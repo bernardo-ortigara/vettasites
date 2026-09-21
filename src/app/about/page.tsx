@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import AboutHero from "./_sections/about-hero";
 import ProcessSection from "./_sections/process-section";
 import TeamSection from "./_sections/team-section";
-import AwardsSection from "./_sections/awards-section";
+import CommitmentsSection from "./_sections/commitments-section";
 import ClientsSection from "./_sections/clients-section";
 import StatsSection from "./_sections/stats-section";
 import ArticleSection from "./_sections/article-section";
@@ -31,7 +31,7 @@ export default function Page() {
           <AboutHero />
           <ProcessSection />
           <TeamSection />
-          <AwardsSection />
+          <CommitmentsSection />
           <ClientsSection />
           <StatsSection />
           <ArticleSection />

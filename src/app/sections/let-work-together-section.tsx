@@ -12,7 +12,7 @@ export default function LetWorkTogetherSection() {
               <div className="w-full flex relative flex-col justify-center items-center content-center shrink-0 gap-0">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <h4 className="block text-bone-soft font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
-                    {"Let\u2019s work together\u2028\u2028"}
+                    {"Vamos trabalhar juntos\u2028\u2028"}
                   </h4>
                 </div>
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
@@ -28,7 +28,7 @@ export default function LetWorkTogetherSection() {
                   <div className="flex relative justify-start items-start content-start shrink-0 gap-36 overflow-clip">
                     <div className="w-[5.9625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                       <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                        Contact Now
+                        Falar agora
                       </p>
                     </div>
                     <div className="w-2 flex relative justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden">
@@ -69,7 +69,7 @@ export default function LetWorkTogetherSection() {
                       <div className="w-[45.7px] flex relative justify-start items-start content-start shrink-0 gap-2.5">
                         <div className="w-[45.7px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                            Portfolio
+                            Portfólio
                           </p>
                         </div>
                       </div>
@@ -88,7 +88,7 @@ export default function LetWorkTogetherSection() {
                       <div className="w-[2.0875rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
                         <div className="w-[2.0875rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                            About
+                            Sobre
                           </p>
                         </div>
                       </div>
@@ -107,7 +107,7 @@ export default function LetWorkTogetherSection() {
                       <div className="w-[2.6625rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
                         <div className="w-[2.6625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                            Contact
+                            Contato
                           </p>
                         </div>
                       </div>
@@ -149,7 +149,7 @@ export default function LetWorkTogetherSection() {
             <div className="w-[196.7px] flex relative justify-center items-end content-end shrink-0 gap-2.5 overflow-clip max-desk:w-full max-desk:justify-between max-desk:gap-[initial]">
               <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                 <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                  © 2025
+                  © 2026
                 </p>
               </div>
               <div className="w-[51.5%] flex relative pb-1.5 justify-start items-end content-end shrink-0 gap-[0.5625rem] max-desk:justify-around max-desk:flex-1 max-desk:gap-[initial]">

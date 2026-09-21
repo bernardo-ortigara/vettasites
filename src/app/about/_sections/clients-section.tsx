@@ -65,7 +65,7 @@ export default function ClientsSection({ logos = LOGOS } = {}) {
       id="clients"
     >
       <div className="w-full max-w-360 block relative shrink-0">
-        <SectionHeader index="(04)" label="(Clients)" />
+        <SectionHeader index="(04)" label="(Clientes)" />
       </div>
       <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-7.5 overflow-clip">
         <div className="w-full h-min grid relative justify-center gap-2.5 overflow-clip grid-cols-[repeat(6,minmax(50px,1fr))] grid-rows-[repeat(1,minmax(0,1fr))] auto-rows-[minmax(0,1fr)] max-desk:grid-cols-[repeat(2,minmax(50px,1fr))] max-tab:flex max-tab:flex-col max-tab:justify-start max-tab:items-center max-tab:content-center">

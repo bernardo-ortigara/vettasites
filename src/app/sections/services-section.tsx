@@ -64,7 +64,7 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
                   </div>
                   <div className="w-[2.5625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
                     <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px] max-tab:hidden">
-                      © 2025
+                      © 2026
                     </p>
                   </div>
                 </div>

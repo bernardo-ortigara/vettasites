@@ -74,7 +74,7 @@ export default function PortfolioHero() {
           transition={{ type: "tween", duration: 0.5, delay: 0.6, ease: EASE_UI }}
         >
           <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-            © 2025
+            © 2026
           </p>
         </Appear>
       </div>

@@ -10,24 +10,24 @@ type Stat = { figure: string; label: string; body: string };
 
 const STATS: Stat[] = [
   {
-    figure: "2.06M",
-    label: "Global Impressions",
-    body: "VETTA moves beyond simple authenticity, creating refined systems that shape digital presence."
+    figure: "24h",
+    label: "Resposta ao orçamento",
+    body: "Você manda a mensagem no WhatsApp e recebe o retorno com escopo e prazo em até um dia útil."
   },
   {
-    figure: "160K",
-    label: "Community Reach",
-    body: "Elevating identity with structured clarity. VETTA crafts experiences that extend far beyond visual form."
+    figure: "100%",
+    label: "Responsivo",
+    body: "Todo projeto é testado em celular, tablet e desktop antes de ir ao ar, sem versão reduzida."
   },
   {
-    figure: "750+",
-    label: "Creative Hours Logged",
-    body: "Through precision and intention, VETTA transforms ideas into cohesive narratives that define brands."
+    figure: "1",
+    label: "Página por serviço",
+    body: "Cada serviço ganha a sua própria página, escrita para a busca que o cliente realmente faz."
   },
   {
-    figure: "257+",
-    label: "Projects Completed",
-    body: "Blending modern aesthetics with functional design, VETTA delivers refined solutions that push brands."
+    figure: "0",
+    label: "Servidor para manter",
+    body: "O site é publicado como páginas estáticas: abre rápido, aguenta pico de acesso e não exige manutenção de servidor."
   }
 ];
 
@@ -75,7 +75,7 @@ export default function StatsSection({ stats = STATS } = {}) {
       id="stats"
     >
       <div className="w-full max-w-360 block relative shrink-0">
-        <SectionHeader index="(05)" label="(Stats)" />
+        <SectionHeader index="(05)" label="(Números)" />
       </div>
       <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-7.5 overflow-clip">
         <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-hairline" />

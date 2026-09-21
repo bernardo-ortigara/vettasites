@@ -12,44 +12,36 @@ type Member = { name: string; role: string; src: string; srcSet: string; width: 
 
 const TEAM: Member[] = [
   {
-    name: "Ariana Voss",
-    role: "Creative Director",
+    name: "Nome do integrante",
+    role: "Função na Vetta",
     src: "/assets/media/images/9eb91f446b45.webp",
     srcSet: "/assets/media/images/769391637689.webp 771w, /assets/media/images/9eb91f446b45.webp 928w",
     width: 928,
     height: 1232
   },
   {
-    name: "Mira Leone",
-    role: "Brand Designer",
+    name: "Nome do integrante",
+    role: "Função na Vetta",
     src: "/assets/media/images/1b0cb664f506.webp",
     srcSet: "/assets/media/images/faf6c0a058e2.webp 716w, /assets/media/images/1b0cb664f506.webp 896w",
     width: 896,
     height: 1280
   },
   {
-    name: "Selena Hart",
-    role: "UX Strategist",
+    name: "Nome do integrante",
+    role: "Função na Vetta",
     src: "/assets/media/images/1d57ffd6301f.webp",
     srcSet: "/assets/media/images/11f9eabe9b0a.webp 771w, /assets/media/images/1d57ffd6301f.webp 928w",
     width: 928,
     height: 1232
   },
   {
-    name: "Nora Bennett",
-    role: "Visual Designer",
+    name: "Nome do integrante",
+    role: "Função na Vetta",
     src: "/assets/media/images/cc88572b5e89.png",
     srcSet: "/assets/media/images/73ec1a8f35d3.webp 796w, /assets/media/images/cc88572b5e89.png 896w",
     width: 896,
     height: 1152
-  },
-  {
-    name: "Chloe Richter",
-    role: "Content Lead",
-    src: "/assets/media/images/d2c0ae6c1074.webp",
-    srcSet: "/assets/media/images/d497d951fdba.webp 716w, /assets/media/images/d2c0ae6c1074.webp 896w",
-    width: 896,
-    height: 1280
   }
 ];
 
@@ -61,7 +53,7 @@ function TeamCard({ m }: { m: Member }) {
           <div className="block absolute inset-0 rounded-[inherit]">
             <img loading="lazy" decoding="async"               className="w-full h-full block rounded-[5px] overflow-clip object-cover"
 
-              alt="Woman Zoom Pose"
+              alt={`Foto de ${m.name}`}
               height={m.height}
               width={m.width}
               sizes="341px"
@@ -98,7 +90,7 @@ export default function TeamSection({ team = TEAM } = {}) {
       <OverlapCurtain fill="bg-ink" heightClass="h-163.5" />
       <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0">
         <div className="w-full flex relative pt-6 px-6 flex-col justify-center items-center content-center shrink-0">
-          <SectionHeader index="(02)" label="(Meet Our Team)" tone="dark" />
+          <SectionHeader index="(02)" label="(Equipe)" tone="dark" />
         </div>
       </div>
       <div className="w-[400vw] h-[521px] block relative shrink-0 max-tab:h-[370px]">

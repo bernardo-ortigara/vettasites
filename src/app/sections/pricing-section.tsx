@@ -27,12 +27,12 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip">
                   <div className="w-[2.775rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                      (Pricing)
+                      (Planos)
                     </p>
                   </div>
                   <div className="w-[2.5625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
                     <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] max-tab:hidden">
-                      © 2025
+                      © 2026
                     </p>
                   </div>
                 </div>
@@ -52,12 +52,12 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-2.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                    Starter
+                    Essencial
                   </p>
                 </div>
-                <div className="w-[207.5px] flex relative max-w-[207.5px] flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
+                <div className="w-full flex relative max-w-[17rem] flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                    Essential design support for new brands taking the first step.
+                    Para quem está começando e precisa de uma presença digital bem feita.
                   </p>
                 </div>
               </div>
@@ -66,27 +66,27 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                   <div className="w-2.5 flex relative flex-col justify-center items-center content-center shrink-0 gap-2.5">
                     <div className="w-2.5 flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                       <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                        $
+                        
                       </p>
                     </div>
                   </div>
-                  <div className="w-[102.3px] flex relative justify-center items-center content-center shrink-0 gap-2.5 max-tab:w-[71.7px]">
-                    <div className="w-[102.3px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:w-[71.7px]">
+                  <div className="w-auto flex relative justify-center items-center content-center shrink-0 gap-2.5">
+                    <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                       <h4 className="block font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
-                        999
+                        Sob
                       </h4>
                     </div>
                   </div>
                 </div>
-                <div className="w-[57.9px] flex relative pb-[0.3125rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                  <div className="w-[57.9px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                <div className="w-auto flex relative pb-[0.3125rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
+                  <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                      / Month
+                      medida
                     </p>
                   </div>
                 </div>
               </div>
-              <ExploreButton href="/contact" label="Join Us Now" tone="dark" className="block relative shrink-0" />
+              <ExploreButton href="/contact" label="Pedir orçamento" tone="dark" className="block relative shrink-0" />
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-4.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
@@ -108,12 +108,12 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-2.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                    Professional
+                    Profissional
                   </p>
                 </div>
-                <div className="w-[207.5px] flex relative max-w-[207.5px] flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
+                <div className="w-full flex relative max-w-[17rem] flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                    Ideal for brands seeking refined systems and digital presence.
+                    Para marcas que já vendem e querem um site preparado para crescer.
                   </p>
                 </div>
               </div>
@@ -122,27 +122,27 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                   <div className="w-2.5 flex relative flex-col justify-center items-center content-center shrink-0 gap-2.5">
                     <div className="w-2.5 flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                       <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                        $
+                        
                       </p>
                     </div>
                   </div>
                   <div className="w-[8.1875rem] flex relative justify-center items-center content-center shrink-0 gap-2.5 max-tab:w-[5.725rem]">
                     <div className="w-[8.1875rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:w-[5.725rem]">
                       <h4 className="block font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
-                        7299
+                        Sob
                       </h4>
                     </div>
                   </div>
                 </div>
-                <div className="w-[57.9px] flex relative pb-[0.3125rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                  <div className="w-[57.9px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                <div className="w-auto flex relative pb-[0.3125rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
+                  <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                      / Month
+                      medida
                     </p>
                   </div>
                 </div>
               </div>
-              <ExploreButton href="/contact" label="Join Us Now" tone="dark" className="block relative shrink-0" />
+              <ExploreButton href="/contact" label="Pedir orçamento" tone="dark" className="block relative shrink-0" />
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-4.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
@@ -164,12 +164,12 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-2.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                    Elite
+                    Completo
                   </p>
                 </div>
-                <div className="w-[207.5px] flex relative max-w-[207.5px] flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
+                <div className="w-full flex relative max-w-[17rem] flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                    High-touch and a fully crafted brand experience by VETTA.
+                    Projeto completo, com painel de edição e acompanhamento contínuo.
                   </p>
                 </div>
               </div>
@@ -182,23 +182,23 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                       </p>
                     </div>
                   </div>
-                  <div className="w-[161.9px] flex relative justify-center items-center content-center shrink-0 gap-2.5 max-tab:w-[7.075rem]">
-                    <div className="w-[161.9px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:w-[7.075rem]">
+                  <div className="w-auto flex relative justify-center items-center content-center shrink-0 gap-2.5">
+                    <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                       <h4 className="block text-bone font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
-                        10999
+                        Sob
                       </h4>
                     </div>
                   </div>
                 </div>
-                <div className="w-[57.9px] flex relative pb-[0.3125rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                  <div className="w-[57.9px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                <div className="w-auto flex relative pb-[0.3125rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
+                  <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                      / Month
+                      medida
                     </p>
                   </div>
                 </div>
               </div>
-              <ExploreButton href="/contact" label="Join Us Now" tone="light" className="block relative shrink-0" />
+              <ExploreButton href="/contact" label="Pedir orçamento" tone="light" className="block relative shrink-0" />
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-4.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">

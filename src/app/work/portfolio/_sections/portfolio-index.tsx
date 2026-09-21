@@ -65,7 +65,7 @@ export default function PortfolioIndex() {
               (Portfolio)
             </p>
             <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap max-tab:hidden">
-              © 2025
+              © 2026
             </p>
           </div>
         </div>

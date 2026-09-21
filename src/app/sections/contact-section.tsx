@@ -9,7 +9,7 @@ const GAP = 10;
 
 const FADE_WIDTH = 5;
 
-const HEADLINE = "We Are Faster, Better And Cheaper\" ";
+const HEADLINE = "O próximo nível começa aqui. ";
 
 export default function ContactSection() {
   const marqueeItem = (
@@ -64,13 +64,13 @@ export default function ContactSection() {
               <Markers className="max-tab:hidden" />
             </div>
 
-            <ExploreButton href="/contact" label="Contact Now" tone="light" className="block relative shrink-0" />
+            <ExploreButton href="/contact" label="Falar com a Vetta" tone="light" className="block relative shrink-0" />
 
             <div className="w-56 h-81 block absolute top-[55.125px] z-1 min-w-0 rounded-[5px] shrink-0 gap-2.5 overflow-hidden max-tab:w-36 max-tab:h-52">
               <div className="w-56 h-full block absolute top-0 rounded-[5px] max-tab:w-36">
                 <img loading="lazy" decoding="async"                   className="w-full h-81 block rounded-[5px] overflow-clip object-cover aspect-[auto_896/1280] max-tab:h-52"
 
-                  alt="Women Orange BG"
+                  alt="Montanha iluminada pelo sol da manhã"
                   height="1280"
                   sizes="224px"
                   src="/assets/media/images/6c6b19e154f4.webp"

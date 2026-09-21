@@ -10,7 +10,7 @@ import FeatureItem from "../../components/feature-item";
 const EASE_UI = [0.44, 0, 0.34, 0.98] as const;
 
 const HEADING =
-  "                                   Design-driven expression blends structured clarity and modern 3D visual systems with Swiss digital ideas, shaped by aesthetics & VETTA®.";
+  "                                   Um método simples e previsível: entender o negócio, desenhar o caminho e publicar um site que continua evoluindo com a marca®.";
 
 const HEADING_FONT: ResponsiveFont = {
   base: {
@@ -41,24 +41,24 @@ type Step = { index: string; title: string; body: string; included: string[] };
 const STEPS: Step[] = [
   {
     index: "001",
-    title: "Research",
+    title: "Descoberta",
     body:
-      "Exploring insights through structured analysis and clear intention. VETTA uncovers patterns and direction, creating a grounded foundation that shapes purposeful design decisions.",
-    included: ["Market discovery & visual mapping", "Brand positioning review", "Dedicated creative, 20 hrs weekly"]
+      "Começamos entendendo o negócio, o público e o que a concorrência já faz. Dessa conversa sai o objetivo do site e a estrutura de páginas que vai sustentar o projeto.",
+    included: ["Conversa inicial sobre o negócio", "Mapa de páginas e prioridades", "Definição do objetivo do site"]
   },
   {
     index: "002",
-    title: "Experiment",
+    title: "Criação",
     body:
-      "Translating ideas into visual concepts with clarity, balance, and exploration. VETTA moves beyond predictable form, crafting variations that reveal new creative possibilities.",
-    included: ["Concept sketches & directions", "Visual style development", "Dedicated creative, 20 hrs weekly"]
+      "O layout nasce a partir da identidade da marca, com atenção à leitura no celular. Você acompanha as telas antes do desenvolvimento e ajusta o que for preciso.",
+    included: ["Layout das páginas principais", "Ajustes de texto e imagem", "Aprovação antes de programar"]
   },
   {
     index: "003",
-    title: "Refinement",
+    title: "Publicação",
     body:
-      "Polishing every detail with precision and structure. VETTA refines layout, tone, and expression, delivering a cohesive system shaped for clarity and long-term impact.",
-    included: ["Final design adjustments", "System-wide consistency check", "Dedicated creative, 20 hrs weekly"]
+      "Desenvolvemos, testamos em vários aparelhos e publicamos com domínio, certificado de segurança e SEO técnico configurado. Depois, acompanhamos o que precisa de ajuste.",
+    included: ["Testes em celular e desktop", "SEO técnico e velocidade", "Acompanhamento pós-lançamento"]
   }
 ];
 
@@ -97,7 +97,7 @@ function ProcessCard({ step }: { step: Step }) {
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-4.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                    What’s included
+                    O que está incluído
                   </p>
                 </div>
                 {step.included.map((description, i) => <FeatureItem key={i} d={{ description }} />)}
@@ -118,7 +118,7 @@ export default function ProcessSection() {
     >
       <OverlapCurtain />
       <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-20 max-tab:gap-15">
-        <SectionHeader index="(01)" label="(Process)" />
+        <SectionHeader index="(01)" label="(Processo)" />
         <div className="w-full block relative shrink-0">
           <StaggeredText
             text={HEADING}
@@ -143,7 +143,7 @@ export default function ProcessSection() {
             <div className="block absolute inset-0 rounded-[inherit]">
               <img loading="lazy" decoding="async"                 className="w-full h-full block rounded-[5px] overflow-clip object-cover"
 
-                alt="Men"
+                alt="Cordada subindo uma montanha ao amanhecer"
                 height="3658"
                 width="2560"
                 sizes="min(100vw - 48px, 1440px)"

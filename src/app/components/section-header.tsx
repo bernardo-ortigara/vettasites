@@ -31,7 +31,7 @@ export default function SectionHeader({
           </div>
           <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
             <p className={`block font-display font-bold leading-[16.2px] tracking-[-0.5px] max-tab:hidden ${text}`}>
-              © 2025
+              © 2026
             </p>
           </div>
         </div>

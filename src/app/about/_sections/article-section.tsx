@@ -21,9 +21,9 @@ type Article = {
 const ARTICLES: Article[] = [
   {
     index: "001",
-    title: "Velocity Becomes",
-    category: "Art Direction",
-    alt: "Woman Close Up",
+    title: "Da conversa ao mapa",
+    category: "Descoberta",
+    alt: "Anotações de um briefing de projeto",
     src: "/assets/media/images/7e23205fe948.png",
     srcSet: "/assets/media/images/1baf6b98dbec.png 558w, /assets/media/images/7e23205fe948.png 768w",
     width: 768,
@@ -32,9 +32,9 @@ const ARTICLES: Article[] = [
   },
   {
     index: "002",
-    title: "Way To Clearance",
-    category: "Books",
-    alt: "Woman Curly Hair",
+    title: "O layout antes do código",
+    category: "Criação",
+    alt: "Layout de site em tela de computador",
     src: "/assets/media/images/97a5393dc435.webp",
     srcSet:
       "/assets/media/images/3f450b16b8bd.jpg 512w, /assets/media/images/d8c3f0565e3a.jpg 1024w, /assets/media/images/a81c8cdec04a.jpg 2048w, /assets/media/images/97a5393dc435.webp 4096w",
@@ -44,9 +44,9 @@ const ARTICLES: Article[] = [
   },
   {
     index: "003",
-    title: "All Grapples",
-    category: "Automotive",
-    alt: "Man Motion Blur",
+    title: "Testes em cada tela",
+    category: "Qualidade",
+    alt: "Testes do site em vários aparelhos",
     src: "/assets/media/images/77c9bcc2e4b4.png",
     srcSet: "/assets/media/images/bc06de5b46c2.png 716w, /assets/media/images/77c9bcc2e4b4.png 896w",
     width: 896,
@@ -55,9 +55,9 @@ const ARTICLES: Article[] = [
   },
   {
     index: "004",
-    title: "Flowers Love",
-    category: "Gardening",
-    alt: "Woman Flowers",
+    title: "No ar e acompanhado",
+    category: "Publicação",
+    alt: "Site publicado e em acompanhamento",
     src: "/assets/media/images/79c2189f3af7.png",
     srcSet: "/assets/media/images/f24ec9257321.png 512w, /assets/media/images/79c2189f3af7.png 1024w",
     width: 1024,
@@ -111,7 +111,7 @@ function ArticleCard({ a }: { a: Article }) {
         <div className="w-min h-min flex relative justify-center items-center content-center shrink-0 gap-1.5">
           <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
             <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-              © 2025
+              © 2026
             </p>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function ArticleSection({ articles = ARTICLES } = {}) {
       id="article"
     >
       <div className="w-full max-w-360 block relative shrink-0">
-        <SectionHeader index="(06)" label="(Article)" />
+        <SectionHeader index="(06)" label="(Bastidores)" />
       </div>
       <div className="w-full max-w-360 h-min flex relative justify-center items-start content-start shrink-0 gap-2.5 overflow-clip max-desk:flex-col">
         {articles.map((a) => (

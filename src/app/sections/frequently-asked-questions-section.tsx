@@ -40,7 +40,7 @@ export default function FrequentlyAskedQuestionsSection({
                     <div className="w-full h-[9.675rem] flex relative rounded-[2.5px] justify-center items-center content-center grow shrink-0 basis-0 gap-2.5 overflow-hidden bg-night">
                       <div className="basis-0 shrink-0 h-full block relative rounded-[2.5px] grow overflow-clip">
                         <div className="h-full block absolute top-0 inset-x-0 rounded-[2.5px]">
-                          <img loading="lazy" decoding="async" className="w-full h-full block rounded-[2.5px] overflow-clip object-cover" alt="Curly Woman" height="1024" sizes="max(100vw - 8px, 1px)" src="/assets/media/images/5961dfd8498b.png" srcSet="/assets/media/images/5961dfd8498b.png 512w, /assets/media/images/bc0753854a2c.png 1024w" width="1024" />
+                          <img loading="lazy" decoding="async" className="w-full h-full block rounded-[2.5px] overflow-clip object-cover" alt="Apresentação em vídeo da Vetta Sites" height="1024" sizes="max(100vw - 8px, 1px)" src="/assets/media/images/5961dfd8498b.png" srcSet="/assets/media/images/5961dfd8498b.png 512w, /assets/media/images/bc0753854a2c.png 1024w" width="1024" />
                         </div>
                       </div>
                     </div>
@@ -55,14 +55,14 @@ export default function FrequentlyAskedQuestionsSection({
                         </div>
                         <div className="w-full flex relative flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                           <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                            Play
+                            Assistir
                           </p>
                         </div>
                       </div>
                       <div className="w-full flex relative justify-start items-center content-center grow shrink-0 basis-0 gap-1 overflow-clip">
                         <div className="w-full flex relative flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                           <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px] text-right">
-                            Showreel
+                            Apresentação
                           </p>
                         </div>
                       </div>

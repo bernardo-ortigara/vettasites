@@ -6,17 +6,17 @@ import SectionHeader from "../../components/section-header";
 
 const EASE_UI = [0.44, 0, 0.34, 0.98] as const;
 
-type Award = { count: string; org: string; work: string; result: string };
+type Commitment = { count: string; org: string; work: string; result: string };
 
-const AWARDS: Award[] = [
-  { count: "2x", org: "Awwwards", work: "Bruten Website", result: "SOTD" },
-  { count: "1x", org: "CSSD Awards", work: "VETTA Portfolio", result: "WOTD" },
-  { count: "7×", org: "Behance", work: "Branding Showcase", result: "Featured" },
-  { count: "5x", org: "FWA", work: "Digital Experience", result: "FOTD" },
-  { count: "2x", org: "CSS Winner", work: "Creative Website", result: "SOTD" },
-  { count: "4x", org: "Mindsparkle", work: "Modern Design", result: "Feature" },
-  { count: "3x", org: "Dribbble", work: "Visual Design", result: "Highlighted" },
-  { count: "8x", org: "Web Excellence Awards", work: "Brand System", result: "Winner" }
+const COMMITMENTS: Commitment[] = [
+  { count: "01", org: "Prazo combinado", work: "Definido antes de começar", result: "Sempre" },
+  { count: "02", org: "Escopo fechado", work: "Sem cobrança por hora", result: "Sempre" },
+  { count: "03", org: "SEO técnico", work: "Em todas as páginas", result: "Incluso" },
+  { count: "04", org: "Site responsivo", work: "Celular, tablet e desktop", result: "Incluso" },
+  { count: "05", org: "Imagens otimizadas", work: "WebP e carregamento sob demanda", result: "Incluso" },
+  { count: "06", org: "Domínio e hospedagem", work: "Configurados por nós", result: "Incluso" },
+  { count: "07", org: "Acessos no seu nome", work: "Domínio, hospedagem e painel", result: "Sempre" },
+  { count: "08", org: "Acompanhamento", work: "Ajustes após o lançamento", result: "Combinado" }
 ];
 
 function Cell({
@@ -51,7 +51,7 @@ function Rule() {
   return <div className="w-full h-px block relative shrink-0 overflow-hidden bg-ink-hairline" />;
 }
 
-function AwardRow({ a, last }: { a: Award; last: boolean }) {
+function CommitmentRow({ a, last }: { a: Commitment; last: boolean }) {
   return (
     <ScrollReveal
       className="w-full block relative shrink-0"
@@ -75,17 +75,17 @@ function AwardRow({ a, last }: { a: Award; last: boolean }) {
   );
 }
 
-export default function AwardsSection({ awards = AWARDS } = {}) {
+export default function CommitmentsSection({ commitments = COMMITMENTS } = {}) {
   return (
     <section
       className="w-full flex relative z-1 pt-6 px-6 pb-[90px] flex-col justify-start items-center content-center shrink-0 gap-20 bg-bone max-tab:pb-20 max-tab:gap-15"
-      id="awards"
+      id="compromissos"
     >
       <div className="w-full max-w-360 block relative shrink-0">
-        <SectionHeader index="(03)" label="(Awards)" />
+        <SectionHeader index="(03)" label="(Compromissos)" />
       </div>
       <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-5 overflow-clip">
-        {awards.map((a, i) => <AwardRow key={i} a={a} last={i === awards.length - 1} />)}
+        {commitments.map((a, i) => <CommitmentRow key={i} a={a} last={i === commitments.length - 1} />)}
       </div>
     </section>
   );
