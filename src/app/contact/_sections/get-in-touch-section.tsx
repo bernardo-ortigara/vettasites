@@ -31,13 +31,13 @@ type FieldSpec = {
 };
 
 const FIELDS: FieldSpec[] = [
-  { label: "First Name*", name: "Name", type: "text", placeholder: "Jim", required: true },
-  { label: "Last Name*", name: "Name", type: "text", placeholder: "Hopper", required: true },
-  { label: "Category", name: "Category", kind: "select", required: true },
-  { label: "Email", name: "Email", type: "email", placeholder: "hello@mail.com", required: false }
+  { label: "Nome*", name: "Nome", type: "text", placeholder: "Seu nome", required: true },
+  { label: "Empresa*", name: "Empresa", type: "text", placeholder: "Nome do seu negócio", required: true },
+  { label: "Tipo de projeto", name: "Projeto", kind: "select", required: true },
+  { label: "E-mail", name: "Email", type: "email", placeholder: "voce@empresa.com.br", required: false }
 ];
 
-const CATEGORIES = ["Art Direction", "Photography"];
+const CATEGORIES = ["Site institucional", "Landing page", "Loja virtual", "Outro"];
 
 const HONEYPOTS = [
   "website", "company", "message", "subject", "title",
@@ -65,7 +65,7 @@ function Field({ f, index }: { f: FieldSpec; index: number }) {
                 defaultValue=""
               >
                 <option value="" className="text-black">
-                  Select
+                  Selecione
                 </option>
                 {CATEGORIES.map((c) => (
                   <option key={c} value={c} className="text-black">
@@ -158,7 +158,7 @@ export default function GetInTouchSection() {
                 className="block text-bone font-display text-[4.375rem] font-bold leading-17.5 tracking-[-2.1px] tab:max-desk:text-[3.5rem] tab:max-desk:leading-14 max-tab:text-3xl max-tab:leading-7.5"
 
               >
-                {"Get In Touch”"}
+                {"Vamos conversar”"}
               </h3>
             </Appear>
 
@@ -168,7 +168,7 @@ export default function GetInTouchSection() {
               transition={{ ...SPRING, delay: DELAY.lead }}
             >
               <p className="block text-bone-soft font-display text-xs font-bold leading-[16.2px] tracking-[-0.5px]">
-                {"Pick a plan, submit a job request, and your イメージ will kickoff   within 24 hours."}
+                {"Conte o que você precisa e a gente volta com escopo, prazo e valor em até 24 horas."}
               </p>
             </Appear>
           </div>
@@ -190,7 +190,7 @@ export default function GetInTouchSection() {
             >
               <label className="w-full h-[min-content] flex relative flex-col justify-start items-start content-start gap-2.5">
                 <div className="w-full h-auto flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className={INPUT_LABEL}>Message</p>
+                  <p className={INPUT_LABEL}>Mensagem</p>
                 </div>
                 <div className="w-full h-auto min-h-25 flex relative items-center overflow-hidden shrink-0">
                   <textarea
@@ -213,7 +213,7 @@ export default function GetInTouchSection() {
                 type="submit"
               >
                 <div className="w-auto h-auto flex relative flex-col justify-start text-center whitespace-pre select-none">
-                  <p className={INPUT_LABEL}>Submit</p>
+                  <p className={INPUT_LABEL}>Enviar no WhatsApp</p>
                 </div>
               </button>
             </Appear>

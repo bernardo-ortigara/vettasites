@@ -151,14 +151,14 @@ export default function MobileMenu({
             </div>
             <div className="flex relative flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-2 overflow-clip">
               <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                Meet the CEO
+                Peça um orçamento
               </p>
               <div className="flex flex-col items-start">
                 <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                  Lousiana KD6
+                  Vetta Sites
                 </p>
                 <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                  CEO
+                  Resposta em 24h
                 </p>
               </div>
             </div>

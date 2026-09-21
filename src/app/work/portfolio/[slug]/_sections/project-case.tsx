@@ -32,7 +32,7 @@ export default function ProjectCase({ p }: { p: ProjectItem }) {
           </div>
           <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip max-desk:gap-10">
             <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
-              (Read More)
+              (Saiba mais)
             </p>
             <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap max-tab:hidden">
               {"© " + p.year}
@@ -47,19 +47,19 @@ export default function ProjectCase({ p }: { p: ProjectItem }) {
 
       <div className="w-full max-w-360 grid relative z-1 mt-27.5 grid-cols-2 gap-x-[3.125rem] items-start max-desk:grid-cols-1 max-desk:gap-y-12 max-desk:mt-15">
         <div className="flex sticky top-12.5 self-start pt-12.5 flex-col justify-start items-start content-start gap-20 max-desk:static max-desk:pt-0 max-desk:gap-12">
-          <CaseRow label="(Research)">
+          <CaseRow label="(Objetivo)">
             <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
               {p.chapters[0]?.body}
             </p>
           </CaseRow>
 
-          <CaseRow label="(Experiment)">
+          <CaseRow label="(Execução)">
             <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
               {p.chapters[1]?.body}
             </p>
           </CaseRow>
 
-          <CaseRow label="(Results)">
+          <CaseRow label="(Resultado)">
             <div className="w-full flex relative flex-col justify-start items-start content-start gap-[6.875rem] max-desk:gap-12">
               <div className="w-full flex relative flex-col justify-start shrink-0 gap-3.5">
                 {p.stats.map((s) => (
@@ -76,7 +76,7 @@ export default function ProjectCase({ p }: { p: ProjectItem }) {
                   </div>
                 ))}
               </div>
-              <ExploreButton href={p.liveUrl ?? "/contact"} label="Live Preview" tone="dark" />
+              <ExploreButton href={p.liveUrl ?? "/contact"} label="Pedir orçamento" tone="dark" />
             </div>
           </CaseRow>
         </div>
