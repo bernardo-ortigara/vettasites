@@ -120,7 +120,7 @@ export default function MobileMenu({
                     active && d.href !== active && "opacity-50"
                   )}
                 >
-                  <span className="text-bone font-display text-[2.25rem] font-bold leading-[2.375rem] tracking-[-1.5px]">
+                  <span className="text-bone font-display text-[2.25rem] font-bold leading-[2.375rem] tracking-[-0.04em]">
                     {d.description}
                   </span>
                   <span className="pb-2 text-bone-soft font-display text-[0.625rem] font-bold [font-variation-settings:'wght'_600] leading-[11.2px]">
@@ -150,14 +150,14 @@ export default function MobileMenu({
               />
             </div>
             <div className="flex relative flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-2 overflow-clip">
-              <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+              <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                 Peça um orçamento
               </p>
               <div className="flex flex-col items-start">
-                <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                   Vetta Sites
                 </p>
-                <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                   Resposta em 24h
                 </p>
               </div>

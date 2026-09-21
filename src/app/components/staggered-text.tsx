@@ -167,7 +167,7 @@ export default function StaggeredText({
             >
               <motion.span
                 custom={i}
-                initial={{ y: 70 }}
+                initial={{ y: "120%" }}
                 animate={controls}
                 style={{
                   display: "inline-block",

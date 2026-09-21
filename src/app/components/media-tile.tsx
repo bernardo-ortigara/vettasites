@@ -62,7 +62,7 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
               <div className="w-full flex relative pr-2.5 justify-between items-start content-start shrink-0">
                 <div className={cn("flex relative justify-center items-center content-center shrink-0 gap-1.5 max-desk:hidden", styles.className7)}>
                   <div className={cn("flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-desk:hidden", styles.className8)}>
-                    <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px] max-desk:hidden">
+                    <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.03em] max-desk:hidden">
                       {d.description}
                     </p>
                   </div>
@@ -70,18 +70,18 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
                 <div className={cn("flex relative justify-center items-start content-start shrink-0 gap-60 overflow-clip max-desk:w-full max-desk:justify-between max-desk:flex-1 max-desk:gap-[initial]", styles.className9)}>
                   <div className="flex relative flex-col justify-center items-start content-start shrink-0 overflow-clip">
                     <div className={cn("flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap", styles.className10)}>
-                      <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                      <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                         {d.description2}
                       </p>
                     </div>
                     <div className={cn("flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap", styles.className11)}>
-                      <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                      <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                         {d.description3}
                       </p>
                     </div>
                   </div>
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                       {d.description4}
                     </p>
                   </div>

@@ -83,10 +83,10 @@ export default function AboutHero() {
           <div className="w-full h-min flex relative justify-center items-center content-center shrink-0 gap-[30px] overflow-clip">
             <PlusColumn />
             <div className="w-auto h-auto flex relative flex-col justify-start shrink-0 whitespace-pre">
-              <h1 className="block text-bone font-display text-[100px] font-bold leading-[100px] tracking-[-3px] max-tab:hidden tab:max-desk:text-[70px] tab:max-desk:leading-[70px]">
+              <h1 className="block text-bone font-display text-[100px] font-bold leading-[100px] tracking-[-0.05em] max-tab:hidden tab:max-desk:text-[70px] tab:max-desk:leading-[70px]">
                 Quem somos
               </h1>
-              <span className="hidden text-bone font-display font-bold max-tab:block max-tab:text-[30px] max-tab:leading-[30px] max-tab:tracking-[-2.1px]">
+              <span className="hidden text-bone font-display font-bold max-tab:block max-tab:text-[30px] max-tab:leading-[30px] max-tab:tracking-[-0.045em]">
                 Sobre
               </span>
             </div>
@@ -97,13 +97,13 @@ export default function AboutHero() {
         <div className="w-full h-min flex relative px-[30px] justify-between items-start shrink-0 max-tab:px-2.5">
           <div className="w-px h-min flex relative max-w-[630px] grow shrink-0 basis-0 justify-between items-start overflow-clip max-tab:max-w-none tab:max-desk:max-w-[450px]">
             <div className="w-auto h-auto flex relative flex-col justify-start shrink-0 whitespace-pre">
-              <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+              <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                 (Our Studio)
               </p>
             </div>
             <div className="w-px h-min flex relative max-w-[200.5px] flex-wrap grow shrink-0 basis-0 flex-col justify-center items-start content-start gap-0 overflow-clip">
               <div className="w-full h-auto flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                   {STANDFIRST}
                 </p>
               </div>
@@ -111,7 +111,7 @@ export default function AboutHero() {
           </div>
           <div className="w-min h-min flex relative justify-center items-center content-center shrink-0 gap-1.5 max-tab:hidden">
             <div className="w-auto h-auto flex relative flex-col justify-start shrink-0 whitespace-pre">
-              <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+              <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                 © 2026
               </p>
             </div>

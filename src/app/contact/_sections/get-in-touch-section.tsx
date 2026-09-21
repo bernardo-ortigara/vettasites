@@ -20,9 +20,9 @@ const DELAY = {
 const RULE = "absolute bottom-0 left-0 w-full h-px bg-bone-edge";
 
 const INPUT_LABEL =
-  "block text-bone font-display text-xs font-bold leading-[16.2px] tracking-[-0.5px]";
+  "block text-bone font-display text-xs font-bold leading-[16.2px] tracking-[-0.03em]";
 const INPUT_FIELD =
-  "flex-1 w-auto min-w-0 p-0 bg-transparent border-0 outline-none font-body text-xs font-normal leading-[19.2px] tracking-[-0.5px] text-bone placeholder:text-bone-soft";
+  "flex-1 w-auto min-w-0 p-0 bg-transparent border-0 outline-none font-body text-xs font-normal leading-[19.2px] tracking-[-0.03em] text-bone placeholder:text-bone-soft";
 const INPUT_FILL = "h-full";
 
 type FieldSpec = {
@@ -154,7 +154,7 @@ export default function GetInTouchSection() {
               transition={{ ...SPRING, delay: DELAY.heading }}
             >
               <h1
-                className="block text-bone font-display text-[4.375rem] font-bold leading-17.5 tracking-[-2.1px] tab:max-desk:text-[3.5rem] tab:max-desk:leading-14 max-tab:text-3xl max-tab:leading-7.5"
+                className="block text-bone font-display text-[4.375rem] font-bold leading-17.5 tracking-[-0.045em] tab:max-desk:text-[3.5rem] tab:max-desk:leading-14 max-tab:text-3xl max-tab:leading-7.5"
 
               >
                 {"Vamos conversar”"}
@@ -166,7 +166,7 @@ export default function GetInTouchSection() {
               initial={{ opacity: 0.001, y: 20 }}
               transition={{ ...SPRING, delay: DELAY.lead }}
             >
-              <p className="block text-bone-soft font-display text-xs font-bold leading-[16.2px] tracking-[-0.5px]">
+              <p className="block text-bone-soft font-display text-xs font-bold leading-[16.2px] tracking-[-0.03em]">
                 {"Conte o que você precisa e a gente volta com escopo, prazo e valor em até 24 horas."}
               </p>
             </Appear>

@@ -15,19 +15,19 @@ export default function TestimonialSection() {
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
                   <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-night transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                       (05)
                     </p>
                   </div>
                 </div>
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip">
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                       (Manifesto)
                     </p>
                   </div>
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
-                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] max-tab:hidden">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em] max-tab:hidden">
                       © 2026
                     </p>
                   </div>

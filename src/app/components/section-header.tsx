@@ -18,19 +18,19 @@ export default function SectionHeader({
         <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
           <div className={`w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square ${dark ? "bg-bone" : "bg-night"} transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]`} />
           <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-            <p className={`block font-display font-bold leading-[16.2px] tracking-[-0.5px] ${text}`}>
+            <p className={`block font-display font-bold leading-[16.2px] tracking-[-0.03em] ${text}`}>
               {index}
             </p>
           </div>
         </div>
         <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip">
           <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-            <p className={`block font-display font-bold leading-[16.2px] tracking-[-0.5px] ${text}`}>
+            <p className={`block font-display font-bold leading-[16.2px] tracking-[-0.03em] ${text}`}>
               {label}
             </p>
           </div>
           <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
-            <p className={`block font-display font-bold leading-[16.2px] tracking-[-0.5px] max-tab:hidden ${text}`}>
+            <p className={`block font-display font-bold leading-[16.2px] tracking-[-0.03em] max-tab:hidden ${text}`}>
               © 2026
             </p>
           </div>

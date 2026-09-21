@@ -66,12 +66,12 @@ function TeamCard({ m }: { m: Member }) {
       <div className="w-full h-min flex relative px-2.5 justify-start items-start content-start shrink-0 gap-2.5">
         <div className="w-px h-min flex relative max-w-[200.5px] flex-wrap grow shrink-0 basis-0 flex-col justify-center items-start content-start gap-0 overflow-clip">
           <div className="w-full h-auto flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-            <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
               {m.name}
             </p>
           </div>
           <div className="w-full h-auto flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-            <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+            <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
               {m.role}
             </p>
           </div>

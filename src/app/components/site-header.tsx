@@ -86,7 +86,7 @@ export default function SiteHeader({
                   <div className="w-full flex relative justify-between items-center content-center shrink-0 overflow-clip max-desk:hidden">
                     <div className="w-30 flex relative max-w-30 pt-px flex-col justify-center items-center content-center grow shrink-0 basis-0 gap-2.5 max-desk:hidden">
                       <div className="w-30 flex relative max-w-30 flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:hidden">
-                        <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] max-desk:hidden">
+                        <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.03em] max-desk:hidden">
                           Peça um orçamento
                         </p>
                       </div>
@@ -98,12 +98,12 @@ export default function SiteHeader({
                   </div>
                   <div className={cn(ceoTextClass, "flex relative flex-col justify-center items-start content-start shrink-0 overflow-clip max-desk:hidden")}>
                     <div className={cn(ceoTextClass, "flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:hidden")}>
-                      <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px] max-desk:hidden">
+                      <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.03em] max-desk:hidden">
                         Vetta Sites
                       </p>
                     </div>
                     <div className={cn(ceoTextClass, "flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:hidden")}>
-                      <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px] max-desk:hidden">
+                      <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em] max-desk:hidden">
                         Resposta em 24h
                       </p>
                     </div>

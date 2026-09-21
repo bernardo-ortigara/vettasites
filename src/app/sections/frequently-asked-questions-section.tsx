@@ -22,14 +22,14 @@ export default function FrequentlyAskedQuestionsSection({
                   <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
                     <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-night transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
                     <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                      <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                      <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                         {index}
                       </p>
                     </div>
                   </div>
                   <div className="w-auto flex relative justify-center items-center content-center shrink-0 gap-1.5">
                     <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                      <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                      <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                         (Perguntas frequentes)
                       </p>
                     </div>
@@ -54,14 +54,14 @@ export default function FrequentlyAskedQuestionsSection({
                           </div>
                         </div>
                         <div className="w-full flex relative flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                          <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                          <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                             Assistir
                           </p>
                         </div>
                       </div>
                       <div className="w-full flex relative justify-start items-center content-center grow shrink-0 basis-0 gap-1 overflow-clip">
                         <div className="w-full flex relative flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                          <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px] text-right">
+                          <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em] text-right">
                             Apresentação
                           </p>
                         </div>

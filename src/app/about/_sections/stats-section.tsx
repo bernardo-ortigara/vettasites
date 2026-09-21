@@ -40,7 +40,7 @@ function StatCard({ s }: { s: Stat }) {
       <div className="w-full h-min flex relative flex-col justify-center items-start content-center gap-2.5 overflow-clip">
         <div className="w-full h-min flex relative justify-center items-start content-center shrink-0 gap-2.5 overflow-clip">
           <div className="w-px flex relative grow shrink-0 basis-0 flex-col justify-start whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-            <h2 className="block font-display text-[100px] font-bold leading-[100px] tracking-[-3px] max-tab:text-[30px] max-tab:leading-[30px] max-tab:tracking-[-2.1px] tab:max-desk:text-[70px] tab:max-desk:leading-[70px]">
+            <h2 className="block font-display text-[100px] font-bold leading-[100px] tracking-[-0.05em] max-tab:text-[30px] max-tab:leading-[30px] max-tab:tracking-[-0.045em] tab:max-desk:text-[70px] tab:max-desk:leading-[70px]">
               {s.figure}
             </h2>
           </div>
@@ -52,12 +52,12 @@ function StatCard({ s }: { s: Stat }) {
           <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-hairline" />
           <div className="w-full h-min flex relative flex-col justify-center items-start content-center shrink-0 gap-2.5 overflow-clip">
             <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-              <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+              <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                 {s.label}
               </p>
             </div>
             <div className="w-[302px] flex relative max-w-[302px] flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-              <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+              <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                 {s.body}
               </p>
             </div>

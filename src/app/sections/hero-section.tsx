@@ -47,7 +47,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 10 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.4, ease: EASE_UI }}
           >
-            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
               {"Estratégia, design e performance "}
             </p>
           </Appear>
@@ -56,7 +56,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 10 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.6, ease: EASE_UI }}
           >
-            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
               {"para o seu negócio "}
               <span className="inline text-bone-soft">
                 {"chegar "}
@@ -68,7 +68,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 10 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.8, ease: EASE_UI }}
           >
-            <p className="block text-bone-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-bone-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
               ao topo.
             </p>
           </Appear>
@@ -88,7 +88,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 10 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.9, ease: EASE_SERVICES }}
           >
-            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
               <span className="inline text-bone-soft">
                 01/
               </span>
@@ -100,7 +100,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 8 }}
             transition={{ type: "tween", duration: 0.5, delay: 1.1, ease: EASE_SERVICES }}
           >
-            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
               Performance
             </p>
           </Appear>
@@ -109,7 +109,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 6 }}
             transition={{ type: "tween", duration: 0.5, delay: 1.3, ease: EASE_SERVICES }}
           >
-            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
               Ascenção
             </p>
           </Appear>
@@ -121,7 +121,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             transition={{ ...SPRING, delay: 0.5 }}
           >
             <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-              <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+              <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                 © 2026
               </p>
             </div>
@@ -139,7 +139,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
               <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
             </div>
             <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-              <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+              <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                 '26
               </p>
             </div>

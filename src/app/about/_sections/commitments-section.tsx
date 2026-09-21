@@ -32,7 +32,7 @@ function Cell({
     align === "right" ? "text-right" : align === "right-below-desk" ? "max-desk:text-right" : "";
   return (
     <div className="w-px flex relative grow shrink-0 basis-0 flex-col justify-start whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-      <p className={`block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] ${alignClass} ${dim ? "desk:text-ink-soft" : ""}`}>
+      <p className={`block font-display text-base font-bold leading-[20.2px] tracking-[-0.03em] ${alignClass} ${dim ? "desk:text-ink-soft" : ""}`}>
         {text}
       </p>
     </div>

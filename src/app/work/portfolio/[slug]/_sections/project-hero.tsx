@@ -48,26 +48,26 @@ export default function ProjectHero({ p }: { p: ProjectItem; total?: number }) {
             <Crosshair className="absolute left-0 bottom-0" />
             <Crosshair className="absolute right-0 bottom-0" />
           </div>
-          <h1 className="w-full block text-bone font-display font-bold text-[2.5rem] leading-[2.5rem] tracking-[-1.2px] text-center tab:text-[4rem] tab:leading-[4rem] tab:tracking-[-1.9px] desk:text-[6.25rem] desk:leading-[6.25rem] desk:tracking-[-3px]">
+          <h1 className="w-full block text-bone font-display font-bold text-[2.5rem] leading-[2.5rem] tracking-[-0.04em] text-center tab:text-[4rem] tab:leading-[4rem] tab:tracking-[-0.045em] desk:text-[6.25rem] desk:leading-[6.25rem] desk:tracking-[-0.05em]">
             {p.title}
           </h1>
         </div>
 
         <div className="w-full flex relative justify-between items-start content-start shrink-0 gap-10 max-desk:flex-col max-desk:justify-start max-desk:items-start max-desk:content-start max-desk:gap-6">
           <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-            <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
               {p.category}
             </p>
           </div>
 
           <div className="w-[12.5625rem] flex relative desk:w-[18.9375rem] desk:pl-[6.375rem] flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:w-full max-desk:max-w-75">
-            <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+            <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
               {p.summary}
             </p>
           </div>
 
           <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-desk:hidden">
-            <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
               {"© " + p.year}
             </p>
           </div>

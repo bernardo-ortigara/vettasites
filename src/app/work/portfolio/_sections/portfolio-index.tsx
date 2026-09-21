@@ -56,15 +56,15 @@ export default function PortfolioIndex() {
         <div className="w-full flex relative justify-between items-center content-center shrink-0">
           <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
             <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-night transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
-            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
+            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em] whitespace-pre text-nowrap">
               (01)
             </p>
           </div>
           <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip max-desk:gap-10">
-            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
+            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em] whitespace-pre text-nowrap">
               (Portfólio)
             </p>
-            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap max-tab:hidden">
+            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em] whitespace-pre text-nowrap max-tab:hidden">
               © 2026
             </p>
           </div>

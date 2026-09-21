@@ -60,7 +60,7 @@ export default function ExploreButton({
               fontSize: 16,
               fontWeight: 700,
               lineHeight: "20.2px",
-              letterSpacing: "-0.5px",
+              letterSpacing: "-0.03em",
               margin: 0
             }}
           >

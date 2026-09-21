@@ -19,19 +19,19 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
                   <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-night transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                       (04)
                     </p>
                   </div>
                 </div>
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip">
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                       (Planos)
                     </p>
                   </div>
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
-                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] max-tab:hidden">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em] max-tab:hidden">
                       © 2026
                     </p>
                   </div>
@@ -51,12 +51,12 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
             <div className="w-full flex relative p-7.5 rounded-[5px] flex-col justify-center items-start content-start gap-10 overflow-clip bg-bone-dim">
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-2.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                  <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                     Essencial
                   </p>
                 </div>
                 <div className="w-full flex relative max-w-[17rem] flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                  <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                     Para quem está começando e precisa de uma presença digital bem feita.
                   </p>
                 </div>
@@ -65,7 +65,7 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                 <div className="flex relative justify-center items-start content-start shrink-0 gap-1 overflow-clip">
                   <div className="w-auto flex relative justify-center items-center content-center shrink-0 gap-2.5">
                     <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                      <h4 className="block font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
+                      <h4 className="block font-display text-[3.5rem] font-bold leading-14 tracking-[-0.045em] max-tab:text-[2.5rem] max-tab:leading-10">
                         Sob
                       </h4>
                     </div>
@@ -73,7 +73,7 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                 </div>
                 <div className="w-auto flex relative pb-[0.3125rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                    <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                       medida
                     </p>
                   </div>
@@ -82,7 +82,7 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
               <ExploreButton href="/contact" label="Pedir orçamento" tone="dark" className="block relative shrink-0" />
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-4.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                  <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                     O que está incluído
                   </p>
                 </div>
@@ -100,12 +100,12 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
             <div className="w-full flex relative p-7.5 rounded-[5px] flex-col justify-center items-start content-start gap-10 overflow-clip bg-bone-dim">
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-2.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                  <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                     Profissional
                   </p>
                 </div>
                 <div className="w-full flex relative max-w-[17rem] flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                  <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                     Para marcas que já vendem e querem um site preparado para crescer.
                   </p>
                 </div>
@@ -114,7 +114,7 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                 <div className="flex relative justify-center items-start content-start shrink-0 gap-1 overflow-clip">
                   <div className="w-auto flex relative justify-center items-center content-center shrink-0 gap-2.5">
                     <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:w-auto">
-                      <h4 className="block font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
+                      <h4 className="block font-display text-[3.5rem] font-bold leading-14 tracking-[-0.045em] max-tab:text-[2.5rem] max-tab:leading-10">
                         Sob
                       </h4>
                     </div>
@@ -122,7 +122,7 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                 </div>
                 <div className="w-auto flex relative pb-[0.3125rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                    <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                       medida
                     </p>
                   </div>
@@ -131,7 +131,7 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
               <ExploreButton href="/contact" label="Pedir orçamento" tone="dark" className="block relative shrink-0" />
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-4.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                  <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                     O que está incluído
                   </p>
                 </div>
@@ -149,12 +149,12 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
             <div className="w-full flex relative p-7.5 rounded-[5px] flex-col justify-center items-start content-start gap-10 overflow-clip bg-ink">
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-2.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                  <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                     Completo
                   </p>
                 </div>
                 <div className="w-full flex relative max-w-[17rem] flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                  <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                     Projeto completo, com painel de edição e acompanhamento contínuo.
                   </p>
                 </div>
@@ -163,7 +163,7 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                 <div className="flex relative justify-center items-start content-start shrink-0 gap-1 overflow-clip">
                   <div className="w-auto flex relative justify-center items-center content-center shrink-0 gap-2.5">
                     <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                      <h4 className="block text-bone font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
+                      <h4 className="block text-bone font-display text-[3.5rem] font-bold leading-14 tracking-[-0.045em] max-tab:text-[2.5rem] max-tab:leading-10">
                         Sob
                       </h4>
                     </div>
@@ -171,7 +171,7 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                 </div>
                 <div className="w-auto flex relative pb-[0.3125rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                    <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                       medida
                     </p>
                   </div>
@@ -180,7 +180,7 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
               <ExploreButton href="/contact" label="Pedir orçamento" tone="light" className="block relative shrink-0" />
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-4.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                  <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                     O que está incluído
                   </p>
                 </div>

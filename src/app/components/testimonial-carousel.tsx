@@ -14,21 +14,21 @@ const QUOTE_FONT: ResponsiveFont = {
   base: {
     fontFamily: "var(--font-display)",
     fontSize: "30px",
-    letterSpacing: "-1.1px",
+    letterSpacing: "-0.04em",
     lineHeight: "30px",
     textAlign: "left"
   },
   tab: {
     fontFamily: "var(--font-display)",
     fontSize: "38px",
-    letterSpacing: "-1.2px",
+    letterSpacing: "-0.04em",
     lineHeight: "38px",
     textAlign: "left"
   },
   desk: {
     fontFamily: "var(--font-display)",
     fontSize: "56px",
-    letterSpacing: "-1.7px",
+    letterSpacing: "-0.045em",
     lineHeight: "56px",
     textAlign: "left"
   }
@@ -142,12 +142,12 @@ export default function TestimonialCarousel() {
             <div className="w-[14.3125rem] flex relative flex-col justify-center items-start content-start shrink-0 gap-2.5 overflow-clip">
               <div className="w-[14.3125rem] flex relative flex-col justify-center items-start content-start shrink-0 gap-1 overflow-clip">
                 <div className="w-[14.3125rem] flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                  <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                     {author.name}
                   </p>
                 </div>
                 <div className="w-[14.3125rem] flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                  <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                     {author.role}
                   </p>
                 </div>
@@ -171,7 +171,7 @@ export default function TestimonialCarousel() {
                       className="w-full flex relative max-w-78 flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]"
                     >
                       <h6
-                        className="block font-display text-4xl font-bold leading-9.5 tracking-[-1.2px]"
+                        className="block font-display text-4xl font-bold leading-9.5 tracking-[-0.04em]"
 
                       >
                         {figure}
@@ -182,12 +182,12 @@ export default function TestimonialCarousel() {
               </div>
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-0.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                  <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                     {col.title}
                   </p>
                 </div>
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                  <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                     {col.subtitle}
                   </p>
                 </div>

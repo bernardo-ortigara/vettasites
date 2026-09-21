@@ -40,10 +40,10 @@ export default function PortfolioHero() {
             initial={{ opacity: 0.001, y: 20 }}
             transition={{ type: "tween", duration: 0.6, delay: 0.2, ease: EASE_UI }}
           >
-            <h1 className="block text-bone font-display text-[6.25rem] font-bold leading-[6.25rem] tracking-[-3px] whitespace-pre text-nowrap max-desk:text-[4rem] max-desk:leading-16 max-desk:tracking-[-2px] max-tab:text-[3rem] max-tab:leading-12">
+            <h1 className="block text-bone font-display text-[6.25rem] font-bold leading-[6.25rem] tracking-[-0.05em] whitespace-pre text-nowrap max-desk:text-[4rem] max-desk:leading-16 max-desk:tracking-[-0.045em] max-tab:text-[3rem] max-tab:leading-12">
               Nossos
             </h1>
-            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em] whitespace-pre text-nowrap">
               (07)
             </p>
           </Appear>
@@ -52,7 +52,7 @@ export default function PortfolioHero() {
             initial={{ opacity: 0.001, y: 20 }}
             transition={{ type: "tween", duration: 0.6, delay: 0.3, ease: EASE_UI }}
           >
-            <p className="block text-bone font-display text-[6.25rem] font-bold leading-[6.25rem] tracking-[-3px] max-desk:text-[4rem] max-desk:leading-16 max-desk:tracking-[-2px] max-tab:text-[3rem] max-tab:leading-12">
+            <p className="block text-bone font-display text-[6.25rem] font-bold leading-[6.25rem] tracking-[-0.05em] max-desk:text-[4rem] max-desk:leading-16 max-desk:tracking-[-0.045em] max-tab:text-[3rem] max-tab:leading-12">
               Projetos
             </p>
           </Appear>
@@ -63,7 +63,7 @@ export default function PortfolioHero() {
           initial={{ opacity: 0.001, y: 10 }}
           transition={{ type: "tween", duration: 0.5, delay: 0.5, ease: EASE_UI }}
         >
-          <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+          <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
             Modelos que mostram a estrutura que entregamos em cada tipo de projeto
           </p>
         </Appear>
@@ -73,7 +73,7 @@ export default function PortfolioHero() {
           initial={{ opacity: 0.001 }}
           transition={{ type: "tween", duration: 0.5, delay: 0.6, ease: EASE_UI }}
         >
-          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
             © 2026
           </p>
         </Appear>

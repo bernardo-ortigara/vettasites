@@ -14,12 +14,12 @@ export default function LetWorkTogetherSection() {
             <div className="w-full flex relative flex-col justify-start items-start content-start grow shrink-0 basis-0 gap-12.5 overflow-clip max-desk:grow-[initial] max-desk:basis-[initial]">
               <div className="w-full flex relative flex-col justify-center items-center content-center shrink-0 gap-0">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <h4 className="block text-bone-soft font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
+                  <h4 className="block text-bone-soft font-display text-[3.5rem] font-bold leading-14 tracking-[-0.045em] max-tab:text-[2.5rem] max-tab:leading-10">
                     {"Vamos trabalhar juntos\u2028\u2028"}
                   </h4>
                 </div>
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <h4 className="block text-bone font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
+                  <h4 className="block text-bone font-display text-[3.5rem] font-bold leading-14 tracking-[-0.045em] max-tab:text-[2.5rem] max-tab:leading-10">
                     <a className="inline cursor-pointer focus:border-bone focus:text-bone focus:outline-bone focus:[text-decoration-color:var(--bone)]" href={`mailto:${VETTA.email}`} rel="noopener">
                       {VETTA.email}
                     </a>
@@ -35,7 +35,7 @@ export default function LetWorkTogetherSection() {
                 >
                   <div className="flex relative justify-start items-start content-start shrink-0 gap-36 overflow-clip">
                     <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                      <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                      <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                         Falar agora
                       </p>
                     </div>
@@ -57,7 +57,7 @@ export default function LetWorkTogetherSection() {
                     <a className="flex relative justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer" href="/">
                       <div className="w-[2.1125rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
                         <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                             Home
                           </p>
                         </div>
@@ -76,7 +76,7 @@ export default function LetWorkTogetherSection() {
                     <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer" href="/work/portfolio">
                       <div className="w-[45.7px] flex relative justify-start items-start content-start shrink-0 gap-2.5">
                         <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                             Portfólio
                           </p>
                         </div>
@@ -95,7 +95,7 @@ export default function LetWorkTogetherSection() {
                     <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer" href="/about">
                       <div className="w-[2.0875rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
                         <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                             Sobre
                           </p>
                         </div>
@@ -114,7 +114,7 @@ export default function LetWorkTogetherSection() {
                     <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer" href="/contact">
                       <div className="w-[2.6625rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
                         <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                             Contato
                           </p>
                         </div>
@@ -156,7 +156,7 @@ export default function LetWorkTogetherSection() {
             </a>
             <div className="w-[196.7px] flex relative justify-center items-end content-end shrink-0 gap-2.5 overflow-clip max-desk:w-full max-desk:justify-between max-desk:gap-[initial]">
               <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                   © 2026
                 </p>
               </div>
@@ -174,7 +174,7 @@ export default function LetWorkTogetherSection() {
                 <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
               </div>
               <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                   &apos;26
                 </p>
               </div>

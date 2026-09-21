@@ -91,18 +91,18 @@ function ArticleCard({ a }: { a: Article }) {
       <div className="w-full h-min flex relative justify-between items-start content-start shrink-0">
         <div className="h-min flex relative justify-start items-start content-start shrink-0 grow gap-[30px] overflow-clip">
           <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em]">
               {a.index}
             </p>
           </div>
           <div className="w-[200.5px] h-min flex relative max-w-[200.5px] flex-wrap flex-col justify-center items-start content-start overflow-clip">
             <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-              <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+              <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                 {a.title}
               </p>
             </div>
             <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-              <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+              <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                 {a.category}
               </p>
             </div>
@@ -110,7 +110,7 @@ function ArticleCard({ a }: { a: Article }) {
         </div>
         <div className="w-min h-min flex relative justify-center items-center content-center shrink-0 gap-1.5">
           <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em]">
               © 2026
             </p>
           </div>

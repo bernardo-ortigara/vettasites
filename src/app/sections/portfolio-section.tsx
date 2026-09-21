@@ -19,19 +19,19 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
                   <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-night transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                       (02)
                     </p>
                   </div>
                 </div>
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip">
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                       (Portfólio)
                     </p>
                   </div>
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
-                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] max-tab:hidden">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.03em] max-tab:hidden">
                       © 2026
                     </p>
                   </div>
@@ -44,7 +44,7 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
       <div className="w-full max-w-360 flex relative justify-between items-start content-start shrink-0 max-desk:flex-col max-desk:justify-start max-desk:gap-10" id="cards">
         <div className="w-62.5 h-[35.2625rem] flex sticky top-0 z-1 max-w-62.5 pt-61 pb-50 flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-4 overflow-clip max-desk:h-[6.5125rem] max-desk:relative max-desk:bottom-0 max-desk:inset-x-0 max-desk:py-0 max-desk:grow-[initial] max-desk:basis-[initial]">
           <div className="w-62.5 flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-            <h4 className="block font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-desk:text-[2.5rem] max-desk:leading-10">
+            <h4 className="block font-display text-[3.5rem] font-bold leading-14 tracking-[-0.045em] max-desk:text-[2.5rem] max-desk:leading-10">
               Vetta '26
             </h4>
           </div>
@@ -54,7 +54,7 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
               <a className="h-[1.95rem] flex relative flex-col justify-center items-start content-start gap-2.5 overflow-clip text-accent cursor-pointer" href="/contact">
                 <div className="flex relative justify-start items-start content-start shrink-0 gap-36 overflow-clip">
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                    <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                       Pedir orçamento
                     </p>
                   </div>
@@ -86,7 +86,7 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
                 </div>
                 <div className="w-auto flex relative justify-center items-center content-center shrink-0 gap-2.5">
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+                    <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                       Ver todos (07)
                     </p>
                   </div>

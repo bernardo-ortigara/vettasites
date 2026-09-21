@@ -10,7 +10,7 @@ export default function NavLink({ d, styles }: { d: NavLinkData; styles: NavLink
     <a className="flex relative justify-center items-end content-end shrink-0 gap-3 overflow-clip text-accent cursor-pointer max-desk:hidden" href={d.href}>
       <div className={cn("h-3.5 flex relative shrink-0 gap-2.5 max-desk:hidden", styles.className)}>
         <div className={cn("flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-desk:hidden", styles.className2)}>
-          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px] max-desk:hidden">
+          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em] max-desk:hidden">
             {d.description}
           </p>
         </div>

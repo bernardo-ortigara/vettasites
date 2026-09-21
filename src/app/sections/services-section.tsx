@@ -12,21 +12,21 @@ const HEADING_FONT: ResponsiveFont = {
   base: {
     fontFamily: "var(--font-display)",
     fontSize: "30px",
-    letterSpacing: "-1.1px",
+    letterSpacing: "-0.04em",
     lineHeight: "30px",
     textAlign: "left"
   },
   tab: {
     fontFamily: "var(--font-display)",
     fontSize: "38px",
-    letterSpacing: "-1.2px",
+    letterSpacing: "-0.04em",
     lineHeight: "38px",
     textAlign: "left"
   },
   desk: {
     fontFamily: "var(--font-display)",
     fontSize: "70px",
-    letterSpacing: "-2.1px",
+    letterSpacing: "-0.045em",
     lineHeight: "70px",
     textAlign: "left"
   }
@@ -51,19 +51,19 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
                   <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-bone transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                       (03)
                     </p>
                   </div>
                 </div>
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip">
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
                       (Serviços)
                     </p>
                   </div>
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
-                    <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px] max-tab:hidden">
+                    <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em] max-tab:hidden">
                       © 2026
                     </p>
                   </div>

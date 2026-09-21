@@ -11,7 +11,7 @@ export default function FeatureItem({ d }: { d: FeatureItemData }) {
         </div>
       </div>
       <div className="w-full flex relative flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-        <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
+        <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
           {d.description}
         </p>
       </div>

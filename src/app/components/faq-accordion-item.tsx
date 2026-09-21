@@ -38,7 +38,7 @@ export default function FaqAccordionItem({ d, revealDuration }: { d: FaqItem; re
         <div className="w-full flex relative flex-col justify-center items-center content-center shrink-0">
           <div className="w-full flex relative justify-between items-center content-center shrink-0 overflow-clip">
             <div className="w-full flex relative max-w-150 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-              <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+              <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
                 {d.question}
               </p>
             </div>
@@ -61,7 +61,7 @@ export default function FaqAccordionItem({ d, revealDuration }: { d: FaqItem; re
           >
             <div ref={bodyRef} className="w-full flex relative pt-5 justify-start items-center content-center gap-2.5">
               <div className="w-full flex relative max-w-[35.5625rem] flex-col justify-start whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                <p className="block text-ink-soft font-display text-[0.75rem] font-bold leading-[16.2px] tracking-[-0.5px]">
+                <p className="block text-ink-soft font-display text-[0.75rem] font-bold leading-[16.2px] tracking-[-0.03em]">
                   {d.answer}
                 </p>
               </div>
