@@ -45,15 +45,25 @@ export function StackedCards({
       ty.set(TY_PER_SPACING * p);
     };
 
+    let queued = 0;
+    const onScroll = () => {
+      if (queued) return;
+      queued = requestAnimationFrame(() => {
+        queued = 0;
+        update();
+      });
+    };
+
     const sync = () => { measure(); update(); };
     sync();
 
-    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", sync);
     const observer = new ResizeObserver(sync);
     observer.observe(el);
     return () => {
-      window.removeEventListener("scroll", update);
+      if (queued) cancelAnimationFrame(queued);
+      window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", sync);
       observer.disconnect();
     };

@@ -44,7 +44,7 @@ export default function MediaCard({ d, styles }: { d: MediaCardData; styles: Med
                 innerClassName="w-full h-full block relative rounded-[5px] overflow-clip"
               >
                 <div className="h-full block absolute top-0 inset-x-0 rounded-[5px]">
-                  <img className={cn("w-full h-full block rounded-[5px] overflow-clip object-cover", styles.className)} alt={d.alt} height={d.height} sizes="406px" src={d.imgSrc} srcSet={d.srcSet} width={d.width} />
+                  <img loading="lazy" decoding="async" className={cn("w-full h-full block rounded-[5px] overflow-clip object-cover", styles.className)} alt={d.alt} height={d.height} sizes="406px" src={d.imgSrc} srcSet={d.srcSet} width={d.width} />
                 </div>
               </ScrollZoom>
               <div className="w-91.5 flex relative py-[0.6875rem] flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-29 overflow-clip max-desk:w-full max-desk:gap-7.5 max-desk:py-0 max-desk:grow-[initial] max-desk:basis-[initial] tab:max-desk:w-180">

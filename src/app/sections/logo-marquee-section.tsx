@@ -16,7 +16,7 @@ export default function LogoMarqueeSection({ logos = logosContent } = {}) {
   const mobileCards = unique.map((d, i) => (
     <div key={i} className="w-full h-42.5 flex relative rounded-[5px] flex-col justify-center items-center content-center gap-2.5 overflow-clip bg-bone-dim">
       <div className="w-26 h-4 block relative shrink-0">
-        <img className="w-full h-4 block overflow-clip object-contain" alt="" height={d.height} src={d.imgSrc} width={d.width} sizes={d.sizes} srcSet={d.srcSet} />
+        <img loading="lazy" decoding="async" className="w-full h-4 block overflow-clip object-contain" alt="" height={d.height} src={d.imgSrc} width={d.width} sizes={d.sizes} srcSet={d.srcSet} />
       </div>
     </div>
   ));

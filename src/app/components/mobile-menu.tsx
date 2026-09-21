@@ -78,11 +78,10 @@ export default function MobileMenu({
           onClick={() => setOpen(false)}
         >
           <div className="w-24.5 h-full block absolute top-0 left-0">
-            <img
-              className="w-full h-4.5 block overflow-clip object-cover aspect-[auto_296/55]"
+            <img decoding="async"               className="w-full h-4.5 block overflow-clip object-cover aspect-[auto_296/55]"
               alt=""
               height="55"
-              src="/assets/media/images/logo.png"
+              src="/assets/media/images/logo.webp"
               width="296"
             />
           </div>
@@ -142,12 +141,11 @@ export default function MobileMenu({
             transition={{ duration: 0.5, delay: 0.08 + navLinks.length * 0.07, ease: EASE_UI }}
           >
             <div className="w-16 h-16 flex relative rounded-[2.5px] justify-center items-center content-center shrink-0 overflow-hidden bg-night">
-              <img
-                className="w-full h-16 block rounded-[2.5px] overflow-clip object-cover aspect-[auto_896/830]"
+              <img decoding="async"                 className="w-full h-16 block rounded-[2.5px] overflow-clip object-cover aspect-[auto_896/830]"
                 alt=""
                 height="830"
                 sizes="64px"
-                src="/assets/media/images/9b08cefad60d.png"
+                src="/assets/media/images/9b08cefad60d.webp"
                 width="896"
               />
             </div>

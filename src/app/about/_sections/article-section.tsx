@@ -35,11 +35,11 @@ const ARTICLES: Article[] = [
     title: "Way To Clearance",
     category: "Books",
     alt: "Woman Curly Hair",
-    src: "/assets/media/images/a651ed757c43.jpg",
+    src: "/assets/media/images/97a5393dc435.webp",
     srcSet:
-      "/assets/media/images/3f450b16b8bd.jpg 512w, /assets/media/images/d8c3f0565e3a.jpg 1024w, /assets/media/images/a81c8cdec04a.jpg 2048w, /assets/media/images/97a5393dc435.jpg 4096w, /assets/media/images/a651ed757c43.jpg 5120w",
-    width: 5120,
-    height: 3584,
+      "/assets/media/images/3f450b16b8bd.jpg 512w, /assets/media/images/d8c3f0565e3a.jpg 1024w, /assets/media/images/a81c8cdec04a.jpg 2048w, /assets/media/images/97a5393dc435.webp 4096w",
+    width: 4096,
+    height: 2867,
     tall: false
   },
   {
@@ -76,8 +76,7 @@ function ArticleCard({ a }: { a: Article }) {
       <div className="w-full h-px flex relative grow shrink-0 basis-0 rounded-[5px] justify-center items-center content-center gap-2.5 overflow-hidden bg-night">
         <div className="w-px h-full block relative grow shrink-0 basis-0 rounded-[5px] overflow-clip">
           <div className="block absolute inset-0 rounded-[inherit]">
-            <img
-              className="w-full h-full block rounded-[5px] overflow-clip object-cover"
+            <img loading="lazy" decoding="async"               className="w-full h-full block rounded-[5px] overflow-clip object-cover"
 
               alt={a.alt}
               height={a.height}

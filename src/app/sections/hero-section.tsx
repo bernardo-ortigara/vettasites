@@ -32,7 +32,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
         transition={{ type: "tween", duration: 1, delay: 0, ease: EASE_IMAGE }}
       >
         <div className="h-full block absolute top-0 inset-x-0">
-          <img className="w-full h-full block overflow-clip object-cover" alt="Women in Orange BG" height="617" sizes="(min-width: 1200px) 100vw, (min-width: 810px) and (max-width: 1199.98px) 100vw, (max-width: 809.98px) 100vw" src="/assets/media/images/816e2cb276ac.png" srcSet="/assets/media/images/e9e4d00ce547.png 512w, /assets/media/images/dfec41af5c07.png 1024w, /assets/media/images/816e2cb276ac.png 1080w" width="1080" />
+          <img fetchPriority="high" decoding="async" className="w-full h-full block overflow-clip object-cover" alt="Women in Orange BG" height="617" sizes="(min-width: 1200px) 100vw, (min-width: 810px) and (max-width: 1199.98px) 100vw, (max-width: 809.98px) 100vw" src="/assets/media/images/816e2cb276ac.png" srcSet="/assets/media/images/e9e4d00ce547.png 512w, /assets/media/images/dfec41af5c07.png 1024w, /assets/media/images/816e2cb276ac.png 1080w" width="1080" />
         </div>
       </Appear>
       <div className="hidden desk:block absolute inset-0 z-0">

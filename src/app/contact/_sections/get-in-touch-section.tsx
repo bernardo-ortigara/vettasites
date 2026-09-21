@@ -120,8 +120,7 @@ export default function GetInTouchSection() {
           transition={{ ...SPRING, delay: DELAY.image }}
         >
           <div className="w-[9%] h-[5%] block absolute top-[47.765%] left-[45.4704%] z-1 overflow-clip">
-            <img
-              className="w-full h-full block object-contain"
+            <img loading="lazy" decoding="async"               className="w-full h-full block object-contain"
 
               alt=""
               width="208"
@@ -135,15 +134,14 @@ export default function GetInTouchSection() {
             className="w-full h-[120%] block relative shrink-0 rounded-[5px] overflow-clip max-desk:h-[140%]"
           >
             <div className="w-full h-full block absolute top-0 left-0 rounded-[5px]">
-              <img
-                className="w-full h-full block rounded-[5px] overflow-clip object-cover object-center"
+              <img loading="lazy" decoding="async"                 className="w-full h-full block rounded-[5px] overflow-clip object-cover object-center"
 
                 alt="Men Orange BG"
                 width="896"
                 height="1280"
                 sizes="(min-width: 1200px) 574px, calc(100vw - 48px)"
-                src="/assets/media/images/c2319a79d95c.png"
-                srcSet="/assets/media/images/e2d3b0b2997d.png 716w, /assets/media/images/c2319a79d95c.png 896w"
+                src="/assets/media/images/c2319a79d95c.webp"
+                srcSet="/assets/media/images/e2d3b0b2997d.webp 716w, /assets/media/images/c2319a79d95c.webp 896w"
               />
             </div>
           </Parallax>

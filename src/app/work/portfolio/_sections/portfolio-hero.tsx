@@ -20,14 +20,13 @@ export default function PortfolioHero() {
         initial={{ opacity: 0.001, scale: 1.2 }}
         transition={{ type: "tween", duration: 1, delay: 0, ease: EASE_IMAGE }}
       >
-        <img
-          className="w-[110%] h-[110%] max-w-none block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover opacity-70"
+        <img fetchPriority="high" decoding="async"           className="w-[110%] h-[110%] max-w-none block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover opacity-70"
 
           alt="Women Garden"
           height="768"
           sizes="110vw"
-          src="/assets/media/images/f9ae45e286be.png"
-          srcSet="/assets/media/images/bb2e456a997a.png 512w, /assets/media/images/5a2db2dbff27.png 1024w, /assets/media/images/f9ae45e286be.png 1408w"
+          src="/assets/media/images/f9ae45e286be.webp"
+          srcSet="/assets/media/images/bb2e456a997a.webp 512w, /assets/media/images/5a2db2dbff27.webp 1024w, /assets/media/images/f9ae45e286be.webp 1408w"
           width="1408"
         />
       </Appear>

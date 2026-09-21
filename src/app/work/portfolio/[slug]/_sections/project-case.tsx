@@ -88,7 +88,7 @@ export default function ProjectCase({ p }: { p: ProjectItem }) {
               className="w-full block relative rounded-[5px] overflow-clip bg-night aspect-[671/607]"
             >
               <Parallax speed={90} className="w-full h-[150%] block absolute bottom-0 inset-x-0">
-                <img
+                <img decoding="async"
                   className={cn("w-full h-full block overflow-clip object-cover", img.aspect)}
 
                   alt={img.alt}

@@ -55,8 +55,7 @@ export default function TestimonialCarousel() {
       <div className="w-53 flex relative flex-col justify-between items-center content-center self-stretch shrink-0 overflow-clip max-desk:w-27.5 max-desk:h-12.5 max-desk:justify-center max-desk:[align-self:initial]">
         <div className="w-53 h-[15.8125rem] flex relative z-1 rounded-[5px] flex-col justify-center items-center content-center shrink-0 gap-2.5 overflow-clip max-desk:hidden">
           <div className="w-53 h-full block absolute top-0 left-0 min-w-0 rounded-[5px]">
-            <img
-              className="w-full h-[15.8125rem] block rounded-[5px] overflow-clip object-cover"
+            <img loading="lazy" decoding="async"               className="w-full h-[15.8125rem] block rounded-[5px] overflow-clip object-cover"
 
               alt={slide.portrait.alt}
               height={slide.portrait.height}
@@ -68,8 +67,7 @@ export default function TestimonialCarousel() {
           </div>
           <div className="w-19 h-4 block relative [mix-blend-mode:difference] shrink-0 gap-2.5 overflow-clip">
             <div className="w-19 h-full block absolute top-0">
-              <img
-                className="w-full h-4 block overflow-clip object-contain"
+              <img loading="lazy" decoding="async"                 className="w-full h-4 block overflow-clip object-contain"
 
                 alt=""
                 height={slide.logo.height}
@@ -131,8 +129,7 @@ export default function TestimonialCarousel() {
               className="w-16.5 h-16.5 flex relative rounded-[2.5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip"
               innerClassName="w-16.5 h-full block relative grow shrink-0 basis-0 overflow-clip"
             >
-              <img
-                className="w-full h-16.5 block overflow-clip object-cover"
+              <img loading="lazy" decoding="async"                 className="w-full h-16.5 block overflow-clip object-cover"
 
                 alt={slide.avatar.alt}
                 height="1024"

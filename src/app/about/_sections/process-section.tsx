@@ -141,15 +141,14 @@ export default function ProcessSection() {
             className="w-px h-[150%] block relative rounded-[5px] grow shrink-0 basis-0 overflow-clip"
           >
             <div className="block absolute inset-0 rounded-[inherit]">
-              <img
-                className="w-full h-full block rounded-[5px] overflow-clip object-cover"
+              <img loading="lazy" decoding="async"                 className="w-full h-full block rounded-[5px] overflow-clip object-cover"
 
                 alt="Men"
-                height="7680"
-                width="5376"
+                height="3658"
+                width="2560"
                 sizes="min(100vw - 48px, 1440px)"
-                src="/assets/media/images/2bda0bbd7aef.jpg"
-                srcSet="/assets/media/images/accdbe1cdadf.jpg 716w, /assets/media/images/5b4ac27fcb4a.jpg 1433w, /assets/media/images/3cb035ffe058.jpg 2867w, /assets/media/images/2bda0bbd7aef.jpg 5376w"
+                src="/assets/media/images/3cb035ffe058.webp"
+                srcSet="/assets/media/images/accdbe1cdadf.webp 716w, /assets/media/images/5b4ac27fcb4a.webp 1433w, /assets/media/images/3cb035ffe058.webp 2560w"
               />
             </div>
           </Parallax>

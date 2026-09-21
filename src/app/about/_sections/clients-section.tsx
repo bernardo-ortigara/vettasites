@@ -42,8 +42,7 @@ function LogoTile({ logo }: { logo: Logo }) {
       <div className="w-full h-42 flex relative rounded-[5px] flex-col justify-center items-center content-center gap-2.5 overflow-clip bg-bone-dim">
         <div className="w-26 h-4 block relative shrink-0">
           <div className="w-26 h-full block absolute top-0">
-            <img
-              className="w-full h-4 block overflow-clip object-contain"
+            <img loading="lazy" decoding="async"               className="w-full h-4 block overflow-clip object-contain"
 
               alt=""
               height={logo.height}

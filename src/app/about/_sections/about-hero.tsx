@@ -10,9 +10,9 @@ const SPRING = { type: "spring", stiffness: 300, damping: 60, mass: 1 } as const
 const STANDFIRST = "One part-time creative dedicated to   your continuous stream of projects.";
 
 const HERO_IMG = {
-  src: "/assets/media/images/65228cc19ae7.jpeg",
+  src: "/assets/media/images/65228cc19ae7.webp",
   srcSet:
-    "/assets/media/images/556fe45f3ffa.jpeg 512w, /assets/media/images/3b9e4d23d421.jpeg 1024w, /assets/media/images/65228cc19ae7.jpeg 1200w",
+    "/assets/media/images/556fe45f3ffa.webp 512w, /assets/media/images/3b9e4d23d421.webp 1024w, /assets/media/images/65228cc19ae7.webp 1200w",
   alt: "Woman Motion Blur"
 };
 
@@ -48,8 +48,7 @@ export default function AboutHero() {
         transition={{ type: "tween", duration: 1, delay: 0, ease: EASE_IMAGE }}
       >
         <div className="block absolute inset-0">
-          <img
-            className="w-full h-full block overflow-clip object-cover"
+          <img fetchPriority="high" decoding="async"             className="w-full h-full block overflow-clip object-cover"
 
             alt={HERO_IMG.alt}
             height="673"
@@ -71,8 +70,7 @@ export default function AboutHero() {
       >
         <div className="w-full h-px flex relative grow shrink-0 basis-0 rounded-[5px] flex-col justify-center items-center content-center gap-2.5 overflow-clip max-tab:grow-0 max-tab:shrink-0 max-tab:basis-auto max-tab:h-[354px] tab:max-desk:grow-0 tab:max-desk:shrink-0 tab:max-desk:basis-auto tab:max-desk:h-[364px]">
           <div className="block absolute inset-0 rounded-[inherit]">
-            <img
-              className="w-full h-full block rounded-[5px] overflow-clip object-cover"
+            <img fetchPriority="high" decoding="async"               className="w-full h-full block rounded-[5px] overflow-clip object-cover"
 
               alt={HERO_IMG.alt}
               height="673"

@@ -34,8 +34,7 @@ export default function ContactSection() {
             className="h-740 block absolute top-[-2159.69px] inset-x-0 opacity-64 min-w-0 shrink-0 overflow-clip"
           >
             <div className="h-full block absolute top-0 inset-x-0">
-              <img
-                className="w-full h-740 block overflow-clip object-cover aspect-[auto_768/1408]"
+              <img loading="lazy" decoding="async"                 className="w-full h-740 block overflow-clip object-cover aspect-[auto_768/1408]"
 
                 alt="Villa"
                 height="1408"
@@ -69,14 +68,13 @@ export default function ContactSection() {
 
             <div className="w-56 h-81 block absolute top-[55.125px] z-1 min-w-0 rounded-[5px] shrink-0 gap-2.5 overflow-hidden max-tab:w-36 max-tab:h-52">
               <div className="w-56 h-full block absolute top-0 rounded-[5px] max-tab:w-36">
-                <img
-                  className="w-full h-81 block rounded-[5px] overflow-clip object-cover aspect-[auto_896/1280] max-tab:h-52"
+                <img loading="lazy" decoding="async"                   className="w-full h-81 block rounded-[5px] overflow-clip object-cover aspect-[auto_896/1280] max-tab:h-52"
 
                   alt="Women Orange BG"
                   height="1280"
                   sizes="224px"
-                  src="/assets/media/images/6c6b19e154f4.png"
-                  srcSet="/assets/media/images/67b9b52f749e.png 716w, /assets/media/images/6c6b19e154f4.png 896w"
+                  src="/assets/media/images/6c6b19e154f4.webp"
+                  srcSet="/assets/media/images/67b9b52f749e.png 716w, /assets/media/images/6c6b19e154f4.webp 896w"
                   width="896"
                 />
               </div>

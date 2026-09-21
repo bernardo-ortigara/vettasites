@@ -270,6 +270,7 @@ export default function LiquidDistortion({
     const canvas = canvasRef.current;
     const container = containerRef.current;
     if (!canvas || !container) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const gl = canvas.getContext("webgl", { alpha: true });
     if (!gl) return;
@@ -591,13 +592,44 @@ export default function LiquidDistortion({
       gl!.bindFramebuffer(gl!.FRAMEBUFFER, null);
       gl!.drawElements(gl!.TRIANGLES, 6, gl!.UNSIGNED_SHORT, 0);
 
-      rafRef.current = requestAnimationFrame(frame);
+      if (running) rafRef.current = requestAnimationFrame(frame);
     }
 
-    frame();
+    let running = false;
+    let onScreen = true;
+
+    const start = () => {
+      if (running) return;
+      running = true;
+      rafRef.current = requestAnimationFrame(frame);
+    };
+
+    const stop = () => {
+      running = false;
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      rafRef.current = undefined;
+    };
+
+    const syncPlayback = () => {
+      if (onScreen && document.visibilityState === "visible") start();
+      else stop();
+    };
+
+    const visibility = new IntersectionObserver(
+      ([entry]) => {
+        onScreen = entry.isIntersecting;
+        syncPlayback();
+      },
+      { threshold: 0 }
+    );
+    visibility.observe(container);
+    document.addEventListener("visibilitychange", syncPlayback);
+    syncPlayback();
 
     return () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      stop();
+      visibility.disconnect();
+      document.removeEventListener("visibilitychange", syncPlayback);
       canvas.removeEventListener("mouseenter", onEnter);
       canvas.removeEventListener("mouseleave", onLeave);
       canvas.removeEventListener("click", onPointer);

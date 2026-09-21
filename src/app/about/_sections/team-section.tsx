@@ -14,24 +14,24 @@ const TEAM: Member[] = [
   {
     name: "Ariana Voss",
     role: "Creative Director",
-    src: "/assets/media/images/9eb91f446b45.png",
-    srcSet: "/assets/media/images/769391637689.png 771w, /assets/media/images/9eb91f446b45.png 928w",
+    src: "/assets/media/images/9eb91f446b45.webp",
+    srcSet: "/assets/media/images/769391637689.webp 771w, /assets/media/images/9eb91f446b45.webp 928w",
     width: 928,
     height: 1232
   },
   {
     name: "Mira Leone",
     role: "Brand Designer",
-    src: "/assets/media/images/1b0cb664f506.png",
-    srcSet: "/assets/media/images/faf6c0a058e2.png 716w, /assets/media/images/1b0cb664f506.png 896w",
+    src: "/assets/media/images/1b0cb664f506.webp",
+    srcSet: "/assets/media/images/faf6c0a058e2.webp 716w, /assets/media/images/1b0cb664f506.webp 896w",
     width: 896,
     height: 1280
   },
   {
     name: "Selena Hart",
     role: "UX Strategist",
-    src: "/assets/media/images/1d57ffd6301f.png",
-    srcSet: "/assets/media/images/11f9eabe9b0a.png 771w, /assets/media/images/1d57ffd6301f.png 928w",
+    src: "/assets/media/images/1d57ffd6301f.webp",
+    srcSet: "/assets/media/images/11f9eabe9b0a.webp 771w, /assets/media/images/1d57ffd6301f.webp 928w",
     width: 928,
     height: 1232
   },
@@ -39,15 +39,15 @@ const TEAM: Member[] = [
     name: "Nora Bennett",
     role: "Visual Designer",
     src: "/assets/media/images/cc88572b5e89.png",
-    srcSet: "/assets/media/images/73ec1a8f35d3.png 796w, /assets/media/images/cc88572b5e89.png 896w",
+    srcSet: "/assets/media/images/73ec1a8f35d3.webp 796w, /assets/media/images/cc88572b5e89.png 896w",
     width: 896,
     height: 1152
   },
   {
     name: "Chloe Richter",
     role: "Content Lead",
-    src: "/assets/media/images/d2c0ae6c1074.png",
-    srcSet: "/assets/media/images/d497d951fdba.png 716w, /assets/media/images/d2c0ae6c1074.png 896w",
+    src: "/assets/media/images/d2c0ae6c1074.webp",
+    srcSet: "/assets/media/images/d497d951fdba.webp 716w, /assets/media/images/d2c0ae6c1074.webp 896w",
     width: 896,
     height: 1280
   }
@@ -59,8 +59,7 @@ function TeamCard({ m }: { m: Member }) {
       <div className="w-full h-px flex relative grow shrink-0 basis-0 rounded-[5px] justify-center items-center content-center gap-2.5 overflow-hidden">
         <div className="w-px h-full block relative grow shrink-0 basis-0 rounded-[5px] overflow-clip">
           <div className="block absolute inset-0 rounded-[inherit]">
-            <img
-              className="w-full h-full block rounded-[5px] overflow-clip object-cover"
+            <img loading="lazy" decoding="async"               className="w-full h-full block rounded-[5px] overflow-clip object-cover"
 
               alt="Woman Zoom Pose"
               height={m.height}

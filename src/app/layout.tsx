@@ -31,7 +31,7 @@ export const metadata = {
     "type": "website",
     "url": "/",
     "images": [
-      "/assets/media/images/og.png"
+      "/assets/media/images/og.webp"
     ]
   },
   "twitter": {
@@ -39,7 +39,7 @@ export const metadata = {
     "title": "VETTA — Premium Design Studio & Portfolio",
     "description": "VETTA is a design-forward studio crafting bold visuals, structured layouts, and high-impact digital experiences for ambitious brands.",
     "images": [
-      "/assets/media/images/og.png"
+      "/assets/media/images/og.webp"
     ]
   },
   "icons": {

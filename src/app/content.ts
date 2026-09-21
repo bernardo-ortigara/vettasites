@@ -64,25 +64,25 @@ export const testimonials: TestimonialItem[] = [
         quoteBase: "                         “VETTA delivers with clarity. Their structured workflow and fast turnaround made our redesign launch seamless. They’ve become our trusted partner for every major creative push.”",
         name: "Adrian Velasco",
         role: "NovaLabs / Creative Lead",
-        portrait: { alt: "Man Hoodie", src: "/assets/media/images/7581dd9e5d6f.png", srcSet: "/assets/media/images/e3b5cac7489f.png 716w, /assets/media/images/7581dd9e5d6f.png 896w", width: "896", height: "1280" },
+        portrait: { alt: "Man Hoodie", src: "/assets/media/images/7581dd9e5d6f.webp", srcSet: "/assets/media/images/e3b5cac7489f.png 716w, /assets/media/images/7581dd9e5d6f.webp 896w", width: "896", height: "1280" },
         logo: { src: "/assets/media/svg/68c38735cda3.svg", width: "76", height: "16" },
-        avatar: { alt: "Women Side Pose", src: "/assets/media/images/beaaaddd3941.png", srcSet: "/assets/media/images/2f2d20acf0ee.png 512w, /assets/media/images/beaaaddd3941.png 1024w" }
+        avatar: { alt: "Women Side Pose", src: "/assets/media/images/beaaaddd3941.webp", srcSet: "/assets/media/images/2f2d20acf0ee.png 512w, /assets/media/images/beaaaddd3941.webp 1024w" }
     },
     {
         quote: "                         “The team understood our vision instantly. Clean replies, flexible timelines, and consistently refined work with punch. VETTA gave our brand the modern edge we were missing.”",
         name: "Gracia Michelle",
         role: "Apple Co. / Senior Lead Engineer",
-        portrait: { alt: "Man Overshirt", src: "/assets/media/images/59ca2b54402e.png", srcSet: "/assets/media/images/48460b2bbd11.png 716w, /assets/media/images/59ca2b54402e.png 896w", width: "896", height: "1280" },
+        portrait: { alt: "Man Overshirt", src: "/assets/media/images/59ca2b54402e.webp", srcSet: "/assets/media/images/48460b2bbd11.webp 716w, /assets/media/images/59ca2b54402e.webp 896w", width: "896", height: "1280" },
         logo: { src: "/assets/media/images/7606ec0e4371.png", width: "303", height: "67" },
-        avatar: { alt: "Women Side Pose", src: "/assets/media/images/e6f70244dd17.png", srcSet: "/assets/media/images/322ebb0029ee.png 512w, /assets/media/images/e6f70244dd17.png 1024w" }
+        avatar: { alt: "Women Side Pose", src: "/assets/media/images/e6f70244dd17.webp", srcSet: "/assets/media/images/322ebb0029ee.webp 512w, /assets/media/images/e6f70244dd17.webp 1024w" }
     },
     {
         quote: "                         “Professional, thoughtful, and incredibly detail-driven. VETTA supported us through multiple product rollouts with steady direction and polished execution. Highly dependable every time.”",
         name: "Kasandra, Leon, Miles",
         role: "Miro One / Team Lead Members",
-        portrait: { alt: "Woman", src: "/assets/media/images/a8a049fba604.png", srcSet: "/assets/media/images/7292e9ec2814.png 761w, /assets/media/images/a8a049fba604.png 880w", width: "880", height: "1184" },
+        portrait: { alt: "Woman", src: "/assets/media/images/a8a049fba604.webp", srcSet: "/assets/media/images/7292e9ec2814.webp 761w, /assets/media/images/a8a049fba604.webp 880w", width: "880", height: "1184" },
         logo: { src: "/assets/media/images/7129aba0969b.png", width: "258", height: "66" },
-        avatar: { alt: "Team", src: "/assets/media/images/c80849aeff3f.png", srcSet: "/assets/media/images/6dcc2299a6ae.png 512w, /assets/media/images/c80849aeff3f.png 1024w" }
+        avatar: { alt: "Team", src: "/assets/media/images/c80849aeff3f.webp", srcSet: "/assets/media/images/6dcc2299a6ae.webp 512w, /assets/media/images/c80849aeff3f.webp 1024w" }
     },
 ]
 
@@ -188,9 +188,9 @@ export const projects: ProjectItem[] = [
             { figure: "0", label: "Exceptions since handover" }
         ],
         gallery: [
-            { alt: "Instrument housing", src: "/assets/media/images/95d860ec3768.png", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
-            { alt: "Catalogue spread", src: "/assets/media/images/6c6b19e154f4.png", width: "896", height: "1280", aspect: "aspect-[auto_896/1280]" },
-            { alt: "Stand build", src: "/assets/media/images/29b003003242.png", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" }
+            { alt: "Instrument housing", src: "/assets/media/images/95d860ec3768.webp", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
+            { alt: "Catalogue spread", src: "/assets/media/images/6c6b19e154f4.webp", width: "896", height: "1280", aspect: "aspect-[auto_896/1280]" },
+            { alt: "Stand build", src: "/assets/media/images/29b003003242.webp", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" }
         ]
     },
     {
@@ -201,7 +201,7 @@ export const projects: ProjectItem[] = [
         year: "2024",
         summary: "Two seasons shot back to back, colour-graded to a single stock so the campaign reads as one run.",
         scope: ["Photography", "Retouch", "Campaign"],
-        image: { alt: "Man in Blue BG", src: "/assets/media/images/d429b442416a.png", srcSet: "/assets/media/images/ad9b2d2be81b.png 512w, /assets/media/images/27d11552e704.png 1024w, /assets/media/images/93c9d668a9d7.png 2048w, /assets/media/images/d429b442416a.png 2728w", width: "2728", height: "1536", aspect: "aspect-[auto_2728/1536]" },
+        image: { alt: "Man in Blue BG", src: "/assets/media/images/d429b442416a.webp", srcSet: "/assets/media/images/ad9b2d2be81b.png 512w, /assets/media/images/27d11552e704.png 1024w, /assets/media/images/93c9d668a9d7.png 2048w, /assets/media/images/d429b442416a.webp 2728w", width: "2728", height: "1536", aspect: "aspect-[auto_2728/1536]" },
         span: "tall",
         intro: "Dunwill Lanson had two collections landing eleven weeks apart and no budget for two shoots. We booked one studio block, shot both, and graded them to a single stock so nobody could tell where one season ended.",
         facts: [
@@ -222,7 +222,7 @@ export const projects: ProjectItem[] = [
         ],
         gallery: [
             { alt: "Studio portrait", src: "/assets/media/images/77c9bcc2e4b4.png", width: "896", height: "1280", aspect: "aspect-[auto_896/1280]" },
-            { alt: "Campaign still", src: "/assets/media/images/2f4b7d061507.png", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
+            { alt: "Campaign still", src: "/assets/media/images/2f4b7d061507.webp", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
             { alt: "Look book page", src: "/assets/media/images/7e23205fe948.png", width: "768", height: "1408", aspect: "aspect-[auto_768/1408]" }
         ]
     },
@@ -254,8 +254,8 @@ export const projects: ProjectItem[] = [
             { figure: "2×", label: "Qualified inbound" }
         ],
         gallery: [
-            { alt: "Positioning board", src: "/assets/media/images/b2c0d66b9ce6.png", width: "832", height: "1248", aspect: "aspect-[auto_832/1248]" },
-            { alt: "Site build", src: "/assets/media/images/a376f8cd1db2.png", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
+            { alt: "Positioning board", src: "/assets/media/images/b2c0d66b9ce6.webp", width: "832", height: "1248", aspect: "aspect-[auto_832/1248]" },
+            { alt: "Site build", src: "/assets/media/images/a376f8cd1db2.webp", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
             { alt: "Messaging card", src: "/assets/media/images/031d00a78b18.png", width: "1024", height: "1024", aspect: "aspect-[auto_1024/1024]" }
         ]
     },
@@ -287,8 +287,8 @@ export const projects: ProjectItem[] = [
             { figure: "11", label: "Weeks end to end" }
         ],
         gallery: [
-            { alt: "Film still", src: "/assets/media/images/0324a09ab65c.png", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
-            { alt: "Athlete portrait", src: "/assets/media/images/68c91cf88797.png", width: "896", height: "1280", aspect: "aspect-[auto_896/1280]" },
+            { alt: "Film still", src: "/assets/media/images/0324a09ab65c.webp", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
+            { alt: "Athlete portrait", src: "/assets/media/images/68c91cf88797.webp", width: "896", height: "1280", aspect: "aspect-[auto_896/1280]" },
             { alt: "Frame board", src: "/assets/media/images/411edd68feb0.png", width: "1420", height: "1422", aspect: "aspect-[auto_1420/1422]" }
         ]
     },
@@ -300,7 +300,7 @@ export const projects: ProjectItem[] = [
         year: "2024",
         summary: "A foundry's first retail release — specimen, licence tiers and storefront shipped in one pass.",
         scope: ["Branding", "Specimen", "E-commerce"],
-        image: { alt: "Studio Interior", src: "/assets/media/images/467b27e5dc07.png", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
+        image: { alt: "Studio Interior", src: "/assets/media/images/467b27e5dc07.webp", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
         span: "wide",
         intro: "Halden had drawn type for other people's brands for nine years and never sold a licence of its own. The first retail release had to explain the foundry and the family at the same time.",
         facts: [
@@ -320,7 +320,7 @@ export const projects: ProjectItem[] = [
             { figure: "16", label: "Weeks to release" }
         ],
         gallery: [
-            { alt: "Specimen spread", src: "/assets/media/images/32cb8dd9da14.png", width: "1024", height: "559", aspect: "aspect-[auto_1024/559]" },
+            { alt: "Specimen spread", src: "/assets/media/images/32cb8dd9da14.webp", width: "1024", height: "559", aspect: "aspect-[auto_1024/559]" },
             { alt: "Type detail", src: "/assets/media/images/79c2189f3af7.png", width: "1024", height: "1024", aspect: "aspect-[auto_1024/1024]" },
             { alt: "Printed sheet", src: "/assets/media/images/1b886de39cd8.png", width: "683", height: "1024", aspect: "aspect-[auto_683/1024]" }
         ]
@@ -333,7 +333,7 @@ export const projects: ProjectItem[] = [
         year: "2024",
         summary: "Room-by-room documentation of a workshop, framed so the process reads before the product does.",
         scope: ["Photography", "Editorial", "Print"],
-        image: { alt: "Atelier", src: "/assets/media/images/02f3a7db3446.png", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
+        image: { alt: "Atelier", src: "/assets/media/images/02f3a7db3446.webp", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
         span: "tall",
         intro: "Marchetti's finished pieces photograph beautifully and say nothing about why they cost what they cost. We spent nine days in the workshop instead, and shot the reason.",
         facts: [
@@ -354,7 +354,7 @@ export const projects: ProjectItem[] = [
         ],
         gallery: [
             { alt: "Workshop floor", src: "/assets/media/images/019a3df9011c.png", width: "1152", height: "2048", aspect: "aspect-[auto_1152/2048]" },
-            { alt: "Bench detail", src: "/assets/media/images/b81b53b51d2f.png", width: "1024", height: "717", aspect: "aspect-[auto_1024/717]" },
+            { alt: "Bench detail", src: "/assets/media/images/b81b53b51d2f.webp", width: "1024", height: "717", aspect: "aspect-[auto_1024/717]" },
             { alt: "Material store", src: "/assets/media/images/259e6dc735f5.png", width: "717", height: "1024", aspect: "aspect-[auto_717/1024]" }
         ]
     },
@@ -366,7 +366,7 @@ export const projects: ProjectItem[] = [
         year: "2023",
         summary: "Six product lines collapsed into three, with the messaging system that made the cut defensible.",
         scope: ["Strategy", "Messaging", "Design System"],
-        image: { alt: "Field", src: "/assets/media/images/ce794bd8df42.png", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
+        image: { alt: "Field", src: "/assets/media/images/ce794bd8df42.webp", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
         span: "tall",
         intro: "Orbit Field had six product lines, four of which were the same product with different logos. Cutting them was the easy part. Making the cut survive contact with six product owners was the work.",
         facts: [
@@ -386,9 +386,9 @@ export const projects: ProjectItem[] = [
             { figure: "2", label: "Acquisitions absorbed since" }
         ],
         gallery: [
-            { alt: "Jobs map", src: "/assets/media/images/2172c7a38664.png", width: "1536", height: "960", aspect: "aspect-[auto_1536/960]" },
-            { alt: "System token sheet", src: "/assets/media/images/9f04c30f9315.png", width: "1024", height: "1024", aspect: "aspect-[auto_1024/1024]" },
-            { alt: "Line architecture", src: "/assets/media/images/25749aa0ee1f.png", width: "1024", height: "559", aspect: "aspect-[auto_1024/559]" }
+            { alt: "Jobs map", src: "/assets/media/images/2172c7a38664.webp", width: "1536", height: "960", aspect: "aspect-[auto_1536/960]" },
+            { alt: "System token sheet", src: "/assets/media/images/9f04c30f9315.webp", width: "1024", height: "1024", aspect: "aspect-[auto_1024/1024]" },
+            { alt: "Line architecture", src: "/assets/media/images/25749aa0ee1f.webp", width: "1024", height: "559", aspect: "aspect-[auto_1024/559]" }
         ]
     }
 ];
