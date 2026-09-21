@@ -19,29 +19,29 @@ export type PlanFeatureItem = {
   description: string;
 };
 export const planFeaturesEssential: PlanFeatureItem[] = [
-    { description: "Custom-crafted visual identity" },
-    { description: "Responsive, modern website design" },
-    { description: "High-quality imagery and production" }
+    { description: "Layout sob medida para a sua marca" },
+    { description: "Site responsivo em celular e desktop" },
+    { description: "Formulário ligado ao seu WhatsApp" }
 ];
 
 export const planFeaturesStandard: PlanFeatureItem[] = [
-    { description: "Custom-crafted visual identity" },
-    { description: "Responsive, modern website design" },
-    { description: "High-quality imagery and production" },
-    { description: "Structured layouts with clean typography" },
-    { description: "Conversion-focused page strategy" },
-    { description: "Fast, optimized performance setup" }
+    { description: "Layout sob medida para a sua marca" },
+    { description: "Site responsivo em celular e desktop" },
+    { description: "Formulário ligado ao seu WhatsApp" },
+    { description: "Textos e imagens tratados para a web" },
+    { description: "Estrutura pensada para conversão" },
+    { description: "SEO técnico e site rápido no Google" }
 ];
 
 export const planFeaturesComplete: PlanFeatureItem[] = [
-    { description: "Custom-crafted visual identity" },
-    { description: "Responsive, modern website design" },
-    { description: "High-quality imagery and production" },
-    { description: "Structured layouts with clean typography" },
-    { description: "Conversion-focused page strategy" },
-    { description: "Fast, optimized performance setup" },
-    { description: "Seamless CMS and organization" },
-    { description: "Dedicated support for revisions" }
+    { description: "Layout sob medida para a sua marca" },
+    { description: "Site responsivo em celular e desktop" },
+    { description: "Formulário ligado ao seu WhatsApp" },
+    { description: "Textos e imagens tratados para a web" },
+    { description: "Estrutura pensada para conversão" },
+    { description: "SEO técnico e site rápido no Google" },
+    { description: "Painel para você editar o conteúdo" },
+    { description: "Acompanhamento após o lançamento" }
 ];
 
 export type TestimonialImage = {
@@ -60,29 +60,28 @@ export type TestimonialItem = {
 };
 export const testimonials: TestimonialItem[] = [
     {
-        quote: "                         “VETTA delivered with clarity. Their structured workflow and fast turnaround made our redesign launch seamless. They’ve become our trusted partner for every major creative push.”",
-        quoteBase: "                         “VETTA delivers with clarity. Their structured workflow and fast turnaround made our redesign launch seamless. They’ve become our trusted partner for every major creative push.”",
-        name: "Adrian Velasco",
-        role: "NovaLabs / Creative Lead",
-        portrait: { alt: "Man Hoodie", src: "/assets/media/images/7581dd9e5d6f.webp", srcSet: "/assets/media/images/e3b5cac7489f.png 716w, /assets/media/images/7581dd9e5d6f.webp 896w", width: "896", height: "1280" },
-        logo: { src: "/assets/media/svg/68c38735cda3.svg", width: "76", height: "16" },
-        avatar: { alt: "Women Side Pose", src: "/assets/media/images/beaaaddd3941.webp", srcSet: "/assets/media/images/2f2d20acf0ee.png 512w, /assets/media/images/beaaaddd3941.webp 1024w" }
+        quote: "“Cada passo importa. Um site não é um arquivo entregue no fim do projeto: é a base de uma subida que continua depois do lançamento.”",
+        name: "Vetta Sites",
+        role: "Manifesto / 01",
+        portrait: { alt: "Caminhada em trilha de montanha ao amanhecer", src: "/assets/media/images/7581dd9e5d6f.webp", srcSet: "/assets/media/images/e3b5cac7489f.png 716w, /assets/media/images/7581dd9e5d6f.webp 896w", width: "896", height: "1280" },
+        logo: { src: "/assets/media/images/logo.webp", width: "296", height: "55" },
+        avatar: { alt: "Detalhe de uma escalada em rocha", src: "/assets/media/images/beaaaddd3941.png", srcSet: "/assets/media/images/2f2d20acf0ee.png 512w, /assets/media/images/beaaaddd3941.png 1024w" }
     },
     {
-        quote: "                         “The team understood our vision instantly. Clean replies, flexible timelines, and consistently refined work with punch. VETTA gave our brand the modern edge we were missing.”",
-        name: "Gracia Michelle",
-        role: "Apple Co. / Senior Lead Engineer",
-        portrait: { alt: "Man Overshirt", src: "/assets/media/images/59ca2b54402e.webp", srcSet: "/assets/media/images/48460b2bbd11.webp 716w, /assets/media/images/59ca2b54402e.webp 896w", width: "896", height: "1280" },
-        logo: { src: "/assets/media/images/7606ec0e4371.png", width: "303", height: "67" },
-        avatar: { alt: "Women Side Pose", src: "/assets/media/images/e6f70244dd17.webp", srcSet: "/assets/media/images/322ebb0029ee.webp 512w, /assets/media/images/e6f70244dd17.webp 1024w" }
+        quote: "“Cada jornada transforma. Estratégia, design e performance trabalham juntos para que o site diga o que a marca vale antes da primeira conversa.”",
+        name: "Vetta Sites",
+        role: "Manifesto / 02",
+        portrait: { alt: "Alpinista conferindo o equipamento antes da subida", src: "/assets/media/images/59ca2b54402e.webp", srcSet: "/assets/media/images/48460b2bbd11.png 716w, /assets/media/images/59ca2b54402e.webp 896w", width: "896", height: "1280" },
+        logo: { src: "/assets/media/images/logo.webp", width: "296", height: "55" },
+        avatar: { alt: "Vista de um vale entre montanhas", src: "/assets/media/images/e6f70244dd17.webp", srcSet: "/assets/media/images/322ebb0029ee.png 512w, /assets/media/images/e6f70244dd17.webp 1024w" }
     },
     {
-        quote: "                         “Professional, thoughtful, and incredibly detail-driven. VETTA supported us through multiple product rollouts with steady direction and polished execution. Highly dependable every time.”",
-        name: "Kasandra, Leon, Miles",
-        role: "Miro One / Team Lead Members",
-        portrait: { alt: "Woman", src: "/assets/media/images/a8a049fba604.webp", srcSet: "/assets/media/images/7292e9ec2814.webp 761w, /assets/media/images/a8a049fba604.webp 880w", width: "880", height: "1184" },
-        logo: { src: "/assets/media/images/7129aba0969b.png", width: "258", height: "66" },
-        avatar: { alt: "Team", src: "/assets/media/images/c80849aeff3f.webp", srcSet: "/assets/media/images/6dcc2299a6ae.webp 512w, /assets/media/images/c80849aeff3f.webp 1024w" }
+        quote: "“Cada conquista leva ao topo. O próximo nível do seu negócio começa por uma presença digital que nenhum concorrente consegue copiar.”",
+        name: "Vetta Sites",
+        role: "Manifesto / 03",
+        portrait: { alt: "Bandeira fincada no cume de uma montanha", src: "/assets/media/images/a8a049fba604.webp", srcSet: "/assets/media/images/7292e9ec2814.png 761w, /assets/media/images/a8a049fba604.webp 880w", width: "880", height: "1184" },
+        logo: { src: "/assets/media/images/logo.webp", width: "296", height: "55" },
+        avatar: { alt: "Cordilheira ao pôr do sol", src: "/assets/media/images/c80849aeff3f.webp", srcSet: "/assets/media/images/6dcc2299a6ae.png 512w, /assets/media/images/c80849aeff3f.webp 1024w" }
     },
 ]
 
@@ -92,8 +91,8 @@ export type TestimonialStatColumn = {
   subtitle: string;
 };
 export const testimonialStats: TestimonialStatColumn[] = [
-    { figures: ["122+", "257+", "315+"], title: "Success Rate", subtitle: "Reliable execution" },
-    { figures: ["99%", "84%", "94%"], title: "Client Satisfaction", subtitle: "Seamless delivery" }
+    { figures: ["01", "02", "03"], title: "Princípio", subtitle: "Manifesto Vetta" },
+    { figures: ["Passo", "Jornada", "Topo"], title: "Etapa", subtitle: "Da ideia ao lançamento" }
 ];
 
 
@@ -104,24 +103,24 @@ export type FaqItem = {
 };
 export const faqs: FaqItem[] = [
     {
-        question: "What distinguishes us from other agencies?",
-        answer: "VETTA blends structured design with purposeful clarity, moving beyond surface visuals to create refined systems that shape brands with long-term impact."
+        question: "Quanto tempo leva para o site ficar pronto?",
+        answer: "Depende do tamanho do projeto. Uma landing page costuma sair em poucos dias; um site institucional completo leva algumas semanas, sempre com prazo combinado antes de começar."
     },
     {
-        question: "Why not hire an in-house designer or freelancer?",
-        answer: "You get senior-level consistency without overhead. VETTA delivers focused, high-quality output with the flexibility and precision solo designers often can’t match."
+        question: "O site vai aparecer no Google?",
+        answer: "Todo projeto sai com a base técnica de SEO pronta: estrutura semântica, títulos e descrições por página, sitemap, dados estruturados e imagens otimizadas. O posicionamento cresce com o tempo e com conteúdo."
     },
     {
-        question: "Are creative requests truly unlimited?",
-        answer: "Yes—requests flow through a structured queue. VETTA handles each task with intention, ensuring every deliverable remains polished, thoughtful, and on-brand."
+        question: "Eu consigo editar o conteúdo depois?",
+        answer: "Sim. Nos planos com painel, você edita textos e imagens sem depender de ninguém. Nos demais, ajustes de conteúdo entram no acompanhamento combinado após o lançamento."
     },
     {
-        question: "How fast will I receive my work?",
-        answer: "VETTA adapts effortlessly. Whether it’s one campaign or a full system, the same clarity, craftsmanship, and refined design process applies from start to finish."
+        question: "Vocês cuidam do domínio e da hospedagem?",
+        answer: "Cuidamos da publicação de ponta a ponta: configuração de domínio, certificado de segurança e hospedagem. Os acessos ficam no seu nome, sempre."
     },
     {
-        question: "What if I have a single project?",
-        answer: "Most tasks are delivered within a few days. VETTA’s streamlined workflow ensures each piece is crafted with balance, detail, and dependable turnaround."
+        question: "Como funciona o orçamento?",
+        answer: "Você manda uma mensagem no WhatsApp contando o que precisa. A gente entende o objetivo do site, propõe o escopo e passa o valor fechado, sem cobrança por hora e sem surpresa no meio do caminho."
     }
 ];
 
@@ -161,239 +160,239 @@ export type ProjectItem = {
 
 export const projects: ProjectItem[] = [
     {
-        slug: "vellfire-calibration",
+        slug: "site-institucional",
         index: "(01)",
-        title: "Vellfire Calibration",
-        category: "Art Direction",
-        year: "2025",
-        summary: "A calibrated identity for a precision-instrument marque — one grid, one grey, nothing decorative.",
-        scope: ["Art Direction", "Identity", "Print"],
-        image: { alt: "Man", src: "/assets/media/images/3418d4c75efa.png", srcSet: "/assets/media/images/11c385d08bb3.png 512w, /assets/media/images/4bc49ee40f65.png 1024w, /assets/media/images/3418d4c75efa.png 1392w", width: "1392", height: "752", aspect: "aspect-[auto_1392/752]" },
+        title: "Site institucional",
+        category: "Sites",
+        year: "2026",
+        summary: "Modelo de site institucional: apresentação da empresa, serviços e um caminho curto até o contato.",
+        scope: ["Estratégia", "Design", "Desenvolvimento"],
+        image: { alt: "Página inicial de um site institucional", src: "/assets/media/images/3418d4c75efa.png", srcSet: "/assets/media/images/11c385d08bb3.png 512w, /assets/media/images/4bc49ee40f65.png 1024w, /assets/media/images/3418d4c75efa.png 1392w", width: "1392", height: "752", aspect: "aspect-[auto_1392/752]" },
         span: "wide",
-        intro: "Vellfire builds calibration rigs for people who measure things to the micron. The old identity apologised for that — soft gradients, stock optimism. We took it back to the instrument.",
+        intro: "Layout demonstrativo de site institucional. Serve para mostrar a estrutura que a Vetta entrega neste tipo de projeto — e será substituído pelo case real assim que o cliente autorizar a publicação.",
         facts: [
-            { label: "Client", value: "Vellfire Instruments" },
-            { label: "Role", value: "Art Direction, Identity" },
-            { label: "Duration", value: "14 weeks" },
-            { label: "Year", value: "2025" }
+            { label: "Tipo", value: "Site institucional" },
+            { label: "Escopo", value: "Estratégia, design e desenvolvimento" },
+            { label: "Prazo", value: "Sob medida" },
+            { label: "Ano", value: "2026" }
         ],
         chapters: [
-            { heading: "The brief", body: "Vellfire sells to metrology labs, where every buyer already knows the spec sheet cold. The existing brand spoke to nobody in that room: it opened on lifestyle photography and buried the tolerances four clicks deep. The ask was to build something a technician would trust on sight." },
-            { heading: "The approach", body: "One grid, derived from the 5mm graduation on their own rigs, and one grey drawn off the anodised housing. Every layout — catalogue, stand, spec sheet, site — sits on it. Type is set at two sizes and no more. The restraint is the argument: a company that measures precisely should look like it." },
-            { heading: "The outcome", body: "The system shipped as a 60-page manual and a component library the in-house team runs without us. Nine months on, every new SKU has launched inside it with no exceptions requested." }
+            { heading: "O objetivo", body: "Empresas que dependem de indicação precisam de um site que confirme, em poucos segundos, aquilo que o cliente já ouviu falar. A estrutura abre pelo posicionamento, mostra os serviços em blocos curtos e leva ao contato sem rodeio." },
+            { heading: "A execução", body: "Uma página por intenção de busca, hierarquia de títulos clara e imagens tratadas para carregar rápido no celular. O formulário abre direto no WhatsApp, onde a conversa realmente acontece." },
+            { heading: "O resultado", body: "Este bloco recebe os números reais do projeto — tempo de carregamento, posições no Google e volume de contatos — quando o case for publicado." }
         ],
         stats: [
-            { figure: "60", label: "Pages of system manual" },
-            { figure: "14", label: "Weeks from brief to launch" },
-            { figure: "0", label: "Exceptions since handover" }
+            { figure: "5", label: "Páginas na estrutura base" },
+            { figure: "24h", label: "Prazo de resposta no orçamento" },
+            { figure: "100%", label: "Responsivo em celular e desktop" }
         ],
         gallery: [
-            { alt: "Instrument housing", src: "/assets/media/images/95d860ec3768.webp", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
-            { alt: "Catalogue spread", src: "/assets/media/images/6c6b19e154f4.webp", width: "896", height: "1280", aspect: "aspect-[auto_896/1280]" },
-            { alt: "Stand build", src: "/assets/media/images/29b003003242.webp", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" }
+            { alt: "Detalhe da página inicial", src: "/assets/media/images/95d860ec3768.webp", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
+            { alt: "Página interna no celular", src: "/assets/media/images/6c6b19e154f4.webp", width: "896", height: "1280", aspect: "aspect-[auto_896/1280]" },
+            { alt: "Bloco de serviços do site", src: "/assets/media/images/29b003003242.webp", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" }
         ]
     },
     {
-        slug: "dunwill-lanson",
+        slug: "landing-page",
         index: "(02)",
-        title: "Dunwill Lanson",
-        category: "Photography",
-        year: "2024",
-        summary: "Two seasons shot back to back, colour-graded to a single stock so the campaign reads as one run.",
-        scope: ["Photography", "Retouch", "Campaign"],
-        image: { alt: "Man in Blue BG", src: "/assets/media/images/d429b442416a.webp", srcSet: "/assets/media/images/ad9b2d2be81b.png 512w, /assets/media/images/27d11552e704.png 1024w, /assets/media/images/93c9d668a9d7.png 2048w, /assets/media/images/d429b442416a.webp 2728w", width: "2728", height: "1536", aspect: "aspect-[auto_2728/1536]" },
+        title: "Landing page de campanha",
+        category: "Landing pages",
+        year: "2026",
+        summary: "Página única para campanhas de anúncios, com um só objetivo e um só caminho de conversão.",
+        scope: ["Copy", "Design", "Performance"],
+        image: { alt: "Landing page aberta em um notebook", src: "/assets/media/images/d429b442416a.webp", srcSet: "/assets/media/images/ad9b2d2be81b.png 512w, /assets/media/images/27d11552e704.png 1024w, /assets/media/images/93c9d668a9d7.png 2048w, /assets/media/images/d429b442416a.webp 2728w", width: "2728", height: "1536", aspect: "aspect-[auto_2728/1536]" },
         span: "tall",
-        intro: "Dunwill Lanson had two collections landing eleven weeks apart and no budget for two shoots. We booked one studio block, shot both, and graded them to a single stock so nobody could tell where one season ended.",
+        intro: "Layout demonstrativo de landing page. Mostra como a Vetta organiza uma página de campanha quando existe um único objetivo a cumprir.",
         facts: [
-            { label: "Client", value: "Dunwill Lanson" },
-            { label: "Role", value: "Photography, Retouch" },
-            { label: "Duration", value: "6 weeks" },
-            { label: "Year", value: "2024" }
+            { label: "Tipo", value: "Landing page" },
+            { label: "Escopo", value: "Copy, design e performance" },
+            { label: "Prazo", value: "Sob medida" },
+            { label: "Ano", value: "2026" }
         ],
         chapters: [
-            { heading: "The brief", body: "Autumn and the resort capsule were built by different design leads and looked it — one warm and matte, one cold and glossy. Merchandising wanted them on the same landing page in November. Shooting them separately would have made that impossible." },
-            { heading: "The approach", body: "A five-day block with one lighting setup and one lens, both collections styled on the same call sheet. The grade was locked on day one against a printed reference and never touched again. Where the garments fought each other we changed the styling, not the light." },
-            { heading: "The outcome", body: "412 finished frames from a single booking. The November page ran both capsules side by side and the seam is invisible — which was the whole point, and the reason the same setup shot the following spring." }
+            { heading: "O objetivo", body: "Tráfego pago não perdoa página lenta nem argumento confuso. A landing abre com a promessa, sustenta com prova e fecha com um formulário curto, sem menu para distrair." },
+            { heading: "A execução", body: "Carregamento otimizado, imagens em WebP, tipografia da marca e um bloco de perguntas frequentes que responde à objeção antes que ela vire desistência." },
+            { heading: "O resultado", body: "Espaço reservado para as métricas reais da campanha — custo por contato, taxa de conversão e volume de mensagens." }
         ],
         stats: [
-            { figure: "412", label: "Finished frames" },
-            { figure: "5", label: "Days on the floor" },
-            { figure: "2", label: "Seasons, one grade" }
+            { figure: "1", label: "Objetivo por página" },
+            { figure: "WebP", label: "Imagens otimizadas" },
+            { figure: "0", label: "Distrações no caminho" }
         ],
         gallery: [
-            { alt: "Studio portrait", src: "/assets/media/images/77c9bcc2e4b4.png", width: "896", height: "1280", aspect: "aspect-[auto_896/1280]" },
-            { alt: "Campaign still", src: "/assets/media/images/2f4b7d061507.webp", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
-            { alt: "Look book page", src: "/assets/media/images/7e23205fe948.png", width: "768", height: "1408", aspect: "aspect-[auto_768/1408]" }
+            { alt: "Seção de destaque da landing", src: "/assets/media/images/77c9bcc2e4b4.png", width: "896", height: "1280", aspect: "aspect-[auto_896/1280]" },
+            { alt: "Bloco de prova social", src: "/assets/media/images/2f4b7d061507.webp", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
+            { alt: "Formulário de contato", src: "/assets/media/images/7e23205fe948.png", width: "768", height: "1408", aspect: "aspect-[auto_768/1408]" }
         ]
     },
     {
-        slug: "noara-willis",
+        slug: "loja-virtual",
         index: "(03)",
-        title: "Noara Willis",
-        category: "Strategy",
-        year: "2025",
-        summary: "Positioning rebuilt from the buying decision backwards, then a site that says the one thing that mattered.",
-        scope: ["Strategy", "Naming", "Web"],
-        image: { alt: "Women on the Chair", src: "/assets/media/images/5185120aa8bd.png", srcSet: "/assets/media/images/c8180f2f6a1e.png 512w, /assets/media/images/84aa5eed3e6f.png 1024w, /assets/media/images/5185120aa8bd.png 1280w", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
+        title: "Loja virtual",
+        category: "E-commerce",
+        year: "2026",
+        summary: "Vitrine, página de produto e checkout pensados para reduzir o abandono no meio do caminho.",
+        scope: ["Estratégia", "Design", "E-commerce"],
+        image: { alt: "Vitrine de uma loja virtual", src: "/assets/media/images/5185120aa8bd.png", srcSet: "/assets/media/images/c8180f2f6a1e.png 512w, /assets/media/images/84aa5eed3e6f.png 1024w, /assets/media/images/5185120aa8bd.png 1280w", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
         span: "tall",
-        intro: "Noara Willis was winning the pitches it got into and losing the ones it never heard about. The problem was not the work. It was that nobody could repeat what the studio did after hearing it once.",
+        intro: "Layout demonstrativo de loja virtual. Representa a estrutura que a Vetta usa quando o site precisa vender direto, sem intermediário.",
         facts: [
-            { label: "Client", value: "Noara Willis" },
-            { label: "Role", value: "Strategy, Naming, Web" },
-            { label: "Duration", value: "9 weeks" },
-            { label: "Year", value: "2025" }
+            { label: "Tipo", value: "Loja virtual" },
+            { label: "Escopo", value: "Estratégia, design e e-commerce" },
+            { label: "Prazo", value: "Sob medida" },
+            { label: "Ano", value: "2026" }
         ],
         chapters: [
-            { heading: "The brief", body: "Twenty-two interviews, split between clients who bought and prospects who didn't. The buyers all described the studio the same way, in words that appeared nowhere on its own site. The prospects couldn't describe it at all." },
-            { heading: "The approach", body: "We started at the moment of the decision and worked backwards: what did the buyer need to believe, in what order, to sign. That produced a single claim and three proofs. Everything that did not serve one of the four came off the site — which was most of it." },
-            { heading: "The outcome", body: "The homepage went from 2,100 words to 340. Inbound qualified leads roughly doubled over the two quarters that followed, and the sales team stopped writing bespoke decks because the site already made the argument." }
+            { heading: "O objetivo", body: "Em loja virtual, cada passo a mais entre o produto e o pagamento custa venda. A estrutura reduz o percurso e mantém a informação essencial sempre visível." },
+            { heading: "A execução", body: "Categorias organizadas pela forma como o cliente procura, página de produto com foto grande e resposta às dúvidas mais comuns, e checkout em uma etapa." },
+            { heading: "O resultado", body: "Reservado para os números reais da operação quando o case for publicado." }
         ],
         stats: [
-            { figure: "22", label: "Buyer interviews" },
-            { figure: "340", label: "Words on the homepage" },
-            { figure: "2×", label: "Qualified inbound" }
+            { figure: "1", label: "Etapa no checkout" },
+            { figure: "3", label: "Cliques até o carrinho" },
+            { figure: "100%", label: "Responsivo em celular e desktop" }
         ],
         gallery: [
-            { alt: "Positioning board", src: "/assets/media/images/b2c0d66b9ce6.webp", width: "832", height: "1248", aspect: "aspect-[auto_832/1248]" },
-            { alt: "Site build", src: "/assets/media/images/a376f8cd1db2.webp", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
-            { alt: "Messaging card", src: "/assets/media/images/031d00a78b18.png", width: "1024", height: "1024", aspect: "aspect-[auto_1024/1024]" }
+            { alt: "Página de categoria da loja", src: "/assets/media/images/b2c0d66b9ce6.webp", width: "832", height: "1248", aspect: "aspect-[auto_832/1248]" },
+            { alt: "Página de produto", src: "/assets/media/images/a376f8cd1db2.webp", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
+            { alt: "Checkout em uma etapa", src: "/assets/media/images/031d00a78b18.png", width: "1024", height: "1024", aspect: "aspect-[auto_1024/1024]" }
         ]
     },
     {
-        slug: "nike-studios",
+        slug: "site-de-servicos",
         index: "(04)",
-        title: "Nike Studios",
-        category: "Art Direction",
-        year: "2025",
-        summary: "A launch film and its stills built off one board, so motion and print never drifted apart.",
-        scope: ["Art Direction", "Film", "Motion"],
-        image: { alt: "Athletes", src: "/assets/media/images/d97fcf9ca982.png", srcSet: "/assets/media/images/c05999c1edde.png 512w, /assets/media/images/f2a42560e3d8.png 1024w, /assets/media/images/d97fcf9ca982.png 1408w", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
+        title: "Site de serviços",
+        category: "Sites",
+        year: "2026",
+        summary: "Uma página por serviço, cada uma escrita para a busca que o cliente realmente faz.",
+        scope: ["SEO", "Design", "Desenvolvimento"],
+        image: { alt: "Site de serviços em telas de celular", src: "/assets/media/images/d97fcf9ca982.png", srcSet: "/assets/media/images/c05999c1edde.png 512w, /assets/media/images/f2a42560e3d8.png 1024w, /assets/media/images/d97fcf9ca982.png 1408w", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
         span: "wide",
-        intro: "A launch normally splits in two the moment it leaves the deck: the film team goes one way, the print team another, and by week six they are arguing about which one is right. We built one board and made both work from it.",
+        intro: "Layout demonstrativo de site de serviços. Mostra como a Vetta separa o conteúdo quando cada serviço tem um público e uma busca diferente.",
         facts: [
-            { label: "Client", value: "Nike Studios" },
-            { label: "Role", value: "Art Direction, Motion" },
-            { label: "Duration", value: "11 weeks" },
-            { label: "Year", value: "2025" }
+            { label: "Tipo", value: "Site de serviços" },
+            { label: "Escopo", value: "SEO, design e desenvolvimento" },
+            { label: "Prazo", value: "Sob medida" },
+            { label: "Ano", value: "2026" }
         ],
         chapters: [
-            { heading: "The brief", body: "Eight markets, one launch date, and a film that had to cut down to nine formats without losing the frame that made it work. The previous launch had produced two visually unrelated campaigns under one name." },
-            { heading: "The approach", body: "Every frame was designed as a still first and animated second. The board carried the crop marks for all nine formats, so the shot that survived the 9:16 cut was chosen on the day rather than rescued in the edit. Print pulled its plates from the same frames." },
-            { heading: "The outcome", body: "One shoot, one board, nine cutdowns, eight markets — and no market opened a request for local variants, which had never happened before." }
+            { heading: "O objetivo", body: "Quem procura por um serviço específico não quer uma página genérica. Cada serviço ganha a sua própria página, com título, descrição e conteúdo próprios." },
+            { heading: "A execução", body: "Estrutura semântica, dados estruturados e links internos ligando os serviços entre si, de modo que o Google entenda a relação e o visitante encontre o próximo passo." },
+            { heading: "O resultado", body: "Espaço reservado para as posições e o tráfego orgânico reais do projeto." }
         ],
         stats: [
-            { figure: "9", label: "Formats from one cut" },
-            { figure: "8", label: "Markets, no variants" },
-            { figure: "11", label: "Weeks end to end" }
+            { figure: "1", label: "Página por serviço" },
+            { figure: "SEO", label: "Base técnica em todas elas" },
+            { figure: "24h", label: "Prazo de resposta no orçamento" }
         ],
         gallery: [
-            { alt: "Film still", src: "/assets/media/images/0324a09ab65c.webp", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
-            { alt: "Athlete portrait", src: "/assets/media/images/68c91cf88797.webp", width: "896", height: "1280", aspect: "aspect-[auto_896/1280]" },
-            { alt: "Frame board", src: "/assets/media/images/411edd68feb0.png", width: "1420", height: "1422", aspect: "aspect-[auto_1420/1422]" }
+            { alt: "Página de serviço", src: "/assets/media/images/0324a09ab65c.webp", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
+            { alt: "Versão mobile do site", src: "/assets/media/images/68c91cf88797.webp", width: "896", height: "1280", aspect: "aspect-[auto_896/1280]" },
+            { alt: "Grade de componentes do projeto", src: "/assets/media/images/411edd68feb0.png", width: "1420", height: "1422", aspect: "aspect-[auto_1420/1422]" }
         ]
     },
     {
-        slug: "halden-type",
+        slug: "portfolio-digital",
         index: "(05)",
-        title: "Halden Type",
-        category: "Branding",
-        year: "2024",
-        summary: "A foundry's first retail release — specimen, licence tiers and storefront shipped in one pass.",
-        scope: ["Branding", "Specimen", "E-commerce"],
-        image: { alt: "Studio Interior", src: "/assets/media/images/467b27e5dc07.webp", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
+        title: "Portfólio digital",
+        category: "Portfólio",
+        year: "2026",
+        summary: "Um portfólio em que o trabalho aparece primeiro e o texto entra só para explicar a decisão.",
+        scope: ["Design", "Desenvolvimento"],
+        image: { alt: "Portfólio digital em tela cheia", src: "/assets/media/images/467b27e5dc07.webp", width: "1408", height: "768", aspect: "aspect-[auto_1408/768]" },
         span: "wide",
-        intro: "Halden had drawn type for other people's brands for nine years and never sold a licence of its own. The first retail release had to explain the foundry and the family at the same time.",
+        intro: "Layout demonstrativo de portfólio. Serve para quem vende pelo próprio trabalho e precisa que ele apareça sem interferência.",
         facts: [
-            { label: "Client", value: "Halden Type" },
-            { label: "Role", value: "Branding, Web" },
-            { label: "Duration", value: "16 weeks" },
-            { label: "Year", value: "2024" }
+            { label: "Tipo", value: "Portfólio digital" },
+            { label: "Escopo", value: "Design e desenvolvimento" },
+            { label: "Prazo", value: "Sob medida" },
+            { label: "Ano", value: "2026" }
         ],
         chapters: [
-            { heading: "The brief", body: "Custom work pays per commission; retail pays per licence, and the two need opposite front doors. Halden needed a storefront that would sell a family to a designer who had never heard of them, without undercutting the commission business that still paid the rent." },
-            { heading: "The approach", body: "The specimen is the storefront. Every page of it is a live tester, so the buying decision and the browsing experience are the same act. Licence tiers were cut from seven to three, priced off seats rather than usage, because the seven-tier grid was where every trial was abandoning." },
-            { heading: "The outcome", body: "Retail licences covered the foundry's fixed costs inside two quarters, and the commission pipeline didn't move — which was the condition the whole project was built under." }
+            { heading: "O objetivo", body: "Portfólio ruim é aquele em que a interface disputa atenção com a obra. Aqui a grade é discreta e o projeto ocupa a tela inteira." },
+            { heading: "A execução", body: "Grade responsiva, carregamento progressivo das imagens e uma página por projeto, com espaço para contar a decisão por trás do trabalho." },
+            { heading: "O resultado", body: "Reservado para os dados reais de visita e contato quando o case for publicado." }
         ],
         stats: [
-            { figure: "3", label: "Licence tiers, down from 7" },
-            { figure: "2", label: "Quarters to break even" },
-            { figure: "16", label: "Weeks to release" }
+            { figure: "1", label: "Página por projeto" },
+            { figure: "Lazy", label: "Carregamento progressivo" },
+            { figure: "100%", label: "Responsivo em celular e desktop" }
         ],
         gallery: [
-            { alt: "Specimen spread", src: "/assets/media/images/32cb8dd9da14.webp", width: "1024", height: "559", aspect: "aspect-[auto_1024/559]" },
-            { alt: "Type detail", src: "/assets/media/images/79c2189f3af7.png", width: "1024", height: "1024", aspect: "aspect-[auto_1024/1024]" },
-            { alt: "Printed sheet", src: "/assets/media/images/1b886de39cd8.png", width: "683", height: "1024", aspect: "aspect-[auto_683/1024]" }
+            { alt: "Grade do portfólio", src: "/assets/media/images/32cb8dd9da14.webp", width: "1024", height: "559", aspect: "aspect-[auto_1024/559]" },
+            { alt: "Detalhe de tipografia do projeto", src: "/assets/media/images/79c2189f3af7.png", width: "1024", height: "1024", aspect: "aspect-[auto_1024/1024]" },
+            { alt: "Página de projeto individual", src: "/assets/media/images/1b886de39cd8.png", width: "683", height: "1024", aspect: "aspect-[auto_683/1024]" }
         ]
     },
     {
-        slug: "marchetti-atelier",
+        slug: "pagina-de-captura",
         index: "(06)",
-        title: "Marchetti Atelier",
-        category: "Photography",
-        year: "2024",
-        summary: "Room-by-room documentation of a workshop, framed so the process reads before the product does.",
-        scope: ["Photography", "Editorial", "Print"],
-        image: { alt: "Atelier", src: "/assets/media/images/02f3a7db3446.webp", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
+        title: "Página de captura",
+        category: "Landing pages",
+        year: "2026",
+        summary: "Página curta para lista de espera, material rico ou inscrição, com formulário de três campos.",
+        scope: ["Copy", "Design"],
+        image: { alt: "Página de captura de contatos", src: "/assets/media/images/02f3a7db3446.webp", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
         span: "tall",
-        intro: "Marchetti's finished pieces photograph beautifully and say nothing about why they cost what they cost. We spent nine days in the workshop instead, and shot the reason.",
+        intro: "Layout demonstrativo de página de captura. Mostra a versão mais enxuta do que a Vetta entrega quando o objetivo é só um: pegar o contato.",
         facts: [
-            { label: "Client", value: "Marchetti Atelier" },
-            { label: "Role", value: "Photography, Editorial" },
-            { label: "Duration", value: "9 days on site" },
-            { label: "Year", value: "2024" }
+            { label: "Tipo", value: "Página de captura" },
+            { label: "Escopo", value: "Copy e design" },
+            { label: "Prazo", value: "Sob medida" },
+            { label: "Ano", value: "2026" }
         ],
         chapters: [
-            { heading: "The brief", body: "A archive full of product shots and a sales team fielding the same question on every call: why this and not the one at a third of the price. The answer lived in the building and had never been photographed." },
-            { heading: "The approach", body: "Room by room, in working light, on the days the work actually happened — no styling, no staged hands. The edit runs in the order the material moves through the building, so the sequence itself is the argument. The finished piece appears once, on the last page." },
-            { heading: "The outcome", body: "184 frames, cut to a 48-page book that now goes out ahead of every quote. The product shots stayed in the archive where they belong." }
+            { heading: "O objetivo", body: "Quanto mais curta a página, mais clara precisa ser a troca. O visitante entende em uma tela o que recebe e o que precisa informar." },
+            { heading: "A execução", body: "Três campos, um botão e nenhum menu. O contato chega no WhatsApp com a mensagem já montada." },
+            { heading: "O resultado", body: "Espaço reservado para a taxa de conversão real da campanha." }
         ],
         stats: [
-            { figure: "184", label: "Frames delivered" },
-            { figure: "48", label: "Pages in the book" },
-            { figure: "9", label: "Days on site" }
+            { figure: "3", label: "Campos no formulário" },
+            { figure: "1", label: "Tela até o contato" },
+            { figure: "WhatsApp", label: "Destino dos contatos" }
         ],
         gallery: [
-            { alt: "Workshop floor", src: "/assets/media/images/019a3df9011c.png", width: "1152", height: "2048", aspect: "aspect-[auto_1152/2048]" },
-            { alt: "Bench detail", src: "/assets/media/images/b81b53b51d2f.webp", width: "1024", height: "717", aspect: "aspect-[auto_1024/717]" },
-            { alt: "Material store", src: "/assets/media/images/259e6dc735f5.png", width: "717", height: "1024", aspect: "aspect-[auto_717/1024]" }
+            { alt: "Topo da página de captura", src: "/assets/media/images/019a3df9011c.png", width: "1152", height: "2048", aspect: "aspect-[auto_1152/2048]" },
+            { alt: "Bloco de benefícios", src: "/assets/media/images/b81b53b51d2f.webp", width: "1024", height: "717", aspect: "aspect-[auto_1024/717]" },
+            { alt: "Formulário curto de contato", src: "/assets/media/images/259e6dc735f5.png", width: "717", height: "1024", aspect: "aspect-[auto_717/1024]" }
         ]
     },
     {
-        slug: "orbit-field",
+        slug: "site-de-evento",
         index: "(07)",
-        title: "Orbit Field",
-        category: "Strategy",
-        year: "2023",
-        summary: "Six product lines collapsed into three, with the messaging system that made the cut defensible.",
-        scope: ["Strategy", "Messaging", "Design System"],
-        image: { alt: "Field", src: "/assets/media/images/ce794bd8df42.webp", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
+        title: "Site de evento",
+        category: "Sites",
+        year: "2026",
+        summary: "Programação, inscrição e informações práticas em uma estrutura que aguenta pico de acesso.",
+        scope: ["Design", "Desenvolvimento", "Performance"],
+        image: { alt: "Site de evento em diferentes telas", src: "/assets/media/images/ce794bd8df42.webp", width: "1280", height: "896", aspect: "aspect-[auto_1280/896]" },
         span: "tall",
-        intro: "Orbit Field had six product lines, four of which were the same product with different logos. Cutting them was the easy part. Making the cut survive contact with six product owners was the work.",
+        intro: "Layout demonstrativo de site de evento. Representa a estrutura usada quando a data é fixa e o acesso se concentra em poucos dias.",
         facts: [
-            { label: "Client", value: "Orbit Field" },
-            { label: "Role", value: "Strategy, Design System" },
-            { label: "Duration", value: "20 weeks" },
-            { label: "Year", value: "2023" }
+            { label: "Tipo", value: "Site de evento" },
+            { label: "Escopo", value: "Design, desenvolvimento e performance" },
+            { label: "Prazo", value: "Sob medida" },
+            { label: "Ano", value: "2026" }
         ],
         chapters: [
-            { heading: "The brief", body: "Six lines built by acquisition, each with its own name, palette and roadmap. Sales was quoting against itself in live deals. Everyone agreed it had to be simplified and no one agreed on whose line should go." },
-            { heading: "The approach", body: "We stopped arguing about the lines and mapped the jobs customers were hiring them for. Three jobs, cleanly separated; six lines, overlapping badly. Once the map was on the wall the merge picked itself, and the owners who lost a name could see why in a diagram rather than a memo." },
-            { heading: "The outcome", body: "Three lines, one system, and a naming logic that has absorbed two further acquisitions since without reopening the question." }
+            { heading: "O objetivo", body: "Site de evento vive de dois momentos: o anúncio e a véspera. Em ambos, precisa abrir rápido e responder às perguntas práticas sem exigir busca." },
+            { heading: "A execução", body: "Programação em blocos, inscrição sempre a um clique de distância e páginas estáticas, que aguentam pico de acesso sem cair." },
+            { heading: "O resultado", body: "Reservado para os números reais de inscrição e acesso quando o case for publicado." }
         ],
         stats: [
-            { figure: "6→3", label: "Product lines" },
-            { figure: "20", label: "Weeks of alignment" },
-            { figure: "2", label: "Acquisitions absorbed since" }
+            { figure: "0", label: "Tempo de servidor por acesso" },
+            { figure: "1", label: "Clique até a inscrição" },
+            { figure: "100%", label: "Responsivo em celular e desktop" }
         ],
         gallery: [
-            { alt: "Jobs map", src: "/assets/media/images/2172c7a38664.webp", width: "1536", height: "960", aspect: "aspect-[auto_1536/960]" },
-            { alt: "System token sheet", src: "/assets/media/images/9f04c30f9315.webp", width: "1024", height: "1024", aspect: "aspect-[auto_1024/1024]" },
-            { alt: "Line architecture", src: "/assets/media/images/25749aa0ee1f.webp", width: "1024", height: "559", aspect: "aspect-[auto_1024/559]" }
+            { alt: "Programação do evento", src: "/assets/media/images/2172c7a38664.webp", width: "1536", height: "960", aspect: "aspect-[auto_1536/960]" },
+            { alt: "Área de inscrição", src: "/assets/media/images/9f04c30f9315.webp", width: "1024", height: "1024", aspect: "aspect-[auto_1024/1024]" },
+            { alt: "Página do evento no celular", src: "/assets/media/images/25749aa0ee1f.webp", width: "1024", height: "559", aspect: "aspect-[auto_1024/559]" }
         ]
-    }
+    },
 ];
 
-export const projectCategories: string[] = ["Art Direction", "Photography", "Strategy", "Branding"];
+export const projectCategories: string[] = ["Sites", "Landing pages", "E-commerce", "Portfólio"];
 
 export function getProject(slug: string): ProjectItem | undefined {
   return projects.find((p) => p.slug === slug);

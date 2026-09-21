@@ -4,7 +4,7 @@ import OverlapCurtain from "../../../components/overlap-curtain";
 import { projects, type ProjectItem } from "../../../content";
 
 
-const INDEX_SLUGS = ["vellfire-calibration", "dunwill-lanson", "noara-willis", "nike-studios"] as const;
+const INDEX_SLUGS = ["site-institucional", "landing-page", "loja-virtual", "site-de-servicos"] as const;
 
 function toTile(p: ProjectItem): MediaTileData {
   const srcSet = p.image.srcSet ?? p.image.src;

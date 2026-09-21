@@ -65,7 +65,7 @@ export default function MobileMenu({
       <div className="basis-0 shrink-0 flex relative justify-between items-center content-center grow">
         <button
           type="button"
-          aria-label={open ? "Close menu" : "Open menu"}
+          aria-label={open ? "Fechar menu" : "Abrir menu"}
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
           className="w-6 flex relative rounded-lg flex-col justify-center items-center content-center shrink-0 order-[1] gap-2 aspect-square cursor-pointer"

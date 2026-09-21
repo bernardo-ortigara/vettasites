@@ -6,7 +6,7 @@ import ExploreButton from "../components/explore-button";
 import OverlapCurtain from "../components/overlap-curtain";
 
 const HEADING =
-  "                                   Design-forward impressive agency crafting bold visuals, structured layouts, and high-impact digital 3D Swiss inspired by modern aesthetics®.";
+  "                                   Estúdio de criação de sites que une estratégia, design e performance para levar marcas ao ponto mais alto do seu mercado®.";
 
 const HEADING_FONT: ResponsiveFont = {
   base: {
@@ -88,7 +88,7 @@ export default function AboutSection() {
           <div className="contents min-w-0">
             <div className="w-82 h-165 block relative inset-0 rounded-[5px] grow shrink-0 basis-0 overflow-clip max-tab:w-full tab:max-desk:w-180">
               <Parallax speed={90} className="h-full block absolute top-0 inset-x-0 rounded-[5px]">
-                <img loading="lazy" decoding="async" className="w-full h-165 block rounded-[5px] overflow-clip object-cover aspect-[auto_2048/3640]" alt="Men Red BG" height="3640" sizes="328px" src="/assets/media/images/4709e99a8a57.png" srcSet="/assets/media/images/ea6687720333.png 576w, /assets/media/images/019a3df9011c.png 1152w, /assets/media/images/4709e99a8a57.png 2048w" width="2048" />
+                <img loading="lazy" decoding="async" className="w-full h-165 block rounded-[5px] overflow-clip object-cover aspect-[auto_2048/3640]" alt="Alpinista subindo uma parede de rocha" height="3640" sizes="328px" src="/assets/media/images/4709e99a8a57.png" srcSet="/assets/media/images/ea6687720333.png 576w, /assets/media/images/019a3df9011c.png 1152w, /assets/media/images/4709e99a8a57.png 2048w" width="2048" />
               </Parallax>
             </div>
           </div>
@@ -101,31 +101,31 @@ export default function AboutSection() {
           <div className="w-full flex relative justify-start items-start content-start shrink-0 gap-50 overflow-clip max-desk:flex-col max-desk:gap-5">
             <div className="w-25 flex relative max-w-25 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:grow-[initial] max-desk:basis-[initial]">
               <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                (Pre)
+                (Estratégia)
               </p>
             </div>
             <div className="w-[23.4375rem] flex relative max-w-[26.3125rem] flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-tab:w-full max-desk:grow-[initial] max-desk:basis-[initial] tab:max-desk:w-[26.3125rem]">
               <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                Igniting ideas with precision and intentional design. VETTA transforms raw creativity into structured visual systems that shape brands and elevate digital experiences.
+                Todo projeto começa pela estratégia. Entendemos o negócio, o público e a concorrência antes de desenhar a primeira tela, para que o site tenha um objetivo claro.
               </p>
             </div>
           </div>
           <div className="w-full flex relative justify-start items-start content-start shrink-0 gap-50 overflow-clip max-desk:flex-col max-desk:gap-5">
             <div className="w-25 flex relative max-w-25 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:grow-[initial] max-desk:basis-[initial]">
               <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                (+Post)
+                (Execução)
               </p>
             </div>
             <div className="w-[23.4375rem] flex relative max-w-[26.3125rem] flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-tab:w-full max-desk:grow-[initial] max-desk:basis-[initial] tab:max-desk:w-[26.3125rem]">
               <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                Driven by bold aesthetics and functional simplicity. VETTA blends modern form with purposeful detail, delivering refined experiences that push brands forward.
+                Design autoral e performance andam juntos. Entregamos páginas rápidas, responsivas e preparadas para buscar, converter e crescer com a sua marca.
               </p>
             </div>
           </div>
           <div className="w-full flex relative justify-start items-start content-start shrink-0 gap-50 overflow-clip max-desk:flex-col max-desk:gap-5">
             <div className="w-25 flex relative max-w-25 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:grow-[initial] max-desk:basis-[initial]">
               <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                (=Results)
+                (Resultado)
               </p>
             </div>
             <div className="w-[55.5%] flex relative flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-27.5 overflow-clip max-desk:w-full max-desk:gap-10 max-desk:grow-[initial] max-desk:basis-[initial]">
@@ -134,12 +134,12 @@ export default function AboutSection() {
                   <div className="w-full flex relative justify-between items-center content-center shrink-0 overflow-clip">
                     <div className="w-37.5 flex relative max-w-37.5 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                       <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                        New clients
+                        Entrega inicial
                       </p>
                     </div>
                     <div className="w-37.5 flex relative max-w-37.5 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                       <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] text-right">
-                        15
+                        Sob demanda
                       </p>
                     </div>
                   </div>
@@ -149,7 +149,7 @@ export default function AboutSection() {
                   <div className="w-full flex relative justify-between items-center content-center shrink-0 overflow-clip">
                     <div className="w-37.5 flex relative max-w-37.5 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                       <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                        Success rate
+                        Responsivo
                       </p>
                     </div>
                     <div className="w-37.5 flex relative max-w-37.5 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
@@ -161,7 +161,7 @@ export default function AboutSection() {
                   <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-hairline" />
                 </div>
               </div>
-              <ExploreButton href="/about" label="Explore Now" tone="dark" className="block relative shrink-0" />
+              <ExploreButton href="/about" label="Sobre a Vetta" tone="dark" className="block relative shrink-0" />
             </div>
           </div>
         </ScrollReveal>

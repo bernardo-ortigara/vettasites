@@ -11,9 +11,9 @@ const SPRING = { type: "spring", stiffness: 300, damping: 60, mass: 1 } as const
 
 export const NAV_LINKS: NavLinkData[] = [
   { href: "/", description: "Home", description2: "01" },
-  { href: "/work/portfolio", description: "Portfolio", description2: "02" },
-  { href: "/about", description: "About", description2: "03" },
-  { href: "/contact", description: "Contact", description2: "04" }
+  { href: "/work/portfolio", description: "Portfólio", description2: "02" },
+  { href: "/about", description: "Sobre", description2: "03" },
+  { href: "/contact", description: "Contato", description2: "04" }
 ];
 
 export default function SiteHeader({
@@ -87,7 +87,7 @@ export default function SiteHeader({
                     <div className="w-30 flex relative max-w-30 pt-px flex-col justify-center items-center content-center grow shrink-0 basis-0 gap-2.5 max-desk:hidden">
                       <div className="w-30 flex relative max-w-30 flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:hidden">
                         <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] max-desk:hidden">
-                          Meet the CEO
+                          Peça um orçamento
                         </p>
                       </div>
                     </div>
@@ -99,12 +99,12 @@ export default function SiteHeader({
                   <div className={cn(ceoTextClass, "flex relative flex-col justify-center items-start content-start shrink-0 overflow-clip max-desk:hidden")}>
                     <div className={cn(ceoTextClass, "flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:hidden")}>
                       <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px] max-desk:hidden">
-                        Lousiana KD6
+                        Vetta Sites
                       </p>
                     </div>
                     <div className={cn(ceoTextClass, "flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:hidden")}>
                       <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px] max-desk:hidden">
-                        CEO
+                        Resposta em 24h
                       </p>
                     </div>
                   </div>
