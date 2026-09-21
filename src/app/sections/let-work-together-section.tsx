@@ -149,9 +149,9 @@ export default function LetWorkTogetherSection() {
           </div>
           <div className="w-full max-w-360 h-px block relative shrink-0 overflow-clip bg-bone-edge" />
           <div className="w-full max-w-360 flex relative justify-between items-end content-end shrink-0 overflow-clip max-desk:flex-col max-desk:justify-start max-desk:gap-5 tab:max-desk:items-start">
-            <a className="w-[77%] block relative [mix-blend-mode:difference] shrink-0 aspect-[6.38095/1] text-accent cursor-pointer max-desk:w-full" href="/">
+            <a className="w-[77%] block relative shrink-0 aspect-[1346/230] text-accent cursor-pointer max-desk:w-full" href="/">
               <div className="h-full block absolute top-0 inset-x-0">
-                <img loading="lazy" decoding="async" className="w-full h-full block overflow-clip object-cover" alt="" height="501" sizes="calc(min(100vw - 48px, 1440px) * 0.7701)" src="/assets/media/images/8c5360eba7f2.png" srcSet="/assets/media/images/4ff2b7be6d40.png 512w, /assets/media/images/6fc2c6b4af84.png 1024w, /assets/media/images/2564269ed19f.png 2048w, /assets/media/images/8c5360eba7f2.png 3195w" width="3195" />
+                <img loading="lazy" decoding="async" className="w-full h-full block overflow-clip object-contain" alt="Vetta Sites" height="230" src="/assets/media/logo/vetta-horizontal-bone.svg" width="1346" />
               </div>
             </a>
             <div className="w-[196.7px] flex relative justify-center items-end content-end shrink-0 gap-2.5 overflow-clip max-desk:w-full max-desk:justify-between max-desk:gap-[initial]">

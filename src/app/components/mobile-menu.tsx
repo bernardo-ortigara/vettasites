@@ -78,11 +78,11 @@ export default function MobileMenu({
           onClick={() => setOpen(false)}
         >
           <div className="w-24.5 h-full block absolute top-0 left-0">
-            <img decoding="async" className="w-full h-4.5 block overflow-clip object-cover aspect-[auto_296/55]"
+            <img decoding="async" className="w-full h-4.5 block overflow-clip object-contain object-left aspect-[auto_1346/230]"
               alt="Vetta Sites"
-              height="55"
-              src="/assets/media/images/logo.webp"
-              width="296"
+              height="230"
+              src="/assets/media/logo/vetta-horizontal-bone.svg"
+              width="1346"
             />
           </div>
         </a>

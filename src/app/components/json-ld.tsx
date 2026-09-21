@@ -12,7 +12,7 @@ export default function JsonLd() {
     name: VETTA.nome,
     legalName: VETTA.razaoSocial || undefined,
     url: base,
-    logo: `${base}/assets/media/images/logo.webp`,
+    logo: `${base}/assets/media/logo/vetta-horizontal.png`,
     slogan: VETTA.slogan,
     email: VETTA.email || undefined,
     telephone: telefone,

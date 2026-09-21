@@ -64,7 +64,7 @@ export const testimonials: TestimonialItem[] = [
         name: "Vetta Sites",
         role: "Manifesto / 01",
         portrait: { alt: "Caminhada em trilha de montanha ao amanhecer", src: "/assets/media/images/7581dd9e5d6f.webp", srcSet: "/assets/media/images/e3b5cac7489f.png 716w, /assets/media/images/7581dd9e5d6f.webp 896w", width: "896", height: "1280" },
-        logo: { src: "/assets/media/images/logo.webp", width: "296", height: "55" },
+        logo: { src: "/assets/media/logo/vetta-horizontal-ink.svg", width: "1346", height: "230" },
         avatar: { alt: "Detalhe de uma escalada em rocha", src: "/assets/media/images/beaaaddd3941.png", srcSet: "/assets/media/images/2f2d20acf0ee.png 512w, /assets/media/images/beaaaddd3941.png 1024w" }
     },
     {
@@ -72,7 +72,7 @@ export const testimonials: TestimonialItem[] = [
         name: "Vetta Sites",
         role: "Manifesto / 02",
         portrait: { alt: "Alpinista conferindo o equipamento antes da subida", src: "/assets/media/images/59ca2b54402e.webp", srcSet: "/assets/media/images/48460b2bbd11.png 716w, /assets/media/images/59ca2b54402e.webp 896w", width: "896", height: "1280" },
-        logo: { src: "/assets/media/images/logo.webp", width: "296", height: "55" },
+        logo: { src: "/assets/media/logo/vetta-horizontal-ink.svg", width: "1346", height: "230" },
         avatar: { alt: "Vista de um vale entre montanhas", src: "/assets/media/images/e6f70244dd17.webp", srcSet: "/assets/media/images/322ebb0029ee.png 512w, /assets/media/images/e6f70244dd17.webp 1024w" }
     },
     {
@@ -80,7 +80,7 @@ export const testimonials: TestimonialItem[] = [
         name: "Vetta Sites",
         role: "Manifesto / 03",
         portrait: { alt: "Bandeira fincada no cume de uma montanha", src: "/assets/media/images/a8a049fba604.webp", srcSet: "/assets/media/images/7292e9ec2814.png 761w, /assets/media/images/a8a049fba604.webp 880w", width: "880", height: "1184" },
-        logo: { src: "/assets/media/images/logo.webp", width: "296", height: "55" },
+        logo: { src: "/assets/media/logo/vetta-horizontal-ink.svg", width: "1346", height: "230" },
         avatar: { alt: "Cordilheira ao pôr do sol", src: "/assets/media/images/c80849aeff3f.webp", srcSet: "/assets/media/images/6dcc2299a6ae.png 512w, /assets/media/images/c80849aeff3f.webp 1024w" }
     },
 ]

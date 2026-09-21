@@ -1,14 +1,14 @@
 export const VETTA = {
   nome: "Vetta Sites",
-  razaoSocial: "",
+  razaoSocial: "Vetta Sites Ltda",
   slogan: "Seu negócio merece estar no topo.",
   descricao:
     "Criação de sites institucionais, landing pages e lojas virtuais com estratégia, design autoral e performance para o Google.",
   whatsapp: "5500000000000",
   email: "contato@vettasites.com.br",
   instagram: "https://instagram.com/vettasites",
-  cidade: "",
-  estado: "",
+  cidade: "Caxias do Sul",
+  estado: "RS",
   pais: "BR"
 } as const;
 

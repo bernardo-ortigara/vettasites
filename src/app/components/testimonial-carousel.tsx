@@ -67,9 +67,9 @@ export default function TestimonialCarousel() {
           </div>
           <div className="w-19 h-4 block relative [mix-blend-mode:difference] shrink-0 gap-2.5 overflow-clip">
             <div className="w-19 h-full block absolute top-0">
-              <img loading="lazy" decoding="async"                 className="w-full h-4 block overflow-clip object-contain"
+              <img loading="lazy" decoding="async" className="w-full h-4 block overflow-clip object-contain object-left"
 
-                alt=""
+                alt="Vetta Sites"
                 height={slide.logo.height}
                 src={slide.logo.src}
                 width={slide.logo.width}
