@@ -62,7 +62,7 @@ export default function PortfolioIndex() {
           </div>
           <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip max-desk:gap-10">
             <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
-              (Portfolio)
+              (Portfólio)
             </p>
             <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap max-tab:hidden">
               © 2026

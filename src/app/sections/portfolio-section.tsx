@@ -27,7 +27,7 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip">
                   <div className="w-[51.5px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                      (Portfolio)
+                      (Portfólio)
                     </p>
                   </div>
                   <div className="w-[2.5625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
@@ -55,7 +55,7 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
                 <div className="flex relative justify-start items-start content-start shrink-0 gap-36 overflow-clip">
                   <div className="w-[93.3px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                      Join Us Now
+                      Pedir orçamento
                     </p>
                   </div>
                   <div className="w-2 flex relative justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden">

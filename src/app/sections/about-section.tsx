@@ -55,7 +55,7 @@ export default function AboutSection() {
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip">
                   <div className="w-[3.525rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                      (About Us)
+                      (Sobre)
                     </p>
                   </div>
                   <div className="w-[2.5625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
