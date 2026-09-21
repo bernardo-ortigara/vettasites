@@ -140,37 +140,26 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             </div>
             <div className="w-5 flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
               <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                19'
+                '26
               </p>
             </div>
           </Appear>
           <div className="contents min-w-0">
             <Appear
-              className="w-231 block relative inset-0 shrink-0 aspect-[6.38095/1] max-tab:w-full tab:max-desk:w-180"
+              className="w-231 block relative inset-0 shrink-0 aspect-[614/191] max-tab:w-full tab:max-desk:w-180"
               initial={{ opacity: 0.001, y: wordmarkOffset }}
               transition={{ ...SPRING, delay: 0.1 }}
             >
               <h1 className="h-full block absolute top-0 inset-x-0">
-                <svg
-                  className="w-full h-full block overflow-visible"
-                  viewBox="0 0 4260 668"
-                  preserveAspectRatio="none"
-                  role="img"
-                  aria-label="Vetta Sites — criação de sites profissionais"
-                >
-                  <text
-                    x="0"
-                    y="668"
-                    textLength="4260"
-                    lengthAdjust="spacing"
-                    fill="var(--bone)"
-                    stroke="none"
-                    fontSize="916"
-                    style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
-                  >
-                    VETTA
-                  </text>
-                </svg>
+                <img
+                  className="w-full h-full block object-contain object-bottom"
+                  alt="Vetta Sites — criação de sites profissionais"
+                  src="/assets/media/logo/vetta-palavra-bone.svg"
+                  width="614"
+                  height="191"
+                  fetchPriority="high"
+                  decoding="async"
+                />
               </h1>
             </Appear>
           </div>

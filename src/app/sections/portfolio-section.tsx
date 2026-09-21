@@ -45,7 +45,7 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
         <div className="w-62.5 h-[35.2625rem] flex sticky top-0 z-1 max-w-62.5 pt-61 pb-50 flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-4 overflow-clip max-desk:h-[6.5125rem] max-desk:relative max-desk:bottom-0 max-desk:inset-x-0 max-desk:py-0 max-desk:grow-[initial] max-desk:basis-[initial]">
           <div className="w-62.5 flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
             <h4 className="block font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-desk:text-[2.5rem] max-desk:leading-10">
-              FX-25'
+              Vetta '26
             </h4>
           </div>
           <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-edge" />
@@ -84,10 +84,10 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
                     </div>
                   </div>
                 </div>
-                <div className="w-[4.8875rem] flex relative max-w-[4.9375rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                  <div className="w-[4.8875rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                <div className="w-auto flex relative justify-center items-center content-center shrink-0 gap-2.5">
+                  <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                      See all (07)
+                      Ver todos (07)
                     </p>
                   </div>
                 </div>

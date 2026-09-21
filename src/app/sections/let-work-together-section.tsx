@@ -175,7 +175,7 @@ export default function LetWorkTogetherSection() {
               </div>
               <div className="w-5 flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                 <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
-                  19&apos;
+                  &apos;26
                 </p>
               </div>
             </div>
