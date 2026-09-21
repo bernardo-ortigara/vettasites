@@ -9,29 +9,29 @@ const MediaTile_data: MediaTileData[] = [
 ];
 export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}) {
   return (
-    <section className="w-full flex relative z-1 pt-6 pb-30 px-6 flex-col justify-start items-center content-center shrink-0 gap-20 bg-color-001 max-desk:pb-20 max-desk:gap-15">
+    <section className="w-full flex relative z-1 pt-6 pb-30 px-6 flex-col justify-start items-center content-center shrink-0 gap-20 bg-bone max-desk:pb-20 max-desk:gap-15">
       <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-20">
         <div className="contents min-w-0">
           <div className="w-308 block relative shrink-0 max-tab:w-full tab:max-desk:w-180">
             <div className="w-308 h-[1.825rem] flex relative flex-col justify-center items-center content-center gap-3 max-tab:w-full tab:max-desk:w-180">
-              <div className="w-full h-px block relative shrink-0 overflow-clip bg-color-004" />
+              <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-edge" />
               <div className="w-full flex relative justify-between items-center content-center shrink-0">
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
-                  <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-foreground transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
+                  <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-night transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
                   <div className="w-5 flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                       (02)
                     </p>
                   </div>
                 </div>
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip">
                   <div className="w-[51.5px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                       (Portfolio)
                     </p>
                   </div>
                   <div className="w-[2.5625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
-                    <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px] max-tab:hidden">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] max-tab:hidden">
                       © 2025
                     </p>
                   </div>
@@ -44,17 +44,17 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
       <div className="w-full max-w-360 flex relative justify-between items-start content-start shrink-0 max-desk:flex-col max-desk:justify-start max-desk:gap-10" id="cards">
         <div className="w-62.5 h-[35.2625rem] flex sticky top-0 z-1 max-w-62.5 pt-61 pb-50 flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-4 overflow-clip max-desk:h-[6.5125rem] max-desk:relative max-desk:bottom-0 max-desk:inset-x-0 max-desk:py-0 max-desk:grow-[initial] max-desk:basis-[initial]">
           <div className="w-62.5 flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-            <h4 className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-desk:text-[2.5rem] max-desk:leading-10">
+            <h4 className="block font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-desk:text-[2.5rem] max-desk:leading-10">
               FX-25'
             </h4>
           </div>
-          <div className="w-full h-px block relative shrink-0 overflow-clip bg-color-004" />
+          <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-edge" />
           <div className="contents min-w-0">
             <div className="block relative shrink-0">
-              <a className="h-[1.95rem] flex relative flex-col justify-center items-start content-start gap-2.5 overflow-clip text-primary cursor-pointer" href="/contact">
+              <a className="h-[1.95rem] flex relative flex-col justify-center items-start content-start gap-2.5 overflow-clip text-accent cursor-pointer" href="/contact">
                 <div className="flex relative justify-start items-start content-start shrink-0 gap-36 overflow-clip">
                   <div className="w-[93.3px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block text-foreground [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+                    <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                       Join Us Now
                     </p>
                   </div>
@@ -65,7 +65,7 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
                     </div>
                   </div>
                 </div>
-                <div className="h-px block relative self-stretch shrink-0 overflow-clip bg-foreground" />
+                <div className="h-px block relative self-stretch shrink-0 overflow-clip bg-night" />
               </a>
             </div>
           </div>
@@ -76,8 +76,8 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
         <div className="w-62.5 h-128.5 flex sticky top-0 z-1 max-w-62.5 pt-61 pb-50 justify-center items-center content-center grow shrink-0 basis-0 gap-2.5 overflow-clip max-desk:h-17.5 max-desk:relative max-desk:bottom-0 max-desk:inset-x-0 max-desk:justify-start max-desk:py-0 max-desk:grow-[initial] max-desk:basis-[initial]">
           <div className="contents min-w-0">
             <div className="block relative shrink-0">
-              <a className="h-17.5 flex relative py-[0.1875rem] pr-4 pl-[0.1875rem] rounded-[5px] justify-start items-center content-center gap-4 overflow-clip text-primary bg-surface-3 cursor-pointer" href="/work/portfolio">
-                <div className="w-16 h-16 flex relative rounded-[2.5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden bg-foreground">
+              <a className="h-17.5 flex relative py-[0.1875rem] pr-4 pl-[0.1875rem] rounded-[5px] justify-start items-center content-center gap-4 overflow-clip text-accent bg-bone-dim cursor-pointer" href="/work/portfolio">
+                <div className="w-16 h-16 flex relative rounded-[2.5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden bg-night">
                   <div className="basis-0 shrink-0 h-full block relative grow gap-2.5 overflow-clip">
                     <div className="w-16 h-full block absolute top-0">
                       <img className="w-full h-16 block overflow-clip object-cover aspect-[auto_1024/1024]" alt="" height="1024" sizes="(min-width: 1200px) 64px, (min-width: 810px) and (max-width: 1199.98px) 64px, (max-width: 809.98px) 64px" src="/assets/media/images/5812c01c2bee.png" srcSet="/assets/media/images/a49815fe3e0a.png 512w, /assets/media/images/5812c01c2bee.png 1024w" width="1024" />
@@ -86,7 +86,7 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
                 </div>
                 <div className="w-[4.8875rem] flex relative max-w-[4.9375rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
                   <div className="w-[4.8875rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block text-foreground [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+                    <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                       See all (07)
                     </p>
                   </div>

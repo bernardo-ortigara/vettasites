@@ -13,7 +13,7 @@ export default function PortfolioHero() {
   return (
     <motion.section
       style={{ opacity, y }}
-      className="w-full h-screen flex sticky top-0 z-1 p-6 flex-col justify-between items-center content-center shrink-0 overflow-clip bg-color-005 max-desk:h-auto max-desk:min-h-[42rem] max-desk:pt-24 max-desk:pb-10 max-desk:gap-20"
+      className="w-full h-screen flex sticky top-0 z-1 p-6 flex-col justify-between items-center content-center shrink-0 overflow-clip bg-ink max-desk:h-auto max-desk:min-h-[42rem] max-desk:pt-24 max-desk:pb-10 max-desk:gap-20"
     >
       <Appear
         className="block absolute inset-0 z-0 overflow-clip"
@@ -41,10 +41,10 @@ export default function PortfolioHero() {
             initial={{ opacity: 0.001, y: 20 }}
             transition={{ type: "tween", duration: 0.6, delay: 0.2, ease: EASE_UI }}
           >
-            <h1 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[6.25rem] [font-weight:1000] leading-[6.25rem] tracking-[-3px] whitespace-pre text-nowrap max-desk:text-[4rem] max-desk:leading-16 max-desk:tracking-[-2px] max-tab:text-[3rem] max-tab:leading-12">
+            <h1 className="block text-bone font-display text-[6.25rem] font-bold leading-[6.25rem] tracking-[-3px] whitespace-pre text-nowrap max-desk:text-[4rem] max-desk:leading-16 max-desk:tracking-[-2px] max-tab:text-[3rem] max-tab:leading-12">
               Latest
             </h1>
-            <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
               (07)
             </p>
           </Appear>
@@ -53,7 +53,7 @@ export default function PortfolioHero() {
             initial={{ opacity: 0.001, y: 20 }}
             transition={{ type: "tween", duration: 0.6, delay: 0.3, ease: EASE_UI }}
           >
-            <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[6.25rem] [font-weight:1000] leading-[6.25rem] tracking-[-3px] max-desk:text-[4rem] max-desk:leading-16 max-desk:tracking-[-2px] max-tab:text-[3rem] max-tab:leading-12">
+            <p className="block text-bone font-display text-[6.25rem] font-bold leading-[6.25rem] tracking-[-3px] max-desk:text-[4rem] max-desk:leading-16 max-desk:tracking-[-2px] max-tab:text-[3rem] max-tab:leading-12">
               Portfolio
             </p>
           </Appear>
@@ -64,7 +64,7 @@ export default function PortfolioHero() {
           initial={{ opacity: 0.001, y: 10 }}
           transition={{ type: "tween", duration: 0.5, delay: 0.5, ease: EASE_UI }}
         >
-          <p className="block text-surface [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+          <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
             A curated collection of structured visuals and modern digital systems
           </p>
         </Appear>
@@ -74,7 +74,7 @@ export default function PortfolioHero() {
           initial={{ opacity: 0.001 }}
           transition={{ type: "tween", duration: 0.5, delay: 0.6, ease: EASE_UI }}
         >
-          <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
             © 2025
           </p>
         </Appear>

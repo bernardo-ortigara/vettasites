@@ -16,7 +16,7 @@ export default function ContactSection() {
     <div className="h-25 flex relative justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
       <div className="w-[1645.64px] flex relative [mix-blend-mode:difference] flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:w-[451.7px] tab:max-desk:w-[1120.45px]">
         <h2
-          className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[6.25rem] [font-weight:1000] leading-25 tracking-[-3px] max-tab:text-3xl max-tab:leading-7.5 max-tab:tracking-[-2.1px] tab:max-desk:text-[4.375rem] tab:max-desk:leading-[4.375rem]"
+          className="block text-bone font-display text-[6.25rem] font-bold leading-25 tracking-[-3px] max-tab:text-3xl max-tab:leading-7.5 max-tab:tracking-[-2.1px] tab:max-desk:text-[4.375rem] tab:max-desk:leading-[4.375rem]"
 
         >
           {HEADLINE}
@@ -27,8 +27,8 @@ export default function ContactSection() {
 
   return (
     <div className="w-full block relative z-1 shrink-0">
-      <section className="flex relative p-6 flex-col justify-start items-center content-center gap-25 bg-color-001">
-        <div className="w-full h-200 flex relative rounded-[5px] flex-col justify-center items-center content-center shrink-0 gap-2.5 overflow-clip bg-foreground">
+      <section className="flex relative p-6 flex-col justify-start items-center content-center gap-25 bg-bone">
+        <div className="w-full h-200 flex relative rounded-[5px] flex-col justify-center items-center content-center shrink-0 gap-2.5 overflow-clip bg-night">
           <Parallax
             speed={90}
             className="h-740 block absolute top-[-2159.69px] inset-x-0 opacity-64 min-w-0 shrink-0 overflow-clip"
@@ -100,8 +100,8 @@ function Markers({ className }: { className?: string }) {
 function Cross() {
   return (
     <div className="w-4 h-4 block relative shrink-0">
-      <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-surface-2" />
-      <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-surface-2 transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px]" />
+      <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend" />
+      <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px]" />
     </div>
   );
 }

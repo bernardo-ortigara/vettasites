@@ -38,19 +38,19 @@ export default function FaqAccordionItem({ d, revealDuration }: { d: FaqItem; re
         <div className="w-full flex relative flex-col justify-center items-center content-center shrink-0">
           <div className="w-full flex relative justify-between items-center content-center shrink-0 overflow-clip">
             <div className="w-full flex relative max-w-150 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-              <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+              <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 {d.question}
               </p>
             </div>
             <div className="w-4 h-4 block relative shrink-0">
               <motion.div
-                className="w-0.5 h-full block absolute top-0 left-[0.4375rem] shrink-0 bg-foreground"
+                className="w-0.5 h-full block absolute top-0 left-[0.4375rem] shrink-0 bg-night"
                 style={{ transformOrigin: "1px 8px" }}
                 animate={{ rotate: open ? 90 : 0 }}
                 transition={ACCORDION_SPRING}
                 initial={false}
               />
-              <div className="w-0.5 h-4 block absolute left-[0.4375rem] shrink-0 bg-foreground transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px]" />
+              <div className="w-0.5 h-4 block absolute left-[0.4375rem] shrink-0 bg-night transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px]" />
             </div>
           </div>
           <motion.div
@@ -61,14 +61,14 @@ export default function FaqAccordionItem({ d, revealDuration }: { d: FaqItem; re
           >
             <div ref={bodyRef} className="w-full flex relative pt-5 justify-start items-center content-center gap-2.5">
               <div className="w-full flex relative max-w-[35.5625rem] flex-col justify-start whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[0.75rem] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+                <p className="block text-ink-soft font-display text-[0.75rem] font-bold leading-[16.2px] tracking-[-0.5px]">
                   {d.answer}
                 </p>
               </div>
             </div>
           </motion.div>
         </div>
-        <div className="w-full h-px block relative shrink-0 overflow-clip bg-color-004" />
+        <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-edge" />
       </div>
     </ScrollReveal>
   );

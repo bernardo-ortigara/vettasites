@@ -15,7 +15,7 @@ export default function ExploreButton({
   className?: string;
 }) {
   const [hovered, setHovered] = useState(false);
-  const color = tone === "light" ? "var(--color-001)" : "var(--foreground)";
+  const color = tone === "light" ? "var(--bone)" : "var(--night)";
   const transition = { type: "spring" as const, bounce: 0.2, duration: 0.4 };
 
   return (
@@ -56,9 +56,9 @@ export default function ExploreButton({
           <p
             style={{
               color,
-              fontFamily: "'BDO Grotesk Variable', sans-serif",
+              fontFamily: "var(--font-display)",
               fontSize: 16,
-              fontWeight: 1000,
+              fontWeight: 700,
               lineHeight: "20.2px",
               letterSpacing: "-0.5px",
               margin: 0

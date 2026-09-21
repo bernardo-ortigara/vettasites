@@ -36,8 +36,8 @@ export default async function Page({ params }: { params: Promise<Params> }) {
 
   return (
     <div className="block" id="main">
-      <div className="min-h-screen flex relative flex-col justify-start items-center content-center overflow-clip bg-foreground">
-        <div className="h-[min-content] min-h-screen contents relative min-w-0 flex-col justify-start items-center content-center overflow-clip bg-foreground">
+      <div className="min-h-screen flex relative flex-col justify-start items-center content-center overflow-clip bg-night">
+        <div className="h-[min-content] min-h-screen contents relative min-w-0 flex-col justify-start items-center content-center overflow-clip bg-night">
           <ProjectHero p={project} />
           <ProjectCase p={project} />
           <NextProject projects={getNextProjects(project.slug, 2)} />

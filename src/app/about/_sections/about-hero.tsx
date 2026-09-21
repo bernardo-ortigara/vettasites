@@ -19,8 +19,8 @@ const HERO_IMG = {
 function PlusMark() {
   return (
     <div className="w-4 h-4 block relative shrink-0">
-      <div className="w-0.5 h-4 block absolute top-0 left-[7px] bg-surface-2 mix-blend-difference" />
-      <div className="w-0.5 h-4 block absolute top-0 left-[7px] bg-surface-2 mix-blend-difference rotate-90" />
+      <div className="w-0.5 h-4 block absolute top-0 left-[7px] bg-bone-blend mix-blend-difference" />
+      <div className="w-0.5 h-4 block absolute top-0 left-[7px] bg-bone-blend mix-blend-difference rotate-90" />
     </div>
   );
 }
@@ -85,10 +85,10 @@ export default function AboutHero() {
           <div className="w-full h-min flex relative justify-center items-center content-center shrink-0 gap-[30px] overflow-clip">
             <PlusColumn />
             <div className="w-auto h-auto flex relative flex-col justify-start shrink-0 whitespace-pre">
-              <h2 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[100px] [font-weight:1000] leading-[100px] tracking-[-3px] max-tab:hidden tab:max-desk:text-[70px] tab:max-desk:leading-[70px]">
+              <h2 className="block text-bone font-display text-[100px] font-bold leading-[100px] tracking-[-3px] max-tab:hidden tab:max-desk:text-[70px] tab:max-desk:leading-[70px]">
                 We Are Here
               </h2>
-              <h2 className="hidden text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] max-tab:block max-tab:text-[30px] max-tab:leading-[30px] max-tab:tracking-[-2.1px]">
+              <h2 className="hidden text-bone font-display font-bold max-tab:block max-tab:text-[30px] max-tab:leading-[30px] max-tab:tracking-[-2.1px]">
                 About
               </h2>
             </div>
@@ -99,13 +99,13 @@ export default function AboutHero() {
         <div className="w-full h-min flex relative px-[30px] justify-between items-start shrink-0 max-tab:px-2.5">
           <div className="w-px h-min flex relative max-w-[630px] grow shrink-0 basis-0 justify-between items-start overflow-clip max-tab:max-w-none tab:max-desk:max-w-[450px]">
             <div className="w-auto h-auto flex relative flex-col justify-start shrink-0 whitespace-pre">
-              <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+              <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                 (Our Studio)
               </p>
             </div>
             <div className="w-px h-min flex relative max-w-[200.5px] flex-wrap grow shrink-0 basis-0 flex-col justify-center items-start content-start gap-0 overflow-clip">
               <div className="w-full h-auto flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                <p className="block text-surface [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+                <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                   {STANDFIRST}
                 </p>
               </div>
@@ -113,7 +113,7 @@ export default function AboutHero() {
           </div>
           <div className="w-min h-min flex relative justify-center items-center content-center shrink-0 gap-1.5 max-tab:hidden">
             <div className="w-auto h-auto flex relative flex-col justify-start shrink-0 whitespace-pre">
-              <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+              <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                 © 2025
               </p>
             </div>

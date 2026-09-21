@@ -1,6 +1,21 @@
 import "./globals.css";
 import type { ReactNode } from "react";
+import { Space_Grotesk, Montserrat } from "next/font/google";
 import { SITE_ORIGIN } from "../lib/site";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-space-grotesk",
+  display: "swap"
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-montserrat",
+  display: "swap"
+});
 
 export const metadata = {
   "metadataBase": new URL(SITE_ORIGIN || "http://localhost:3000"),
@@ -48,8 +63,8 @@ export const viewport = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt-BR">
-      <body className="block text-foreground bg-foreground [font-family:sans-serif] text-xs font-normal leading-3.5">
+    <html lang="pt-BR" className={`${spaceGrotesk.variable} ${montserrat.variable}`}>
+      <body className="block text-night bg-night font-body text-xs font-normal leading-3.5">
         {children}
       </body>
     </html>

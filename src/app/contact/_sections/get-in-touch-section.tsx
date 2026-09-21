@@ -13,12 +13,12 @@ const DELAY = {
   submit: 0.8
 } as const;
 
-const RULE = "absolute bottom-0 left-0 w-full h-px bg-surface-4";
+const RULE = "absolute bottom-0 left-0 w-full h-px bg-bone-edge";
 
 const INPUT_LABEL =
-  "block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-xs [font-weight:1000] leading-[16.2px] tracking-[-0.5px]";
+  "block text-bone font-display text-xs font-bold leading-[16.2px] tracking-[-0.5px]";
 const INPUT_FIELD =
-  "flex-1 w-auto min-w-0 p-0 bg-transparent border-0 outline-none [font-family:Inter] text-xs font-normal leading-[19.2px] tracking-[-0.5px] text-color-001 placeholder:text-surface";
+  "flex-1 w-auto min-w-0 p-0 bg-transparent border-0 outline-none font-body text-xs font-normal leading-[19.2px] tracking-[-0.5px] text-bone placeholder:text-bone-soft";
 const INPUT_FILL = "h-full";
 
 type FieldSpec = {
@@ -106,7 +106,7 @@ export default function GetInTouchSection() {
     <section
       className="w-full h-[min-content] flex relative z-1 flex-col justify-start items-center content-center gap-10 overflow-clip px-6 pt-6 pb-25 max-tab:pb-20"
     >
-      <div className="w-full h-full block absolute top-0 left-0 overflow-clip bg-color-005" />
+      <div className="w-full h-full block absolute top-0 left-0 overflow-clip bg-ink" />
 
       <SiteHeader variant="fluid" active="/contact" />
       <div className="w-full h-17.5 block relative shrink-0 overflow-clip" />
@@ -157,7 +157,7 @@ export default function GetInTouchSection() {
               transition={{ ...SPRING, delay: DELAY.heading }}
             >
               <h3
-                className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[4.375rem] [font-weight:1000] leading-17.5 tracking-[-2.1px] tab:max-desk:text-[3.5rem] tab:max-desk:leading-14 max-tab:text-3xl max-tab:leading-7.5"
+                className="block text-bone font-display text-[4.375rem] font-bold leading-17.5 tracking-[-2.1px] tab:max-desk:text-[3.5rem] tab:max-desk:leading-14 max-tab:text-3xl max-tab:leading-7.5"
 
               >
                 {"Get In Touch”"}
@@ -169,7 +169,7 @@ export default function GetInTouchSection() {
               initial={{ opacity: 0.001, y: 20 }}
               transition={{ ...SPRING, delay: DELAY.lead }}
             >
-              <p className="block text-surface [font-family:'BDO_Grotesk_Variable',_sans-serif] text-xs [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+              <p className="block text-bone-soft font-display text-xs font-bold leading-[16.2px] tracking-[-0.5px]">
                 {"Pick a plan, submit a job request, and your イメージ will kickoff   within 24 hours."}
               </p>
             </Appear>
@@ -211,7 +211,7 @@ export default function GetInTouchSection() {
               transition={{ ...SPRING, delay: DELAY.submit }}
             >
               <button
-                className="w-full h-full flex relative justify-center items-center content-center rounded-[10px] bg-surface-4 cursor-pointer text-center"
+                className="w-full h-full flex relative justify-center items-center content-center rounded-[10px] bg-bone-edge cursor-pointer text-center"
                 type="submit"
               >
                 <div className="w-auto h-auto flex relative flex-col justify-start text-center whitespace-pre select-none">

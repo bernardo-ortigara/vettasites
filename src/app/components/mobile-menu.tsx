@@ -12,12 +12,12 @@ function Burger({ open }: { open: boolean }) {
   return (
     <>
       <motion.span
-        className="w-4.5 h-0.5 block rounded-[1px] shrink-0 bg-color-001"
+        className="w-4.5 h-0.5 block rounded-[1px] shrink-0 bg-bone"
         animate={open ? { rotate: 45, y: 5 } : { rotate: 0, y: 0 }}
         transition={{ duration: 0.35, ease: EASE_UI }}
       />
       <motion.span
-        className="w-4.5 h-0.5 block rounded-[1px] shrink-0 bg-color-001"
+        className="w-4.5 h-0.5 block rounded-[1px] shrink-0 bg-bone"
         animate={open ? { rotate: -45, y: -5 } : { rotate: 0, y: 0 }}
         transition={{ duration: 0.35, ease: EASE_UI }}
       />
@@ -73,7 +73,7 @@ export default function MobileMenu({
           <Burger open={open} />
         </button>
         <a
-          className="w-24.5 h-4.5 block relative shrink-0 overflow-clip text-primary cursor-pointer"
+          className="w-24.5 h-4.5 block relative shrink-0 overflow-clip text-accent cursor-pointer"
           href="/"
           onClick={() => setOpen(false)}
         >
@@ -95,7 +95,7 @@ export default function MobileMenu({
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-[60] hidden max-desk:flex flex-col justify-between bg-color-005"
+          className="fixed inset-0 z-[60] hidden max-desk:flex flex-col justify-between bg-ink"
           initial={{ opacity: 0, y: -16 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -16 }}
@@ -121,10 +121,10 @@ export default function MobileMenu({
                     active && d.href !== active && "opacity-50"
                   )}
                 >
-                  <span className="text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[2.25rem] [font-weight:1000] leading-[2.375rem] tracking-[-1.5px]">
+                  <span className="text-bone font-display text-[2.25rem] font-bold leading-[2.375rem] tracking-[-1.5px]">
                     {d.description}
                   </span>
-                  <span className="pb-2 text-surface [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[0.625rem] [font-weight:1000] [font-variation-settings:'wght'_600] leading-[11.2px]">
+                  <span className="pb-2 text-bone-soft font-display text-[0.625rem] font-bold [font-variation-settings:'wght'_600] leading-[11.2px]">
                     {d.description2}
                   </span>
                 </a>
@@ -135,13 +135,13 @@ export default function MobileMenu({
           <motion.a
             href="/contact"
             onClick={() => setOpen(false)}
-            className="flex shrink-0 mx-6 mb-10 py-[0.1875rem] pr-2 pl-[0.1875rem] rounded-[5px] justify-start items-center content-center gap-2.5 overflow-clip bg-surface-3"
+            className="flex shrink-0 mx-6 mb-10 py-[0.1875rem] pr-2 pl-[0.1875rem] rounded-[5px] justify-start items-center content-center gap-2.5 overflow-clip bg-bone-dim"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.5, delay: 0.08 + navLinks.length * 0.07, ease: EASE_UI }}
           >
-            <div className="w-16 h-16 flex relative rounded-[2.5px] justify-center items-center content-center shrink-0 overflow-hidden bg-foreground">
+            <div className="w-16 h-16 flex relative rounded-[2.5px] justify-center items-center content-center shrink-0 overflow-hidden bg-night">
               <img
                 className="w-full h-16 block rounded-[2.5px] overflow-clip object-cover aspect-[auto_896/830]"
                 alt=""
@@ -152,14 +152,14 @@ export default function MobileMenu({
               />
             </div>
             <div className="flex relative flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-2 overflow-clip">
-              <p className="block text-foreground [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+              <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 Meet the CEO
               </p>
               <div className="flex flex-col items-start">
-                <p className="block text-foreground [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+                <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                   Lousiana KD6
                 </p>
-                <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+                <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                   CEO
                 </p>
               </div>

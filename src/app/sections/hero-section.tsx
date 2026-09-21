@@ -47,7 +47,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 10 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.4, ease: EASE_UI }}
           >
-            <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
               {"Pick a plan, submit a job request,  "}
             </p>
           </Appear>
@@ -56,9 +56,9 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 10 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.6, ease: EASE_UI }}
           >
-            <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
               {"and your イメージ "}
-              <span className="inline text-surface">
+              <span className="inline text-bone-soft">
                 {"will kickoff   "}
               </span>
             </p>
@@ -68,7 +68,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 10 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.8, ease: EASE_UI }}
           >
-            <p className="block text-surface [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-bone-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
               within 24 hours.
             </p>
           </Appear>
@@ -88,8 +88,8 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 10 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.9, ease: EASE_SERVICES }}
           >
-            <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
-              <span className="inline text-surface">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
+              <span className="inline text-bone-soft">
                 01/
               </span>
               {" Strategy"}
@@ -100,7 +100,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 8 }}
             transition={{ type: "tween", duration: 0.5, delay: 1.1, ease: EASE_SERVICES }}
           >
-            <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
               Videography
             </p>
           </Appear>
@@ -109,7 +109,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 6 }}
             transition={{ type: "tween", duration: 0.5, delay: 1.3, ease: EASE_SERVICES }}
           >
-            <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
               Branding
             </p>
           </Appear>
@@ -121,25 +121,25 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             transition={{ ...SPRING, delay: 0.5 }}
           >
             <div className="w-14 flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-              <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+              <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 © 2025
               </p>
             </div>
             <div className="w-[51.5%] flex relative pb-1.5 justify-start items-end content-end shrink-0 gap-[0.5625rem] max-tab:w-[77%] max-desk:justify-around max-desk:flex-1 max-desk:gap-[initial] tab:max-desk:w-[89.5%]">
-              <div className="w-px h-2.5 block relative shrink-0 bg-surface" />
-              <div className="w-px h-2.5 block relative shrink-0 bg-surface" />
-              <div className="w-px h-2.5 block relative shrink-0 bg-surface" />
-              <div className="w-px h-2.5 block relative shrink-0 bg-surface" />
-              <div className="w-px h-2.5 block relative shrink-0 bg-surface" />
-              <div className="w-px h-10 block relative shrink-0 bg-surface" />
-              <div className="w-px h-2.5 block relative shrink-0 bg-surface" />
-              <div className="w-px h-2.5 block relative shrink-0 bg-surface" />
-              <div className="w-px h-2.5 block relative shrink-0 bg-surface" />
-              <div className="w-px h-2.5 block relative shrink-0 bg-surface" />
-              <div className="w-px h-2.5 block relative shrink-0 bg-surface" />
+              <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
+              <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
+              <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
+              <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
+              <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
+              <div className="w-px h-10 block relative shrink-0 bg-bone-soft" />
+              <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
+              <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
+              <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
+              <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
+              <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
             </div>
             <div className="w-5 flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-              <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+              <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 19'
               </p>
             </div>
@@ -166,7 +166,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
                     fill="#ffffff"
                     stroke="none"
                     fontSize="916"
-                    style={{ fontFamily: "'BDO_Grotesk_Variable', sans-serif", fontWeight: 1000 }}
+                    style={{ fontFamily: "var(--font-display)", fontWeight: 700 }}
                   >
                     VETTA
                   </text>
@@ -183,8 +183,8 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
       >
         <div className="w-4 h-4 block relative [mix-blend-mode:difference] shrink-0 max-desk:hidden" />
         <div className="w-4 h-4 block relative shrink-0 max-desk:hidden">
-          <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-surface-2 max-desk:hidden" />
-          <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-surface-2 transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px] max-desk:hidden" />
+          <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend max-desk:hidden" />
+          <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px] max-desk:hidden" />
         </div>
       </Appear>
       <Appear
@@ -193,8 +193,8 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
         transition={{ ...SPRING, delay: 0.8 }}
       >
         <div className="w-4 h-4 block relative shrink-0 max-desk:hidden">
-          <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-surface-2 max-desk:hidden" />
-          <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-surface-2 transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px] max-desk:hidden" />
+          <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend max-desk:hidden" />
+          <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px] max-desk:hidden" />
         </div>
         <div className="w-4 h-4 block relative [mix-blend-mode:difference] shrink-0 max-desk:hidden" />
       </Appear>
@@ -205,8 +205,8 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
       >
         <div className="w-4 h-4 block relative [mix-blend-mode:difference] shrink-0 max-desk:hidden" />
         <div className="w-4 h-4 block relative shrink-0 max-desk:hidden">
-          <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-surface-2 max-desk:hidden" />
-          <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-surface-2 transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px] max-desk:hidden" />
+          <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend max-desk:hidden" />
+          <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px] max-desk:hidden" />
         </div>
       </Appear>
       <Appear
@@ -215,8 +215,8 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
         transition={{ ...SPRING, delay: 0.8 }}
       >
         <div className="w-4 h-4 block relative shrink-0 max-desk:hidden">
-          <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-surface-2 max-desk:hidden" />
-          <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-surface-2 transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px] max-desk:hidden" />
+          <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend max-desk:hidden" />
+          <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px] max-desk:hidden" />
         </div>
         <div className="w-4 h-4 block relative [mix-blend-mode:difference] shrink-0 max-desk:hidden" />
       </Appear>

@@ -40,24 +40,24 @@ function StatCard({ s }: { s: Stat }) {
       <div className="w-full h-min flex relative flex-col justify-center items-start content-center gap-2.5 overflow-clip">
         <div className="w-full h-min flex relative justify-center items-start content-center shrink-0 gap-2.5 overflow-clip">
           <div className="w-px flex relative grow shrink-0 basis-0 flex-col justify-start whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-            <h2 className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[100px] [font-weight:1000] leading-[100px] tracking-[-3px] max-tab:text-[30px] max-tab:leading-[30px] max-tab:tracking-[-2.1px] tab:max-desk:text-[70px] tab:max-desk:leading-[70px]">
+            <h2 className="block font-display text-[100px] font-bold leading-[100px] tracking-[-3px] max-tab:text-[30px] max-tab:leading-[30px] max-tab:tracking-[-2.1px] tab:max-desk:text-[70px] tab:max-desk:leading-[70px]">
               {s.figure}
             </h2>
           </div>
           <div className="w-2 h-2 block relative shrink-0">
-            <div className="w-2 h-2 block absolute top-0 right-0 border-t border-r border-solid border-foreground" />
+            <div className="w-2 h-2 block absolute top-0 right-0 border-t border-r border-solid border-night" />
           </div>
         </div>
         <div className="w-full h-min flex relative flex-col justify-center items-start content-center shrink-0 gap-3.5 overflow-clip">
-          <div className="w-full h-px block relative shrink-0 overflow-clip bg-color-003" />
+          <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-hairline" />
           <div className="w-full h-min flex relative flex-col justify-center items-start content-center shrink-0 gap-2.5 overflow-clip">
             <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-              <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+              <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 {s.label}
               </p>
             </div>
             <div className="w-[302px] flex relative max-w-[302px] flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-              <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+              <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                 {s.body}
               </p>
             </div>
@@ -71,14 +71,14 @@ function StatCard({ s }: { s: Stat }) {
 export default function StatsSection({ stats = STATS } = {}) {
   return (
     <section
-      className="w-full flex relative z-1 pt-6 px-6 pb-30 flex-col justify-start items-center content-center shrink-0 gap-[110px] bg-color-001 max-tab:pb-20 max-tab:gap-15 tab:max-desk:gap-20"
+      className="w-full flex relative z-1 pt-6 px-6 pb-30 flex-col justify-start items-center content-center shrink-0 gap-[110px] bg-bone max-tab:pb-20 max-tab:gap-15 tab:max-desk:gap-20"
       id="stats"
     >
       <div className="w-full max-w-360 block relative shrink-0">
         <SectionHeader index="(05)" label="(Stats)" />
       </div>
       <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-7.5 overflow-clip">
-        <div className="w-full h-px block relative shrink-0 overflow-clip bg-color-003" />
+        <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-hairline" />
         <div className="w-full h-min grid relative justify-center gap-[110px] overflow-clip grid-cols-[repeat(2,minmax(50px,1fr))] grid-rows-[repeat(1,minmax(0,1fr))] auto-rows-[minmax(0,1fr)] max-tab:flex max-tab:flex-col max-tab:justify-start max-tab:items-center max-tab:gap-10">
           {stats.map((s) => <StatCard key={s.label} s={s} />)}
         </div>

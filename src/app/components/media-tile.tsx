@@ -32,7 +32,7 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
   return (
     <div className={cn("flex z-1 flex-col justify-center items-start content-start shrink-0 gap-5", styles.className)}>
       <a
-        className={cn("w-full flex relative justify-start items-center content-center shrink-0 gap-2.5 text-primary cursor-pointer", styles.className2)}
+        className={cn("w-full flex relative justify-start items-center content-center shrink-0 gap-2.5 text-accent cursor-pointer", styles.className2)}
 
         href={d.href}
         onMouseEnter={hoverZoom ? () => setHovered(true) : undefined}
@@ -41,7 +41,7 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
         <div className="contents min-w-0">
           <CardScale index={index} className={cn("w-full block relative grow shrink-0 basis-0", styles.className3)} id={d.id}>
             <div className={cn("h-[30.9rem] flex relative flex-col justify-center items-center content-center gap-2.5 overflow-clip max-tab:h-[30.5625rem]", styles.className4)}>
-              <div className="w-full h-113 flex relative rounded-[5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip bg-foreground max-tab:h-[27.9125rem] max-tab:p-7.5 max-tab:flex-1">
+              <div className="w-full h-113 flex relative rounded-[5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip bg-night max-tab:h-[27.9125rem] max-tab:p-7.5 max-tab:flex-1">
                 <div className="w-[110%] h-[31.075rem] block absolute opacity-95 min-w-0 shrink-0 overflow-clip [filter:blur(8px)] max-tab:h-[491.3px]">
                   <div className="h-full block absolute top-0 inset-x-0">
                     <img className={cn("w-full h-[31.0625rem] block overflow-clip object-cover max-tab:h-[30.6875rem]", styles.className5)} alt={d.alt} height={d.height} sizes="calc(max(min(max((min(100vw - 48px, 1440px) - 20px) / 3, 1px), 892px) - 92px, 1px) * 1.1)" src={d.imgSrc} srcSet={d.srcSet} width={d.width} />
@@ -62,7 +62,7 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
               <div className="w-full flex relative pr-2.5 justify-between items-start content-start shrink-0">
                 <div className={cn("flex relative justify-center items-center content-center shrink-0 gap-1.5 max-desk:hidden", styles.className7)}>
                   <div className={cn("flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-desk:hidden", styles.className8)}>
-                    <p className="block text-foreground [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px] max-desk:hidden">
+                    <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px] max-desk:hidden">
                       {d.description}
                     </p>
                   </div>
@@ -70,18 +70,18 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
                 <div className={cn("flex relative justify-center items-start content-start shrink-0 gap-60 overflow-clip max-desk:w-full max-desk:justify-between max-desk:flex-1 max-desk:gap-[initial]", styles.className9)}>
                   <div className="flex relative flex-col justify-center items-start content-start shrink-0 overflow-clip">
                     <div className={cn("flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap", styles.className10)}>
-                      <p className="block text-foreground [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+                      <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                         {d.description2}
                       </p>
                     </div>
                     <div className={cn("flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap", styles.className11)}>
-                      <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+                      <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                         {d.description3}
                       </p>
                     </div>
                   </div>
                   <div className="w-[2.5625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block text-foreground [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                       {d.description4}
                     </p>
                   </div>

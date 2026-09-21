@@ -32,7 +32,7 @@ function Cell({
     align === "right" ? "text-right" : align === "right-below-desk" ? "max-desk:text-right" : "";
   return (
     <div className="w-px flex relative grow shrink-0 basis-0 flex-col justify-start whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-      <p className={`block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px] ${alignClass} ${dim ? "desk:text-color-002" : ""}`}>
+      <p className={`block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] ${alignClass} ${dim ? "desk:text-ink-soft" : ""}`}>
         {text}
       </p>
     </div>
@@ -48,7 +48,7 @@ function Half({ children }: { children: React.ReactNode }) {
 }
 
 function Rule() {
-  return <div className="w-full h-px block relative shrink-0 overflow-hidden bg-color-003" />;
+  return <div className="w-full h-px block relative shrink-0 overflow-hidden bg-ink-hairline" />;
 }
 
 function AwardRow({ a, last }: { a: Award; last: boolean }) {
@@ -78,7 +78,7 @@ function AwardRow({ a, last }: { a: Award; last: boolean }) {
 export default function AwardsSection({ awards = AWARDS } = {}) {
   return (
     <section
-      className="w-full flex relative z-1 pt-6 px-6 pb-[90px] flex-col justify-start items-center content-center shrink-0 gap-20 bg-color-001 max-tab:pb-20 max-tab:gap-15"
+      className="w-full flex relative z-1 pt-6 px-6 pb-[90px] flex-col justify-start items-center content-center shrink-0 gap-20 bg-bone max-tab:pb-20 max-tab:gap-15"
       id="awards"
     >
       <div className="w-full max-w-360 block relative shrink-0">

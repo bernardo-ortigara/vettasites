@@ -10,21 +10,21 @@ const HEADING =
 
 const HEADING_FONT: ResponsiveFont = {
   base: {
-    fontFamily: "'BDO Grotesk Variable', 'BDO Grotesk Variable Placeholder', sans-serif",
+    fontFamily: "var(--font-display)",
     fontSize: "30px",
     letterSpacing: "-1.1px",
     lineHeight: "30px",
     textAlign: "left"
   },
   tab: {
-    fontFamily: "'BDO Grotesk Variable', 'BDO Grotesk Variable Placeholder', sans-serif",
+    fontFamily: "var(--font-display)",
     fontSize: "38px",
     letterSpacing: "-1.2px",
     lineHeight: "38px",
     textAlign: "left"
   },
   desk: {
-    fontFamily: "'BDO Grotesk Variable', 'BDO Grotesk Variable Placeholder', sans-serif",
+    fontFamily: "var(--font-display)",
     fontSize: "70px",
     letterSpacing: "-2.1px",
     lineHeight: "70px",
@@ -36,30 +36,30 @@ const EASE_UI = [0.44, 0, 0.34, 0.98] as const;
 
 export default function AboutSection() {
   return (
-    <section className="w-full flex relative z-1 pt-6 px-6 flex-col justify-start items-center content-center shrink-0 bg-color-001" id="about">
+    <section className="w-full flex relative z-1 pt-6 px-6 flex-col justify-start items-center content-center shrink-0 bg-bone" id="about">
       <OverlapCurtain />
       <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-20 max-desk:gap-15">
         <div className="w-full block relative shrink-0">
           <div className="contents">
             <div className="w-308 h-[1.825rem] flex relative flex-col justify-center items-center content-center gap-3 max-tab:w-full tab:max-desk:w-180">
-              <div className="w-full h-px block relative shrink-0 overflow-clip bg-color-004" />
+              <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-edge" />
               <div className="w-full flex relative justify-between items-center content-center shrink-0">
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
-                  <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-foreground transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
+                  <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-night transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
                   <div className="w-[18.1px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                       (01)
                     </p>
                   </div>
                 </div>
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip">
                   <div className="w-[3.525rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                    <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                       (About Us)
                     </p>
                   </div>
                   <div className="w-[2.5625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
-                    <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px] max-tab:hidden">
+                    <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] max-tab:hidden">
                       © 2025
                     </p>
                   </div>
@@ -74,7 +74,7 @@ export default function AboutSection() {
             delay={0.1}
             duration={0.7}
             font={HEADING_FONT}
-            color="var(--foreground)"
+            color="var(--night)"
             style={{ width: "100%" }}
           />
         </div>
@@ -100,31 +100,31 @@ export default function AboutSection() {
         >
           <div className="w-full flex relative justify-start items-start content-start shrink-0 gap-50 overflow-clip max-desk:flex-col max-desk:gap-5">
             <div className="w-25 flex relative max-w-25 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:grow-[initial] max-desk:basis-[initial]">
-              <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+              <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 (Pre)
               </p>
             </div>
             <div className="w-[23.4375rem] flex relative max-w-[26.3125rem] flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-tab:w-full max-desk:grow-[initial] max-desk:basis-[initial] tab:max-desk:w-[26.3125rem]">
-              <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+              <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 Igniting ideas with precision and intentional design. VETTA transforms raw creativity into structured visual systems that shape brands and elevate digital experiences.
               </p>
             </div>
           </div>
           <div className="w-full flex relative justify-start items-start content-start shrink-0 gap-50 overflow-clip max-desk:flex-col max-desk:gap-5">
             <div className="w-25 flex relative max-w-25 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:grow-[initial] max-desk:basis-[initial]">
-              <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+              <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 (+Post)
               </p>
             </div>
             <div className="w-[23.4375rem] flex relative max-w-[26.3125rem] flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-tab:w-full max-desk:grow-[initial] max-desk:basis-[initial] tab:max-desk:w-[26.3125rem]">
-              <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+              <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 Driven by bold aesthetics and functional simplicity. VETTA blends modern form with purposeful detail, delivering refined experiences that push brands forward.
               </p>
             </div>
           </div>
           <div className="w-full flex relative justify-start items-start content-start shrink-0 gap-50 overflow-clip max-desk:flex-col max-desk:gap-5">
             <div className="w-25 flex relative max-w-25 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:grow-[initial] max-desk:basis-[initial]">
-              <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+              <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 (=Results)
               </p>
             </div>
@@ -133,32 +133,32 @@ export default function AboutSection() {
                 <div className="w-[23.4375rem] flex relative flex-col justify-center items-center content-center shrink-0 gap-3.5 overflow-clip max-tab:w-full tab:max-desk:w-180">
                   <div className="w-full flex relative justify-between items-center content-center shrink-0 overflow-clip">
                     <div className="w-37.5 flex relative max-w-37.5 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                      <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+                      <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                         New clients
                       </p>
                     </div>
                     <div className="w-37.5 flex relative max-w-37.5 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                      <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px] text-right">
+                      <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] text-right">
                         15
                       </p>
                     </div>
                   </div>
-                  <div className="w-full h-px block relative shrink-0 overflow-clip bg-color-003" />
+                  <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-hairline" />
                 </div>
                 <div className="w-[23.4375rem] flex relative flex-col justify-center items-center content-center shrink-0 gap-3.5 overflow-clip max-tab:w-full tab:max-desk:w-180">
                   <div className="w-full flex relative justify-between items-center content-center shrink-0 overflow-clip">
                     <div className="w-37.5 flex relative max-w-37.5 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                      <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+                      <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                         Success rate
                       </p>
                     </div>
                     <div className="w-37.5 flex relative max-w-37.5 flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                      <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px] text-right">
+                      <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] text-right">
                         100%
                       </p>
                     </div>
                   </div>
-                  <div className="w-full h-px block relative shrink-0 overflow-clip bg-color-003" />
+                  <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-hairline" />
                 </div>
               </div>
               <ExploreButton href="/about" label="Explore Now" tone="dark" className="block relative shrink-0" />

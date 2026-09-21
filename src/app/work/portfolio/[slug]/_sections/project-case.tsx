@@ -6,7 +6,7 @@ import { cn } from "../../../../../lib/utils";
 import type { ProjectImage, ProjectItem } from "../../../../content";
 
 const LEAD_CLASS =
-  "w-full block text-foreground [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] " +
+  "w-full block text-night font-display font-bold " +
   "text-[2rem] leading-[2rem] tracking-[-1px] " +
   "tab:text-[2.75rem] tab:leading-[2.75rem] tab:tracking-[-1.3px] " +
   "desk:text-[4.375rem] desk:leading-[4.375rem] desk:tracking-[-2.1px] " +
@@ -18,23 +18,23 @@ export default function ProjectCase({ p }: { p: ProjectItem }) {
   const frames: ProjectImage[] = [p.image, ...p.gallery].slice(0, 4);
 
   return (
-    <section id="case-body" className="w-full flex relative z-1 pt-6 pb-30 px-6 flex-col justify-start items-center content-center shrink-0 bg-color-001 max-desk:pb-20">
+    <section id="case-body" className="w-full flex relative z-1 pt-6 pb-30 px-6 flex-col justify-start items-center content-center shrink-0 bg-bone max-desk:pb-20">
       <OverlapCurtain />
 
       <div className="w-full max-w-360 flex relative z-1 flex-col justify-center items-center content-center shrink-0 gap-3">
-        <div className="w-full h-px block relative shrink-0 overflow-clip bg-color-004" />
+        <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-edge" />
         <div className="w-full flex relative justify-between items-center content-center shrink-0">
           <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
-            <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-foreground transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
-            <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
+            <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-night transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
+            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
               (01)
             </p>
           </div>
           <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip max-desk:gap-10">
-            <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
+            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
               (Read More)
             </p>
-            <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap max-tab:hidden">
+            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] whitespace-pre text-nowrap max-tab:hidden">
               {"© " + p.year}
             </p>
           </div>
@@ -48,13 +48,13 @@ export default function ProjectCase({ p }: { p: ProjectItem }) {
       <div className="w-full max-w-360 grid relative z-1 mt-27.5 grid-cols-2 gap-x-[3.125rem] items-start max-desk:grid-cols-1 max-desk:gap-y-12 max-desk:mt-15">
         <div className="flex sticky top-12.5 self-start pt-12.5 flex-col justify-start items-start content-start gap-20 max-desk:static max-desk:pt-0 max-desk:gap-12">
           <CaseRow label="(Research)">
-            <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
               {p.chapters[0]?.body}
             </p>
           </CaseRow>
 
           <CaseRow label="(Experiment)">
-            <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+            <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
               {p.chapters[1]?.body}
             </p>
           </CaseRow>
@@ -65,14 +65,14 @@ export default function ProjectCase({ p }: { p: ProjectItem }) {
                 {p.stats.map((s) => (
                   <div key={s.label} className="w-full flex relative flex-col justify-start shrink-0 gap-3.5">
                     <div className="w-full flex relative justify-between items-center content-center shrink-0 gap-4">
-                      <p className="block text-foreground [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+                      <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                         {s.label}
                       </p>
-                      <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px] text-right whitespace-pre text-nowrap">
+                      <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] text-right whitespace-pre text-nowrap">
                         {s.figure}
                       </p>
                     </div>
-                    <div className="w-full h-px block relative shrink-0 overflow-clip bg-color-004" />
+                    <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-edge" />
                   </div>
                 ))}
               </div>
@@ -85,7 +85,7 @@ export default function ProjectCase({ p }: { p: ProjectItem }) {
           {frames.map((img, i) => (
             <div
               key={`${img.src}-${i}`}
-              className="w-full block relative rounded-[5px] overflow-clip bg-foreground aspect-[671/607]"
+              className="w-full block relative rounded-[5px] overflow-clip bg-night aspect-[671/607]"
             >
               <Parallax speed={90} className="w-full h-[150%] block absolute bottom-0 inset-x-0">
                 <img
@@ -111,7 +111,7 @@ export default function ProjectCase({ p }: { p: ProjectItem }) {
 function CaseRow({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="w-full flex relative justify-start items-start content-start shrink-0 gap-50 overflow-clip max-desk:gap-10 max-tab:flex-col max-tab:gap-4">
-      <p className="w-25 block shrink-0 text-foreground [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
+      <p className="w-25 block shrink-0 text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
         {label}
       </p>
       <div className="flex relative flex-col justify-start items-start content-start grow shrink basis-0 max-tab:grow-[initial] max-tab:basis-[initial] max-tab:w-full">

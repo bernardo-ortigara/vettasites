@@ -39,7 +39,7 @@ function LogoTile({ logo }: { logo: Logo }) {
       className="w-full h-42 block relative"
       transition={{ type: "tween", duration: 1.2, delay: 0, ease: EASE_UI }}
     >
-      <div className="w-full h-42 flex relative rounded-[5px] flex-col justify-center items-center content-center gap-2.5 overflow-clip bg-surface-3">
+      <div className="w-full h-42 flex relative rounded-[5px] flex-col justify-center items-center content-center gap-2.5 overflow-clip bg-bone-dim">
         <div className="w-26 h-4 block relative shrink-0">
           <div className="w-26 h-full block absolute top-0">
             <img
@@ -62,7 +62,7 @@ function LogoTile({ logo }: { logo: Logo }) {
 export default function ClientsSection({ logos = LOGOS } = {}) {
   return (
     <section
-      className="w-full flex relative z-1 pt-6 px-6 pb-30 flex-col justify-start items-center content-center shrink-0 gap-15 bg-color-001 max-tab:pb-20 tab:max-desk:gap-20"
+      className="w-full flex relative z-1 pt-6 px-6 pb-30 flex-col justify-start items-center content-center shrink-0 gap-15 bg-bone max-tab:pb-20 tab:max-desk:gap-20"
       id="clients"
     >
       <div className="w-full max-w-360 block relative shrink-0">

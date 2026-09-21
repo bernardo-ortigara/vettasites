@@ -103,7 +103,7 @@ export default function Carousel({ items, gap = 10, className, label = "Slidesho
         className="w-full flex absolute top-full left-0 mt-5 justify-center items-center border-0 p-0"
         aria-label={label}
       >
-        <div className="w-22.5 h-7.5 flex rounded-[50px] justify-center items-center overflow-hidden bg-clr-0">
+        <div className="w-22.5 h-7.5 flex rounded-[50px] justify-center items-center overflow-hidden bg-ink-shadow">
           {items.map((_, i) => (
             <button
               key={i}
@@ -114,7 +114,7 @@ export default function Carousel({ items, gap = 10, className, label = "Slidesho
               onClick={() => goTo(i)}
             >
               <div
-                className="w-2.5 h-2.5 block rounded-[50%] bg-color-001"
+                className="w-2.5 h-2.5 block rounded-[50%] bg-bone"
                 style={{ opacity: i === page ? 1 : 0.5 }}
               />
             </button>

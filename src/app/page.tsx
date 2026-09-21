@@ -12,8 +12,8 @@ import LetWorkTogetherSection from "./sections/let-work-together-section";
 export default function Page() {
   return (
     <div className="block" id="main">
-      <div className="min-h-screen flex relative flex-col justify-start items-center content-center overflow-clip bg-foreground">
-        <div className="h-[min-content] min-h-screen contents relative min-w-0 flex-col justify-start items-center content-center overflow-clip bg-foreground">
+      <div className="min-h-screen flex relative flex-col justify-start items-center content-center overflow-clip bg-night">
+        <div className="h-[min-content] min-h-screen contents relative min-w-0 flex-col justify-start items-center content-center overflow-clip bg-night">
           <HeroSection />
           <AboutSection />
           <LogoMarqueeSection />

@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { cn } from "../../lib/utils";
 
 export default function OverlapCurtain({
-  fill = "bg-color-001",
+  fill = "bg-bone",
   heightClass = "h-208.5",
   className
 }: {

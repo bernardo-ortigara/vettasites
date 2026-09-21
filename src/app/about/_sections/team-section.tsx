@@ -75,12 +75,12 @@ function TeamCard({ m }: { m: Member }) {
       <div className="w-full h-min flex relative px-2.5 justify-start items-start content-start shrink-0 gap-2.5">
         <div className="w-px h-min flex relative max-w-[200.5px] flex-wrap grow shrink-0 basis-0 flex-col justify-center items-start content-start gap-0 overflow-clip">
           <div className="w-full h-auto flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-            <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+            <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
               {m.name}
             </p>
           </div>
           <div className="w-full h-auto flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-            <p className="block text-surface [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+            <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
               {m.role}
             </p>
           </div>
@@ -93,10 +93,10 @@ function TeamCard({ m }: { m: Member }) {
 export default function TeamSection({ team = TEAM } = {}) {
   return (
     <section
-      className="w-full flex relative z-1 pb-25 flex-col justify-start items-center content-center shrink-0 gap-15 overflow-hidden bg-color-005 max-tab:pb-20 tab:max-desk:gap-20"
+      className="w-full flex relative z-1 pb-25 flex-col justify-start items-center content-center shrink-0 gap-15 overflow-hidden bg-ink max-tab:pb-20 tab:max-desk:gap-20"
       id="team"
     >
-      <OverlapCurtain fill="bg-color-005" heightClass="h-163.5" />
+      <OverlapCurtain fill="bg-ink" heightClass="h-163.5" />
       <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0">
         <div className="w-full flex relative pt-6 px-6 flex-col justify-center items-center content-center shrink-0">
           <SectionHeader index="(02)" label="(Meet Our Team)" tone="dark" />

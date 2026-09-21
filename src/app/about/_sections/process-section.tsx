@@ -14,21 +14,21 @@ const HEADING =
 
 const HEADING_FONT: ResponsiveFont = {
   base: {
-    fontFamily: "'BDO Grotesk Variable', 'BDO Grotesk Variable Placeholder', sans-serif",
+    fontFamily: "var(--font-display)",
     fontSize: "30px",
     letterSpacing: "-1.1px",
     lineHeight: "30px",
     textAlign: "left"
   },
   tab: {
-    fontFamily: "'BDO Grotesk Variable', 'BDO Grotesk Variable Placeholder', sans-serif",
+    fontFamily: "var(--font-display)",
     fontSize: "38px",
     letterSpacing: "-1.2px",
     lineHeight: "38px",
     textAlign: "left"
   },
   desk: {
-    fontFamily: "'BDO Grotesk Variable', 'BDO Grotesk Variable Placeholder', sans-serif",
+    fontFamily: "var(--font-display)",
     fontSize: "70px",
     letterSpacing: "-2.1px",
     lineHeight: "70px",
@@ -69,11 +69,11 @@ function ProcessCard({ step }: { step: Step }) {
       transition={{ type: "tween", duration: 1.2, delay: 0, ease: EASE_UI }}
     >
       <div className="w-full flex relative flex-col justify-center items-center content-center shrink-0 gap-10 overflow-clip">
-        <div className="w-full h-px block relative shrink-0 overflow-clip bg-color-004" />
+        <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-edge" />
         <div className="w-full flex relative justify-center items-start content-start shrink-0 gap-[207px] overflow-clip max-desk:flex-col max-desk:gap-[30px]">
           <div className="w-px flex relative max-w-10 grow shrink-0 basis-0 justify-start items-center content-center gap-2.5 max-desk:w-full max-desk:grow-0 max-desk:basis-auto">
             <div className="w-full flex relative flex-col justify-start whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-              <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+              <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 {step.index}
               </p>
             </div>
@@ -81,7 +81,7 @@ function ProcessCard({ step }: { step: Step }) {
           <div className="w-px flex relative grow shrink-0 basis-0 justify-between items-start content-start overflow-clip max-desk:w-full max-desk:grow-0 max-desk:basis-auto max-desk:flex-col max-desk:justify-start max-desk:gap-[30px]">
             <div className="w-px flex relative max-w-[390px] grow shrink-0 basis-0 justify-start items-start content-start gap-[207px] overflow-clip max-desk:w-full max-desk:grow-0 max-desk:basis-auto">
               <div className="w-full flex relative flex-col justify-start whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                <h4 className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[56px] [font-weight:1000] leading-[56px] tracking-[-1.7px] max-tab:text-[40px] max-tab:leading-[40px]">
+                <h4 className="block font-display text-[56px] font-bold leading-[56px] tracking-[-1.7px] max-tab:text-[40px] max-tab:leading-[40px]">
                   {step.title}
                 </h4>
               </div>
@@ -89,14 +89,14 @@ function ProcessCard({ step }: { step: Step }) {
             <div className="w-px flex relative max-w-[580px] pr-[178px] flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-10 overflow-clip max-desk:w-full max-desk:pr-0 max-desk:grow-0 max-desk:basis-auto">
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-2.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+                  <p className="block text-ink-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                     {step.body}
                   </p>
                 </div>
               </div>
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-4.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
+                  <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                     What’s included
                   </p>
                 </div>
@@ -113,7 +113,7 @@ function ProcessCard({ step }: { step: Step }) {
 export default function ProcessSection() {
   return (
     <section
-      className="w-full flex relative z-1 pt-20 px-6 pb-25 flex-col justify-start items-center content-center shrink-0 gap-12.5 bg-color-001 max-tab:pb-20"
+      className="w-full flex relative z-1 pt-20 px-6 pb-25 flex-col justify-start items-center content-center shrink-0 gap-12.5 bg-bone max-tab:pb-20"
       id="process"
     >
       <OverlapCurtain />
@@ -125,7 +125,7 @@ export default function ProcessSection() {
             delay={0.1}
             duration={0.7}
             font={HEADING_FONT}
-            color="var(--foreground)"
+            color="var(--night)"
             ghostWeight={1000}
             style={{ width: "100%" }}
           />

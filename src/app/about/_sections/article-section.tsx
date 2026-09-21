@@ -73,7 +73,7 @@ function ArticleCard({ a }: { a: Article }) {
 
   return (
     <div className={`w-full ${height} flex relative flex-col justify-center items-center content-center gap-2.5 overflow-clip cursor-pointer`}>
-      <div className="w-full h-px flex relative grow shrink-0 basis-0 rounded-[5px] justify-center items-center content-center gap-2.5 overflow-hidden bg-foreground">
+      <div className="w-full h-px flex relative grow shrink-0 basis-0 rounded-[5px] justify-center items-center content-center gap-2.5 overflow-hidden bg-night">
         <div className="w-px h-full block relative grow shrink-0 basis-0 rounded-[5px] overflow-clip">
           <div className="block absolute inset-0 rounded-[inherit]">
             <img
@@ -92,18 +92,18 @@ function ArticleCard({ a }: { a: Article }) {
       <div className="w-full h-min flex relative justify-between items-start content-start shrink-0">
         <div className="h-min flex relative justify-start items-start content-start shrink-0 grow gap-[30px] overflow-clip">
           <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-            <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
               {a.index}
             </p>
           </div>
           <div className="w-[200.5px] h-min flex relative max-w-[200.5px] flex-wrap flex-col justify-center items-start content-start overflow-clip">
             <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-              <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+              <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                 {a.title}
               </p>
             </div>
             <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-              <p className="block text-color-002 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+              <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                 {a.category}
               </p>
             </div>
@@ -111,7 +111,7 @@ function ArticleCard({ a }: { a: Article }) {
         </div>
         <div className="w-min h-min flex relative justify-center items-center content-center shrink-0 gap-1.5">
           <div className="flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-            <p className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
+            <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
               © 2025
             </p>
           </div>
@@ -124,7 +124,7 @@ function ArticleCard({ a }: { a: Article }) {
 export default function ArticleSection({ articles = ARTICLES } = {}) {
   return (
     <section
-      className="w-full flex relative z-1 pt-6 px-6 pb-30 flex-col justify-start items-center content-center shrink-0 gap-[70px] bg-color-001 max-tab:pb-20 max-tab:gap-15 tab:max-desk:gap-20"
+      className="w-full flex relative z-1 pt-6 px-6 pb-30 flex-col justify-start items-center content-center shrink-0 gap-[70px] bg-bone max-tab:pb-20 max-tab:gap-15 tab:max-desk:gap-20"
       id="article"
     >
       <div className="w-full max-w-360 block relative shrink-0">
