@@ -27,10 +27,10 @@ export default function FrequentlyAskedQuestionsSection({
                       </p>
                     </div>
                   </div>
-                  <div className="w-[158.3px] flex relative justify-center items-center content-center shrink-0 gap-1.5">
-                    <div className="w-[158.3px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                  <div className="w-auto flex relative justify-center items-center content-center shrink-0 gap-1.5">
+                    <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                       <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
-                        (Frequently Asked Questions)
+                        (Perguntas frequentes)
                       </p>
                     </div>
                   </div>
