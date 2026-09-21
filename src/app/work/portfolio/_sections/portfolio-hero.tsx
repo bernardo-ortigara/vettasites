@@ -22,7 +22,7 @@ export default function PortfolioHero() {
       >
         <img
           className="w-[110%] h-[110%] max-w-none block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover opacity-70"
-          data-component="image"
+
           alt="Women Garden"
           height="768"
           sizes="110vw"
@@ -41,7 +41,7 @@ export default function PortfolioHero() {
             initial={{ opacity: 0.001, y: 20 }}
             transition={{ type: "tween", duration: 0.6, delay: 0.2, ease: EASE_UI }}
           >
-            <h1 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[6.25rem] [font-weight:1000] leading-[6.25rem] tracking-[-3px] whitespace-pre text-nowrap max-desk:text-[4rem] max-desk:leading-16 max-desk:tracking-[-2px] max-tab:text-[3rem] max-tab:leading-12" data-component="heading">
+            <h1 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[6.25rem] [font-weight:1000] leading-[6.25rem] tracking-[-3px] whitespace-pre text-nowrap max-desk:text-[4rem] max-desk:leading-16 max-desk:tracking-[-2px] max-tab:text-[3rem] max-tab:leading-12">
               Latest
             </h1>
             <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px] whitespace-pre text-nowrap">

@@ -1,6 +1,6 @@
 "use client";
 
-import { type NavLink2Data } from "../components/nav-link2";
+import { type NavLinkData } from "../components/nav-link";
 import SiteHeader from "../components/site-header";
 import { Appear, motion, useBreakpointValue, useHeroScroll } from "../components/motion-primitives";
 import HeroLiquid from "../components/hero-liquid";
@@ -11,7 +11,7 @@ const EASE_UI = [0.44, 0, 0.34, 0.98] as const;
 const EASE_SERVICES = [0.76, 0.02, 0.13, 1.01] as const;
 const SPRING = { type: "spring", stiffness: 300, damping: 60, mass: 1 } as const;
 
-const NavLink2_data: NavLink2Data[] = [
+const NavLink2_data: NavLinkData[] = [
     { href: "/", description: "Home", description2: "01" },
     { href: "/work/portfolio", description: "Portfolio", description2: "02" },
     { href: "/about", description: "About", description2: "03" },
@@ -32,7 +32,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
         transition={{ type: "tween", duration: 1, delay: 0, ease: EASE_IMAGE }}
       >
         <div className="h-full block absolute top-0 inset-x-0">
-          <img className="w-full h-full block overflow-clip object-cover" data-component="image" alt="Women in Orange BG" height="617" sizes="(min-width: 1200px) 100vw, (min-width: 810px) and (max-width: 1199.98px) 100vw, (max-width: 809.98px) 100vw" src="/assets/media/images/816e2cb276ac.png" srcSet="/assets/media/images/e9e4d00ce547.png 512w, /assets/media/images/dfec41af5c07.png 1024w, /assets/media/images/816e2cb276ac.png 1080w" width="1080" />
+          <img className="w-full h-full block overflow-clip object-cover" alt="Women in Orange BG" height="617" sizes="(min-width: 1200px) 100vw, (min-width: 810px) and (max-width: 1199.98px) 100vw, (max-width: 809.98px) 100vw" src="/assets/media/images/816e2cb276ac.png" srcSet="/assets/media/images/e9e4d00ce547.png 512w, /assets/media/images/dfec41af5c07.png 1024w, /assets/media/images/816e2cb276ac.png 1080w" width="1080" />
         </div>
       </Appear>
       <div className="hidden desk:block absolute inset-0 z-0">

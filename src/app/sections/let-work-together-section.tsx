@@ -11,20 +11,20 @@ export default function LetWorkTogetherSection() {
             <div className="w-full flex relative flex-col justify-start items-start content-start grow shrink-0 basis-0 gap-12.5 overflow-clip max-desk:grow-[initial] max-desk:basis-[initial]">
               <div className="w-full flex relative flex-col justify-center items-center content-center shrink-0 gap-0">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <h4 className="block text-surface [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10" data-component="heading">
+                  <h4 className="block text-surface [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
                     {"Let\u2019s work together\u2028\u2028"}
                   </h4>
                 </div>
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <h4 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10" data-component="heading">
-                    <a className="inline cursor-pointer focus:border-color-001 focus:text-color-001 focus:outline-color-001 focus:[text-decoration-color:var(--color-001)]" data-component="link" href="mailto:dummy@mail.com" rel="noopener">
+                  <h4 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
+                    <a className="inline cursor-pointer focus:border-color-001 focus:text-color-001 focus:outline-color-001 focus:[text-decoration-color:var(--color-001)]" href="mailto:dummy@mail.com" rel="noopener">
                       sayhi@vetta.studio
                     </a>
                   </h4>
                 </div>
               </div>
               <div className="w-[15.4625rem] block relative shrink-0">
-                <a className="h-[1.95rem] flex relative flex-col justify-center items-start content-start gap-2.5 overflow-clip text-primary cursor-pointer" data-component="link" href="/contact">
+                <a className="h-[1.95rem] flex relative flex-col justify-center items-start content-start gap-2.5 overflow-clip text-primary cursor-pointer" href="/contact">
                   <div className="flex relative justify-start items-start content-start shrink-0 gap-36 overflow-clip">
                     <div className="w-[5.9625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                       <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
@@ -44,9 +44,9 @@ export default function LetWorkTogetherSection() {
             </div>
             <div className="w-full max-w-115 flex relative flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-2.5 overflow-clip max-desk:grow-[initial] max-desk:basis-[initial]">
               <div className="w-full block relative max-w-115 shrink-0">
-                <nav className="flex relative max-w-full flex-col justify-center items-start content-start gap-2.5" data-component="nav">
+                <nav className="flex relative max-w-full flex-col justify-center items-start content-start gap-2.5">
                   <div className="w-[3.5625rem] block relative shrink-0">
-                    <a className="flex relative justify-center items-end content-end gap-3 overflow-clip text-primary cursor-pointer" data-component="link" href="/">
+                    <a className="flex relative justify-center items-end content-end gap-3 overflow-clip text-primary cursor-pointer" href="/">
                       <div className="w-[2.1125rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
                         <div className="w-[2.1125rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
@@ -65,7 +65,7 @@ export default function LetWorkTogetherSection() {
                   </div>
                   <div className="w-full h-px block relative shrink-0 overflow-clip bg-surface-4" />
                   <div className="w-[70.3px] block relative shrink-0">
-                    <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-primary cursor-pointer" data-component="link" href="/work/portfolio">
+                    <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-primary cursor-pointer" href="/work/portfolio">
                       <div className="w-[45.7px] flex relative justify-start items-start content-start shrink-0 gap-2.5">
                         <div className="w-[45.7px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
@@ -84,7 +84,7 @@ export default function LetWorkTogetherSection() {
                   </div>
                   <div className="w-full h-px block relative shrink-0 overflow-clip bg-surface-4" />
                   <div className="w-[3.6375rem] block relative shrink-0">
-                    <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-primary cursor-pointer" data-component="link" href="/about">
+                    <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-primary cursor-pointer" href="/about">
                       <div className="w-[2.0875rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
                         <div className="w-[2.0875rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
@@ -103,7 +103,7 @@ export default function LetWorkTogetherSection() {
                   </div>
                   <div className="w-full h-px block relative shrink-0 overflow-clip bg-surface-4" />
                   <div className="w-[4.2375rem] block relative shrink-0">
-                    <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-primary cursor-pointer" data-component="link" href="/contact">
+                    <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-primary cursor-pointer" href="/contact">
                       <div className="w-[2.6625rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
                         <div className="w-[2.6625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px]">
@@ -141,9 +141,9 @@ export default function LetWorkTogetherSection() {
           </div>
           <div className="w-full max-w-360 h-px block relative shrink-0 overflow-clip bg-surface-4" />
           <div className="w-full max-w-360 flex relative justify-between items-end content-end shrink-0 overflow-clip max-desk:flex-col max-desk:justify-start max-desk:gap-5 tab:max-desk:items-start">
-            <a className="w-[77%] block relative [mix-blend-mode:difference] shrink-0 aspect-[6.38095/1] text-primary cursor-pointer max-desk:w-full" data-component="link" href="/">
+            <a className="w-[77%] block relative [mix-blend-mode:difference] shrink-0 aspect-[6.38095/1] text-primary cursor-pointer max-desk:w-full" href="/">
               <div className="h-full block absolute top-0 inset-x-0">
-                <img className="w-full h-full block overflow-clip object-cover" data-component="image" alt="" height="501" sizes="calc(min(100vw - 48px, 1440px) * 0.7701)" src="/assets/media/images/8c5360eba7f2.png" srcSet="/assets/media/images/4ff2b7be6d40.png 512w, /assets/media/images/6fc2c6b4af84.png 1024w, /assets/media/images/2564269ed19f.png 2048w, /assets/media/images/8c5360eba7f2.png 3195w" width="3195" />
+                <img className="w-full h-full block overflow-clip object-cover" alt="" height="501" sizes="calc(min(100vw - 48px, 1440px) * 0.7701)" src="/assets/media/images/8c5360eba7f2.png" srcSet="/assets/media/images/4ff2b7be6d40.png 512w, /assets/media/images/6fc2c6b4af84.png 1024w, /assets/media/images/2564269ed19f.png 2048w, /assets/media/images/8c5360eba7f2.png 3195w" width="3195" />
               </div>
             </a>
             <div className="w-[196.7px] flex relative justify-center items-end content-end shrink-0 gap-2.5 overflow-clip max-desk:w-full max-desk:justify-between max-desk:gap-[initial]">

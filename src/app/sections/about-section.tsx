@@ -88,7 +88,7 @@ export default function AboutSection() {
           <div className="contents min-w-0">
             <div className="w-82 h-165 block relative inset-0 rounded-[5px] grow shrink-0 basis-0 overflow-clip max-tab:w-full tab:max-desk:w-180">
               <Parallax speed={90} className="h-full block absolute top-0 inset-x-0 rounded-[5px]">
-                <img className="w-full h-165 block rounded-[5px] overflow-clip object-cover aspect-[auto_2048/3640]" data-component="image" alt="Men Red BG" height="3640" sizes="328px" src="/assets/media/images/4709e99a8a57.png" srcSet="/assets/media/images/ea6687720333.png 576w, /assets/media/images/019a3df9011c.png 1152w, /assets/media/images/4709e99a8a57.png 2048w" width="2048" />
+                <img className="w-full h-165 block rounded-[5px] overflow-clip object-cover aspect-[auto_2048/3640]" alt="Men Red BG" height="3640" sizes="328px" src="/assets/media/images/4709e99a8a57.png" srcSet="/assets/media/images/ea6687720333.png 576w, /assets/media/images/019a3df9011c.png 1152w, /assets/media/images/4709e99a8a57.png 2048w" width="2048" />
               </Parallax>
             </div>
           </div>

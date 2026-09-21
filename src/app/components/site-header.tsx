@@ -1,15 +1,15 @@
 "use client";
 
-import NavLink2, { type NavLink2Data } from "./nav-link2";
+import NavLink, { type NavLinkData } from "./nav-link";
 import MobileMenu from "./mobile-menu";
-import { NavLink2_styles } from "../_styles";
+import { navLinkStyles } from "../_styles";
 import { Appear } from "./motion-primitives";
 import { cn } from "../../lib/utils";
 
 const EASE_UI = [0.44, 0, 0.34, 0.98] as const;
 const SPRING = { type: "spring", stiffness: 300, damping: 60, mass: 1 } as const;
 
-export const NAV_LINKS: NavLink2Data[] = [
+export const NAV_LINKS: NavLinkData[] = [
   { href: "/", description: "Home", description2: "01" },
   { href: "/work/portfolio", description: "Portfolio", description2: "02" },
   { href: "/about", description: "About", description2: "03" },
@@ -23,7 +23,7 @@ export default function SiteHeader({
 }: {
   variant?: "hero" | "page" | "fluid";
   active?: string;
-  navLinks?: NavLink2Data[];
+  navLinks?: NavLinkData[];
 }) {
   const isFluid = variant === "fluid";
   const isHero = variant === "hero" || isFluid;
@@ -50,14 +50,14 @@ export default function SiteHeader({
         >
           <header className={cn("flex relative justify-between items-center content-center overflow-clip max-desk:hidden", variant === "hero" ? "w-308" : "w-full")}>
             <div className={cn(sideClass, "flex relative justify-start items-center content-center shrink-0 gap-2.5 overflow-clip max-desk:hidden")}>
-              <a className="w-24.5 h-4.5 block relative shrink-0 overflow-clip text-primary cursor-pointer max-desk:hidden" data-component="link" href="/">
+              <a className="w-24.5 h-4.5 block relative shrink-0 overflow-clip text-primary cursor-pointer max-desk:hidden" href="/">
                 <div className="w-24.5 h-full block absolute top-0 left-0 max-desk:hidden">
-                  <img className="w-full h-4.5 block overflow-clip object-cover aspect-[auto_296/55] max-desk:hidden" data-component="image" alt="" height="55" src="/assets/media/images/logo.png" width="296" />
+                  <img className="w-full h-4.5 block overflow-clip object-cover aspect-[auto_296/55] max-desk:hidden" alt="" height="55" src="/assets/media/images/logo.png" width="296" />
                 </div>
               </a>
             </div>
             <div className="w-[30.8375rem] block relative shrink-0 max-desk:hidden">
-              <nav className="flex relative justify-center items-center content-center gap-20 max-desk:hidden" data-component="nav">
+              <nav className="flex relative justify-center items-center content-center gap-20 max-desk:hidden">
                 {navLinks.map((d, i) => (
                   <Appear
                     key={d.href}
@@ -68,17 +68,17 @@ export default function SiteHeader({
                     initial={isHero ? { opacity: 0.001, y: -10 } : { opacity: 0.001 }}
                     transition={{ type: "tween", duration: 0.5, delay: (isHero ? 0.4 : 0.1) + i * 0.1, ease: EASE_UI }}
                   >
-                    <NavLink2 d={d} styles={NavLink2_styles[i]} />
+                    <NavLink d={d} styles={navLinkStyles[i]} />
                   </Appear>
                 ))}
               </nav>
             </div>
             <div className={cn(sideClass, "block relative shrink-0 max-desk:hidden")}>
-              <a className={cn(ceoCardClass, "flex relative py-[0.1875rem] pr-2 pl-[0.1875rem] rounded-[5px] justify-start items-center content-center gap-2.5 overflow-clip text-primary bg-surface-3 cursor-pointer max-desk:hidden")} data-component="link" href="/contact">
+              <a className={cn(ceoCardClass, "flex relative py-[0.1875rem] pr-2 pl-[0.1875rem] rounded-[5px] justify-start items-center content-center gap-2.5 overflow-clip text-primary bg-surface-3 cursor-pointer max-desk:hidden")} href="/contact">
                 <div className="w-16 h-16 flex relative rounded-[2.5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden bg-foreground max-desk:hidden">
                   <div className="basis-full shrink-0 h-full block relative rounded-[2.5px] max-desk:hidden">
                     <div className="w-16 h-full block absolute top-0 rounded-[2.5px] max-desk:hidden">
-                      <img className="w-full h-16 block rounded-[2.5px] overflow-clip object-cover aspect-[auto_896/830] max-desk:hidden" data-component="image" alt="" height="830" sizes="64px" src="/assets/media/images/9b08cefad60d.png" srcSet="/assets/media/images/1d62f0633629.png 512w, /assets/media/images/9b08cefad60d.png 896w" width="896" />
+                      <img className="w-full h-16 block rounded-[2.5px] overflow-clip object-cover aspect-[auto_896/830] max-desk:hidden" alt="" height="830" sizes="64px" src="/assets/media/images/9b08cefad60d.png" srcSet="/assets/media/images/1d62f0633629.png 512w, /assets/media/images/9b08cefad60d.png 896w" width="896" />
                     </div>
                   </div>
                 </div>

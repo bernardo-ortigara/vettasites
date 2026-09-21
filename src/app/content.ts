@@ -15,19 +15,16 @@ export const logos: LogosItem[] = [
     { height: "64", imgSrc: "/assets/media/images/911144d091cb.png", width: "246" }
 ];
 
-export type Tile4DataItem = {
+export type PlanFeatureItem = {
   description: string;
 };
-export const tile4Data: Tile4DataItem[] = [
+export const planFeaturesEssential: PlanFeatureItem[] = [
     { description: "Custom-crafted visual identity" },
     { description: "Responsive, modern website design" },
     { description: "High-quality imagery and production" }
 ];
 
-export type Tile4Data2Item = {
-  description: string;
-};
-export const tile4Data2: Tile4Data2Item[] = [
+export const planFeaturesStandard: PlanFeatureItem[] = [
     { description: "Custom-crafted visual identity" },
     { description: "Responsive, modern website design" },
     { description: "High-quality imagery and production" },
@@ -36,10 +33,7 @@ export const tile4Data2: Tile4Data2Item[] = [
     { description: "Fast, optimized performance setup" }
 ];
 
-export type Tile6DataItem = {
-  description: string;
-};
-export const tile6Data: Tile6DataItem[] = [
+export const planFeaturesComplete: PlanFeatureItem[] = [
     { description: "Custom-crafted visual identity" },
     { description: "Responsive, modern website design" },
     { description: "High-quality imagery and production" },

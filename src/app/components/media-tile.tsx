@@ -33,7 +33,7 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
     <div className={cn("flex z-1 flex-col justify-center items-start content-start shrink-0 gap-5", styles.className)}>
       <a
         className={cn("w-full flex relative justify-start items-center content-center shrink-0 gap-2.5 text-primary cursor-pointer", styles.className2)}
-        data-component="link"
+
         href={d.href}
         onMouseEnter={hoverZoom ? () => setHovered(true) : undefined}
         onMouseLeave={hoverZoom ? () => setHovered(false) : undefined}
@@ -44,7 +44,7 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
               <div className="w-full h-113 flex relative rounded-[5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip bg-foreground max-tab:h-[27.9125rem] max-tab:p-7.5 max-tab:flex-1">
                 <div className="w-[110%] h-[31.075rem] block absolute opacity-95 min-w-0 shrink-0 overflow-clip [filter:blur(8px)] max-tab:h-[491.3px]">
                   <div className="h-full block absolute top-0 inset-x-0">
-                    <img className={cn("w-full h-[31.0625rem] block overflow-clip object-cover max-tab:h-[30.6875rem]", styles.className5)} data-component="image" alt={d.alt} height={d.height} sizes="calc(max(min(max((min(100vw - 48px, 1440px) - 20px) / 3, 1px), 892px) - 92px, 1px) * 1.1)" src={d.imgSrc} srcSet={d.srcSet} width={d.width} />
+                    <img className={cn("w-full h-[31.0625rem] block overflow-clip object-cover max-tab:h-[30.6875rem]", styles.className5)} alt={d.alt} height={d.height} sizes="calc(max(min(max((min(100vw - 48px, 1440px) - 20px) / 3, 1px), 892px) - 92px, 1px) * 1.1)" src={d.imgSrc} srcSet={d.srcSet} width={d.width} />
                   </div>
                 </div>
                 <motion.div
@@ -54,7 +54,7 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
                 >
                   <div className="basis-full shrink-0 h-64 block relative rounded-[5px] overflow-clip max-desk:flex-1">
                     <div className="h-full block absolute top-0 inset-x-0 rounded-[5px]">
-                      <img className={cn("w-full h-64 block rounded-[5px] overflow-clip object-cover", styles.className6)} data-component="image" alt={d.alt2} height={d.height2} sizes="432px" src={d.imgSrc2} srcSet={d.srcSet2} width={d.width2} />
+                      <img className={cn("w-full h-64 block rounded-[5px] overflow-clip object-cover", styles.className6)} alt={d.alt2} height={d.height2} sizes="432px" src={d.imgSrc2} srcSet={d.srcSet2} width={d.width2} />
                     </div>
                   </div>
                 </motion.div>

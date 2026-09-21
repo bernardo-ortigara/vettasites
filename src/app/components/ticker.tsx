@@ -104,7 +104,7 @@ export default function Ticker({
       >
         {Array.from({ length: sets }, (_, set) =>
           children.map((child, i) => (
-            <TickerItem key={`${set}-${i}`} clone={set > 0}>
+            <TickerItem key={`${set}-${i}`} duplicate={set > 0}>
               {child}
             </TickerItem>
           ))
@@ -114,18 +114,18 @@ export default function Ticker({
   );
 }
 
-function TickerItem({ clone, children }: { clone: boolean; children: ReactNode }) {
+function TickerItem({ duplicate, children }: { duplicate: boolean; children: ReactNode }) {
   const ref = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
-    if (!clone || !ref.current) return;
+    if (!duplicate || !ref.current) return;
     ref.current.querySelectorAll<HTMLElement>("a,button,input,select,textarea").forEach((el) => {
       el.tabIndex = -1;
     });
-  }, [clone]);
+  }, [duplicate]);
 
   return (
-    <li ref={ref} className="list-item shrink-0" aria-hidden={clone || undefined}>
+    <li ref={ref} className="list-item shrink-0" aria-hidden={duplicate || undefined}>
       {children}
     </li>
   );

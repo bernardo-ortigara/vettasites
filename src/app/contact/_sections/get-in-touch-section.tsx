@@ -105,7 +105,6 @@ export default function GetInTouchSection() {
   return (
     <section
       className="w-full h-[min-content] flex relative z-1 flex-col justify-start items-center content-center gap-10 overflow-clip px-6 pt-6 pb-25 max-tab:pb-20"
-      data-section="get-in-touch"
     >
       <div className="w-full h-full block absolute top-0 left-0 overflow-clip bg-color-005" />
 
@@ -114,7 +113,6 @@ export default function GetInTouchSection() {
 
       <div
         className="w-full max-w-360 h-[min-content] flex relative justify-start items-start content-start gap-[127px] overflow-clip max-desk:flex-col max-desk:gap-20 max-desk:max-w-none"
-        data-role="row"
       >
         <Appear
           className="w-143.5 h-195.75 flex relative flex-col justify-start items-center content-center shrink-0 gap-2.5 rounded-[5px] overflow-clip max-desk:order-1 max-desk:justify-center max-desk:w-full tab:max-desk:h-180 max-tab:h-88.5"
@@ -124,7 +122,7 @@ export default function GetInTouchSection() {
           <div className="w-[9%] h-[5%] block absolute top-[47.765%] left-[45.4704%] z-1 overflow-clip">
             <img
               className="w-full h-full block object-contain"
-              data-component="image"
+
               alt=""
               width="208"
               height="147"
@@ -139,7 +137,7 @@ export default function GetInTouchSection() {
             <div className="w-full h-full block absolute top-0 left-0 rounded-[5px]">
               <img
                 className="w-full h-full block rounded-[5px] overflow-clip object-cover object-center"
-                data-component="image"
+
                 alt="Men Orange BG"
                 width="896"
                 height="1280"
@@ -160,7 +158,7 @@ export default function GetInTouchSection() {
             >
               <h3
                 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[4.375rem] [font-weight:1000] leading-17.5 tracking-[-2.1px] tab:max-desk:text-[3.5rem] tab:max-desk:leading-14 max-tab:text-3xl max-tab:leading-7.5"
-                data-component="heading"
+
               >
                 {"Get In Touch”"}
               </h3>

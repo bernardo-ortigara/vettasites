@@ -1,7 +1,7 @@
-export type Tile4Data = {
+export type FeatureItemData = {
   description: string;
 };
-export default function Tile4({ d }: { d: Tile4Data }) {
+export default function FeatureItem({ d }: { d: FeatureItemData }) {
   return (
     <div className="w-full flex relative justify-center items-center content-center shrink-0 gap-1.5 overflow-clip">
       <div className="flex relative pb-[0.1875rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">

@@ -61,7 +61,7 @@ function TeamCard({ m }: { m: Member }) {
           <div className="block absolute inset-0 rounded-[inherit]">
             <img
               className="w-full h-full block rounded-[5px] overflow-clip object-cover"
-              data-component="image"
+
               alt="Woman Zoom Pose"
               height={m.height}
               width={m.width}

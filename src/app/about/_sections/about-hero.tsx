@@ -50,7 +50,7 @@ export default function AboutHero() {
         <div className="block absolute inset-0">
           <img
             className="w-full h-full block overflow-clip object-cover"
-            data-component="image"
+
             alt={HERO_IMG.alt}
             height="673"
             width="1200"
@@ -73,7 +73,7 @@ export default function AboutHero() {
           <div className="block absolute inset-0 rounded-[inherit]">
             <img
               className="w-full h-full block rounded-[5px] overflow-clip object-cover"
-              data-component="image"
+
               alt={HERO_IMG.alt}
               height="673"
               width="1200"

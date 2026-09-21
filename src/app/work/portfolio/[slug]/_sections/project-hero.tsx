@@ -23,7 +23,7 @@ export default function ProjectHero({ p }: { p: ProjectItem; total?: number }) {
       >
         <img
           className="w-[110%] h-[110%] max-w-none block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover opacity-70 [filter:blur(5px)]"
-          data-component="image"
+
           alt={p.image.alt}
           height={p.image.height}
           sizes="110vw"

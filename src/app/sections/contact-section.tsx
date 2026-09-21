@@ -17,7 +17,7 @@ export default function ContactSection() {
       <div className="w-[1645.64px] flex relative [mix-blend-mode:difference] flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:w-[451.7px] tab:max-desk:w-[1120.45px]">
         <h2
           className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[6.25rem] [font-weight:1000] leading-25 tracking-[-3px] max-tab:text-3xl max-tab:leading-7.5 max-tab:tracking-[-2.1px] tab:max-desk:text-[4.375rem] tab:max-desk:leading-[4.375rem]"
-          data-component="heading"
+
         >
           {HEADLINE}
         </h2>
@@ -36,7 +36,7 @@ export default function ContactSection() {
             <div className="h-full block absolute top-0 inset-x-0">
               <img
                 className="w-full h-740 block overflow-clip object-cover aspect-[auto_768/1408]"
-                data-component="image"
+
                 alt="Villa"
                 height="1408"
                 sizes="calc(100vw - 48px)"
@@ -71,7 +71,7 @@ export default function ContactSection() {
               <div className="w-56 h-full block absolute top-0 rounded-[5px] max-tab:w-36">
                 <img
                   className="w-full h-81 block rounded-[5px] overflow-clip object-cover aspect-[auto_896/1280] max-tab:h-52"
-                  data-component="image"
+
                   alt="Women Orange BG"
                   height="1280"
                   sizes="224px"

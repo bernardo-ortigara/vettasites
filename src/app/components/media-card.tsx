@@ -33,7 +33,7 @@ export default function MediaCard({ d, styles }: { d: MediaCardData; styles: Med
                 <h2 className="hidden max-desk:block max-desk:text-color-001 max-desk:[font-family:'BDO_Grotesk_Variable',_sans-serif] max-desk:text-3xl max-desk:[font-weight:1000] max-desk:leading-7.5 max-desk:tracking-[-2.1px] tab:max-desk:text-[4.375rem] tab:max-desk:leading-17.5 tab:max-desk:tracking-[-3px]">
                   {d.title2}
                 </h2>
-                <h1 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[12.1875rem] [font-weight:1000] leading-49 tracking-[-7.8px] max-desk:hidden" data-component="heading">
+                <h1 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[12.1875rem] [font-weight:1000] leading-49 tracking-[-7.8px] max-desk:hidden">
                   {d.title3}
                 </h1>
               </div>
@@ -44,12 +44,12 @@ export default function MediaCard({ d, styles }: { d: MediaCardData; styles: Med
                 innerClassName="w-full h-full block relative rounded-[5px] overflow-clip"
               >
                 <div className="h-full block absolute top-0 inset-x-0 rounded-[5px]">
-                  <img className={cn("w-full h-full block rounded-[5px] overflow-clip object-cover", styles.className)} data-component="image" alt={d.alt} height={d.height} sizes="406px" src={d.imgSrc} srcSet={d.srcSet} width={d.width} />
+                  <img className={cn("w-full h-full block rounded-[5px] overflow-clip object-cover", styles.className)} alt={d.alt} height={d.height} sizes="406px" src={d.imgSrc} srcSet={d.srcSet} width={d.width} />
                 </div>
               </ScrollZoom>
               <div className="w-91.5 flex relative py-[0.6875rem] flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-29 overflow-clip max-desk:w-full max-desk:gap-7.5 max-desk:py-0 max-desk:grow-[initial] max-desk:basis-[initial] tab:max-desk:w-180">
                 <div className="w-91.5 flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:w-full">
-                  <h4 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10" data-component="heading">
+                  <h4 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
                     {d.title4}
                   </h4>
                 </div>

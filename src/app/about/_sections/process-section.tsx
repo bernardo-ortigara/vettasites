@@ -4,7 +4,7 @@ import { ScrollReveal, Parallax } from "../../components/motion-primitives";
 import StaggeredText, { type ResponsiveFont } from "../../components/staggered-text";
 import SectionHeader from "../../components/section-header";
 import OverlapCurtain from "../../components/overlap-curtain";
-import Tile4 from "../../components/tile4";
+import FeatureItem from "../../components/feature-item";
 
 
 const EASE_UI = [0.44, 0, 0.34, 0.98] as const;
@@ -81,7 +81,7 @@ function ProcessCard({ step }: { step: Step }) {
           <div className="w-px flex relative grow shrink-0 basis-0 justify-between items-start content-start overflow-clip max-desk:w-full max-desk:grow-0 max-desk:basis-auto max-desk:flex-col max-desk:justify-start max-desk:gap-[30px]">
             <div className="w-px flex relative max-w-[390px] grow shrink-0 basis-0 justify-start items-start content-start gap-[207px] overflow-clip max-desk:w-full max-desk:grow-0 max-desk:basis-auto">
               <div className="w-full flex relative flex-col justify-start whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                <h4 className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[56px] [font-weight:1000] leading-[56px] tracking-[-1.7px] max-tab:text-[40px] max-tab:leading-[40px]" data-component="heading">
+                <h4 className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[56px] [font-weight:1000] leading-[56px] tracking-[-1.7px] max-tab:text-[40px] max-tab:leading-[40px]">
                   {step.title}
                 </h4>
               </div>
@@ -100,7 +100,7 @@ function ProcessCard({ step }: { step: Step }) {
                     What’s included
                   </p>
                 </div>
-                {step.included.map((description, i) => <Tile4 key={i} d={{ description }} />)}
+                {step.included.map((description, i) => <FeatureItem key={i} d={{ description }} />)}
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function ProcessSection() {
             <div className="block absolute inset-0 rounded-[inherit]">
               <img
                 className="w-full h-full block rounded-[5px] overflow-clip object-cover"
-                data-component="image"
+
                 alt="Men"
                 height="7680"
                 width="5376"

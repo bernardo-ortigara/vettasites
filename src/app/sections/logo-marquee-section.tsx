@@ -1,5 +1,5 @@
-import Logo2 from "../components/logo2";
-import { Logo2_styles } from "../_styles";
+import ClientLogo from "../components/client-logo";
+import { clientLogoStyles } from "../_styles";
 import { logos as logosContent } from "../content";
 import Ticker from "../components/ticker";
 import Carousel from "../components/carousel";
@@ -9,9 +9,9 @@ const TICKER_SPEED = 50;
 const GAP = 10;
 
 export default function LogoMarqueeSection({ logos = logosContent } = {}) {
-  const unique = logos.slice(0, Logo2_styles.length);
+  const unique = logos.slice(0, clientLogoStyles.length);
 
-  const deskCards = unique.map((d, i) => <Logo2 key={i} d={d} styles={Logo2_styles[i]} />);
+  const deskCards = unique.map((d, i) => <ClientLogo key={i} d={d} styles={clientLogoStyles[i]} />);
 
   const mobileCards = unique.map((d, i) => (
     <div key={i} className="w-full h-42.5 flex relative rounded-[5px] flex-col justify-center items-center content-center gap-2.5 overflow-clip bg-surface-3">

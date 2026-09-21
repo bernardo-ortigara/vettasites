@@ -44,7 +44,7 @@ function LogoTile({ logo }: { logo: Logo }) {
           <div className="w-26 h-full block absolute top-0">
             <img
               className="w-full h-4 block overflow-clip object-contain"
-              data-component="image"
+
               alt=""
               height={logo.height}
               width={logo.width}

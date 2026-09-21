@@ -1,12 +1,12 @@
-import Tile4 from "../components/tile4";
-import Tile6 from "../components/tile6";
+import FeatureItem from "../components/feature-item";
+import FeatureItemInverse from "../components/feature-item-inverse";
 import OverlapCurtain from "../components/overlap-curtain";
 import ExploreButton from "../components/explore-button";
 import { ScrollReveal } from "../components/motion-primitives";
-import { tile4Data as tile4DataContent, tile4Data2 as tile4Data2Content, tile6Data as tile6DataContent } from "../content";
+import { planFeaturesEssential as planFeaturesEssentialContent, planFeaturesStandard as planFeaturesStandardContent, planFeaturesComplete as planFeaturesCompleteContent } from "../content";
 const EASE_UI = [0.44, 0, 0.34, 0.98] as const;
 
-export default function PricingSection({ tile4Data = tile4DataContent, tile4Data2 = tile4Data2Content, tile6Data = tile6DataContent } = {}) {
+export default function PricingSection({ planFeaturesEssential = planFeaturesEssentialContent, planFeaturesStandard = planFeaturesStandardContent, planFeaturesComplete = planFeaturesCompleteContent } = {}) {
   return (
     <section className="w-full flex relative z-1 pt-6 pb-30 px-6 flex-col justify-start items-center content-center shrink-0 gap-15 bg-color-001 tab:max-desk:gap-20 max-tab:pb-20">
       <OverlapCurtain />
@@ -72,7 +72,7 @@ export default function PricingSection({ tile4Data = tile4DataContent, tile4Data
                   </div>
                   <div className="w-[102.3px] flex relative justify-center items-center content-center shrink-0 gap-2.5 max-tab:w-[71.7px]">
                     <div className="w-[102.3px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:w-[71.7px]">
-                      <h4 className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10" data-component="heading">
+                      <h4 className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
                         999
                       </h4>
                     </div>
@@ -93,7 +93,7 @@ export default function PricingSection({ tile4Data = tile4DataContent, tile4Data
                     What’s included
                   </p>
                 </div>
-                {tile4Data.map((d, i) => <Tile4 key={i} d={d} />)}
+                {planFeaturesEssential.map((d, i) => <FeatureItem key={i} d={d} />)}
               </div>
             </div>
           </ScrollReveal>
@@ -128,7 +128,7 @@ export default function PricingSection({ tile4Data = tile4DataContent, tile4Data
                   </div>
                   <div className="w-[8.1875rem] flex relative justify-center items-center content-center shrink-0 gap-2.5 max-tab:w-[5.725rem]">
                     <div className="w-[8.1875rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:w-[5.725rem]">
-                      <h4 className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10" data-component="heading">
+                      <h4 className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
                         7299
                       </h4>
                     </div>
@@ -149,7 +149,7 @@ export default function PricingSection({ tile4Data = tile4DataContent, tile4Data
                     What’s included
                   </p>
                 </div>
-                {tile4Data2.map((d, i) => <Tile4 key={i} d={d} />)}
+                {planFeaturesStandard.map((d, i) => <FeatureItem key={i} d={d} />)}
               </div>
             </div>
           </ScrollReveal>
@@ -184,7 +184,7 @@ export default function PricingSection({ tile4Data = tile4DataContent, tile4Data
                   </div>
                   <div className="w-[161.9px] flex relative justify-center items-center content-center shrink-0 gap-2.5 max-tab:w-[7.075rem]">
                     <div className="w-[161.9px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:w-[7.075rem]">
-                      <h4 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10" data-component="heading">
+                      <h4 className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
                         10999
                       </h4>
                     </div>
@@ -205,7 +205,7 @@ export default function PricingSection({ tile4Data = tile4DataContent, tile4Data
                     What’s included
                   </p>
                 </div>
-                {tile6Data.map((d, i) => <Tile6 key={i} d={d} />)}
+                {planFeaturesComplete.map((d, i) => <FeatureItemInverse key={i} d={d} />)}
               </div>
             </div>
           </ScrollReveal>

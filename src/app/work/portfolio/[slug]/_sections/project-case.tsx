@@ -41,7 +41,7 @@ export default function ProjectCase({ p }: { p: ProjectItem }) {
         </div>
       </div>
 
-      <div className="w-full max-w-360 flex relative z-1 mt-20 flex-col justify-start shrink-0 max-desk:mt-12" data-component="heading">
+      <div className="w-full max-w-360 flex relative z-1 mt-20 flex-col justify-start shrink-0 max-desk:mt-12">
         <LineStaggerText text={p.intro} className={LEAD_CLASS} indentClassName={LEAD_INDENT} />
       </div>
 
@@ -90,7 +90,7 @@ export default function ProjectCase({ p }: { p: ProjectItem }) {
               <Parallax speed={90} className="w-full h-[150%] block absolute bottom-0 inset-x-0">
                 <img
                   className={cn("w-full h-full block overflow-clip object-cover", img.aspect)}
-                  data-component="image"
+
                   alt={img.alt}
                   height={img.height}
                   loading={i === 0 ? undefined : "lazy"}

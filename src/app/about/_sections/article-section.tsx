@@ -78,7 +78,7 @@ function ArticleCard({ a }: { a: Article }) {
           <div className="block absolute inset-0 rounded-[inherit]">
             <img
               className="w-full h-full block rounded-[5px] overflow-clip object-cover"
-              data-component="image"
+
               alt={a.alt}
               height={a.height}
               width={a.width}

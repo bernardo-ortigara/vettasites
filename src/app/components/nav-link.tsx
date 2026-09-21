@@ -1,13 +1,13 @@
-import type { NavLink2Styles } from "../_styles";
+import type { NavLinkStyles } from "../_styles";
 import { cn } from "../../lib/utils";
-export type NavLink2Data = {
+export type NavLinkData = {
   href: string;
   description: string;
   description2: string;
 };
-export default function NavLink2({ d, styles }: { d: NavLink2Data; styles: NavLink2Styles }) {
+export default function NavLink({ d, styles }: { d: NavLinkData; styles: NavLinkStyles }) {
   return (
-    <a className="flex relative justify-center items-end content-end shrink-0 gap-3 overflow-clip text-primary cursor-pointer max-desk:hidden" data-component="link" href={d.href}>
+    <a className="flex relative justify-center items-end content-end shrink-0 gap-3 overflow-clip text-primary cursor-pointer max-desk:hidden" href={d.href}>
       <div className={cn("h-3.5 flex relative shrink-0 gap-2.5 max-desk:hidden", styles.className)}>
         <div className={cn("flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-desk:hidden", styles.className2)}>
           <p className="block text-color-001 [font-family:'BDO_Grotesk_Variable',_sans-serif] [font-weight:1000] leading-[16.2px] tracking-[-0.5px] max-desk:hidden">

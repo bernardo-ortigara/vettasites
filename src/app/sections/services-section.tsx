@@ -1,5 +1,5 @@
 import MediaCard, { type MediaCardData } from "../components/media-card";
-import { MediaCard_styles } from "../_styles";
+import { mediaCardStyles } from "../_styles";
 import StaggeredText, { type ResponsiveFont } from "../components/staggered-text";
 import ExploreButton from "../components/explore-button";
 import { ScrollReveal } from "../components/motion-primitives";
@@ -106,7 +106,7 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
           <div className="contents min-w-0">
             <div className="h-58 aspect-[0.767241/1] flex absolute -top-[10.9375rem] left-0 z-1 rounded-[5px] justify-center items-start content-start shrink-0 gap-2.5 overflow-clip max-desk:h-[122.5px] max-desk:-top-[4.3125rem] tab:max-desk:-top-[5.9375rem] max-tab:h-[92.5px]">
               <div className="h-full block absolute top-0 inset-x-0 min-w-0 rounded-[5px]">
-                <img className="w-full h-full block rounded-[5px] overflow-clip object-cover" data-component="image" alt="" height="1280" sizes="178px" src="/assets/media/images/68c91cf88797.png" srcSet="/assets/media/images/8ef7501244a9.png 716w, /assets/media/images/68c91cf88797.png 896w" width="896" />
+                <img className="w-full h-full block rounded-[5px] overflow-clip object-cover" alt="" height="1280" sizes="178px" src="/assets/media/images/68c91cf88797.png" srcSet="/assets/media/images/8ef7501244a9.png 716w, /assets/media/images/68c91cf88797.png 896w" width="896" />
               </div>
               <div className="basis-full shrink-0 h-full block relative">
                 <video className="w-full h-full block overflow-clip object-cover bg-color-005" autoPlay loop muted playsInline poster="/assets/media/images/411edd68feb0.png" preload="auto" src="/assets/media/videos/c2a4b4a0ce34.mp4" />
@@ -118,7 +118,7 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
       <div className="w-full max-w-360 flex relative pl-23.5 flex-col justify-center items-center content-center shrink-0 gap-17.5 overflow-clip max-desk:pl-0">
         {mediaCardData.map((d, i) => (
           <ScrollReveal key={i} className="w-full" transition={{ type: "tween", duration: 1.2, delay: 0, ease: EASE_UI }}>
-            <MediaCard d={d} styles={MediaCard_styles[i]} />
+            <MediaCard d={d} styles={mediaCardStyles[i]} />
           </ScrollReveal>
         ))}
       </div>

@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import type { NavLink2Data } from "./nav-link2";
+import type { NavLinkData } from "./nav-link";
 import { cn } from "../../lib/utils";
 
 const EASE_UI = [0.44, 0, 0.34, 0.98] as const;
@@ -29,7 +29,7 @@ export default function MobileMenu({
   navLinks,
   active
 }: {
-  navLinks: NavLink2Data[];
+  navLinks: NavLinkData[];
   active?: string;
 }) {
   const [open, setOpen] = useState(false);

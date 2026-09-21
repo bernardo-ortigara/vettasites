@@ -57,7 +57,7 @@ export default function TestimonialCarousel() {
           <div className="w-53 h-full block absolute top-0 left-0 min-w-0 rounded-[5px]">
             <img
               className="w-full h-[15.8125rem] block rounded-[5px] overflow-clip object-cover"
-              data-component="image"
+
               alt={slide.portrait.alt}
               height={slide.portrait.height}
               sizes="212px"
@@ -70,7 +70,7 @@ export default function TestimonialCarousel() {
             <div className="w-19 h-full block absolute top-0">
               <img
                 className="w-full h-4 block overflow-clip object-contain"
-                data-component="image"
+
                 alt=""
                 height={slide.logo.height}
                 src={slide.logo.src}
@@ -133,7 +133,7 @@ export default function TestimonialCarousel() {
             >
               <img
                 className="w-full h-16.5 block overflow-clip object-cover"
-                data-component="image"
+
                 alt={slide.avatar.alt}
                 height="1024"
                 sizes="66px"
@@ -175,7 +175,7 @@ export default function TestimonialCarousel() {
                     >
                       <h6
                         className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-4xl [font-weight:1000] leading-9.5 tracking-[-1.2px]"
-                        data-component="heading"
+
                       >
                         {figure}
                       </h6>

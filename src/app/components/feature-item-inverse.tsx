@@ -1,7 +1,7 @@
-export type Tile6Data = {
+export type FeatureItemInverseData = {
   description: string;
 };
-export default function Tile6({ d }: { d: Tile6Data }) {
+export default function FeatureItemInverse({ d }: { d: FeatureItemInverseData }) {
   return (
     <div className="w-full flex relative justify-center items-center content-center shrink-0 gap-1.5 overflow-clip">
       <div className="flex relative pb-[0.1875rem] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">

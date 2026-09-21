@@ -1,5 +1,5 @@
 import MediaTile, { type MediaTileData } from "../components/media-tile";
-import { MediaTile_styles } from "../_styles";
+import { mediaTileStyles } from "../_styles";
 import { StackedCards } from "../components/stacked-cards";
 const MediaTile_data: MediaTileData[] = [
     { href: "/work/portfolio/vellfire-calibration", id: "vellfire-calibration-card-1", alt: "Man", height: "752", imgSrc: "/assets/media/images/3418d4c75efa.png", srcSet: "/assets/media/images/11c385d08bb3.png 512w, /assets/media/images/4bc49ee40f65.png 1024w, /assets/media/images/3418d4c75efa.png 1392w", width: "1392", alt2: "Man", height2: "752", imgSrc2: "/assets/media/images/3418d4c75efa.png", srcSet2: "/assets/media/images/11c385d08bb3.png 512w, /assets/media/images/4bc49ee40f65.png 1024w, /assets/media/images/3418d4c75efa.png 1392w", width2: "1392", description: "(01)", description2: "Vellfire Calibration", description3: "Art Direction", description4: "© 2025" },
@@ -44,14 +44,14 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
       <div className="w-full max-w-360 flex relative justify-between items-start content-start shrink-0 max-desk:flex-col max-desk:justify-start max-desk:gap-10" id="cards">
         <div className="w-62.5 h-[35.2625rem] flex sticky top-0 z-1 max-w-62.5 pt-61 pb-50 flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-4 overflow-clip max-desk:h-[6.5125rem] max-desk:relative max-desk:bottom-0 max-desk:inset-x-0 max-desk:py-0 max-desk:grow-[initial] max-desk:basis-[initial]">
           <div className="w-62.5 flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-            <h4 className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-desk:text-[2.5rem] max-desk:leading-10" data-component="heading">
+            <h4 className="block [font-family:'BDO_Grotesk_Variable',_sans-serif] text-[3.5rem] [font-weight:1000] leading-14 tracking-[-1.7px] max-desk:text-[2.5rem] max-desk:leading-10">
               FX-25'
             </h4>
           </div>
           <div className="w-full h-px block relative shrink-0 overflow-clip bg-color-004" />
           <div className="contents min-w-0">
             <div className="block relative shrink-0">
-              <a className="h-[1.95rem] flex relative flex-col justify-center items-start content-start gap-2.5 overflow-clip text-primary cursor-pointer" data-component="link" href="/contact">
+              <a className="h-[1.95rem] flex relative flex-col justify-center items-start content-start gap-2.5 overflow-clip text-primary cursor-pointer" href="/contact">
                 <div className="flex relative justify-start items-start content-start shrink-0 gap-36 overflow-clip">
                   <div className="w-[93.3px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block text-foreground [font-family:'BDO_Grotesk_Variable',_sans-serif] text-base [font-weight:1000] leading-[20.2px] tracking-[-0.5px]">
@@ -71,16 +71,16 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
           </div>
         </div>
         <StackedCards total={mediaTileData.length} className="w-[59.5%] flex relative desk:max-w-223 px-11.5 flex-col justify-center items-center content-center grow shrink-0 basis-0 gap-6 max-desk:w-full max-desk:px-0 max-desk:grow-[initial] max-desk:basis-[initial]">
-          {mediaTileData.map((d, i) => <MediaTile key={i} d={d} styles={MediaTile_styles[i]} index={i} />)}
+          {mediaTileData.map((d, i) => <MediaTile key={i} d={d} styles={mediaTileStyles[i]} index={i} />)}
         </StackedCards>
         <div className="w-62.5 h-128.5 flex sticky top-0 z-1 max-w-62.5 pt-61 pb-50 justify-center items-center content-center grow shrink-0 basis-0 gap-2.5 overflow-clip max-desk:h-17.5 max-desk:relative max-desk:bottom-0 max-desk:inset-x-0 max-desk:justify-start max-desk:py-0 max-desk:grow-[initial] max-desk:basis-[initial]">
           <div className="contents min-w-0">
             <div className="block relative shrink-0">
-              <a className="h-17.5 flex relative py-[0.1875rem] pr-4 pl-[0.1875rem] rounded-[5px] justify-start items-center content-center gap-4 overflow-clip text-primary bg-surface-3 cursor-pointer" data-component="link" href="/work/portfolio">
+              <a className="h-17.5 flex relative py-[0.1875rem] pr-4 pl-[0.1875rem] rounded-[5px] justify-start items-center content-center gap-4 overflow-clip text-primary bg-surface-3 cursor-pointer" href="/work/portfolio">
                 <div className="w-16 h-16 flex relative rounded-[2.5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden bg-foreground">
                   <div className="basis-0 shrink-0 h-full block relative grow gap-2.5 overflow-clip">
                     <div className="w-16 h-full block absolute top-0">
-                      <img className="w-full h-16 block overflow-clip object-cover aspect-[auto_1024/1024]" data-component="image" alt="" height="1024" sizes="(min-width: 1200px) 64px, (min-width: 810px) and (max-width: 1199.98px) 64px, (max-width: 809.98px) 64px" src="/assets/media/images/5812c01c2bee.png" srcSet="/assets/media/images/a49815fe3e0a.png 512w, /assets/media/images/5812c01c2bee.png 1024w" width="1024" />
+                      <img className="w-full h-16 block overflow-clip object-cover aspect-[auto_1024/1024]" alt="" height="1024" sizes="(min-width: 1200px) 64px, (min-width: 810px) and (max-width: 1199.98px) 64px, (max-width: 809.98px) 64px" src="/assets/media/images/5812c01c2bee.png" srcSet="/assets/media/images/a49815fe3e0a.png 512w, /assets/media/images/5812c01c2bee.png 1024w" width="1024" />
                     </div>
                   </div>
                 </div>
