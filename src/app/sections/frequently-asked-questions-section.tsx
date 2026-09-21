@@ -21,7 +21,7 @@ export default function FrequentlyAskedQuestionsSection({
                 <div className="w-full max-w-[394.5px] flex relative justify-between items-center content-center shrink-0">
                   <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
                     <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-night transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
-                    <div className="w-[20.3px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                    <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                       <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                         {index}
                       </p>

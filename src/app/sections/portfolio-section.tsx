@@ -18,19 +18,19 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
               <div className="w-full flex relative justify-between items-center content-center shrink-0">
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
                   <div className="w-[0.3125rem] block relative shrink-0 overflow-clip aspect-square bg-night transform-[matrix(0.707107,-0.707107,0.707107,0.707107,0,0)] origin-[2.5px_2.5px]" />
-                  <div className="w-5 flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                  <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                       (02)
                     </p>
                   </div>
                 </div>
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-[29.1875rem] overflow-clip">
-                  <div className="w-[51.5px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                  <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                       (Portfólio)
                     </p>
                   </div>
-                  <div className="w-[2.5625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
+                  <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:hidden">
                     <p className="block font-display font-bold leading-[16.2px] tracking-[-0.5px] max-tab:hidden">
                       © 2026
                     </p>
@@ -53,7 +53,7 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
             <div className="block relative shrink-0">
               <a className="h-[1.95rem] flex relative flex-col justify-center items-start content-start gap-2.5 overflow-clip text-accent cursor-pointer" href="/contact">
                 <div className="flex relative justify-start items-start content-start shrink-0 gap-36 overflow-clip">
-                  <div className="w-[93.3px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                  <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                       Pedir orçamento
                     </p>

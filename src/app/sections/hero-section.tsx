@@ -120,7 +120,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001 }}
             transition={{ ...SPRING, delay: 0.5 }}
           >
-            <div className="w-14 flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+            <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
               <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 © 2026
               </p>
@@ -138,7 +138,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
               <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
               <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
             </div>
-            <div className="w-5 flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+            <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
               <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                 '26
               </p>

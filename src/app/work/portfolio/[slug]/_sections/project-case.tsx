@@ -111,7 +111,7 @@ export default function ProjectCase({ p }: { p: ProjectItem }) {
 function CaseRow({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="w-full flex relative justify-start items-start content-start shrink-0 gap-50 overflow-clip max-desk:gap-10 max-tab:flex-col max-tab:gap-4">
-      <p className="w-25 block shrink-0 text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
+      <p className="w-auto block shrink-0 text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.5px] whitespace-pre text-nowrap">
         {label}
       </p>
       <div className="flex relative flex-col justify-start items-start content-start grow shrink basis-0 max-tab:grow-[initial] max-tab:basis-[initial] max-tab:w-full">

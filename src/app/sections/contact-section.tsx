@@ -14,7 +14,7 @@ const HEADLINE = "O próximo nível começa aqui. ";
 export default function ContactSection() {
   const marqueeItem = (
     <div className="h-25 flex relative justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-      <div className="w-[1645.64px] flex relative [mix-blend-mode:difference] flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:w-[451.7px] tab:max-desk:w-[1120.45px]">
+      <div className="w-auto flex relative [mix-blend-mode:difference] flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:w-auto tab:max-desk:w-auto">
         <h2
           className="block text-bone font-display text-[6.25rem] font-bold leading-25 tracking-[-3px] max-tab:text-3xl max-tab:leading-7.5 max-tab:tracking-[-2.1px] tab:max-desk:text-[4.375rem] tab:max-desk:leading-[4.375rem]"
 

@@ -80,7 +80,7 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
                       </p>
                     </div>
                   </div>
-                  <div className="w-[2.5625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                  <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                       {d.description4}
                     </p>

@@ -34,7 +34,7 @@ export default function LetWorkTogetherSection() {
                   rel="noopener"
                 >
                   <div className="flex relative justify-start items-start content-start shrink-0 gap-36 overflow-clip">
-                    <div className="w-[5.9625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                    <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                       <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                         Falar agora
                       </p>
@@ -56,14 +56,14 @@ export default function LetWorkTogetherSection() {
                   <div className="w-[3.5625rem] block relative shrink-0">
                     <a className="flex relative justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer" href="/">
                       <div className="w-[2.1125rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
-                        <div className="w-[2.1125rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                             Home
                           </p>
                         </div>
                       </div>
                       <div className="w-[11.3px] flex relative pb-2 justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                        <div className="w-[11.3px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-bone-soft font-display text-[0.625rem] font-bold leading-[11.2px]">
                             01
                           </p>
@@ -75,14 +75,14 @@ export default function LetWorkTogetherSection() {
                   <div className="w-[70.3px] block relative shrink-0">
                     <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer" href="/work/portfolio">
                       <div className="w-[45.7px] flex relative justify-start items-start content-start shrink-0 gap-2.5">
-                        <div className="w-[45.7px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                             Portfólio
                           </p>
                         </div>
                       </div>
                       <div className="w-[12.5px] flex relative pb-2 justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                        <div className="w-[12.5px] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-bone-soft font-display text-[0.625rem] font-bold leading-[11.2px]">
                             02
                           </p>
@@ -94,14 +94,14 @@ export default function LetWorkTogetherSection() {
                   <div className="w-[3.6375rem] block relative shrink-0">
                     <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer" href="/about">
                       <div className="w-[2.0875rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
-                        <div className="w-[2.0875rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                             Sobre
                           </p>
                         </div>
                       </div>
                       <div className="w-[0.8rem] flex relative pb-2 justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                        <div className="w-[0.8rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-bone-soft font-display text-[0.625rem] font-bold leading-[11.2px]">
                             03
                           </p>
@@ -113,14 +113,14 @@ export default function LetWorkTogetherSection() {
                   <div className="w-[4.2375rem] block relative shrink-0">
                     <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer" href="/contact">
                       <div className="w-[2.6625rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
-                        <div className="w-[2.6625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.5px]">
                             Contato
                           </p>
                         </div>
                       </div>
                       <div className="w-[0.825rem] flex relative pb-2 justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                        <div className="w-[0.825rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                           <p className="block text-bone-soft font-display text-[0.625rem] font-bold leading-[11.2px]">
                             04
                           </p>
@@ -173,7 +173,7 @@ export default function LetWorkTogetherSection() {
                 <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
                 <div className="w-px h-2.5 block relative shrink-0 bg-bone-soft" />
               </div>
-              <div className="w-5 flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+              <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                 <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
                   &apos;26
                 </p>
