@@ -1,5 +1,9 @@
+"use client";
+
 import SiteHeader from "../../components/site-header";
 import { Appear, Parallax } from "../../components/motion-primitives";
+import { HONEYPOTS, montarMensagem } from "../../../lib/contato";
+import { whatsappLink } from "../../../lib/vetta";
 
 
 const SPRING = { type: "spring", stiffness: 300, damping: 60, mass: 1 } as const;
@@ -38,11 +42,6 @@ const FIELDS: FieldSpec[] = [
 ];
 
 const CATEGORIES = ["Site institucional", "Landing page", "Loja virtual", "Outro"];
-
-const HONEYPOTS = [
-  "website", "company", "message", "subject", "title",
-  "description", "feedback", "notes", "details", "remarks", "comments"
-];
 
 function Field({ f, index }: { f: FieldSpec; index: number }) {
   return (
@@ -173,7 +172,15 @@ export default function GetInTouchSection() {
             </Appear>
           </div>
 
-          <form className="w-full h-[min-content] flex relative flex-col justify-start items-start content-start gap-12.5 max-tab:gap-5">
+          <form
+            className="w-full h-[min-content] flex relative flex-col justify-start items-start content-start gap-12.5 max-tab:gap-5"
+            onSubmit={(evento) => {
+              evento.preventDefault();
+              const dados = new FormData(evento.currentTarget);
+              if (HONEYPOTS.some((campo) => String(dados.get(campo) ?? "").trim() !== "")) return;
+              window.open(whatsappLink(montarMensagem(dados)), "_blank", "noopener");
+            }}
+          >
             <div className="w-full h-[min-content] flex relative justify-center items-center content-center gap-5 max-tab:flex-col">
               <Field f={FIELDS[0]} index={0} />
               <Field f={FIELDS[1]} index={1} />
@@ -195,8 +202,8 @@ export default function GetInTouchSection() {
                 <div className="w-full h-auto min-h-25 flex relative items-center overflow-hidden shrink-0">
                   <textarea
                     className={`${INPUT_FIELD} form-field-input w-full h-25 min-h-25 resize-y [white-space:break-spaces] overflow-y-auto`}
-                    name="Message"
-                    placeholder="Enter your message....."
+                    name="Mensagem"
+                    placeholder="Conte o que o seu negócio precisa..."
                   />
                   <div className={RULE} aria-hidden="true" />
                 </div>

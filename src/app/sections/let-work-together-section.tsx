@@ -1,4 +1,7 @@
+"use client";
+
 import OverlapCurtain from "../components/overlap-curtain";
+import { VETTA, whatsappLink } from "../../lib/vetta";
 
 export default function LetWorkTogetherSection() {
   return (
@@ -17,14 +20,19 @@ export default function LetWorkTogetherSection() {
                 </div>
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <h4 className="block text-bone font-display text-[3.5rem] font-bold leading-14 tracking-[-1.7px] max-tab:text-[2.5rem] max-tab:leading-10">
-                    <a className="inline cursor-pointer focus:border-bone focus:text-bone focus:outline-bone focus:[text-decoration-color:var(--bone)]" href="mailto:dummy@mail.com" rel="noopener">
-                      sayhi@vetta.studio
+                    <a className="inline cursor-pointer focus:border-bone focus:text-bone focus:outline-bone focus:[text-decoration-color:var(--bone)]" href={`mailto:${VETTA.email}`} rel="noopener">
+                      {VETTA.email}
                     </a>
                   </h4>
                 </div>
               </div>
               <div className="w-[15.4625rem] block relative shrink-0">
-                <a className="h-[1.95rem] flex relative flex-col justify-center items-start content-start gap-2.5 overflow-clip text-accent cursor-pointer" href="/contact">
+                <a
+                  className="h-[1.95rem] flex relative flex-col justify-center items-start content-start gap-2.5 overflow-clip text-accent cursor-pointer"
+                  href={whatsappLink()}
+                  target="_blank"
+                  rel="noopener"
+                >
                   <div className="flex relative justify-start items-start content-start shrink-0 gap-36 overflow-clip">
                     <div className="w-[5.9625rem] flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                       <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.5px]">
