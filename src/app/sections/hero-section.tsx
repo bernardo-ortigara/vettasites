@@ -150,13 +150,13 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
               initial={{ opacity: 0.001, y: wordmarkOffset }}
               transition={{ ...SPRING, delay: 0.1 }}
             >
-              <div className="h-full block absolute top-0 inset-x-0">
+              <h1 className="h-full block absolute top-0 inset-x-0">
                 <svg
                   className="w-full h-full block overflow-visible"
                   viewBox="0 0 4260 668"
                   preserveAspectRatio="none"
                   role="img"
-                  aria-label="VETTA"
+                  aria-label="Vetta Sites — criação de sites profissionais"
                 >
                   <text
                     x="0"
@@ -171,7 +171,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
                     VETTA
                   </text>
                 </svg>
-              </div>
+              </h1>
             </Appear>
           </div>
         </div>

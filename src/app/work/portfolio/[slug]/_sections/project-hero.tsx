@@ -48,9 +48,9 @@ export default function ProjectHero({ p }: { p: ProjectItem; total?: number }) {
             <Crosshair className="absolute left-0 bottom-0" />
             <Crosshair className="absolute right-0 bottom-0" />
           </div>
-          <h2 className="w-full block text-bone font-display font-bold text-[2.5rem] leading-[2.5rem] tracking-[-1.2px] text-center tab:text-[4rem] tab:leading-[4rem] tab:tracking-[-1.9px] desk:text-[6.25rem] desk:leading-[6.25rem] desk:tracking-[-3px]">
+          <h1 className="w-full block text-bone font-display font-bold text-[2.5rem] leading-[2.5rem] tracking-[-1.2px] text-center tab:text-[4rem] tab:leading-[4rem] tab:tracking-[-1.9px] desk:text-[6.25rem] desk:leading-[6.25rem] desk:tracking-[-3px]">
             {p.title}
-          </h2>
+          </h1>
         </div>
 
         <div className="w-full flex relative justify-between items-start content-start shrink-0 gap-10 max-desk:flex-col max-desk:justify-start max-desk:items-start max-desk:content-start max-desk:gap-6">

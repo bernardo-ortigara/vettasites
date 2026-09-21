@@ -4,16 +4,19 @@ import PortfolioIndex from "./_sections/portfolio-index";
 import FrequentlyAskedQuestionsSection from "../../sections/frequently-asked-questions-section";
 import LetWorkTogetherSection from "../../sections/let-work-together-section";
 
+const TITULO = "Portfólio de sites";
+const DESCRICAO =
+  "Modelos de site institucional, landing page, loja virtual e página de captura, com a estrutura que a Vetta entrega em cada tipo de projeto.";
+
 export const metadata: Metadata = {
-  title: "Portfolio — VETTA",
-  description:
-    "Selected work: art direction, photography, strategy and branding projects taken from first board to launch.",
+  title: TITULO,
+  description: DESCRICAO,
   alternates: { canonical: "/work/portfolio" },
   openGraph: {
-    title: "Portfolio — VETTA",
-    description:
-      "Selected work: art direction, photography, strategy and branding projects taken from first board to launch.",
+    title: TITULO,
+    description: DESCRICAO,
     type: "website",
+    locale: "pt_BR",
     url: "/work/portfolio"
   }
 };

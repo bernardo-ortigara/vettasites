@@ -52,7 +52,7 @@ export default function SiteHeader({
             <div className={cn(sideClass, "flex relative justify-start items-center content-center shrink-0 gap-2.5 overflow-clip max-desk:hidden")}>
               <a className="w-24.5 h-4.5 block relative shrink-0 overflow-clip text-accent cursor-pointer max-desk:hidden" href="/">
                 <div className="w-24.5 h-full block absolute top-0 left-0 max-desk:hidden">
-                  <img decoding="async" className="w-full h-4.5 block overflow-clip object-cover aspect-[auto_296/55] max-desk:hidden" alt="" height="55" src="/assets/media/images/logo.webp" width="296" />
+                  <img decoding="async" className="w-full h-4.5 block overflow-clip object-cover aspect-[auto_296/55] max-desk:hidden" alt="Vetta Sites" height="55" src="/assets/media/images/logo.webp" width="296" />
                 </div>
               </a>
             </div>

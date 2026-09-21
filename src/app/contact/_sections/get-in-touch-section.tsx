@@ -154,12 +154,12 @@ export default function GetInTouchSection() {
               initial={{ opacity: 0.001, y: 20 }}
               transition={{ ...SPRING, delay: DELAY.heading }}
             >
-              <h3
+              <h1
                 className="block text-bone font-display text-[4.375rem] font-bold leading-17.5 tracking-[-2.1px] tab:max-desk:text-[3.5rem] tab:max-desk:leading-14 max-tab:text-3xl max-tab:leading-7.5"
 
               >
                 {"Vamos conversar”"}
-              </h3>
+              </h1>
             </Appear>
 
             <Appear

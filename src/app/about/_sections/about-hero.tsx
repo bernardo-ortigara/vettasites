@@ -83,12 +83,12 @@ export default function AboutHero() {
           <div className="w-full h-min flex relative justify-center items-center content-center shrink-0 gap-[30px] overflow-clip">
             <PlusColumn />
             <div className="w-auto h-auto flex relative flex-col justify-start shrink-0 whitespace-pre">
-              <h2 className="block text-bone font-display text-[100px] font-bold leading-[100px] tracking-[-3px] max-tab:hidden tab:max-desk:text-[70px] tab:max-desk:leading-[70px]">
+              <h1 className="block text-bone font-display text-[100px] font-bold leading-[100px] tracking-[-3px] max-tab:hidden tab:max-desk:text-[70px] tab:max-desk:leading-[70px]">
                 Quem somos
-              </h2>
-              <h2 className="hidden text-bone font-display font-bold max-tab:block max-tab:text-[30px] max-tab:leading-[30px] max-tab:tracking-[-2.1px]">
+              </h1>
+              <span className="hidden text-bone font-display font-bold max-tab:block max-tab:text-[30px] max-tab:leading-[30px] max-tab:tracking-[-2.1px]">
                 Sobre
-              </h2>
+              </span>
             </div>
             <PlusColumn />
           </div>

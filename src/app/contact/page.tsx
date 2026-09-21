@@ -3,16 +3,19 @@ import GetInTouchSection from "./_sections/get-in-touch-section";
 import FrequentlyAskedQuestionsSection from "../sections/frequently-asked-questions-section";
 import LetWorkTogetherSection from "../sections/let-work-together-section";
 
+const TITULO = "Contato e orçamento";
+const DESCRICAO =
+  "Conte o que o seu negócio precisa e receba escopo, prazo e valor em até 24 horas. O contato vai direto para o WhatsApp da Vetta Sites.";
+
 export const metadata: Metadata = {
-  title: "VETTA — Premium Design Studio & Portfolio",
-  description:
-    "VETTA is a design-forward studio crafting bold visuals, structured layouts, and high-impact digital experiences for ambitious brands.",
+  title: TITULO,
+  description: DESCRICAO,
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "VETTA — Premium Design Studio & Portfolio",
-    description:
-      "VETTA is a design-forward studio crafting bold visuals, structured layouts, and high-impact digital experiences for ambitious brands.",
+    title: TITULO,
+    description: DESCRICAO,
     type: "website",
+    locale: "pt_BR",
     url: "/contact"
   }
 };

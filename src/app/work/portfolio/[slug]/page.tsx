@@ -16,15 +16,15 @@ export function generateStaticParams(): Params[] {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { slug } = await params;
   const p = getProject(slug);
-  if (!p) return { title: "Project not found — VETTA" };
+  if (!p) return { title: "Projeto não encontrado" };
 
-  const title = `${p.title} — VETTA`;
+  const title = p.title;
   const url = `/work/portfolio/${p.slug}`;
   return {
     title,
     description: p.summary,
     alternates: { canonical: url },
-    openGraph: { title, description: p.summary, type: "article", url, images: [p.image.src] },
+    openGraph: { title, description: p.summary, type: "article", locale: "pt_BR", url, images: [p.image.src] },
     twitter: { card: "summary_large_image", title, description: p.summary, images: [p.image.src] }
   };
 }

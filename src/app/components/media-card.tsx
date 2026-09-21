@@ -33,9 +33,9 @@ export default function MediaCard({ d, styles }: { d: MediaCardData; styles: Med
                 <h2 className="hidden max-desk:block max-desk:text-bone max-desk:font-display max-desk:text-3xl max-desk:font-bold max-desk:leading-7.5 max-desk:tracking-[-2.1px] tab:max-desk:text-[4.375rem] tab:max-desk:leading-17.5 tab:max-desk:tracking-[-3px]">
                   {d.title2}
                 </h2>
-                <h1 className="block text-bone font-display text-[12.1875rem] font-bold leading-49 tracking-[-7.8px] max-desk:hidden">
+                <span className="block text-bone font-display text-[12.1875rem] font-bold leading-49 tracking-[-7.8px] max-desk:hidden">
                   {d.title3}
-                </h1>
+                </span>
               </div>
             </div>
             <div className="w-[73.5%] flex relative max-w-237 justify-center items-start content-start grow shrink-0 basis-0 gap-16.5 overflow-clip max-desk:w-full max-desk:flex-col max-desk:gap-10 max-desk:grow-[initial] max-desk:basis-[initial]">

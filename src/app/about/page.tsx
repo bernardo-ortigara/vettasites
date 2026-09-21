@@ -9,16 +9,19 @@ import ArticleSection from "./_sections/article-section";
 import FrequentlyAskedQuestionsSection from "../sections/frequently-asked-questions-section";
 import LetWorkTogetherSection from "../sections/let-work-together-section";
 
+const TITULO = "Sobre a Vetta Sites";
+const DESCRICAO =
+  "Como a Vetta trabalha: descoberta, criação e publicação, com prazo combinado, SEO técnico e acompanhamento depois que o site vai ao ar.";
+
 export const metadata: Metadata = {
-  title: "About — VETTA",
-  description:
-    "One part-time creative dedicated to your continuous stream of projects: how the studio researches, experiments and refines.",
+  title: TITULO,
+  description: DESCRICAO,
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "About — VETTA",
-    description:
-      "One part-time creative dedicated to your continuous stream of projects: how the studio researches, experiments and refines.",
+    title: TITULO,
+    description: DESCRICAO,
     type: "website",
+    locale: "pt_BR",
     url: "/about"
   }
 };
