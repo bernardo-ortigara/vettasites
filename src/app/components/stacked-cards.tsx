@@ -5,7 +5,7 @@ import { createContext, useContext, useEffect, useRef, type ReactNode } from "re
 
 const TY_PER_SPACING = 25.27;
 
-type StackCtx = { ty: MotionValue<number>; total: number };
+type StackCtx = { ty: MotionValue<number>; lift: MotionValue<number>; total: number };
 const Ctx = createContext<StackCtx | null>(null);
 
 export function StackedCards({
@@ -19,6 +19,9 @@ export function StackedCards({
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const ty = useMotionValue(0);
+  // 1 no desktop, 0 no celular: lá os cards são baixos e o topo fixo fica colado
+  // na tela, então subir a pilha empurraria os cards para fora da vista
+  const lift = useMotionValue(1);
 
   useEffect(() => {
     const el = ref.current;
@@ -29,6 +32,7 @@ export function StackedCards({
     let active = false;
 
     const measure = () => {
+      lift.set(window.matchMedia("(min-width: 810px)").matches ? 1 : 0);
       const kids = Array.from(el.children) as HTMLElement[];
       active = kids.length >= 2;
       if (!active) return;
@@ -70,10 +74,10 @@ export function StackedCards({
       window.removeEventListener("resize", sync);
       observer.disconnect();
     };
-  }, [total, ty]);
+  }, [total, ty, lift]);
 
   return (
-    <Ctx.Provider value={{ ty, total }}>
+    <Ctx.Provider value={{ ty, lift, total }}>
       <div ref={ref} className={className}>{children}</div>
     </Ctx.Provider>
   );
@@ -93,12 +97,15 @@ export function CardScale({
   const ctx = useContext(Ctx);
   const zero = useMotionValue(0);
   const source = ctx ? ctx.ty : zero;
+  const lift = ctx ? ctx.lift : zero;
   const behind = ctx ? ctx.total - 1 - index : 0;
   const scale = useTransform(source, (v) => 1 - (behind * v) / 1000);
-  const y = useTransform(source, (v) => -v);
+  const y = useTransform(() => -source.get() * lift.get());
+  // Sem subir, o card encolhe preso ao topo e a borda dele segue à vista
+  const originY = useTransform(lift, (l) => (l ? 0.5 : 0));
 
   return (
-    <motion.div className={className} id={id} style={{ scale, y }}>
+    <motion.div className={className} id={id} style={{ scale, y, originY }}>
       {children}
     </motion.div>
   );
