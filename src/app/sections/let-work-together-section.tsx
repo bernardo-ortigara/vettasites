@@ -19,7 +19,8 @@ export default function LetWorkTogetherSection() {
                   </h4>
                 </div>
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
-                  <h4 className="block text-bone font-display text-[3.5rem] font-bold leading-14 tracking-[-0.045em] max-tab:text-[2.5rem] max-tab:leading-10">
+                  {/* No celular a fonte acompanha a largura para o e-mail caber numa linha */}
+                  <h4 className="block text-bone font-display text-[3.5rem] font-bold leading-14 tracking-[-0.045em] max-tab:text-[min(2.5rem,6.8vw)] max-tab:leading-[1]">
                     <a className="inline cursor-pointer focus:border-bone focus:text-bone focus:outline-bone focus:[text-decoration-color:var(--bone)]" href={`mailto:${VETTA.email}`} rel="noopener">
                       {VETTA.email}
                     </a>
