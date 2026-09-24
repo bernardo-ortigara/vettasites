@@ -47,7 +47,8 @@ export default function OverlapCurtain({
 
 const TAN = Math.tan((Math.abs(SKEW_MAX) * Math.PI) / 180);
 const FLAG = { h: 56, w: 55, poleX: 0.17, inset: 24 };
-const CLIMBER = { h: 64, w: 59, footX: 0.36 };
+// Desenho espelhado (scaleX -1): o pé de apoio fica a 64% da largura
+const CLIMBER = { h: 64, w: 59, footX: 0.64 };
 
 /**
  * Bandeira e alpinista presos à borda de cima da cortina. A borda é uma reta que
@@ -101,7 +102,7 @@ function Summit({ progress }: { progress: MotionValue<number> }) {
             width={CLIMBER.w}
             height={CLIMBER.h}
             className="block absolute top-0 left-0"
-            style={{ x: climberX, y: climberY, opacity: climberOpacity }}
+            style={{ x: climberX, y: climberY, scaleX: -1, opacity: climberOpacity }}
           />
         </>
       ) : null}
