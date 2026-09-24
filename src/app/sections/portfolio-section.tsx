@@ -80,7 +80,7 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
                 <div className="w-16 h-16 flex relative rounded-[2.5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden bg-night">
                   <div className="basis-0 shrink-0 h-full block relative grow gap-2.5 overflow-clip">
                     <div className="w-16 h-full block absolute top-0">
-                      <img loading="lazy" decoding="async" className="w-full h-16 block overflow-clip object-cover aspect-[auto_1024/1024]" alt="" height="1024" sizes="(min-width: 1200px) 64px, (min-width: 810px) and (max-width: 1199.98px) 64px, (max-width: 809.98px) 64px" src="/assets/media/images/5812c01c2bee.webp" srcSet="/assets/media/images/a49815fe3e0a.png 512w, /assets/media/images/5812c01c2bee.webp 1024w" width="1024" />
+                      <img loading="lazy" decoding="async" className="w-full h-16 block overflow-clip object-cover" alt="" height="64" src="/assets/media/logo/vetta-icone-degrade.svg" width="64" />
                     </div>
                   </div>
                 </div>
