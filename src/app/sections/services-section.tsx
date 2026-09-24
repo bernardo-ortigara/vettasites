@@ -6,7 +6,7 @@ import { ScrollReveal } from "../components/motion-primitives";
 import OverlapCurtain from "../components/overlap-curtain";
 
 const HEADING =
-  "              Sites institucionais, landing pages e otimização para o Google, feitos para marcas que querem ser encontradas\ne lembradas pela Vetta\u00ae.";
+  "              Sites institucionais, landing pages e otimização para o Google, feitos para marcas que querem ser encontradas e lembradas.";
 
 const HEADING_FONT: ResponsiveFont = {
   base: {
@@ -25,10 +25,11 @@ const HEADING_FONT: ResponsiveFont = {
   },
   desk: {
     fontFamily: "var(--font-display)",
-    fontSize: "70px",
+    // 70px em 1440, encolhendo junto com a coluna até 1200 para manter as quebras do Figma
+    fontSize: "min(70px, 4.861vw)",
     letterSpacing: "-0.045em",
-    lineHeight: "70px",
-    textAlign: "left"
+    lineHeight: "min(70px, 4.861vw)",
+    textAlign: "justify"
   }
 };
 
@@ -42,7 +43,7 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
   return (
     <section className="w-full flex relative z-1 pt-6 pb-40 px-6 flex-col justify-start items-center content-center shrink-0 gap-25 bg-ink max-desk:pb-20 max-desk:gap-15 tab:max-desk:pb-30 tab:max-desk:gap-20 grid-cols-1">
       <OverlapCurtain fill="bg-ink" />
-      <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-[14.4375rem] max-desk:gap-[6.3125rem] tab:max-desk:gap-30">
+      <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-10 max-desk:gap-[6.3125rem] tab:max-desk:gap-30">
         <div className="contents min-w-0">
           <div className="w-full block relative shrink-0">
             <div className="w-full h-[1.825rem] flex relative flex-col justify-center items-center content-center gap-3">
@@ -72,17 +73,21 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
             </div>
           </div>
         </div>
-        <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-17.5 max-tab:gap-10">
-          <div className="w-full block relative shrink-0">
-            <StaggeredText
-              text={HEADING}
-              delay={0.1}
-              duration={0.7}
-              font={HEADING_FONT}
-              color="var(--bone)"
-              halfOpacity
-              style={{ width: "100%" }}
-            />
+        <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-[8.0625rem] max-desk:gap-17.5 max-tab:gap-10">
+          <div className="w-full flex pl-[6.75%] items-end gap-[3.16%] max-desk:block max-desk:pl-0">
+            <div className="w-[23.04%] aspect-[299/412] relative z-1 rounded-[5px] shrink-0 overflow-clip max-desk:w-auto max-desk:h-[122.5px] max-desk:aspect-[0.767241/1] max-desk:absolute max-desk:left-0 max-desk:-top-[4.3125rem] tab:max-desk:-top-[5.9375rem] max-tab:h-[92.5px]">
+              <video className="w-full h-full block object-cover bg-ink" autoPlay loop muted playsInline poster="/assets/media/images/servicos-ski-poster.webp" preload="auto" src="/assets/media/videos/servicos-ski.mp4" />
+            </div>
+            <div className="max-w-[66.33%] block relative grow shrink basis-0 min-w-0 max-desk:max-w-none max-desk:w-full">
+              <StaggeredText
+                text={HEADING}
+                delay={0.1}
+                duration={0.7}
+                font={HEADING_FONT}
+                color="var(--bone)"
+                style={{ width: "100%" }}
+              />
+            </div>
           </div>
           <div className="w-full flex relative justify-start items-center content-center shrink-0 gap-57.5 overflow-clip">
             <div className="contents min-w-0">
@@ -100,16 +105,6 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
               <div className="w-4 h-4 block relative shrink-0">
                 <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend" />
                 <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px]" />
-              </div>
-            </div>
-          </div>
-          <div className="contents min-w-0">
-            <div className="h-58 aspect-[0.767241/1] flex absolute -top-[10.9375rem] left-0 z-1 rounded-[5px] justify-center items-start content-start shrink-0 gap-2.5 overflow-clip max-desk:h-[122.5px] max-desk:-top-[4.3125rem] tab:max-desk:-top-[5.9375rem] max-tab:h-[92.5px]">
-              <div className="h-full block absolute top-0 inset-x-0 min-w-0 rounded-[5px]">
-                <img loading="lazy" decoding="async" className="w-full h-full block rounded-[5px] overflow-clip object-cover" alt="" height="1280" sizes="178px" src="/assets/media/images/68c91cf88797.webp" srcSet="/assets/media/images/8ef7501244a9.png 716w, /assets/media/images/68c91cf88797.webp 896w" width="896" />
-              </div>
-              <div className="basis-full shrink-0 h-full block relative">
-                <video className="w-full h-full block overflow-clip object-cover bg-ink" autoPlay loop muted playsInline poster="/assets/media/images/411edd68feb0.png" preload="auto" src="/assets/media/videos/c2a4b4a0ce34.mp4" />
               </div>
             </div>
           </div>

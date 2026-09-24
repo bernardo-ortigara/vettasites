@@ -117,6 +117,9 @@ export default function StaggeredText({
 
   const halfway = useMemo(() => text.length / 2, [text.length]);
   const weight = weightOverride ?? (variable ? 700 : 500);
+  // Cada linha é um span separado, então o justify do CSS não alcança: estica
+  // as linhas uma a uma, menos a última, como num parágrafo justificado.
+  const justify = resolvedFont.textAlign === "justify";
 
   return (
     <>
@@ -153,6 +156,7 @@ export default function StaggeredText({
         {lines.map((line, i) => {
           const offset = lines.slice(0, i).reduce((sum, l) => sum + l.length, 0);
           const opacity = halfOpacity && offset >= halfway ? 0.5 : 1;
+          const stretch = justify && i < lines.length - 1;
           return (
             <span
               key={i}
@@ -173,6 +177,7 @@ export default function StaggeredText({
                   display: "inline-block",
                   whiteSpace: "pre-wrap",
                   ...resolvedFont,
+                  ...(stretch && { width: "100%", textAlignLast: "justify" }),
                   color,
                   opacity,
                   fontWeight: weight,
@@ -183,7 +188,7 @@ export default function StaggeredText({
                   lineHeight: resolvedFont.lineHeight
                 }}
               >
-                {line || " "}
+                {(stretch ? line.trimEnd() : line) || " "}
               </motion.span>
             </span>
           );
