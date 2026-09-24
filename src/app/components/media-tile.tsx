@@ -48,13 +48,13 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
                   </div>
                 </div>
                 <motion.div
-                  className="w-144 flex relative rounded-[5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden max-tab:w-full max-tab:flex-1"
+                  className="w-160 flex relative rounded-[5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden max-tab:w-full max-tab:flex-1"
                   animate={hoverZoom ? { scale: hovered ? 1.1 : 1 } : undefined}
                   transition={HOVER_SPRING}
                 >
-                  <div className="basis-full shrink-0 h-78 block relative rounded-[5px] overflow-clip max-desk:flex-1">
+                  <div className="basis-full shrink-0 h-[21.625rem] block relative rounded-[5px] overflow-clip max-desk:flex-1">
                     <div className="h-full block absolute top-0 inset-x-0 rounded-[5px]">
-                      <img loading="lazy" decoding="async" className={cn("w-full h-78 block rounded-[5px] overflow-clip object-cover", styles.className6)} alt={d.alt2} height={d.height2} sizes="576px" src={d.imgSrc2} srcSet={d.srcSet2} width={d.width2} />
+                      <img loading="lazy" decoding="async" className={cn("w-full h-[21.625rem] block rounded-[5px] overflow-clip object-cover", styles.className6)} alt={d.alt2} height={d.height2} sizes="640px" src={d.imgSrc2} srcSet={d.srcSet2} width={d.width2} />
                     </div>
                   </div>
                 </motion.div>

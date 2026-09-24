@@ -61,6 +61,9 @@ export function StackedCards({
     window.addEventListener("resize", sync);
     const observer = new ResizeObserver(sync);
     observer.observe(el);
+    // Conteúdo acima (imagens, fontes) muda a altura da página sem mexer nos cards:
+    // sem isso o início do empilhamento fica medido no lugar antigo.
+    observer.observe(document.body);
     return () => {
       if (queued) cancelAnimationFrame(queued);
       window.removeEventListener("scroll", onScroll);
