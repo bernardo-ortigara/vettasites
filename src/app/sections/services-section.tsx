@@ -92,11 +92,11 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
               />
             </div>
           </div>
-          <div className="w-full flex relative justify-start items-center content-center shrink-0 gap-57.5 overflow-clip">
+          <div className="w-full flex relative pl-[5.675%] justify-start items-center content-center shrink-0 gap-57.5 overflow-clip max-desk:pl-0">
             <div className="contents min-w-0">
               <ExploreButton href="/about" label="Nossos serviços" tone="light" className="block relative shrink-0" />
             </div>
-            <div className="w-[61%] flex relative justify-center items-center content-center grow shrink-0 basis-0 gap-75 overflow-clip max-tab:w-auto tab:max-desk:w-1/3">
+            <div className="w-[61%] flex relative pr-10 justify-end items-center content-center grow shrink-0 basis-0 gap-75 overflow-clip max-desk:pr-0 max-desk:justify-center max-tab:w-auto tab:max-desk:w-1/3">
               <div className="w-4 h-4 block relative shrink-0">
                 <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend" />
                 <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px]" />

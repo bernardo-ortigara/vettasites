@@ -176,12 +176,14 @@ export function ScrollZoom({
   to = 1,
   className,
   innerClassName,
+  style,
   children
 }: {
   from?: number;
   to?: number;
   className?: string;
   innerClassName?: string;
+  style?: CSSProperties;
   children?: ReactNode;
 }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -189,7 +191,7 @@ export function ScrollZoom({
   const scale = useTransform(scrollYProgress, [0, 1], [from, to], { clamp: true });
 
   return (
-    <div ref={ref} className={className}>
+    <div ref={ref} className={className} style={style}>
       <motion.div
         className={innerClassName}
         style={{ scale, transformOrigin: "center", willChange: "transform" }}
