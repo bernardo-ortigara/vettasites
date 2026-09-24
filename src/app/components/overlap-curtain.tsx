@@ -47,8 +47,11 @@ export default function OverlapCurtain({
 
 const TAN = Math.tan((Math.abs(SKEW_MAX) * Math.PI) / 180);
 const FLAG = { h: 56, w: 55, poleX: 0.17, inset: 24 };
-// Desenho espelhado (scaleX -1): o pé de apoio fica a 64% da largura
-const CLIMBER = { h: 64, w: 59, footX: 0.64 };
+// Pé de trás (apoio) e pé da frente, em fração da caixa do desenho. A reta entre
+// eles sobe a ~63°; giramos o boneco no pé de trás até ela seguir a borda.
+const CLIMBER = { h: 64, w: 59, back: { x: 0.609, y: 0.988 }, front: { x: 0.814, y: 0.615 } };
+const FEET_ANGLE =
+  (Math.atan2((CLIMBER.back.y - CLIMBER.front.y) * CLIMBER.h, (CLIMBER.front.x - CLIMBER.back.x) * CLIMBER.w) * 180) / Math.PI;
 
 /**
  * Bandeira e alpinista presos à borda de cima da cortina. A borda é uma reta que
@@ -80,8 +83,10 @@ function Summit({ progress }: { progress: MotionValue<number> }) {
     const t = clamp((p - 0.05) / 0.45);
     return width * 0.5 + (flagFoot - 90 - width * 0.5) * t;
   });
-  const climberX = useTransform(climberFoot, (x) => x - CLIMBER.w * CLIMBER.footX);
-  const climberY = useTransform(() => edgeAt(progress.get(), climberFoot.get()) - CLIMBER.h + 4);
+  const climberX = useTransform(climberFoot, (x) => x - CLIMBER.w * CLIMBER.back.x);
+  const climberY = useTransform(() => edgeAt(progress.get(), climberFoot.get()) - CLIMBER.h * CLIMBER.back.y);
+  // Borda inclina de 0° a SKEW_MAX junto com a rolagem
+  const climberRotate = useTransform(progress, (p) => FEET_ANGLE + SKEW_MAX * clamp(p));
   const climberOpacity = useTransform(progress, [0.03, 0.15], [0, 1]);
 
   return (
@@ -102,7 +107,13 @@ function Summit({ progress }: { progress: MotionValue<number> }) {
             width={CLIMBER.w}
             height={CLIMBER.h}
             className="block absolute top-0 left-0"
-            style={{ x: climberX, y: climberY, scaleX: -1, opacity: climberOpacity }}
+            style={{
+              x: climberX,
+              y: climberY,
+              rotate: climberRotate,
+              transformOrigin: `${CLIMBER.back.x * 100}% ${CLIMBER.back.y * 100}%`,
+              opacity: climberOpacity
+            }}
           />
         </>
       ) : null}
