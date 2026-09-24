@@ -45,9 +45,9 @@ export const clientLogoStyles: ClientLogoStyles[] = [
     { className: "w-56", className2: "w-56", className3: "w-56", className5: "aspect-[auto_416/52]" }
 ];
 export const mediaTileStyles: MediaTileStyles[] = [
-    { className: "w-full h-[30.9rem] sticky top-12.5 max-desk:top-6 max-tab:h-[30.5625rem]", className2: "h-full", className3: "z-1", className5: "aspect-[auto_1440/778]", className6: "aspect-[auto_1440/778]", className7: "w-auto", className8: "w-auto", className9: "w-3/5", className10: "w-auto", className11: "w-auto" },
-    { className: "w-full h-[30.9rem] sticky top-22.5 max-desk:top-16 max-tab:h-[30.5625rem]", className2: "h-full", className3: "z-2", className5: "aspect-[auto_1440/777]", className6: "aspect-[auto_1440/777]", className7: "w-auto", className8: "w-auto", className9: "w-[58%]", className10: "w-auto", className11: "w-auto" },
-    { className: "w-full h-[30.9rem] sticky top-32.5 max-desk:top-26 max-tab:h-[30.5625rem]", className2: "h-full", className3: "z-3", className5: "aspect-[auto_1440/779]", className6: "aspect-[auto_1440/779]", className7: "w-auto", className8: "w-auto", className9: "w-[54.5%]", className10: "w-auto", className11: "w-auto" },
+    { className: "w-full h-[30.9rem] sticky top-12.5 max-desk:top-6 max-tab:h-auto", className2: "h-full", className3: "z-1", className5: "aspect-[auto_1440/778]", className6: "aspect-[auto_1440/778]", className7: "w-auto", className8: "w-auto", className9: "w-3/5", className10: "w-auto", className11: "w-auto" },
+    { className: "w-full h-[30.9rem] sticky top-22.5 max-desk:top-16 max-tab:h-auto", className2: "h-full", className3: "z-2", className5: "aspect-[auto_1440/777]", className6: "aspect-[auto_1440/777]", className7: "w-auto", className8: "w-auto", className9: "w-[58%]", className10: "w-auto", className11: "w-auto" },
+    { className: "w-full h-[30.9rem] sticky top-32.5 max-desk:top-26 max-tab:h-auto", className2: "h-full", className3: "z-3", className5: "aspect-[auto_1440/779]", className6: "aspect-[auto_1440/779]", className7: "w-auto", className8: "w-auto", className9: "w-[54.5%]", className10: "w-auto", className11: "w-auto" },
     { className: "w-full relative", className3: "z-3", className4: "bg-bone", className5: "aspect-[auto_1440/778]", className6: "aspect-[auto_1440/778]", className7: "w-auto", className8: "w-auto", className9: "w-[55.5%]", className10: "w-auto", className11: "w-auto" }
 ];
 export const mediaCardStyles: MediaCardStyles[] = [
