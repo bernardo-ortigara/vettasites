@@ -28,8 +28,8 @@ export default function MediaCard({ d, styles }: { d: MediaCardData; styles: Med
       <div className="w-full block relative z-3 shrink-0">
         <div className="w-full flex relative flex-col justify-start items-center content-center gap-6 overflow-clip bg-ink">
           <div className="w-full flex relative justify-between items-start content-start shrink-0 max-desk:flex-col max-desk:justify-start max-desk:gap-5">
-            <div className="w-65 flex relative max-w-65 justify-center items-center content-center grow shrink-0 basis-0 gap-2.5 overflow-clip max-desk:grow-[initial] max-desk:basis-[initial]">
-              <div className="w-65 flex relative flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
+            <div className="w-75 flex relative max-w-75 justify-center items-center content-center grow shrink-0 basis-0 gap-2.5 overflow-clip max-desk:grow-[initial] max-desk:basis-[initial]">
+              <div className="w-75 flex relative flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                 <h2 className="hidden max-desk:block max-desk:text-bone max-desk:font-display max-desk:text-3xl max-desk:font-bold max-desk:leading-7.5 max-desk:tracking-[-0.045em] tab:max-desk:text-[4.375rem] tab:max-desk:leading-17.5 tab:max-desk:tracking-[-0.05em]">
                   {d.title2}
                 </h2>
