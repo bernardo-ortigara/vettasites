@@ -2,7 +2,7 @@
 
 import { motion, useAnimationControls, useInView } from "motion/react";
 import { useBreakpointValue } from "./motion-primitives";
-import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
 
 export type StaggeredFont = {
@@ -44,6 +44,7 @@ export default function StaggeredText({
   color,
   variable = false,
   halfOpacity = false,
+  highlight,
   weight: weightOverride,
   ghostWeight = 400,
   indent,
@@ -57,6 +58,8 @@ export default function StaggeredText({
   color?: string;
   variable?: boolean;
   halfOpacity?: boolean;
+  /** Palavras pintadas com o degradê de destaque da marca */
+  highlight?: string[];
   weight?: number;
   ghostWeight?: number;
   indent?: { base?: string; tab?: string; desk?: string };
@@ -114,6 +117,29 @@ export default function StaggeredText({
     }));
     setHasAnimated(true);
   }, [inView, hasAnimated, lines.length, controls, delay, duration]);
+
+  // Trechos marcados pela posição no texto inteiro, para sobreviver a qualquer quebra de linha
+  const highlighted = useMemo(() => {
+    const marks = new Array<boolean>(text.length).fill(false);
+    for (const phrase of highlight ?? []) {
+      for (let at = text.indexOf(phrase); at !== -1; at = text.indexOf(phrase, at + phrase.length)) {
+        marks.fill(true, at, at + phrase.length);
+      }
+    }
+    return marks;
+  }, [text, highlight]);
+  const renderLine = (line: string, offset: number) => {
+    if (!highlight?.length) return line;
+    const parts: ReactNode[] = [];
+    let start = 0;
+    for (let k = 1; k <= line.length; k++) {
+      if (k < line.length && highlighted[offset + k] === highlighted[offset + start]) continue;
+      const chunk = line.slice(start, k);
+      parts.push(highlighted[offset + start] ? <span key={start} className="vetta-highlight">{chunk}</span> : chunk);
+      start = k;
+    }
+    return parts;
+  };
 
   const halfway = useMemo(() => text.length / 2, [text.length]);
   const weight = weightOverride ?? (variable ? 700 : 500);
@@ -188,7 +214,7 @@ export default function StaggeredText({
                   lineHeight: resolvedFont.lineHeight
                 }}
               >
-                {(stretch ? line.trimEnd() : line) || " "}
+                {renderLine(stretch ? line.trimEnd() : line, offset) || " "}
               </motion.span>
             </span>
           );

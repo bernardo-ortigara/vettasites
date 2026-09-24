@@ -64,6 +64,7 @@
   --background: var(--night);
   --foreground: var(--bone);
   --gradient-vetta: linear-gradient(90deg, var(--vetta-sun), var(--vetta-ember), #000000);
+  --gradient-highlight: linear-gradient(90deg, var(--vetta-sun), var(--vetta-ember));
 }
 
 :root {
@@ -155,4 +156,13 @@ textarea.form-field-input::-webkit-resizer {
   background: url("data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2214%22 height=%2214%22><path d=%22m1.5 8 7-7M9 5.5l-3 3%22 stroke=%22%23999%22 stroke-width=%221.5%22 stroke-linecap=%22round%22 fill=%22none%22></path></svg>") no-repeat;
 }
 
+}
+
+/* Palavra em destaque: degradê sol → brasa recortado no texto */
+@utility vetta-highlight {
+  background-image: var(--gradient-highlight);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }

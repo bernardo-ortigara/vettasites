@@ -8,6 +8,8 @@ import OverlapCurtain from "../components/overlap-curtain";
 const HEADING =
   "              Sites institucionais, landing pages e otimização para o Google, feitos para marcas que querem ser encontradas e lembradas.";
 
+const HIGHLIGHT = ["encontradas e lembradas."];
+
 const HEADING_FONT: ResponsiveFont = {
   base: {
     fontFamily: "var(--font-display)",
@@ -85,6 +87,7 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
                 duration={0.7}
                 font={HEADING_FONT}
                 color="var(--bone)"
+                highlight={HIGHLIGHT}
                 style={{ width: "100%" }}
               />
             </div>
