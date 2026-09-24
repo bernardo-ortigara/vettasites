@@ -51,7 +51,7 @@ export const mediaTileStyles: MediaTileStyles[] = [
     { className: "w-full relative", className3: "z-3", className4: "bg-bone", className5: "aspect-[auto_1440/778]", className6: "aspect-[auto_1440/778]", className7: "w-auto", className8: "w-auto", className9: "w-[55.5%]", className10: "w-auto", className11: "w-auto" }
 ];
 export const mediaCardStyles: MediaCardStyles[] = [
-    { className: "aspect-[auto_1280/896]", className3: "2xl:aspect-[auto_1280/896]" },
-    { className: "aspect-[auto_896/1280]", className2: "2xl:left-0", className3: "2xl:aspect-[auto_896/1280]" },
-    { className: "aspect-[auto_1024/1024]", className2: "2xl:left-0", className3: "2xl:aspect-[auto_1024/1024]" }
+    { className: "aspect-[auto_1440/778]", className3: "2xl:aspect-[auto_1440/778]" },
+    { className: "aspect-[auto_1440/824]", className2: "2xl:left-0", className3: "2xl:aspect-[auto_1440/824]" },
+    { className: "aspect-[auto_1440/791]", className2: "2xl:left-0", className3: "2xl:aspect-[auto_1440/791]" }
 ];
