@@ -7,11 +7,13 @@ export default function ExploreButton({
   href,
   label = "Explore Now",
   tone = "light",
+  gap = 144,
   className
 }: {
   href: string;
   label?: string;
   tone?: "light" | "dark";
+  gap?: number;
   className?: string;
 }) {
   const [hovered, setHovered] = useState(false);
@@ -47,7 +49,7 @@ export default function ExploreButton({
           flexDirection: "row",
           justifyContent: "flex-start",
           alignItems: "flex-start",
-          gap: 144,
+          gap,
           width: "min-content",
           overflow: "clip"
         }}

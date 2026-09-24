@@ -4,6 +4,7 @@ import NavLink, { type NavLinkData } from "./nav-link";
 import MobileMenu from "./mobile-menu";
 import { navLinkStyles } from "../_styles";
 import { Appear } from "./motion-primitives";
+import ExploreButton from "./explore-button";
 import { cn } from "../../lib/utils";
 
 const EASE_UI = [0.44, 0, 0.34, 0.98] as const;
@@ -21,14 +22,17 @@ export default function SiteHeader({
   active,
   navLinks = NAV_LINKS
 }: {
-  variant?: "hero" | "page" | "fluid";
+  variant?: "home" | "hero" | "page" | "fluid";
   active?: string;
   navLinks?: NavLinkData[];
 }) {
   const isFluid = variant === "fluid";
-  const isHero = variant === "hero" || isFluid;
+  const isHome = variant === "home";
+  const isHero = variant === "hero" || isFluid || isHome;
 
-  const wrapperClass = isFluid
+  const wrapperClass = isHome
+    ? "block relative z-2 shrink-0 col-span-12 row-start-1 max-desk:hidden"
+    : isFluid
     ? "h-17.5 block absolute left-6 right-6 z-2 shrink-0 max-desk:hidden"
     : variant === "hero"
       ? "w-308 h-17.5 block absolute left-6 z-2 shrink-0 max-desk:hidden"
@@ -48,15 +52,21 @@ export default function SiteHeader({
           initial={isHero ? { opacity: 0.001, y: -100 } : { opacity: 0.001 }}
           transition={isHero ? { ...SPRING, delay: 0.3 } : { type: "tween", duration: 0.5, delay: 0, ease: EASE_UI }}
         >
-          <header className={cn("flex relative justify-between items-center content-center overflow-clip max-desk:hidden", variant === "hero" ? "w-308" : "w-full")}>
-            <div className={cn(sideClass, "flex relative justify-start items-center content-center shrink-0 gap-2.5 overflow-clip max-desk:hidden")}>
+          <header
+            className={cn(
+              "relative items-center content-center max-desk:hidden",
+              isHome ? "grid grid-cols-12 gap-x-6" : "flex justify-between overflow-clip",
+              variant === "hero" ? "w-308" : "w-full"
+            )}
+          >
+            <div className={cn(isHome ? "col-span-2" : sideClass, "flex relative justify-start items-center content-center shrink-0 gap-2.5 overflow-clip max-desk:hidden")}>
               <a className="w-24.5 h-4.5 block relative shrink-0 overflow-clip text-accent cursor-pointer max-desk:hidden" href="/">
                 <div className="w-24.5 h-full block absolute top-0 left-0 max-desk:hidden">
                   <img decoding="async" className="w-full h-4.5 block overflow-clip object-contain object-left aspect-[auto_1346/230] max-desk:hidden" alt="Vetta Sites" height="230" src="/assets/media/logo/vetta-horizontal-bone.svg" width="1346" />
                 </div>
               </a>
             </div>
-            <div className="w-[30.8375rem] block relative shrink-0 max-desk:hidden">
+            <div className={cn("w-[30.8375rem] block relative shrink-0 max-desk:hidden", isHome && "col-start-4 col-span-6 justify-self-center")}>
               <nav className="flex relative justify-center items-center content-center gap-20 max-desk:hidden">
                 {navLinks.map((d, i) => (
                   <Appear
@@ -73,6 +83,11 @@ export default function SiteHeader({
                 ))}
               </nav>
             </div>
+            {isHome ? (
+              <div className="col-start-11 col-span-2 justify-self-end block relative shrink-0 max-desk:hidden">
+                <ExploreButton href="/contact" label="Saiba mais" tone="light" gap={75} />
+              </div>
+            ) : (
             <div className={cn(sideClass, "block relative shrink-0 max-desk:hidden")}>
               <a className={cn(ceoCardClass, "flex relative py-[0.1875rem] pr-2 pl-[0.1875rem] rounded-[5px] justify-start items-center content-center gap-2.5 overflow-clip text-accent bg-bone-dim cursor-pointer max-desk:hidden")} href="/contact">
                 <div className="w-16 h-16 flex relative rounded-[2.5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden bg-night max-desk:hidden">
@@ -111,6 +126,7 @@ export default function SiteHeader({
                 </div>
               </a>
             </div>
+            )}
           </header>
         </Appear>
       </div>

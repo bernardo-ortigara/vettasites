@@ -24,7 +24,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
   return (
     <motion.section
       style={{ opacity, y }}
-      className="w-full h-screen flex sticky top-0 z-1 p-6 flex-col justify-between items-center content-center shrink-0 overflow-clip"
+      className="w-full h-screen flex sticky top-0 z-1 p-6 flex-col justify-between items-center content-center shrink-0 overflow-clip desk:grid desk:grid-cols-12 desk:grid-rows-[auto_1fr_auto] desk:gap-6 desk:items-stretch"
     >
       <Appear
         className="h-full block absolute top-0 inset-x-0 z-0 min-w-0 shrink-0 overflow-clip"
@@ -38,9 +38,9 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
       <div className="hidden desk:block absolute inset-0 z-0">
         <HeroLiquid src="/assets/media/images/816e2cb276ac.png" />
       </div>
-      <SiteHeader variant="hero" active="/" navLinks={navLink2Data} />
-      <div className="w-full h-17.5 block relative shrink-0 overflow-clip" />
-      <div className="w-[249.1px] h-[8.2375rem] flex absolute top-[12.0625rem] left-6 z-1 min-w-0 max-w-360 flex-col justify-center items-start content-start shrink-0 gap-10 max-tab:w-full max-desk:relative max-desk:inset-0 tab:max-desk:w-180">
+      <SiteHeader variant="home" active="/" navLinks={navLink2Data} />
+      <div className="w-full h-17.5 block relative shrink-0 overflow-clip desk:hidden" />
+      <div className="w-[249.1px] h-[8.2375rem] flex relative z-1 min-w-0 max-w-360 flex-col justify-center items-start content-start shrink-0 gap-10 max-tab:w-full tab:max-desk:w-180 desk:col-span-3 desk:row-start-2 desk:self-center">
         <div className="w-[249.1px] flex relative flex-col justify-center items-start content-start self-stretch shrink-0 max-tab:w-full max-desk:[align-self:initial] tab:max-desk:w-180">
           <Appear
             className="w-full max-w-75 flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]"
@@ -81,42 +81,10 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
           <ExploreButton href="/about" label="Saiba mais" tone="light" />
         </Appear>
       </div>
-      <div className="w-full max-w-360 flex relative flex-col justify-center items-start content-start shrink-0 gap-6.5 max-desk:gap-14">
-        <div className="flex relative pt-7.5 pl-60 flex-col justify-center items-start content-start shrink-0 gap-1.5 max-desk:pl-0">
+      <div className="w-full max-w-360 flex relative flex-col justify-center items-start content-start shrink-0 gap-6.5 max-desk:gap-14 desk:contents">
+        <div className="w-full flex relative justify-between items-end content-end shrink-0 desk:contents max-desk:flex-col max-desk:justify-start max-desk:items-start max-desk:content-start max-desk:gap-7.5">
           <Appear
-            className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap"
-            initial={{ opacity: 0.001, y: 10 }}
-            transition={{ type: "tween", duration: 0.5, delay: 0.9, ease: EASE_SERVICES }}
-          >
-            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
-              <span className="inline text-bone-soft">
-                01/
-              </span>
-              {" Criatividade"}
-            </p>
-          </Appear>
-          <Appear
-            className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap"
-            initial={{ opacity: 0.001, y: 8 }}
-            transition={{ type: "tween", duration: 0.5, delay: 1.1, ease: EASE_SERVICES }}
-          >
-            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
-              Performance
-            </p>
-          </Appear>
-          <Appear
-            className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap"
-            initial={{ opacity: 0.001, y: 6 }}
-            transition={{ type: "tween", duration: 0.5, delay: 1.3, ease: EASE_SERVICES }}
-          >
-            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
-              Ascenção
-            </p>
-          </Appear>
-        </div>
-        <div className="w-full flex relative justify-between items-end content-end shrink-0 max-desk:flex-col max-desk:justify-start max-desk:items-start max-desk:content-start max-desk:gap-7.5">
-          <Appear
-            className="w-[196.7px] flex relative justify-center items-end content-end shrink-0 gap-2.5 overflow-clip max-tab:w-full max-desk:justify-between max-desk:order-[1] max-desk:gap-[initial] tab:max-desk:w-180"
+            className="w-[196.7px] flex relative justify-center items-end content-end shrink-0 gap-2.5 overflow-clip desk:col-span-2 desk:row-start-3 desk:self-end max-tab:w-full max-desk:justify-between max-desk:order-[1] max-desk:gap-[initial] tab:max-desk:w-180"
             initial={{ opacity: 0.001 }}
             transition={{ ...SPRING, delay: 0.5 }}
           >
@@ -144,12 +112,21 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
               </p>
             </div>
           </Appear>
-          <div className="contents min-w-0">
-            <Appear
-              className="w-231 block relative inset-0 shrink-0 aspect-[614/191] max-tab:w-full tab:max-desk:w-180"
-              initial={{ opacity: 0.001, y: wordmarkOffset }}
-              transition={{ ...SPRING, delay: 0.1 }}
-            >
+          <Appear
+            className="flex relative items-end gap-3 shrink-0 max-tab:w-full tab:max-desk:w-180 desk:col-start-3 desk:col-span-10 desk:row-start-3 desk:justify-self-end desk:self-end desk:w-full desk:max-w-[67.1875rem]"
+            initial={{ opacity: 0.001, y: wordmarkOffset }}
+            transition={{ ...SPRING, delay: 0.1 }}
+          >
+            <img
+              className="hidden desk:block w-[26.4%] h-auto shrink-0 aspect-[284/179] mb-1.5"
+              alt=""
+              aria-hidden="true"
+              src="/assets/media/logo/vetta-montanha-bone.svg"
+              width="284"
+              height="179"
+              decoding="async"
+            />
+            <div className="w-full block relative shrink-0 aspect-[614/191] desk:w-auto desk:grow desk:basis-0 desk:min-w-0">
               <h1 className="h-full block absolute top-0 inset-x-0">
                 <img
                   className="w-full h-full block object-contain object-bottom"
@@ -161,8 +138,8 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
                   decoding="async"
                 />
               </h1>
-            </Appear>
-          </div>
+            </div>
+          </Appear>
         </div>
       </div>
       <Appear
