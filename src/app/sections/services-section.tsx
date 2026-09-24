@@ -120,10 +120,6 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
           </ScrollReveal>
         ))}
       </div>
-      {/* Montanha do Figma no pé da seção: 557×351 em 1440, 181px para fora da borda e 8px sobre Planos */}
-      <div aria-hidden="true" className="w-[26.1%] block absolute left-0 -bottom-[0.55vw] z-0 overflow-hidden pointer-events-none max-tab:hidden">
-        <img className="w-[148.14%] max-w-none h-auto block -ml-[48.14%]" alt="" width="557" height="351" src="/assets/media/svg/montanha-alpinista.svg" />
-      </div>
     </section>
   );
 }

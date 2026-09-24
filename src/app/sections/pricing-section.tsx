@@ -9,7 +9,7 @@ const EASE_UI = [0.44, 0, 0.34, 0.98] as const;
 export default function PricingSection({ planFeaturesEssential = planFeaturesEssentialContent, planFeaturesStandard = planFeaturesStandardContent, planFeaturesComplete = planFeaturesCompleteContent } = {}) {
   return (
     <section className="w-full flex relative z-1 pt-6 pb-30 px-6 flex-col justify-start items-center content-center shrink-0 gap-15 bg-bone tab:max-desk:gap-20 max-tab:pb-20">
-      <OverlapCurtain />
+      <OverlapCurtain summit />
       <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-20">
         <div className="contents min-w-0">
           <div className="w-full block relative shrink-0">
