@@ -77,17 +77,19 @@ function Summit({ progress }: { progress: MotionValue<number> }) {
   const flagFoot = width - FLAG.inset - FLAG.w * (1 - FLAG.poleX);
   const flagY = useTransform(progress, (p) => edgeAt(p, flagFoot) - FLAG.h);
 
-  // Começa no meio da página e chega a um passo da bandeira na metade da
-  // transição, enquanto a borda ainda está no meio da tela
+  // Começa a dois terços da página e chega a um passo da bandeira quando a
+  // borda ainda está no terço de cima da tela; ~0,8px de caminhada por px rolado
   const climberFoot = useTransform(progress, (p) => {
-    const t = clamp((p - 0.05) / 0.45);
-    return width * 0.5 + (flagFoot - 90 - width * 0.5) * t;
+    const t = clamp((p - 0.05) / 0.5);
+    return width * 0.65 + (flagFoot - 90 - width * 0.65) * t;
   });
   const climberX = useTransform(climberFoot, (x) => x - CLIMBER.w * CLIMBER.back.x);
   const climberY = useTransform(() => edgeAt(progress.get(), climberFoot.get()) - CLIMBER.h * CLIMBER.back.y);
   // Borda inclina de 0° a SKEW_MAX junto com a rolagem
   const climberRotate = useTransform(progress, (p) => FEET_ANGLE + SKEW_MAX * clamp(p));
-  const climberOpacity = useTransform(progress, [0.03, 0.15], [0, 1]);
+  // Função em vez de faixa: a faixa o motion joga para o ScrollTimeline nativo,
+  // que sai de sincronia com a posição e faz o boneco piscar
+  const climberOpacity = useTransform(progress, (p) => clamp((p - 0.03) / 0.2));
 
   return (
     <div ref={ref} aria-hidden="true" className="w-full h-0 block absolute top-0 left-0 pointer-events-none max-tab:hidden">
