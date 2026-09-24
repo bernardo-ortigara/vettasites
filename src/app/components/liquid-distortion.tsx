@@ -254,17 +254,22 @@ export default function LiquidDistortion({
   resolution = 5,
   cursorSize = 0.5,
   cursorPower = 0.5,
-  distortionPower = 0.4
+  distortionPower = 0.4,
+  paused = false
 }: {
   src: string;
   resolution?: number;
   cursorSize?: number;
   cursorPower?: number;
   distortionPower?: number;
+  paused?: boolean;
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const rafRef = useRef<number | undefined>(undefined);
+  const pausedRef = useRef(paused);
+  const syncPlaybackRef = useRef<(() => void) | undefined>(undefined);
+  pausedRef.current = paused;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -611,9 +616,10 @@ export default function LiquidDistortion({
     };
 
     const syncPlayback = () => {
-      if (onScreen && document.visibilityState === "visible") start();
+      if (onScreen && !pausedRef.current && document.visibilityState === "visible") start();
       else stop();
     };
+    syncPlaybackRef.current = syncPlayback;
 
     const visibility = new IntersectionObserver(
       ([entry]) => {
@@ -652,6 +658,10 @@ export default function LiquidDistortion({
       if (imageTexture) gl.deleteTexture(imageTexture);
     };
   }, [src, resolution, cursorSize, cursorPower, distortionPower]);
+
+  useEffect(() => {
+    syncPlaybackRef.current?.();
+  }, [paused]);
 
   return (
     <div

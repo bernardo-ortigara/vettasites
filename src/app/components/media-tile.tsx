@@ -42,7 +42,7 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
           <CardScale index={index} className={cn("w-full block relative grow shrink-0 basis-0", styles.className3)} id={d.id}>
             <div className={cn("h-[30.9rem] flex relative flex-col justify-center items-center content-center gap-2.5 overflow-clip max-tab:h-[30.5625rem]", styles.className4)}>
               <div className="w-full h-113 flex relative rounded-[5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-clip bg-night max-tab:h-[27.9125rem] max-tab:p-7.5 max-tab:flex-1">
-                <div className="w-[110%] h-[31.075rem] block absolute opacity-95 min-w-0 shrink-0 overflow-clip [filter:blur(8px)] max-tab:h-[491.3px]">
+                <div className="w-[110%] h-[31.075rem] block absolute opacity-95 min-w-0 shrink-0 overflow-clip [filter:blur(8px)] will-change-transform transform-[translateZ(0)] max-tab:h-[491.3px]">
                   <div className="h-full block absolute top-0 inset-x-0">
                     <img loading="lazy" decoding="async" className={cn("w-full h-[31.0625rem] block overflow-clip object-cover max-tab:h-[30.6875rem]", styles.className5)} alt={d.alt} height={d.height} sizes="calc(max(min(max((min(100vw - 48px, 1440px) - 20px) / 3, 1px), 892px) - 92px, 1px) * 1.1)" src={d.imgSrc} srcSet={d.srcSet} width={d.width} />
                   </div>

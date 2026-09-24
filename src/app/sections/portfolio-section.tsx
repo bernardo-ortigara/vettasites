@@ -12,8 +12,8 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
     <section className="w-full flex relative z-1 pt-6 pb-30 px-6 flex-col justify-start items-center content-center shrink-0 gap-20 bg-bone max-desk:pb-20 max-desk:gap-15">
       <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-20">
         <div className="contents min-w-0">
-          <div className="w-308 block relative shrink-0 max-tab:w-full tab:max-desk:w-180">
-            <div className="w-308 h-[1.825rem] flex relative flex-col justify-center items-center content-center gap-3 max-tab:w-full tab:max-desk:w-180">
+          <div className="w-full block relative shrink-0">
+            <div className="w-full h-[1.825rem] flex relative flex-col justify-center items-center content-center gap-3">
               <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-edge" />
               <div className="w-full flex relative justify-between items-center content-center shrink-0">
                 <div className="flex relative justify-center items-center content-center shrink-0 gap-1.5">
