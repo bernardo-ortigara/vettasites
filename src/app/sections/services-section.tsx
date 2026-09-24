@@ -113,7 +113,7 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
           </div>
         </div>
       </div>
-      <div className="w-full max-w-360 flex relative pl-23.5 flex-col justify-center items-center content-center shrink-0 gap-17.5 overflow-clip max-desk:pl-0">
+      <div className="w-full max-w-360 flex relative pl-23.5 flex-col justify-center items-center content-center shrink-0 gap-17.5 overflow-clip max-desk:pl-0 max-tab:gap-10">
         {mediaCardData.map((d, i) => (
           <ScrollReveal key={i} className="w-full" transition={{ type: "tween", duration: 1.2, delay: 0, ease: EASE_UI }}>
             <MediaCard d={d} styles={mediaCardStyles[i]} />
