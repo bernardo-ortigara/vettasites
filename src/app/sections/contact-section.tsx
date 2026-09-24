@@ -16,7 +16,7 @@ export default function ContactSection() {
     <div className="h-25 flex relative justify-center items-center content-center shrink-0 gap-2.5 overflow-clip [overflow-clip-margin:0.2em]">
       <div className="w-auto flex relative [mix-blend-mode:difference] flex-col justify-start shrink-0 whitespace-pre text-nowrap max-tab:w-auto tab:max-desk:w-auto">
         <h2
-          className="block text-bone font-display text-[6.25rem] font-bold leading-25 tracking-[-0.05em] max-tab:text-3xl max-tab:leading-7.5 max-tab:tracking-[-0.045em] tab:max-desk:text-[4.375rem] tab:max-desk:leading-[4.375rem]"
+          className="block text-bone font-display text-[6.25rem] font-bold leading-25 tracking-[-0.05em] max-tab:text-[3.5rem] max-tab:leading-14 max-tab:tracking-[-0.05em] tab:max-desk:text-[4.375rem] tab:max-desk:leading-[4.375rem]"
 
         >
           {HEADLINE}
@@ -28,7 +28,7 @@ export default function ContactSection() {
   return (
     <div className="w-full block relative z-1 shrink-0">
       <section className="flex relative p-6 flex-col justify-start items-center content-center gap-25 bg-bone">
-        <div className="w-full h-200 flex relative rounded-[5px] flex-col justify-center items-center content-center shrink-0 gap-2.5 overflow-clip bg-night">
+        <div className="w-full h-200 flex relative rounded-[5px] max-tab:h-140 flex-col justify-center items-center content-center shrink-0 gap-2.5 overflow-clip bg-night">
           <Parallax
             speed={90}
             className="h-740 block absolute top-[-2159.69px] inset-x-0 opacity-64 min-w-0 shrink-0 overflow-clip"
@@ -46,7 +46,7 @@ export default function ContactSection() {
             </div>
           </Parallax>
 
-          <div className="w-full flex relative pt-32.5 flex-col justify-center items-center content-center shrink-0 gap-30 overflow-clip">
+          <div className="w-full flex relative pt-32.5 flex-col justify-center items-center content-center shrink-0 gap-30 overflow-clip max-tab:pt-20 max-tab:gap-23">
             <div className="w-full flex relative justify-center items-center content-center shrink-0 gap-7.5 overflow-clip max-tab:gap-0">
               <Markers className="max-tab:hidden" />
 
@@ -66,9 +66,9 @@ export default function ContactSection() {
 
             <ExploreButton href="/contact" label="Falar com a Vetta" tone="light" className="block relative shrink-0" />
 
-            <div className="w-56 h-81 block absolute top-[55.125px] z-1 min-w-0 rounded-[5px] shrink-0 gap-2.5 overflow-hidden max-tab:w-36 max-tab:h-52">
-              <div className="w-56 h-full block absolute top-0 rounded-[5px] max-tab:w-36">
-                <img loading="lazy" decoding="async"                   className="w-full h-81 block rounded-[5px] overflow-clip object-cover aspect-[auto_896/1280] max-tab:h-52"
+            <div className="w-56 h-81 block absolute top-[55.125px] z-1 min-w-0 rounded-[5px] shrink-0 gap-2.5 overflow-hidden max-tab:top-[18px] max-tab:w-40 max-tab:h-56">
+              <div className="w-56 h-full block absolute top-0 rounded-[5px] max-tab:w-40">
+                <img loading="lazy" decoding="async"                   className="w-full h-81 block rounded-[5px] overflow-clip object-cover aspect-[auto_896/1280] max-tab:h-56"
 
                   alt="Montanha iluminada pelo sol da manhã"
                   height="1280"
