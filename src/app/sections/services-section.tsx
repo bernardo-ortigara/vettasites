@@ -76,11 +76,11 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
           </div>
         </div>
         <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-[8.0625rem] max-desk:gap-17.5 max-tab:gap-10">
-          <div className="w-full flex pl-[6.75%] items-end gap-[3.16%] max-desk:block max-desk:pl-0">
-            <div className="w-[23.04%] aspect-[299/412] relative z-1 rounded-[5px] shrink-0 overflow-clip max-desk:w-auto max-desk:h-[122.5px] max-desk:aspect-[0.767241/1] max-desk:absolute max-desk:left-0 max-desk:-top-[4.3125rem] tab:max-desk:-top-[5.9375rem] max-tab:h-[92.5px]">
+          <div className="w-full flex px-[6.75%] items-end gap-[3.4%] max-desk:block max-desk:px-0">
+            <div className="w-[24.83%] aspect-[299/412] relative z-1 rounded-[5px] shrink-0 overflow-clip max-desk:w-auto max-desk:h-[122.5px] max-desk:aspect-[0.767241/1] max-desk:absolute max-desk:left-0 max-desk:-top-[4.3125rem] tab:max-desk:-top-[5.9375rem] max-tab:h-[92.5px]">
               <video className="w-full h-full block object-cover bg-ink" autoPlay loop muted playsInline poster="/assets/media/images/servicos-ski-poster.webp" preload="auto" src="/assets/media/videos/servicos-ski.mp4" />
             </div>
-            <div className="max-w-[66.33%] block relative grow shrink basis-0 min-w-0 max-desk:max-w-none max-desk:w-full">
+            <div className="block relative grow shrink basis-0 min-w-0 max-desk:w-full">
               <StaggeredText
                 text={HEADING}
                 delay={0.1}
@@ -92,11 +92,11 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
               />
             </div>
           </div>
-          <div className="w-full flex relative pl-[5.675%] justify-start items-center content-center shrink-0 gap-57.5 overflow-clip max-desk:pl-0">
+          <div className="w-full flex relative px-[6.75%] justify-start items-center content-center shrink-0 gap-57.5 overflow-clip max-desk:px-0">
             <div className="contents min-w-0">
               <ExploreButton href="/about" label="Nossos serviços" tone="light" className="block relative shrink-0" />
             </div>
-            <div className="w-[61%] flex relative pr-10 justify-end items-center content-center grow shrink-0 basis-0 gap-75 overflow-clip max-desk:pr-0 max-desk:justify-center max-tab:w-auto tab:max-desk:w-1/3">
+            <div className="w-[61%] flex relative justify-end items-center content-center grow shrink-0 basis-0 gap-[43.5%] overflow-clip max-desk:justify-center max-desk:gap-75 max-tab:w-auto tab:max-desk:w-1/3">
               <div className="w-4 h-4 block relative shrink-0">
                 <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend" />
                 <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px]" />
@@ -113,7 +113,7 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
           </div>
         </div>
       </div>
-      <div className="w-full max-w-360 flex relative pl-23.5 flex-col justify-center items-center content-center shrink-0 gap-17.5 overflow-clip max-desk:pl-0">
+      <div className="w-full max-w-360 flex relative px-[6.75%] flex-col justify-center items-center content-center shrink-0 gap-17.5 overflow-clip max-desk:px-0">
         {mediaCardData.map((d, i) => (
           <ScrollReveal key={i} className="w-full" transition={{ type: "tween", duration: 1.2, delay: 0, ease: EASE_UI }}>
             <MediaCard d={d} styles={mediaCardStyles[i]} />
