@@ -37,7 +37,7 @@ function useResponsiveFont(font: ResponsiveFont): StaggeredFont {
 }
 
 export default function StaggeredText({
-  text,
+  text: fullText,
   delay = 0.1,
   duration = 0.7,
   font,
@@ -48,6 +48,7 @@ export default function StaggeredText({
   weight: weightOverride,
   ghostWeight = 400,
   indent,
+  trimIndentOnMobile = false,
   className,
   style
 }: {
@@ -63,9 +64,13 @@ export default function StaggeredText({
   weight?: number;
   ghostWeight?: number;
   indent?: { base?: string; tab?: string; desk?: string };
+  /** Tira os espaços do começo no celular, onde o texto não divide a linha com nada */
+  trimIndentOnMobile?: boolean;
   className?: string;
   style?: CSSProperties;
 }) {
+  const mobile = useBreakpointValue({ base: true, tab: false, desk: false });
+  const text = trimIndentOnMobile && mobile ? fullText.trimStart() : fullText;
   const resolvedFont = useResponsiveFont(font);
   const resolvedIndent = useBreakpointValue({ base: indent?.base ?? "0px", tab: indent?.tab, desk: indent?.desk });
   const [lines, setLines] = useState<string[]>([]);

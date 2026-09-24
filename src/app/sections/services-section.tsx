@@ -11,11 +11,12 @@ const HEADING =
 const HIGHLIGHT = ["encontradas e lembradas."];
 
 const HEADING_FONT: ResponsiveFont = {
+  // No celular o título divide a linha com o vídeo, como no desktop
   base: {
     fontFamily: "var(--font-display)",
-    fontSize: "30px",
+    fontSize: "20px",
     letterSpacing: "-0.04em",
-    lineHeight: "30px",
+    lineHeight: "21px",
     textAlign: "left"
   },
   tab: {
@@ -45,7 +46,7 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
   return (
     <section className="w-full flex relative z-1 pt-6 pb-40 px-6 flex-col justify-start items-center content-center shrink-0 gap-25 bg-ink max-desk:pb-20 max-desk:gap-15 tab:max-desk:pb-30 tab:max-desk:gap-20 grid-cols-1">
       <OverlapCurtain fill="bg-ink" />
-      <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-10 max-desk:gap-[6.3125rem] tab:max-desk:gap-30">
+      <div className="w-full max-w-360 flex relative flex-col justify-center items-center content-center shrink-0 gap-10 max-desk:gap-[6.3125rem] tab:max-desk:gap-30 max-tab:gap-10">
         <div className="contents min-w-0">
           <div className="w-full block relative shrink-0">
             <div className="w-full h-[1.825rem] flex relative flex-col justify-center items-center content-center gap-3">
@@ -76,11 +77,11 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
           </div>
         </div>
         <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-[8.0625rem] max-desk:gap-17.5 max-tab:gap-10">
-          <div className="w-full flex pl-[6.75%] items-end gap-[3.16%] max-desk:block max-desk:pl-0">
-            <div className="w-[23.04%] aspect-[299/412] relative z-1 rounded-[5px] shrink-0 overflow-clip max-desk:w-auto max-desk:h-[122.5px] max-desk:aspect-[0.767241/1] max-desk:absolute max-desk:left-0 max-desk:-top-[4.3125rem] tab:max-desk:-top-[5.9375rem] max-tab:h-[92.5px]">
+          <div className="w-full flex pl-[6.75%] items-end gap-[3.16%] max-desk:block max-desk:pl-0 max-tab:flex max-tab:gap-3">
+            <div className="w-[23.04%] aspect-[299/412] relative z-1 rounded-[5px] shrink-0 overflow-clip max-desk:w-auto max-desk:h-[122.5px] max-desk:aspect-[0.767241/1] max-desk:absolute max-desk:left-0 max-desk:-top-[4.3125rem] tab:max-desk:-top-[5.9375rem] max-tab:static max-tab:w-[38%] max-tab:h-auto max-tab:aspect-[299/412]">
               <video className="w-full h-full block object-cover bg-ink" autoPlay loop muted playsInline poster="/assets/media/images/servicos-ski-poster.webp" preload="auto" src="/assets/media/videos/servicos-ski.mp4" />
             </div>
-            <div className="max-w-[66.33%] block relative grow shrink basis-0 min-w-0 max-desk:max-w-none max-desk:w-full">
+            <div className="max-w-[66.33%] block relative grow shrink basis-0 min-w-0 max-desk:max-w-none max-desk:w-full max-tab:w-auto">
               <StaggeredText
                 text={HEADING}
                 delay={0.1}
@@ -88,6 +89,7 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
                 font={HEADING_FONT}
                 color="var(--bone)"
                 highlight={HIGHLIGHT}
+                trimIndentOnMobile
                 style={{ width: "100%" }}
               />
             </div>
