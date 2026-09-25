@@ -53,6 +53,6 @@ export const mediaTileStyles: MediaTileStyles[] = [
 export const mediaCardStyles: MediaCardStyles[] = [
     { className: "aspect-[auto_1440/778]", className3: "2xl:aspect-[auto_1440/778]" },
     { className: "aspect-[auto_1440/824]", className2: "2xl:left-0", className3: "2xl:aspect-[auto_1440/824]" },
-    { className: "aspect-[auto_1440/639]", className2: "2xl:left-0", className3: "2xl:aspect-[auto_1440/639]" },
+    { className: "aspect-[auto_1440/791]", className2: "2xl:left-0", className3: "2xl:aspect-[auto_1440/791]" },
     { className: "aspect-[auto_1440/791]", className2: "2xl:left-0", className3: "2xl:aspect-[auto_1440/791]" }
 ];
