@@ -14,8 +14,7 @@ const SPRING = { type: "spring", stiffness: 300, damping: 60, mass: 1 } as const
 const NavLink2_data: NavLinkData[] = [
     { href: "/", description: "Home", description2: "01" },
     { href: "/work/portfolio", description: "Portfólio", description2: "02" },
-    { href: "/about", description: "Sobre", description2: "03" },
-    { href: "/contact", description: "Contato", description2: "04" }
+    { href: "/contact", description: "Contato", description2: "03" }
 ];
 export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
   const { opacity, y } = useHeroScroll();

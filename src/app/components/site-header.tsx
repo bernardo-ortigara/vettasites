@@ -13,8 +13,7 @@ const SPRING = { type: "spring", stiffness: 300, damping: 60, mass: 1 } as const
 export const NAV_LINKS: NavLinkData[] = [
   { href: "/", description: "Home", description2: "01" },
   { href: "/work/portfolio", description: "Portfólio", description2: "02" },
-  { href: "/about", description: "Sobre", description2: "03" },
-  { href: "/contact", description: "Contato", description2: "04" }
+  { href: "/contact", description: "Contato", description2: "03" }
 ];
 
 export default function SiteHeader({
@@ -39,8 +38,6 @@ export default function SiteHeader({
       : "w-full max-w-360 h-17.5 block relative z-2 shrink-0 max-desk:hidden";
 
   const sideClass = isFluid ? "w-[22%]" : variant === "hero" ? "w-[16.9375rem]" : "w-[19.125rem]";
-  const ceoTextClass = isFluid ? "w-full" : variant === "hero" ? "w-[11.625rem]" : "w-[13.8125rem]";
-  const ceoCardClass = isFluid ? "w-full" : sideClass;
 
   return (
     <>
@@ -88,44 +85,9 @@ export default function SiteHeader({
                 <ExploreButton href="/contact" label="Saiba mais" tone="light" gap={75} />
               </div>
             ) : (
-            <div className={cn(sideClass, "block relative shrink-0 max-desk:hidden")}>
-              <a className={cn(ceoCardClass, "flex relative py-[0.1875rem] pr-2 pl-[0.1875rem] rounded-[5px] justify-start items-center content-center gap-2.5 overflow-clip text-accent bg-bone-dim cursor-pointer max-desk:hidden")} href="/contact">
-                <div className="w-16 h-16 flex relative rounded-[2.5px] justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden bg-night max-desk:hidden">
-                  <div className="basis-full shrink-0 h-full block relative rounded-[2.5px] max-desk:hidden">
-                    <div className="w-16 h-full block absolute top-0 rounded-[2.5px] max-desk:hidden">
-                      <img decoding="async" className="w-full h-16 block rounded-[2.5px] overflow-clip object-cover aspect-[auto_896/830] max-desk:hidden" alt="" height="830" sizes="64px" src="/assets/media/images/9b08cefad60d.webp" srcSet="/assets/media/images/1d62f0633629.png 512w, /assets/media/images/9b08cefad60d.webp 896w" width="896" />
-                    </div>
-                  </div>
-                </div>
-                <div className={cn(ceoTextClass, "flex relative flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-2 overflow-clip max-desk:hidden")}>
-                  <div className="w-full flex relative justify-between items-center content-center shrink-0 overflow-clip max-desk:hidden">
-                    <div className="w-30 flex relative max-w-30 pt-px flex-col justify-center items-center content-center grow shrink-0 basis-0 gap-2.5 max-desk:hidden">
-                      <div className="w-30 flex relative max-w-30 flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:hidden">
-                        <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.03em] max-desk:hidden">
-                          Peça um orçamento
-                        </p>
-                      </div>
-                    </div>
-                    <div className="h-3.5 flex relative flex-col justify-start items-center content-center shrink-0 gap-2.5 transform-[matrix(0.984808,0.173648,-0.173648,0.984808,0,0)] origin-[7px_7px] max-desk:hidden">
-                      <div className="w-3.5 h-3.5 block relative shrink-0 [background-size:100%_100%] max-desk:hidden" style={{ backgroundImage: "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 14%22><g transform=%22translate(0.092 1.048) rotate(-10 6.25 6)%22><path d=%22M 5.455 0.917 C 5.455 0.41 5.865 0 6.371 0 L 11.538 0 C 12.044 0 12.455 0.41 12.455 0.917 L 12.455 6.083 C 12.455 6.59 12.044 7 11.538 7 L 6.371 7 C 5.865 7 5.455 6.59 5.455 6.083 Z%22 fill=%22var(--night)%22></path><path d=%22M 0 7.483 C 0 6.931 0.448 6.483 1 6.483 L 4.455 6.483 C 5.007 6.483 5.455 6.931 5.455 7.483 L 5.455 10.938 C 5.455 11.49 5.007 11.938 4.455 11.938 L 1 11.938 C 0.448 11.938 0 11.49 0 10.938 Z%22 fill=%22var(--night)%22></path></g></svg>\")" }} aria-hidden="true" />
-                      <div className="w-3.5 h-3.5 block relative shrink-0 [background-size:100%_100%] max-desk:hidden" style={{ backgroundImage: "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 14%22><g transform=%22translate(0.092 1.048) rotate(-10 6.25 6)%22><path d=%22M 5.455 0.917 C 5.455 0.41 5.865 0 6.371 0 L 11.538 0 C 12.044 0 12.455 0.41 12.455 0.917 L 12.455 6.083 C 12.455 6.59 12.044 7 11.538 7 L 6.371 7 C 5.865 7 5.455 6.59 5.455 6.083 Z%22 fill=%22var(--night)%22></path><path d=%22M 0 7.483 C 0 6.931 0.448 6.483 1 6.483 L 4.455 6.483 C 5.007 6.483 5.455 6.931 5.455 7.483 L 5.455 10.938 C 5.455 11.49 5.007 11.938 4.455 11.938 L 1 11.938 C 0.448 11.938 0 11.49 0 10.938 Z%22 fill=%22var(--night)%22></path></g></svg>\")" }} aria-hidden="true" />
-                    </div>
-                  </div>
-                  <div className={cn(ceoTextClass, "flex relative flex-col justify-center items-start content-start shrink-0 overflow-clip max-desk:hidden")}>
-                    <div className={cn(ceoTextClass, "flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:hidden")}>
-                      <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.03em] max-desk:hidden">
-                        Vetta Sites
-                      </p>
-                    </div>
-                    <div className={cn(ceoTextClass, "flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word] max-desk:hidden")}>
-                      <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em] max-desk:hidden">
-                        Resposta em 24h
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
+              <div className={cn(sideClass, "flex relative justify-end shrink-0 max-desk:hidden")}>
+                <ExploreButton href="/contact" label="Saiba mais" tone="light" gap={75} />
+              </div>
             )}
           </header>
         </Appear>
