@@ -78,8 +78,8 @@ function Markers({ className }: { className?: string }) {
 function Cross() {
   return (
     <div className="w-4 h-4 block relative shrink-0">
-      <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend" />
-      <div className="w-0.5 h-4 block absolute left-[0.4375rem] [mix-blend-mode:difference] shrink-0 bg-bone-blend transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px]" />
+      <div className="w-0.5 h-full block absolute top-0 left-[0.4375rem] shrink-0 bg-bone" />
+      <div className="w-0.5 h-4 block absolute left-[0.4375rem] shrink-0 bg-bone transform-[matrix(0,1,-1,0,0,0)] origin-[1px_8px]" />
     </div>
   );
 }
