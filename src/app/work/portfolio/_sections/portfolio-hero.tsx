@@ -23,12 +23,12 @@ export default function PortfolioHero() {
       >
         <img fetchPriority="high" decoding="async"           className="w-[110%] h-[110%] max-w-none block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover opacity-70"
 
-          alt="Women Garden"
-          height="768"
+          alt="Alpinista fincando uma bandeira laranja no topo da montanha ao pôr do sol"
+          height="937"
           sizes="110vw"
-          src="/assets/media/images/f9ae45e286be.webp"
-          srcSet="/assets/media/images/bb2e456a997a.webp 512w, /assets/media/images/5a2db2dbff27.webp 1024w, /assets/media/images/f9ae45e286be.webp 1408w"
-          width="1408"
+          src="/assets/media/images/projetos-hero.webp"
+          srcSet="/assets/media/images/projetos-hero-840.webp 840w, /assets/media/images/projetos-hero.webp 1678w"
+          width="1678"
         />
       </Appear>
 
