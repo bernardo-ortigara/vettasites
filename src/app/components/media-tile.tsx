@@ -35,6 +35,8 @@ export default function MediaTile({ d, styles, index = 0, hoverZoom = false }: {
         className={cn("w-full flex relative justify-start items-center content-center shrink-0 gap-2.5 text-accent cursor-pointer", styles.className2)}
 
         href={d.href}
+        // Sites de clientes abrem em outra aba para o visitante não sair da Vetta
+        {...(d.href.startsWith("http") ? { target: "_blank", rel: "noopener" } : {})}
         onMouseEnter={hoverZoom ? () => setHovered(true) : undefined}
         onMouseLeave={hoverZoom ? () => setHovered(false) : undefined}
       >
