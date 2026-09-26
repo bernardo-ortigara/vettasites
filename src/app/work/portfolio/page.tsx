@@ -6,7 +6,7 @@ import LetWorkTogetherSection from "../../sections/let-work-together-section";
 
 const TITULO = "Portfólio de sites";
 const DESCRICAO =
-  "Modelos de site institucional, landing page, loja virtual e página de captura, com a estrutura que a Vetta entrega em cada tipo de projeto.";
+  "Sites feitos pela Vetta para Empório Abbraccio, ACC, Casagrande e Crespim — clique em cada projeto para ver o site no ar.";
 
 export const metadata: Metadata = {
   title: TITULO,

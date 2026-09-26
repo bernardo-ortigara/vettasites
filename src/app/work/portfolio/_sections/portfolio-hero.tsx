@@ -1,6 +1,7 @@
 "use client";
 
 import SiteHeader from "../../../components/site-header";
+import { clientProjects } from "../../../content";
 import { Appear, motion, useHeroScroll } from "../../../components/motion-primitives";
 
 
@@ -44,7 +45,7 @@ export default function PortfolioHero() {
               Nossos
             </h1>
             <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em] whitespace-pre text-nowrap">
-              (07)
+              ({String(clientProjects.length).padStart(2, "0")})
             </p>
           </Appear>
           <Appear
@@ -64,7 +65,7 @@ export default function PortfolioHero() {
           transition={{ type: "tween", duration: 0.5, delay: 0.5, ease: EASE_UI }}
         >
           <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
-            Modelos que mostram a estrutura que entregamos em cada tipo de projeto
+            Sites que colocamos no ar para os nossos clientes
           </p>
         </Appear>
 

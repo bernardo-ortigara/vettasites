@@ -10,7 +10,7 @@ const BODY = [
   "## Páginas",
   "",
   "- [Home](/) — Serviços, planos, perguntas frequentes e contato.",
-  "- [Portfólio](/work/portfolio) — Modelos de site institucional, landing page, loja virtual e página de captura.",
+  "- [Portfólio](/work/portfolio) — Sites de clientes no ar: Empório Abbraccio, ACC, Casagrande e Crespim.",
   "- [Sobre](/about) — Processo de trabalho, compromissos de cada projeto e equipe.",
   "- [Contato](/contact) — Peça um orçamento pelo WhatsApp.",
   "",

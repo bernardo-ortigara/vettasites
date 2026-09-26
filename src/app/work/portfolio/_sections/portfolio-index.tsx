@@ -1,52 +1,42 @@
 import MediaTile, { type MediaTileData } from "../../../components/media-tile";
 import type { MediaTileStyles } from "../../../_styles";
 import OverlapCurtain from "../../../components/overlap-curtain";
-import { projects, type ProjectItem } from "../../../content";
+import { clientProjects, type ClientProject } from "../../../content";
 
-
-const INDEX_SLUGS = ["site-institucional", "landing-page", "loja-virtual", "site-de-servicos"] as const;
-
-function toTile(p: ProjectItem): MediaTileData {
-  const srcSet = p.image.srcSet ?? p.image.src;
+function toTile(c: ClientProject): MediaTileData {
   return {
-    href: `/work/portfolio/${p.slug}`,
-    id: `${p.slug}-card`,
-    alt: p.image.alt,
-    height: p.image.height,
-    imgSrc: p.image.src,
-    srcSet,
-    width: p.image.width,
-    alt2: p.image.alt,
-    height2: p.image.height,
-    imgSrc2: p.image.src,
-    srcSet2: srcSet,
-    width2: p.image.width,
-    description: p.index,
-    description2: p.title,
-    description3: p.category,
-    description4: `© ${p.year}`
+    href: c.url,
+    id: `${c.id}-card`,
+    alt: c.image.alt,
+    height: c.image.height,
+    imgSrc: c.image.src,
+    srcSet: c.image.srcSet,
+    width: c.image.width,
+    alt2: c.image.alt,
+    height2: c.image.height,
+    imgSrc2: c.image.src,
+    srcSet2: c.image.srcSet,
+    width2: c.image.width,
+    description: c.index,
+    description2: c.name,
+    description3: c.category,
+    description4: `© ${c.year}`
   };
 }
 
-function toTileStyles(p: ProjectItem): MediaTileStyles {
-  return {
-    className: "w-full relative",
-    className3: "z-1",
-    className5: p.image.aspect,
-    className6: p.image.aspect,
-    className7: "",
-    className8: "",
-    className9: "",
-    className10: "",
-    className11: ""
-  };
-}
+const TILE_STYLES: MediaTileStyles = {
+  className: "w-full relative",
+  className3: "z-1",
+  className5: "aspect-[auto_1440/778]",
+  className6: "aspect-[auto_1440/778]",
+  className7: "",
+  className8: "",
+  className9: "",
+  className10: "",
+  className11: ""
+};
 
 export default function PortfolioIndex() {
-  const indexed = INDEX_SLUGS.map((slug) => projects.find((p) => p.slug === slug)).filter(
-    (p): p is ProjectItem => Boolean(p)
-  );
-
   return (
     <section id="portfolio-index" className="w-full flex relative z-1 pt-15 pb-30 px-6 flex-col justify-start items-center content-center shrink-0 gap-17.5 bg-bone max-desk:pt-10 max-desk:pb-20 max-desk:gap-10">
       <OverlapCurtain />
@@ -72,8 +62,8 @@ export default function PortfolioIndex() {
       </div>
 
       <div className="w-full max-w-360 grid relative z-1 grid-cols-2 gap-x-2.5 gap-y-5 max-desk:grid-cols-1 max-desk:gap-y-10" id="cards">
-        {indexed.map((p) => (
-          <MediaTile key={p.slug} d={toTile(p)} styles={toTileStyles(p)} hoverZoom />
+        {clientProjects.map((c) => (
+          <MediaTile key={c.id} d={toTile(c)} styles={TILE_STYLES} hoverZoom />
         ))}
       </div>
     </section>

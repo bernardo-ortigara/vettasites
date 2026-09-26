@@ -1,12 +1,13 @@
 import MediaTile, { type MediaTileData } from "../components/media-tile";
 import { mediaTileStyles } from "../_styles";
 import { StackedCards } from "../components/stacked-cards";
-const MediaTile_data: MediaTileData[] = [
-    { href: "/work/portfolio/site-institucional", id: "emporioabbraccio-card-1", alt: "Página inicial do site do Empório Abbraccio", height: "779", imgSrc: "/assets/media/images/portfolio-emporioabbraccio-1440.webp", srcSet: "/assets/media/images/portfolio-emporioabbraccio-720.webp 720w, /assets/media/images/portfolio-emporioabbraccio-1440.webp 1440w", width: "1440", alt2: "Página inicial do site do Empório Abbraccio", height2: "779", imgSrc2: "/assets/media/images/portfolio-emporioabbraccio-1440.webp", srcSet2: "/assets/media/images/portfolio-emporioabbraccio-720.webp 720w, /assets/media/images/portfolio-emporioabbraccio-1440.webp 1440w", width2: "1440", description: "(01)", description2: "Empório Abbraccio", description3: "Empório e cafeteria", description4: "© 2026" },
-    { href: "https://accdispositivos.com.br/", id: "acc-card-2", alt: "Página inicial do site da ACC", height: "778", imgSrc: "/assets/media/images/portfolio-acc-1440.webp", srcSet: "/assets/media/images/portfolio-acc-720.webp 720w, /assets/media/images/portfolio-acc-1440.webp 1440w", width: "1440", alt2: "Página inicial do site da ACC", height2: "778", imgSrc2: "/assets/media/images/portfolio-acc-1440.webp", srcSet2: "/assets/media/images/portfolio-acc-720.webp 720w, /assets/media/images/portfolio-acc-1440.webp 1440w", width2: "1440", description: "(02)", description2: "ACC", description3: "Dispositivos de fixação", description4: "© 2026" },
-    { href: "https://www.casamaq.ind.br/", id: "casagrande-card-3", alt: "Página inicial do site da Casagrande", height: "778", imgSrc: "/assets/media/images/portfolio-casagrande-1440.webp", srcSet: "/assets/media/images/portfolio-casagrande-720.webp 720w, /assets/media/images/portfolio-casagrande-1440.webp 1440w", width: "1440", alt2: "Página inicial do site da Casagrande", height2: "778", imgSrc2: "/assets/media/images/portfolio-casagrande-1440.webp", srcSet2: "/assets/media/images/portfolio-casagrande-720.webp 720w, /assets/media/images/portfolio-casagrande-1440.webp 1440w", width2: "1440", description: "(03)", description2: "Casagrande", description3: "Máquinas para curtumes", description4: "© 2026" },
-    { href: "https://crespimbarbearia.com.br/", id: "crespim-card-4", alt: "Página inicial do site da barbearia Crespim", height: "778", imgSrc: "/assets/media/images/portfolio-crespim-1440.webp", srcSet: "/assets/media/images/portfolio-crespim-720.webp 720w, /assets/media/images/portfolio-crespim-1440.webp 1440w", width: "1440", alt2: "Página inicial do site da barbearia Crespim", height2: "778", imgSrc2: "/assets/media/images/portfolio-crespim-1440.webp", srcSet2: "/assets/media/images/portfolio-crespim-720.webp 720w, /assets/media/images/portfolio-crespim-1440.webp 1440w", width2: "1440", description: "(04)", description2: "Crespim", description3: "Barbearia", description4: "© 2026" }
-];
+import { clientProjects } from "../content";
+const MediaTile_data: MediaTileData[] = clientProjects.map((c) => ({
+    href: c.url, id: `${c.id}-card`,
+    alt: c.image.alt, height: c.image.height, imgSrc: c.image.src, srcSet: c.image.srcSet, width: c.image.width,
+    alt2: c.image.alt, height2: c.image.height, imgSrc2: c.image.src, srcSet2: c.image.srcSet, width2: c.image.width,
+    description: c.index, description2: c.name, description3: c.category, description4: `© ${c.year}`
+}));
 export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}) {
   return (
     <section className="w-full flex relative z-1 pt-6 pb-30 px-6 flex-col justify-start items-center content-center shrink-0 gap-20 bg-bone max-desk:pb-20 max-desk:gap-15">
@@ -87,7 +88,7 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
                 <div className="w-auto flex relative justify-center items-center content-center shrink-0 gap-2.5">
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
-                      Ver todos (07)
+                      Ver todos ({clientProjects.length.toString().padStart(2, "0")})
                     </p>
                   </div>
                 </div>
