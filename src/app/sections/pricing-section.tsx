@@ -79,7 +79,7 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                   </div>
                 </div>
               </div>
-              <ExploreButton href="/contact" label="Pedir orçamento" tone="dark" className="block relative shrink-0" />
+              <ExploreButton href="/contact" label="Solicitar orçamento" tone="dark" className="block relative shrink-0" />
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-4.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
@@ -128,7 +128,7 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                   </div>
                 </div>
               </div>
-              <ExploreButton href="/contact" label="Pedir orçamento" tone="dark" className="block relative shrink-0" />
+              <ExploreButton href="/contact" label="Solicitar orçamento" tone="dark" className="block relative shrink-0" />
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-4.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
@@ -177,7 +177,7 @@ export default function PricingSection({ planFeaturesEssential = planFeaturesEss
                   </div>
                 </div>
               </div>
-              <ExploreButton href="/contact" label="Pedir orçamento" tone="light" className="block relative shrink-0" />
+              <ExploreButton href="/contact" label="Solicitar orçamento" tone="light" className="block relative shrink-0" />
               <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-4.5 overflow-clip">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">

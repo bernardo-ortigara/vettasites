@@ -1,6 +1,5 @@
 import Ticker from "../components/ticker";
 import ExploreButton from "../components/explore-button";
-import { Parallax } from "../components/motion-primitives";
 import { cn } from "../../lib/utils";
 
 
@@ -29,22 +28,16 @@ export default function ContactSection() {
     <div className="w-full block relative z-1 shrink-0">
       <section className="flex relative p-6 flex-col justify-start items-center content-center gap-25 bg-bone">
         <div className="w-full h-200 flex relative rounded-[5px] max-tab:h-140 flex-col justify-center items-center content-center shrink-0 gap-2.5 overflow-clip bg-night">
-          <Parallax
-            speed={90}
-            className="h-740 block absolute top-[-2159.69px] inset-x-0 opacity-64 min-w-0 shrink-0 overflow-clip"
-          >
-            <div className="h-full block absolute top-0 inset-x-0">
-              <img loading="lazy" decoding="async"                 className="w-full h-740 block overflow-clip object-cover aspect-[auto_768/1408]"
-
-                alt="Villa"
-                height="1408"
-                sizes="calc(100vw - 48px)"
-                src="/assets/media/images/7ea838c12d96.png"
-                srcSet="/assets/media/images/5668003cfcd2.png 558w, /assets/media/images/7ea838c12d96.png 768w"
-                width="768"
-              />
-            </div>
-          </Parallax>
+          {/* Arte da montanha com o V da Vetta; no celular o corte puxa pra esquerda para o V aparecer */}
+          <img loading="lazy" decoding="async"
+            className="w-full h-full block absolute inset-0 object-cover max-tab:object-left"
+            alt="Montanha nevada com o V laranja da Vetta"
+            height="935"
+            sizes="calc(100vw - 48px)"
+            src="/assets/media/images/vetta-bg.webp"
+            srcSet="/assets/media/images/vetta-bg-840.webp 840w, /assets/media/images/vetta-bg.webp 1683w"
+            width="1683"
+          />
 
           <div className="w-full flex relative pt-32.5 flex-col justify-center items-center content-center shrink-0 gap-30 overflow-clip max-tab:pt-20 max-tab:gap-23">
             <div className="w-full flex relative justify-center items-center content-center shrink-0 gap-7.5 overflow-clip max-tab:gap-0">
@@ -66,19 +59,6 @@ export default function ContactSection() {
 
             <ExploreButton href="/contact" label="Falar com a Vetta" tone="light" className="block relative shrink-0" />
 
-            <div className="w-56 h-81 block absolute top-[55.125px] z-1 min-w-0 rounded-[5px] shrink-0 gap-2.5 overflow-hidden max-tab:top-[18px] max-tab:w-40 max-tab:h-56">
-              <div className="w-56 h-full block absolute top-0 rounded-[5px] max-tab:w-40">
-                <img loading="lazy" decoding="async"                   className="w-full h-81 block rounded-[5px] overflow-clip object-cover aspect-[auto_896/1280] max-tab:h-56"
-
-                  alt="Montanha iluminada pelo sol da manhã"
-                  height="1280"
-                  sizes="224px"
-                  src="/assets/media/images/6c6b19e154f4.webp"
-                  srcSet="/assets/media/images/67b9b52f749e.png 716w, /assets/media/images/6c6b19e154f4.webp 896w"
-                  width="896"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>

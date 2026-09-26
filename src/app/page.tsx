@@ -4,7 +4,6 @@ import LogoMarqueeSection from "./sections/logo-marquee-section";
 import PortfolioSection from "./sections/portfolio-section";
 import ServicesSection from "./sections/services-section";
 import PricingSection from "./sections/pricing-section";
-import TestimonialSection from "./sections/testimonial-section";
 import ContactSection from "./sections/contact-section";
 import FrequentlyAskedQuestionsSection from "./sections/frequently-asked-questions-section";
 import LetWorkTogetherSection from "./sections/let-work-together-section";
@@ -20,7 +19,6 @@ export default function Page() {
           <PortfolioSection />
           <ServicesSection />
           <PricingSection />
-          <TestimonialSection />
           <ContactSection />
         </div>
         <FrequentlyAskedQuestionsSection />

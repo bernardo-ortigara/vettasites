@@ -7,12 +7,11 @@ export type LogosItem = {
   srcSet?: string;
 };
 export const logos: LogosItem[] = [
-    { height: "64", imgSrc: "/assets/media/images/911144d091cb.png", width: "246" },
-    { height: "45", imgSrc: "/assets/media/images/e87a3d2783c3.png", width: "206" },
-    { height: "90", imgSrc: "/assets/media/svg/d46969807239.svg", width: "524", sizes: "104px", srcSet: "/assets/media/svg/c353bbcb9492.svg 512w, /assets/media/svg/d46969807239.svg 524w" },
-    { height: "64", imgSrc: "/assets/media/images/f365e588160f.png", width: "302" },
-    { height: "52", imgSrc: "/assets/media/images/ac61b5b7dc60.png", width: "416" },
-    { height: "64", imgSrc: "/assets/media/images/911144d091cb.png", width: "246" }
+    { height: "80", imgSrc: "/assets/media/logo/clientes/casagrande.png", width: "384" },
+    { height: "80", imgSrc: "/assets/media/logo/clientes/emporio-abbraccio.png", width: "384" },
+    { height: "80", imgSrc: "/assets/media/logo/clientes/acc-maquinas.png", width: "384" },
+    { height: "80", imgSrc: "/assets/media/logo/clientes/crespim.png", width: "384" },
+    { height: "80", imgSrc: "/assets/media/logo/clientes/eltv.png", width: "384" }
 ];
 
 export type PlanFeatureItem = {
@@ -28,9 +27,9 @@ export const planFeaturesStandard: PlanFeatureItem[] = [
     { description: "Layout sob medida para a sua marca" },
     { description: "Site responsivo em celular e desktop" },
     { description: "Formulário ligado ao seu WhatsApp" },
-    { description: "Textos e imagens tratados para a web" },
+    { description: "Textos e imagens otimizados para a web" },
     { description: "Estrutura pensada para conversão" },
-    { description: "SEO técnico e site rápido no Google" }
+    { description: "SEO técnico e alta velocidade no Google" }
 ];
 
 export const planFeaturesComplete: PlanFeatureItem[] = [
@@ -39,63 +38,10 @@ export const planFeaturesComplete: PlanFeatureItem[] = [
     { description: "Formulário ligado ao seu WhatsApp" },
     { description: "Textos e imagens tratados para a web" },
     { description: "Estrutura pensada para conversão" },
-    { description: "SEO técnico e site rápido no Google" },
-    { description: "Painel para você editar o conteúdo" },
+    { description: "SEO técnico e alta velocidade no Google" },
+    { description: "Relatórios de performance mensais" },
     { description: "Acompanhamento após o lançamento" }
 ];
-
-export type TestimonialImage = {
-  alt: string;
-  src: string;
-  srcSet: string;
-};
-export type TestimonialItem = {
-  quote: string;
-  quoteBase?: string;
-  name: string;
-  role: string;
-  portrait: TestimonialImage & { width: string; height: string };
-  logo: { src: string; width: string; height: string };
-  avatar: TestimonialImage;
-};
-export const testimonials: TestimonialItem[] = [
-    {
-        quote: "“Cada passo importa. Um site não é um arquivo entregue no fim do projeto: é a base de uma subida que continua depois do lançamento.”",
-        name: "Vetta Sites",
-        role: "Manifesto / 01",
-        portrait: { alt: "Caminhada em trilha de montanha ao amanhecer", src: "/assets/media/images/7581dd9e5d6f.webp", srcSet: "/assets/media/images/e3b5cac7489f.png 716w, /assets/media/images/7581dd9e5d6f.webp 896w", width: "896", height: "1280" },
-        logo: { src: "/assets/media/logo/vetta-horizontal-ink.svg", width: "1346", height: "230" },
-        avatar: { alt: "Detalhe de uma escalada em rocha", src: "/assets/media/images/beaaaddd3941.png", srcSet: "/assets/media/images/2f2d20acf0ee.png 512w, /assets/media/images/beaaaddd3941.png 1024w" }
-    },
-    {
-        quote: "“Cada jornada transforma. Estratégia, design e performance trabalham juntos para que o site diga o que a marca vale antes da primeira conversa.”",
-        name: "Vetta Sites",
-        role: "Manifesto / 02",
-        portrait: { alt: "Alpinista conferindo o equipamento antes da subida", src: "/assets/media/images/59ca2b54402e.webp", srcSet: "/assets/media/images/48460b2bbd11.png 716w, /assets/media/images/59ca2b54402e.webp 896w", width: "896", height: "1280" },
-        logo: { src: "/assets/media/logo/vetta-horizontal-ink.svg", width: "1346", height: "230" },
-        avatar: { alt: "Vista de um vale entre montanhas", src: "/assets/media/images/e6f70244dd17.webp", srcSet: "/assets/media/images/322ebb0029ee.png 512w, /assets/media/images/e6f70244dd17.webp 1024w" }
-    },
-    {
-        quote: "“Cada conquista leva ao topo. O próximo nível do seu negócio começa por uma presença digital que nenhum concorrente consegue copiar.”",
-        name: "Vetta Sites",
-        role: "Manifesto / 03",
-        portrait: { alt: "Bandeira fincada no cume de uma montanha", src: "/assets/media/images/a8a049fba604.webp", srcSet: "/assets/media/images/7292e9ec2814.png 761w, /assets/media/images/a8a049fba604.webp 880w", width: "880", height: "1184" },
-        logo: { src: "/assets/media/logo/vetta-horizontal-ink.svg", width: "1346", height: "230" },
-        avatar: { alt: "Cordilheira ao pôr do sol", src: "/assets/media/images/c80849aeff3f.webp", srcSet: "/assets/media/images/6dcc2299a6ae.png 512w, /assets/media/images/c80849aeff3f.webp 1024w" }
-    },
-]
-
-export type TestimonialStatColumn = {
-  figures: string[];
-  title: string;
-  subtitle: string;
-};
-export const testimonialStats: TestimonialStatColumn[] = [
-    { figures: ["01", "02", "03"], title: "Princípio", subtitle: "Manifesto Vetta" },
-    { figures: ["Passo", "Jornada", "Topo"], title: "Etapa", subtitle: "Da ideia ao lançamento" }
-];
-
-
 
 export type FaqItem = {
   question: string;
