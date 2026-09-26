@@ -39,7 +39,7 @@ export default function ContactSection() {
             width="1683"
           />
 
-          <div className="w-full flex relative pt-32.5 flex-col justify-center items-center content-center shrink-0 gap-30 overflow-clip max-tab:pt-20 max-tab:gap-23">
+          <div className="w-full flex relative pt-[5.5625rem] flex-col justify-center items-center content-center shrink-0 gap-6.5 overflow-clip max-tab:pt-10 max-tab:gap-13">
             <div className="w-full flex relative justify-center items-center content-center shrink-0 gap-7.5 overflow-clip max-tab:gap-0">
               <Markers className="max-tab:hidden" />
 

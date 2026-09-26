@@ -78,7 +78,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
           initial={{ opacity: 0.001 }}
           transition={{ ...SPRING, delay: 0.6 }}
         >
-          <ExploreButton href="/about" label="Saiba mais" tone="light" />
+          <ExploreButton href="/contact" label="Solicitar Orçamento" tone="light" />
         </Appear>
       </div>
       <div className="w-full max-w-360 flex relative flex-col justify-center items-start content-start shrink-0 gap-6.5 max-desk:gap-14 desk:contents">

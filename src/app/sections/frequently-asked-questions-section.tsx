@@ -2,6 +2,7 @@ import OverlapCurtain from "../components/overlap-curtain";
 import Icon from "../svgs/svg-icon";
 import FaqAccordionItem from "../components/faq-accordion-item";
 import { faqs as faqsContent } from "../content";
+import { VETTA } from "../../lib/vetta";
 
 export default function FrequentlyAskedQuestionsSection({
   faqs = faqsContent,
@@ -36,11 +37,11 @@ export default function FrequentlyAskedQuestionsSection({
                   </div>
                 </div>
                 <div className="w-[19.125rem] block relative shrink-0 max-tab:w-full">
-                  <a className="w-full h-[12.6875rem] flex relative p-1 rounded-[5px] flex-col justify-center items-center content-center gap-3.5 overflow-clip text-accent bg-bone-dim cursor-pointer" href="https://www.youtube.com/" rel="noopener" target="_blank">
+                  <a className="w-full h-[12.6875rem] flex relative p-1 rounded-[5px] flex-col justify-center items-center content-center gap-3.5 overflow-clip text-accent bg-bone-dim cursor-pointer" href={VETTA.instagram} rel="noopener" target="_blank">
                     <div className="w-full h-[9.675rem] flex relative rounded-[2.5px] justify-center items-center content-center grow shrink-0 basis-0 gap-2.5 overflow-hidden bg-night">
                       <div className="basis-0 shrink-0 h-full block relative rounded-[2.5px] grow overflow-clip">
                         <div className="h-full block absolute top-0 inset-x-0 rounded-[2.5px]">
-                          <img loading="lazy" decoding="async" className="w-full h-full block rounded-[2.5px] overflow-clip object-cover" alt="Apresentação em vídeo da Vetta Sites" height="1024" sizes="max(100vw - 8px, 1px)" src="/assets/media/images/5961dfd8498b.png" srcSet="/assets/media/images/5961dfd8498b.png 512w, /assets/media/images/bc0753854a2c.png 1024w" width="1024" />
+                          <img loading="lazy" decoding="async" className="w-full h-full block rounded-[2.5px] overflow-clip object-cover" alt="Celular com o Instagram da Vetta Sites" height="718" sizes="(max-width: 809px) calc(100vw - 56px), 298px" src="/assets/media/images/faq-redes-640.webp" srcSet="/assets/media/images/faq-redes-640.webp 640w, /assets/media/images/faq-redes-1280.webp 1280w" width="1280" />
                         </div>
                       </div>
                     </div>
@@ -55,14 +56,14 @@ export default function FrequentlyAskedQuestionsSection({
                         </div>
                         <div className="w-full flex relative flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                           <p className="block text-night font-display font-bold leading-[16.2px] tracking-[-0.03em]">
-                            Assistir
+                            Conferir Redes Sociais
                           </p>
                         </div>
                       </div>
                       <div className="w-full flex relative justify-start items-center content-center grow shrink-0 basis-0 gap-1 overflow-clip">
                         <div className="w-full flex relative flex-col justify-start grow shrink-0 basis-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                           <p className="block text-ink-soft font-display font-bold leading-[16.2px] tracking-[-0.03em] text-right">
-                            Apresentação
+                            Instagram
                           </p>
                         </div>
                       </div>
