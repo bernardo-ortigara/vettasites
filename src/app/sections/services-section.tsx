@@ -6,7 +6,7 @@ import { ScrollReveal } from "../components/motion-primitives";
 import OverlapCurtain from "../components/overlap-curtain";
 
 const HEADING =
-  "              Sites institucionais, landing pages e otimização para o Google, feitos para marcas que querem ser encontradas e lembradas.";
+  "              Sites institucionais, Lojas virtuais e otimizações para o Google, feitos para marcas que querem ser encontradas e lembradas.";
 
 const HIGHLIGHT = ["encontradas e lembradas."];
 
