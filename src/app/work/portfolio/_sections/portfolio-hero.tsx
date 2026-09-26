@@ -21,7 +21,8 @@ export default function PortfolioHero() {
         initial={{ opacity: 0.001, scale: 1.2 }}
         transition={{ type: "tween", duration: 1, delay: 0, ease: EASE_IMAGE }}
       >
-        <img fetchPriority="high" decoding="async"           className="w-[110%] h-[110%] max-w-none block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover opacity-70"
+        {/* Alpinista um pouco abaixo do centro; no celular a foto fica só na parte de baixo, livre do título */}
+        <img fetchPriority="high" decoding="async"           className="w-[110%] h-[110%] max-w-none block absolute left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 object-cover opacity-70 max-desk:top-auto max-desk:bottom-0 max-desk:translate-y-0 max-desk:h-[62%] max-desk:[mask-image:linear-gradient(to_bottom,transparent,black_35%)]"
 
           alt="Alpinista fincando uma bandeira laranja no topo da montanha ao pôr do sol"
           height="937"
