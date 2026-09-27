@@ -11,7 +11,6 @@ const BODY = [
   "",
   "- [Home](/) — Serviços, planos, perguntas frequentes e contato.",
   "- [Portfólio](/work/portfolio) — Sites de clientes no ar: Empório Abbraccio, ACC, Casagrande e Crespim.",
-  "- [Sobre](/about) — Processo de trabalho, compromissos de cada projeto e equipe.",
   "- [Contato](/contact) — Peça um orçamento pelo WhatsApp.",
   "",
   "## Serviços",

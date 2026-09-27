@@ -2,7 +2,6 @@
 
 import { ScrollReveal } from "../components/motion-primitives";
 import StaggeredText, { type ResponsiveFont } from "../components/staggered-text";
-import ExploreButton from "../components/explore-button";
 import OverlapCurtain from "../components/overlap-curtain";
 
 const HEADING =
@@ -141,7 +140,6 @@ export default function AboutSection() {
                   <div className="w-full h-px block relative shrink-0 overflow-clip bg-ink-hairline" />
                 </div>
               </div>
-              <ExploreButton href="/about" label="Sobre a Vetta" tone="dark" className="block relative shrink-0" />
             </div>
           </div>
         </ScrollReveal>

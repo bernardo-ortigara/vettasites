@@ -16,11 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   },
   {
-    url: SITE_ORIGIN + "/about",
-    changeFrequency: "monthly",
-    priority: 0.7,
-  },
-  {
     url: SITE_ORIGIN + "/contact",
     changeFrequency: "monthly",
     priority: 0.9,

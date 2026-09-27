@@ -9,8 +9,7 @@ import { cn } from "../../lib/utils";
 const FOOTER_LINKS = [
   { href: "/", label: "Home", number: "01" },
   { href: "/work/portfolio", label: "Portfólio", number: "02" },
-  { href: "/about", label: "Sobre", number: "03" },
-  { href: "/contact", label: "Contato", number: "04" }
+  { href: "/contact", label: "Contato", number: "03" }
 ];
 
 export default function LetWorkTogetherSection() {
