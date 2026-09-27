@@ -6,9 +6,9 @@ import { ScrollReveal } from "../components/motion-primitives";
 import OverlapCurtain from "../components/overlap-curtain";
 
 const HEADING =
-  "              Sites institucionais, Lojas virtuais e otimizações para o Google, feitos para marcas que querem ser encontradas e lembradas.";
+  "              Sites institucionais, lojas virtuais e landing pages feitos para o seu negócio ser encontrado, lembrado e escolhido.";
 
-const HIGHLIGHT = ["encontradas e lembradas."];
+const HIGHLIGHT = ["encontrado, lembrado e escolhido."];
 
 const HEADING_FONT: ResponsiveFont = {
   // No celular o título divide a linha com o vídeo, como no desktop
@@ -81,7 +81,7 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
         <div className="w-full flex relative flex-col justify-center items-start content-start shrink-0 gap-[8.0625rem] max-desk:gap-17.5 max-tab:gap-10">
           <div className="w-full flex pl-[6.75%] items-end gap-[3.16%] max-desk:block max-desk:pl-0 max-tab:flex max-tab:items-stretch max-tab:gap-3">
             <div className="w-[23.04%] aspect-[299/412] relative z-1 rounded-[5px] shrink-0 overflow-clip max-desk:w-auto max-desk:h-[122.5px] max-desk:aspect-[0.767241/1] max-desk:absolute max-desk:left-0 max-desk:-top-[4.3125rem] tab:max-desk:-top-[5.9375rem] max-tab:relative max-tab:top-auto max-tab:w-[38%] max-tab:h-auto max-tab:aspect-auto">
-              <video className="w-full h-full block object-cover bg-ink max-tab:absolute max-tab:inset-0" autoPlay loop muted playsInline poster="/assets/media/images/servicos-ski-poster.webp" preload="auto" src="/assets/media/videos/servicos-ski.mp4" />
+              <video className="w-full h-full block object-cover bg-ink max-tab:absolute max-tab:inset-0" autoPlay loop muted playsInline poster="/assets/media/images/servicos-ski-quente-poster.webp" preload="auto" src="/assets/media/videos/servicos-ski-quente.mp4" />
             </div>
             <div className="max-w-[66.33%] block relative grow shrink basis-0 min-w-0 max-desk:max-w-none max-desk:w-full max-tab:w-auto">
               <StaggeredText
@@ -98,7 +98,7 @@ export default function ServicesSection({ mediaCardData = MediaCard_data } = {})
           </div>
           <div className="w-full flex relative pl-[5.675%] justify-start items-center content-center shrink-0 gap-57.5 overflow-clip max-desk:pl-0">
             <div className="contents min-w-0">
-              <ExploreButton href="/about" label="Nossos serviços" tone="light" className="block relative shrink-0" />
+              <ExploreButton href="/about" label="Como trabalhamos" tone="light" className="block relative shrink-0" />
             </div>
             <div className="w-[61%] flex relative pr-10 justify-end items-center content-center grow shrink-0 basis-0 gap-75 overflow-clip max-desk:pr-0 max-desk:justify-center max-tab:w-auto tab:max-desk:w-1/3">
               <div className="w-4 h-4 block relative shrink-0">
