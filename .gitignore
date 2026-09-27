@@ -3,4 +3,6 @@ node_modules
 out
 dist
 *.tsbuildinfo
-.env.local
+.env*.local
+.vercel
+.DS_Store
