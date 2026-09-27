@@ -19,35 +19,40 @@ const NavLink2_data: NavLinkData[] = [
 export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
   const { opacity, y } = useHeroScroll();
   const wordmarkOffset = useBreakpointValue({ base: 30, desk: 170 });
+  // No celular/tablet o botão fica na escala menor, para o bloco caber na pedra escura da foto
+  const ctaSize = useBreakpointValue<"sm" | "md">({ base: "sm", desk: "md" });
 
   return (
     <motion.section
       style={{ opacity, y }}
-      className="w-full h-screen flex sticky top-0 z-1 p-6 flex-col justify-between items-center content-center shrink-0 overflow-clip desk:grid desk:grid-cols-12 desk:grid-rows-[auto_1fr_auto] desk:gap-6 desk:items-stretch"
+      className="w-full h-screen max-desk:h-svh flex sticky top-0 z-1 p-6 flex-col justify-between items-center content-center shrink-0 overflow-clip desk:grid desk:grid-cols-12 desk:grid-rows-[auto_1fr_auto] desk:gap-6 desk:items-stretch"
     >
       <Appear
-        className="h-full block absolute top-0 inset-x-0 z-0 min-w-0 shrink-0 overflow-clip"
+        className="h-full block absolute top-0 inset-x-0 z-0 min-w-0 shrink-0 overflow-clip max-desk:bg-ink"
         initial={{ opacity: 0.001, scale: 1.2 }}
         transition={{ type: "tween", duration: 1, delay: 0, ease: EASE_IMAGE }}
       >
         <div className="h-full block absolute top-0 inset-x-0">
-          <img fetchPriority="high" decoding="async" className="w-full h-full block overflow-clip object-cover" alt="Vista do alto de uma montanha ao amanhecer" height="617" sizes="(min-width: 1200px) 100vw, (min-width: 810px) and (max-width: 1199.98px) 100vw, (max-width: 809.98px) 100vw" src="/assets/media/images/816e2cb276ac.png" srcSet="/assets/media/images/e9e4d00ce547.png 512w, /assets/media/images/dfec41af5c07.png 1024w, /assets/media/images/816e2cb276ac.png 1080w" width="1080" />
+          {/* Mesma foto do hero de Portfólio; no celular/tablet ela ocupa a hero inteira, enquadrada no alpinista e na bandeira */}
+          <img fetchPriority="high" decoding="async" className="w-full h-full block overflow-clip object-cover object-[50%_45%] max-desk:object-[58%_center] max-desk:scale-[1.12] max-desk:origin-bottom" alt="Alpinista fincando uma bandeira laranja no topo da montanha ao pôr do sol" height="937" sizes="100vw" src="/assets/media/images/projetos-hero.webp" srcSet="/assets/media/images/projetos-hero-840.webp 840w, /assets/media/images/projetos-hero.webp 1678w" width="1678" />
         </div>
       </Appear>
       <div className="hidden desk:block absolute inset-0 z-0">
-        <HeroLiquid src="/assets/media/images/816e2cb276ac.png" />
+        <HeroLiquid src="/assets/media/images/projetos-hero.webp" />
       </div>
+      {/* Degradê para o texto da esquerda e o logo do rodapé continuarem legíveis sobre o céu claro */}
+      <div className="absolute inset-0 z-0 pointer-events-none bg-[linear-gradient(to_bottom,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0)_22%,rgba(0,0,0,0)_45%,rgba(0,0,0,0.35)_65%,rgba(0,0,0,0.6)_100%)] desk:bg-[linear-gradient(to_right,rgba(0,0,0,0.45)_0%,rgba(0,0,0,0)_45%),linear-gradient(to_bottom,rgba(0,0,0,0.3)_0%,rgba(0,0,0,0)_25%,rgba(0,0,0,0)_60%,rgba(0,0,0,0.5)_100%)]" />
       <SiteHeader variant="home" active="/" navLinks={navLink2Data} />
       <div className="w-full h-17.5 block relative shrink-0 overflow-clip desk:hidden" />
-      <div className="w-[249.1px] h-[8.2375rem] flex relative z-1 min-w-0 max-w-360 flex-col justify-center items-start content-start shrink-0 gap-10 max-tab:w-full tab:max-desk:w-180 desk:col-span-3 desk:row-start-2 desk:self-center">
+      <div className="w-[249.1px] h-[8.2375rem] flex relative z-1 min-w-0 max-w-360 flex-col justify-center items-start content-start shrink-0 gap-10 max-desk:h-auto max-desk:gap-5 max-desk:mt-auto max-desk:mb-6 max-tab:w-full tab:max-desk:w-180 desk:col-span-3 desk:row-start-2 desk:self-center">
         <div className="w-[249.1px] flex relative flex-col justify-center items-start content-start self-stretch shrink-0 max-tab:w-full max-desk:[align-self:initial] tab:max-desk:w-180">
           <Appear
             className="w-full max-w-75 flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]"
             initial={{ opacity: 0.001, y: 10 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.4, ease: EASE_UI }}
           >
-            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
-              {"Estratégia, design e performance "}
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em] max-desk:text-sm max-desk:leading-[17.7px]">
+              {"Sites que vendem, "}
             </p>
           </Appear>
           <Appear
@@ -55,7 +60,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 10 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.6, ease: EASE_UI }}
           >
-            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
+            <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em] max-desk:text-sm max-desk:leading-[17.7px]">
               {"para o seu negócio "}
               <span className="inline text-bone-soft">
                 {"chegar "}
@@ -67,7 +72,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
             initial={{ opacity: 0.001, y: 10 }}
             transition={{ type: "tween", duration: 0.5, delay: 0.8, ease: EASE_UI }}
           >
-            <p className="block text-bone-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
+            <p className="block text-bone-soft font-display text-base font-bold leading-[20.2px] tracking-[-0.03em] max-desk:text-sm max-desk:leading-[17.7px]">
               ao topo.
             </p>
           </Appear>
@@ -77,7 +82,7 @@ export default function HeroSection({ navLink2Data = NavLink2_data } = {}) {
           initial={{ opacity: 0.001 }}
           transition={{ ...SPRING, delay: 0.6 }}
         >
-          <ExploreButton href="/contact" label="Solicitar Orçamento" tone="light" />
+          <ExploreButton href="/contact" label="Quero meu orçamento" tone="light" size={ctaSize} gap={ctaSize === "sm" ? 96 : 144} />
         </Appear>
       </div>
       <div className="w-full max-w-360 flex relative flex-col justify-center items-start content-start shrink-0 gap-6.5 max-desk:gap-14 desk:contents">

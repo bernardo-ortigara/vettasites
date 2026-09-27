@@ -8,17 +8,21 @@ export default function ExploreButton({
   label = "Explore Now",
   tone = "light",
   gap = 144,
+  size = "md",
   className
 }: {
   href: string;
   label?: string;
   tone?: "light" | "dark";
   gap?: number;
+  // "sm": mesma escala dos links do menu (12px), para o cabeçalho
+  size?: "md" | "sm";
   className?: string;
 }) {
   const [hovered, setHovered] = useState(false);
   const color = tone === "light" ? "var(--bone)" : "var(--night)";
   const transition = { type: "spring" as const, bounce: 0.2, duration: 0.4 };
+  const small = size === "sm";
 
   return (
     <motion.a
@@ -35,7 +39,7 @@ export default function ExploreButton({
         justifyContent: "center",
         alignItems: "flex-start",
         alignContent: "flex-start",
-        gap: 10,
+        gap: small ? 2 : 10,
         width: "min-content",
         overflow: "clip",
         cursor: "pointer",
@@ -48,7 +52,7 @@ export default function ExploreButton({
           position: "relative",
           flexDirection: "row",
           justifyContent: "flex-start",
-          alignItems: "flex-start",
+          alignItems: small ? "center" : "flex-start",
           gap,
           width: "min-content",
           overflow: "clip"
@@ -59,9 +63,9 @@ export default function ExploreButton({
             style={{
               color,
               fontFamily: "var(--font-display)",
-              fontSize: 16,
+              fontSize: small ? 12 : 16,
               fontWeight: 700,
-              lineHeight: "20.2px",
+              lineHeight: small ? "16.2px" : "20.2px",
               letterSpacing: "-0.03em",
               margin: 0
             }}
