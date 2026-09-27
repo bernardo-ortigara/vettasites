@@ -1,9 +1,22 @@
 "use client";
 
+import { Fragment } from "react";
+import { usePathname } from "next/navigation";
 import OverlapCurtain from "../components/overlap-curtain";
 import { VETTA, whatsappLink } from "../../lib/vetta";
+import { cn } from "../../lib/utils";
+
+const FOOTER_LINKS = [
+  { href: "/", label: "Home", number: "01" },
+  { href: "/work/portfolio", label: "Portfólio", number: "02" },
+  { href: "/about", label: "Sobre", number: "03" },
+  { href: "/contact", label: "Contato", number: "04" }
+];
 
 export default function LetWorkTogetherSection() {
+  // O rodapé é o mesmo em todas as páginas; o link da página atual fica aceso e os demais a 50%
+  const pathname = usePathname();
+
   return (
     <div className="w-full block relative z-1 shrink-0 order-[1002]">
       <div className="contents">
@@ -15,7 +28,7 @@ export default function LetWorkTogetherSection() {
               <div className="w-full flex relative flex-col justify-center items-center content-center shrink-0 gap-0">
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
                   <h4 className="block text-bone-soft font-display text-[3.5rem] font-bold leading-14 tracking-[-0.045em] max-tab:text-[2.5rem] max-tab:leading-10">
-                    {"Vamos trabalhar juntos\u2028\u2028"}
+                    {"Vamos levar seu negócio ao topo\u2028\u2028"}
                   </h4>
                 </div>
                 <div className="w-full flex relative flex-col justify-start shrink-0 whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]">
@@ -37,7 +50,7 @@ export default function LetWorkTogetherSection() {
                   <div className="flex relative justify-start items-start content-start shrink-0 gap-36 overflow-clip">
                     <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                       <p className="block text-bone font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
-                        Falar agora
+                        Pedir orçamento no WhatsApp
                       </p>
                     </div>
                     <div className="w-2 flex relative justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden">
@@ -54,82 +67,39 @@ export default function LetWorkTogetherSection() {
             <div className="w-full max-w-115 flex relative flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-2.5 overflow-clip max-desk:grow-[initial] max-desk:basis-[initial]">
               <div className="w-full block relative max-w-115 shrink-0">
                 <nav className="flex relative max-w-full flex-col justify-center items-start content-start gap-2.5">
-                  <div className="w-[3.5625rem] block relative shrink-0">
-                    <a className="flex relative justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer" href="/">
-                      <div className="w-[2.1125rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
-                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
-                            Home
-                          </p>
+                  {FOOTER_LINKS.map((link) => {
+                    const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+                    return (
+                      <Fragment key={link.href}>
+                        <div className="block relative shrink-0">
+                          <a
+                            className={cn(
+                              "flex relative justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer transition-opacity duration-300",
+                              !isActive && "opacity-50 hover:opacity-100"
+                            )}
+                            href={link.href}
+                            aria-current={isActive ? "page" : undefined}
+                          >
+                            <div className="flex relative justify-start items-start content-start shrink-0 gap-2.5">
+                              <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                                <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
+                                  {link.label}
+                                </p>
+                              </div>
+                            </div>
+                            <div className="flex relative pb-2 justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
+                              <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
+                                <p className="block text-bone-soft font-display text-[0.625rem] font-bold leading-[11.2px]">
+                                  {link.number}
+                                </p>
+                              </div>
+                            </div>
+                          </a>
                         </div>
-                      </div>
-                      <div className="w-[11.3px] flex relative pb-2 justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                          <p className="block text-bone-soft font-display text-[0.625rem] font-bold leading-[11.2px]">
-                            01
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="w-full h-px block relative shrink-0 overflow-clip bg-bone-edge" />
-                  <div className="w-[70.3px] block relative shrink-0">
-                    <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer" href="/work/portfolio">
-                      <div className="w-[45.7px] flex relative justify-start items-start content-start shrink-0 gap-2.5">
-                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
-                            Portfólio
-                          </p>
-                        </div>
-                      </div>
-                      <div className="w-[12.5px] flex relative pb-2 justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                          <p className="block text-bone-soft font-display text-[0.625rem] font-bold leading-[11.2px]">
-                            02
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="w-full h-px block relative shrink-0 overflow-clip bg-bone-edge" />
-                  <div className="w-[3.6375rem] block relative shrink-0">
-                    <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer" href="/about">
-                      <div className="w-[2.0875rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
-                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
-                            Sobre
-                          </p>
-                        </div>
-                      </div>
-                      <div className="w-[0.8rem] flex relative pb-2 justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                          <p className="block text-bone-soft font-display text-[0.625rem] font-bold leading-[11.2px]">
-                            03
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="w-full h-px block relative shrink-0 overflow-clip bg-bone-edge" />
-                  <div className="w-[4.2375rem] block relative shrink-0">
-                    <a className="flex relative opacity-50 justify-center items-end content-end gap-3 overflow-clip text-accent cursor-pointer" href="/contact">
-                      <div className="w-[2.6625rem] flex relative justify-start items-start content-start shrink-0 gap-2.5">
-                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                          <p className="block text-bone font-display font-bold leading-[16.2px] tracking-[-0.03em]">
-                            Contato
-                          </p>
-                        </div>
-                      </div>
-                      <div className="w-[0.825rem] flex relative pb-2 justify-center items-center content-center shrink-0 gap-2.5 overflow-clip">
-                        <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
-                          <p className="block text-bone-soft font-display text-[0.625rem] font-bold leading-[11.2px]">
-                            04
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="w-full h-px block relative shrink-0 overflow-clip bg-bone-edge" />
+                        <div className="w-full h-px block relative shrink-0 overflow-clip bg-bone-edge" />
+                      </Fragment>
+                    );
+                  })}
                 </nav>
               </div>
             </div>
