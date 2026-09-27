@@ -40,10 +40,10 @@ export default function ContactSection() {
           />
 
           <div className="w-full flex relative pt-[5.5625rem] flex-col justify-center items-center content-center shrink-0 gap-6.5 overflow-clip max-tab:pt-10 max-tab:gap-13">
-            <div className="w-full flex relative justify-center items-center content-center shrink-0 gap-7.5 overflow-clip max-tab:gap-0">
-              <Markers className="max-tab:hidden" />
+            <div className="w-full flex relative justify-center items-center content-center shrink-0 gap-7.5 overflow-clip max-tab:gap-3 max-tab:px-3">
+              <Markers className="max-tab:gap-20" />
 
-              <div className="h-25 block relative grow shrink-0 basis-0 max-w-200 tab:max-desk:max-w-140">
+              <div className="h-25 block relative grow shrink-0 basis-0 min-w-0 max-w-200 tab:max-desk:max-w-140">
                 <Ticker
                   className="flex max-w-full max-h-full p-2.5 items-center overflow-hidden"
                   speed={TICKER_SPEED}
@@ -54,10 +54,10 @@ export default function ContactSection() {
                 </Ticker>
               </div>
 
-              <Markers className="max-tab:hidden" />
+              <Markers className="max-tab:gap-20" />
             </div>
 
-            <ExploreButton href="/contact" label="Falar com a Vetta" tone="light" className="block relative shrink-0" />
+            <ExploreButton href="/contact" label="Pedir orçamento grátis" tone="light" className="block relative shrink-0" />
 
           </div>
         </div>
