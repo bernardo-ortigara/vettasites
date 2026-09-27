@@ -57,9 +57,9 @@ export default function SiteHeader({
             )}
           >
             <div className={cn(isHome ? "col-span-2" : sideClass, "flex relative justify-start items-center content-center shrink-0 gap-2.5 overflow-clip max-desk:hidden")}>
-              <a className="w-24.5 h-4.5 block relative shrink-0 overflow-clip text-accent cursor-pointer max-desk:hidden" href="/">
-                <div className="w-24.5 h-full block absolute top-0 left-0 max-desk:hidden">
-                  <img decoding="async" className="w-full h-4.5 block overflow-clip object-contain object-left aspect-[auto_1346/230] max-desk:hidden" alt="Vetta Sites" height="230" src="/assets/media/logo/vetta-horizontal-bone.svg" width="1346" />
+              <a className="w-[7.875rem] h-4.5 block relative shrink-0 overflow-clip text-accent cursor-pointer max-desk:hidden" href="/">
+                <div className="w-[7.875rem] h-full block absolute top-0 left-0 max-desk:hidden">
+                  <img decoding="async" className="w-full h-4.5 block overflow-clip object-contain object-left aspect-[auto_1606/230] max-desk:hidden" alt="Vetta Sites" height="230" src="/assets/media/logo/vetta-horizontal-sites-bone.svg" width="1606" />
                 </div>
               </a>
             </div>
@@ -80,13 +80,14 @@ export default function SiteHeader({
                 ))}
               </nav>
             </div>
+            {/* "Saiba mais" desce meio passo para a linha de base bater com a do menu e do logo */}
             {isHome ? (
               <div className="col-start-11 col-span-2 justify-self-end block relative shrink-0 max-desk:hidden">
-                <ExploreButton href="/contact" label="Saiba mais" tone="light" gap={75} />
+                <ExploreButton href="/contact" label="Saiba mais" tone="light" gap={75} size="sm" className="top-[5.5px]" />
               </div>
             ) : (
               <div className={cn(sideClass, "flex relative justify-end shrink-0 max-desk:hidden")}>
-                <ExploreButton href="/contact" label="Saiba mais" tone="light" gap={75} />
+                <ExploreButton href="/contact" label="Saiba mais" tone="light" gap={75} size="sm" className="top-[5.5px]" />
               </div>
             )}
           </header>

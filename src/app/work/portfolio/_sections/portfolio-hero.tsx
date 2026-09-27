@@ -66,7 +66,7 @@ export default function PortfolioHero() {
           transition={{ type: "tween", duration: 0.5, delay: 0.5, ease: EASE_UI }}
         >
           <p className="block text-bone-soft font-display font-bold leading-[16.2px] tracking-[-0.03em]">
-            Sites que colocamos no ar para os nossos clientes
+            Sites no ar, trabalhando pelos nossos clientes
           </p>
         </Appear>
 

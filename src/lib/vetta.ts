@@ -3,7 +3,7 @@ export const VETTA = {
   razaoSocial: "Vetta Sites Ltda",
   slogan: "Seu negócio merece estar no topo.",
   descricao:
-    "Criação de sites institucionais, landing pages e lojas virtuais com estratégia, design autoral e performance para o Google.",
+    "Sites institucionais, landing pages e lojas virtuais feitos para trazer clientes: design autoral, SEO técnico e orçamento em até 24h.",
   whatsapp: "5500000000000",
   email: "contato@vettasites.com.br",
   instagram: "https://instagram.com/vettasites",

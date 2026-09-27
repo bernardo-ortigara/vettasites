@@ -57,16 +57,16 @@ export const faqs: FaqItem[] = [
         answer: "Todo projeto sai com a base técnica de SEO pronta: estrutura semântica, títulos e descrições por página, sitemap, dados estruturados e imagens otimizadas. O posicionamento cresce com o tempo e com conteúdo."
     },
     {
-        question: "Eu consigo editar o conteúdo depois?",
-        answer: "Sim. Nos planos com painel, você edita textos e imagens sem depender de ninguém. Nos demais, ajustes de conteúdo entram no acompanhamento combinado após o lançamento."
+        question: "E se eu precisar mudar algo no site depois?",
+        answer: "É só chamar a gente. Nosso suporte faz as alterações de texto, imagem e conteúdo para você, sem precisar mexer em nada nem aprender nenhuma ferramenta."
     },
     {
         question: "Vocês cuidam do domínio e da hospedagem?",
         answer: "Cuidamos da publicação de ponta a ponta: configuração de domínio, certificado de segurança e hospedagem. Os acessos ficam no seu nome, sempre."
     },
     {
-        question: "Como funciona o orçamento?",
-        answer: "Você manda uma mensagem no WhatsApp contando o que precisa. A gente entende o objetivo do site, propõe o escopo e passa o valor fechado, sem cobrança por hora e sem surpresa no meio do caminho."
+        question: "Quanto custa e como funciona o orçamento?",
+        answer: "O valor depende do escopo e é fechado antes de começar, sem cobrança por hora e sem mensalidade escondida. Você manda uma mensagem no WhatsApp contando o que precisa e recebe escopo, prazo e valor em até 24h, sem compromisso."
     }
 ];
 

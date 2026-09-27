@@ -56,7 +56,7 @@ export default function PortfolioSection({ mediaTileData = MediaTile_data } = {}
                 <div className="flex relative justify-start items-start content-start shrink-0 gap-36 overflow-clip">
                   <div className="w-auto flex relative flex-col justify-start shrink-0 whitespace-pre text-nowrap">
                     <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
-                      Pedir orçamento
+                      Quero um site assim
                     </p>
                   </div>
                   <div className="w-2 flex relative justify-center items-center content-center shrink-0 gap-2.5 overflow-hidden">

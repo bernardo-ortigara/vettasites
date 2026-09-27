@@ -15,7 +15,7 @@ const COMMITMENTS: Commitment[] = [
   { count: "04", org: "Site responsivo", work: "Celular, tablet e desktop", result: "Incluso" },
   { count: "05", org: "Imagens otimizadas", work: "WebP e carregamento sob demanda", result: "Incluso" },
   { count: "06", org: "Domínio e hospedagem", work: "Configurados por nós", result: "Incluso" },
-  { count: "07", org: "Acessos no seu nome", work: "Domínio, hospedagem e painel", result: "Sempre" },
+  { count: "07", org: "Acessos no seu nome", work: "Domínio e hospedagem", result: "Sempre" },
   { count: "08", org: "Acompanhamento", work: "Ajustes após o lançamento", result: "Combinado" }
 ];
 

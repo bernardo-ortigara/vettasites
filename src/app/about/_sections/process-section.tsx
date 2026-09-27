@@ -10,7 +10,7 @@ import FeatureItem from "../../components/feature-item";
 const EASE_UI = [0.44, 0, 0.34, 0.98] as const;
 
 const HEADING =
-  "                                   Um método simples e previsível: entender o negócio, desenhar o caminho e publicar um site que continua evoluindo com a marca®.";
+  "                                   Um método simples e previsível: você sabe o prazo, o valor e cada etapa antes de começar®.";
 
 const HEADING_FONT: ResponsiveFont = {
   base: {

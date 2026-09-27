@@ -38,11 +38,11 @@ export const navLinkStyles: NavLinkStyles[] = [
     { className: "w-auto justify-center items-center content-center", className2: "w-auto", className3: "w-auto", className4: "w-auto" }
 ];
 export const clientLogoStyles: ClientLogoStyles[] = [
-    { className: "w-[13.9375rem]", className2: "w-[13.9375rem]", className3: "w-[13.9375rem]", className4: "left-0", className5: "aspect-[auto_246/64]" },
-    { className: "w-56", className2: "w-56", className3: "w-56", className4: "left-0", className5: "aspect-[auto_206/45]" },
-    { className: "w-56", className2: "w-56", className3: "w-56", className4: "left-0", className5: "aspect-[auto_524/90]" },
-    { className: "w-56", className2: "w-56", className3: "w-56", className4: "left-0", className5: "aspect-[auto_302/64]" },
-    { className: "w-56", className2: "w-56", className3: "w-56", className5: "aspect-[auto_416/52]" }
+    { className: "w-[13.9375rem]", className2: "w-[13.9375rem]", className3: "w-[13.9375rem]", className4: "left-0", className5: "aspect-[auto_384/80]" },
+    { className: "w-56", className2: "w-56", className3: "w-56", className4: "left-0", className5: "aspect-[auto_384/80]" },
+    { className: "w-56", className2: "w-56", className3: "w-56", className4: "left-0", className5: "aspect-[auto_384/80]" },
+    { className: "w-56", className2: "w-56", className3: "w-56", className4: "left-0", className5: "aspect-[auto_384/80]" },
+    { className: "w-56", className2: "w-56", className3: "w-56", className5: "aspect-[auto_384/80]" }
 ];
 export const mediaTileStyles: MediaTileStyles[] = [
     { className: "w-full h-[30.9rem] sticky top-12.5 max-desk:top-6 max-tab:h-auto", className2: "h-full", className3: "z-1", className5: "aspect-[auto_1440/778]", className6: "aspect-[auto_1440/778]", className7: "w-auto", className8: "w-auto", className9: "w-3/5", className10: "w-auto", className11: "w-auto" },

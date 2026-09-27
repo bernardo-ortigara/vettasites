@@ -1,7 +1,7 @@
 "use client";
 
 import SiteHeader from "../../components/site-header";
-import { Appear, Parallax } from "../../components/motion-primitives";
+import { Appear } from "../../components/motion-primitives";
 import { HONEYPOTS, montarMensagem } from "../../../lib/contato";
 import { whatsappLink } from "../../../lib/vetta";
 
@@ -114,39 +114,27 @@ export default function GetInTouchSection() {
         className="w-full max-w-360 h-[min-content] flex relative justify-start items-start content-start gap-[127px] overflow-clip max-desk:flex-col max-desk:gap-20 max-desk:max-w-none"
       >
         <Appear
-          className="w-143.5 h-195.75 flex relative flex-col justify-start items-center content-center shrink-0 gap-2.5 rounded-[5px] overflow-clip max-desk:order-1 max-desk:justify-center max-desk:w-full tab:max-desk:h-180 max-tab:h-88.5"
+          className="w-143.5 aspect-[1080/1350] flex relative flex-col justify-start items-center content-center shrink-0 gap-2.5 rounded-[5px] overflow-clip max-desk:order-1 max-desk:justify-center max-desk:w-full tab:max-desk:w-144"
           initial={{ opacity: 0.001, y: 70 }}
           transition={{ ...SPRING, delay: DELAY.image }}
         >
-          <div className="w-[9%] h-[5%] block absolute top-[47.765%] left-[45.4704%] z-1 overflow-clip">
-            <img loading="lazy" decoding="async"               className="w-full h-full block object-contain"
-
-              alt=""
-              width="208"
-              height="147"
-              src="/assets/media/images/237cf1bbfc22.png"
-            />
-          </div>
-
-          <Parallax
-            speed={90}
-            className="w-full h-[120%] block relative shrink-0 rounded-[5px] overflow-clip max-desk:h-[140%]"
-          >
+          {/* Sem parallax: o pôster aparece inteiro, na proporção original */}
+          <div className="w-full h-full block relative shrink-0 rounded-[5px] overflow-clip">
             <div className="w-full h-full block absolute top-0 left-0 rounded-[5px]">
               <img loading="lazy" decoding="async"                 className="w-full h-full block rounded-[5px] overflow-clip object-cover object-center"
 
-                alt="Men Orange BG"
-                width="896"
-                height="1280"
+                alt="Pôster da Vetta Sites: pessoas caminhando sobre um fundo laranja"
+                width="1080"
+                height="1350"
                 sizes="(min-width: 1200px) 574px, calc(100vw - 48px)"
-                src="/assets/media/images/c2319a79d95c.webp"
-                srcSet="/assets/media/images/e2d3b0b2997d.webp 716w, /assets/media/images/c2319a79d95c.webp 896w"
+                src="/assets/media/images/sobre-vetta.webp"
+                srcSet="/assets/media/images/sobre-vetta-540.webp 540w, /assets/media/images/sobre-vetta.webp 1080w"
               />
             </div>
-          </Parallax>
+          </div>
         </Appear>
 
-        <div className="flex-1 grow shrink-0 basis-0 w-px h-[min-content] flex relative flex-col justify-center items-start content-start gap-20 pt-20 overflow-clip max-desk:flex-none max-desk:order-0 max-desk:w-full max-desk:gap-12.5 max-desk:pt-0">
+        <div className="flex-1 grow shrink-0 basis-0 w-px h-[min-content] flex relative flex-col justify-center items-start content-start gap-20 pt-20 overflow-clip desk:h-auto desk:self-stretch desk:justify-between desk:pt-0 max-desk:flex-none max-desk:order-0 max-desk:w-full max-desk:gap-12.5 max-desk:pt-0">
           <div className="w-full h-[min-content] flex relative flex-col justify-center items-start content-start gap-12.5 max-desk:gap-5">
             <Appear
               className="w-full h-auto flex relative flex-col justify-start whitespace-pre-wrap [word-break:break-word] [overflow-wrap:break-word]"
@@ -216,7 +204,7 @@ export default function GetInTouchSection() {
               transition={{ ...SPRING, delay: DELAY.submit }}
             >
               <button
-                className="w-full h-full flex relative justify-center items-center content-center rounded-[10px] bg-bone-edge cursor-pointer text-center"
+                className="w-full h-full flex relative justify-center items-center content-center rounded-[10px] bg-bone-edge cursor-pointer text-center transition-colors duration-300 hover:bg-accent focus-visible:bg-accent"
                 type="submit"
               >
                 <div className="w-auto h-auto flex relative flex-col justify-start text-center whitespace-pre select-none">

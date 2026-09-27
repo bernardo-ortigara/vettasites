@@ -41,7 +41,7 @@
 :root {
   --vetta-orange: #FF480A;
   --vetta-ink: #22201E;
-  --vetta-bone: #F1ECE7;
+  --vetta-bone: #FAF8F6;
   --vetta-stone: #817D77;
   --vetta-sun: #FCB263;
   --vetta-ember: #D84618;
@@ -53,11 +53,11 @@
   --ink-edge: rgba(34, 32, 30, 0.16);
   --ink-shadow: rgba(34, 32, 30, 0.2);
   --bone: var(--vetta-bone);
-  --bone-soft: rgba(241, 236, 231, 0.5);
-  --bone-dim: #F7F5F2;
+  --bone-soft: rgba(250, 248, 246, 0.5);
+  --bone-dim: #FFFFFF;
   --bone-blend: #E6E1DB;
-  --bone-edge: rgba(241, 236, 231, 0.16);
-  --bone-hairline: rgba(241, 236, 231, 0.1);
+  --bone-edge: rgba(250, 248, 246, 0.16);
+  --bone-hairline: rgba(250, 248, 246, 0.1);
   --accent: var(--vetta-orange);
   --stone: var(--vetta-stone);
 
