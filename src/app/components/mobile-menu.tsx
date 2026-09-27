@@ -73,16 +73,16 @@ export default function MobileMenu({
           <Burger open={open} />
         </button>
         <a
-          className="w-24.5 h-4.5 block relative shrink-0 overflow-clip text-accent cursor-pointer"
+          className="w-[7.875rem] h-4.5 block relative shrink-0 overflow-clip text-accent cursor-pointer"
           href="/"
           onClick={() => setOpen(false)}
         >
-          <div className="w-24.5 h-full block absolute top-0 left-0">
-            <img decoding="async" className="w-full h-4.5 block overflow-clip object-contain object-left aspect-[auto_1346/230]"
+          <div className="w-[7.875rem] h-full block absolute top-0 left-0">
+            <img decoding="async" className="w-full h-4.5 block overflow-clip object-contain object-left aspect-[auto_1606/230]"
               alt="Vetta Sites"
               height="230"
-              src="/assets/media/logo/vetta-horizontal-bone.svg"
-              width="1346"
+              src="/assets/media/logo/vetta-horizontal-sites-bone.svg"
+              width="1606"
             />
           </div>
         </a>
@@ -141,13 +141,8 @@ export default function MobileMenu({
             transition={{ duration: 0.5, delay: 0.08 + navLinks.length * 0.07, ease: EASE_UI }}
           >
             <div className="w-16 h-16 flex relative rounded-[2.5px] justify-center items-center content-center shrink-0 overflow-hidden bg-night">
-              <img decoding="async"                 className="w-full h-16 block rounded-[2.5px] overflow-clip object-cover aspect-[auto_896/830]"
-                alt=""
-                height="830"
-                sizes="64px"
-                src="/assets/media/images/9b08cefad60d.webp"
-                width="896"
-              />
+              {/* Mesmo ícone da Vetta em degradê usado no card da seção de Portfólio */}
+              <img decoding="async" className="w-full h-16 block overflow-clip object-cover" alt="" height="64" src="/assets/media/logo/vetta-icone-degrade.svg" width="64" />
             </div>
             <div className="flex relative flex-col justify-center items-start content-start grow shrink-0 basis-0 gap-2 overflow-clip">
               <p className="block text-night font-display text-base font-bold leading-[20.2px] tracking-[-0.03em]">
