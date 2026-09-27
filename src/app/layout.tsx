@@ -21,7 +21,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_ORIGIN || "http://localhost:3000"),
+  metadataBase: new URL(SITE_ORIGIN),
   // Aba do navegador mostra só a marca, em todas as páginas
   title: {
     default: "Vetta Sites",

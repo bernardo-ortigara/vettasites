@@ -4,7 +4,7 @@ export const VETTA = {
   slogan: "Seu negócio merece estar no topo.",
   descricao:
     "Sites institucionais, landing pages e lojas virtuais feitos para trazer clientes: design autoral, SEO técnico e orçamento em até 24h.",
-  whatsapp: "5500000000000",
+  whatsapp: "5554976030143",
   email: "contato@vettasites.com.br",
   instagram: "https://instagram.com/vettasites",
   cidade: "Caxias do Sul",

@@ -3,7 +3,7 @@ import { VETTA } from "../../lib/vetta";
 import { faqs } from "../content";
 
 export default function JsonLd() {
-  const base = SITE_ORIGIN || "http://localhost:3000";
+  const base = SITE_ORIGIN;
   const telefone = VETTA.whatsapp ? `+${VETTA.whatsapp}` : undefined;
 
   const organizacao = {
