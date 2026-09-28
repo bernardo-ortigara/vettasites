@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, "max-image-preview": "large" },
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Vetta Sites — Criação de sites profissionais",
+    title: "Vetta Sites",
     description: VETTA.descricao,
     type: "website",
     locale: "pt_BR",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vetta Sites — Criação de sites profissionais",
+    title: "Vetta Sites",
     description: VETTA.descricao,
     images: ["/assets/media/images/og.jpg"]
   }
